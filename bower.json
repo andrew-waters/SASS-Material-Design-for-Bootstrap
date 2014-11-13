@@ -1,0 +1,24 @@
+{
+  "name": "SASS Material Design for Bootstrap",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andrew-waters/SASS-Material-Design-for-Bootstrap",
+  "authors": [
+    "Andrew Waters <andrew@band-x.media>"
+  ],
+  "description": "Extends the official Bootstrap SASS to include additional classes based on the Google Material Design",
+  "main": "/build/material-bbotstrap.css",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
