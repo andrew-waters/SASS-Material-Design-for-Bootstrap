@@ -1,6 +1,41 @@
 
-.background-color-container span {
-	padding: 15px;
-	font-size: 85%;
+html, body {
+	background-color: #f9f9f9;
 }
 
+.background-color-container {
+	margin-top: 15px;
+}
+
+.background-color-container span.center-block {
+	padding: 15px;	
+}
+
+.background-color-container span.textClassLabel {
+	float: left;
+	width: 20%;
+}
+
+.background-color-container .bg-A100 span.textClassLabel,
+.background-color-container .bg-A200 span.textClassLabel,
+.background-color-container .bg-A400 span.textClassLabel,
+.background-color-container .bg-A700 span.textClassLabel {
+	font-weight: 500;
+}
+
+.background-color-container span.textClass {
+	float: left;
+	font-size: 85%;
+	width: 80%;
+	text-align: right;
+}
+
+.background-color-container h4 {
+	padding: 15px;
+	padding-bottom: 90px;
+	margin-bottom: 5px;
+}
+
+.bg-A100 {
+	margin-top: 5px;
+}

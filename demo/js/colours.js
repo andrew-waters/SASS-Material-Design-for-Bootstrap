@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 		colorString = color.replace("-", " ");
 
-		$container.append('<hr /><h4>' + colorString + '</h4>');
+		$container.append('<h4 class="bg-' + color  + '">' + colorString + '<span class=""></span></h4>');
 
 		$('<p />').appendTo('#background-color-' + color);
 
@@ -54,8 +54,8 @@ $(document).ready(function() {
 			$p = $('#background-color-' + color + ' p');
 
 			$('<span />', {
-				class: 'center-block bg-' + color + '-' + textClass,
-				html: '.bg-' + color + '-' + textClass
+				class: 'center-block bg-' + color + ' bg-' + textClass,
+				html: '<span class="textClassLabel">' + textClass + '</span><span class="textClass">.bg-' + color + '.bg-' + textClass + '</span><span class="clearfix"></span>'
 			}).appendTo($p);
 
 		});
