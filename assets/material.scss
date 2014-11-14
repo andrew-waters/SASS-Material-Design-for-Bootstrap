@@ -1,9 +1,12 @@
 
+@import "stylesheets/fonts";
+
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
 
 @import "stylesheets/colors";
 
-@import "stylesheets/depthShadows";
+@import "stylesheets/headers";
+@import "stylesheets/elevation";
 @import "stylesheets/utilities";
 @import "stylesheets/scaffolding";
 @import "stylesheets/panels";
@@ -11,3 +14,4 @@
 @import "stylesheets/background";
 @import "stylesheets/inputs";
 @import "stylesheets/buttons";
+@import "stylesheets/jumbotron";

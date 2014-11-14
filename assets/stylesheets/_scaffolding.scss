@@ -5,7 +5,18 @@ body {
 }
 
 p {
-	color: $color-grey-600;
+	color: $color-grey-800;
+	letter-spacing: .1px;
+	-webkit-font-smoothing: antialiased;
+	font-family: "RobotoDraft", "Roboto", sans-serif;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.well {
+	background-color: $color-grey-100;
 }
 
 a {
@@ -14,4 +25,22 @@ a {
 
 a:hover {
 	color: $color-light-blue-700;
+}
+
+
+
+code {
+	font-size: 10px;
+	border-radius: 1px;
+	background-color: $color-grey-200;
+	color: $color-deep-orange;
+}
+
+pre {
+	font-size: 10px;
+	padding: 5px;
+	margin: 0;
+	border-radius: 2px;
+	background-color: $color-grey-200;
+	color: $color-deep-orange;
 }

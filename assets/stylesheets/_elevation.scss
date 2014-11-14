@@ -1,91 +1,101 @@
 
-.shadow-1 {
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.elevated-1 {
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.shadow-2 {
+.elevated-2 {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.shadow-3 {
+.elevated-3 {
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.shadow-4 {
+.elevated-4 {
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.shadow-5 {
-	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+.elevated-5 {
+	box-shadow: 0 23px 42px rgba(0,0,0,0.30), 0 19px 16px rgba(0,0,0,0.22);
 }
 
 
 
-.animated-shadow-1 {
+.animated-elevation-0 {
 	-webkit-transition: all 0.15s;
 	-moz-transition: all 0.15s;
 	transition: all 0.15s;
 }
 
-.animated-shadow-2 {
+.animated-elevation-1 {
+	-webkit-transition: all 0.15s;
+	-moz-transition: all 0.15s;
+	transition: all 0.15s;
+}
+
+.animated-elevation-2 {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
 }
 
-.animated-shadow-3 {
+.animated-elevation-3 {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.animated-shadow-4 {
+.animated-elevation-4 {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.animated-shadow-5 {
+.animated-elevation-5 {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.animated-shadow-1:hover {
+.animated-elevation-0:hover {
+	-webkit-transform: translateY(-1px);
+	-moz-transform: translateY(-1px);
+	transform: translateY(-1px);
+	box-shadow: none;
+}
+
+.animated-elevation-1:hover {
 	-webkit-transform: translateY(-1px);
 	-moz-transform: translateY(-1px);
 	transform: translateY(-1px);
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.animated-shadow-2:hover {
+.animated-elevation-2:hover {
 	-webkit-transform: translateY(-1px);
 	-moz-transform: translateY(-1px);
 	transform: translateY(-1px);
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.animated-shadow-3:hover {
+.animated-elevation-3:hover {
 	-webkit-transform: translateY(-1px);
 	-moz-transform: translateY(-1px);
 	transform: translateY(-1px);
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.animated-shadow-4:hover {
+.animated-elevation-4:hover {
 	-webkit-transform: translateY(-1px);
 	-moz-transform: translateY(-1px);
 	transform: translateY(-1px);
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.animated-shadow-5:hover {
+.animated-elevation-5:hover {
 	-webkit-transform: translateY(-1px);
 	-moz-transform: translateY(-1px);
 	transform: translateY(-1px);
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
-
-
-
 
