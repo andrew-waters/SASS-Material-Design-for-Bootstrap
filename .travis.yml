@@ -1,5 +1,5 @@
 script:
- - "scripts/travis/travis.rb"
+ - "scripts/travis/test.rb"
 
 env:
  global:
@@ -14,4 +14,4 @@ before_install:
  - gem install sass
 
 after_success:
- - "scripts/travis/travis-gh-pages.sh"
+ - "scripts/travis/publish-gh-pages.sh"
