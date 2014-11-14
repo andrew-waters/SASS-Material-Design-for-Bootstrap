@@ -7,9 +7,6 @@
   ],
   "description": "Extends the official Bootstrap SASS to include additional classes based on the Google Material Design",
   "main": "/build/material-bbotstrap.css",
-  "moduleType": [
-    "globals"
-  ],
   "license": "MIT",
   "private": true,
   "ignore": [
