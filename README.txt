@@ -1,0 +1,1 @@
+This directory is for MAMP Sites to be shared across machines
