@@ -1,6 +1,6 @@
 # SASS Material Design for Bootstrap
 
-[![Build Status](https://travis-ci.org/andrew-waters/SASS-Material-Design-for-Bootstrap.svg?branch=master)](https://travis-ci.org/andrew-waters/SASS-Material-Design-for-Bootstrap)
+[![Build Status](https://travis-ci.org/band-x-media/SASS-Material-Design-for-Bootstrap.svg?branch=master)](https://travis-ci.org/band-x-media/SASS-Material-Design-for-Bootstrap)
 
 ## Introduction
 
@@ -19,5 +19,4 @@ Your built output will be in /build
 
 ## Links
 
-[Bootstrap](http://getbootstrap.com)
-[Google Material Design](http://www.google.com/design/spec/material-design)
+[Bootstrap](http://getbootstrap.com), [Google Material Design](http://www.google.com/design/spec/material-design)
