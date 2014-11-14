@@ -12,10 +12,10 @@ Use Bower to install Bootstrap (SASS) and then launch a watcher (or manually bui
 
 ```
 bower install
-sass --watch assets/material.scss:build/material-bootstrap.css
+sass --watch assets/material.scss:pages/css/material-bootstrap.css
 ```
 
-Your built output will be in /build
+You can then view the site in your browser at ./pages/index.html
 
 ## Links
 
