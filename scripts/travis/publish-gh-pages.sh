@@ -5,8 +5,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   echo -e "Starting to update gh-pages\n"
 
   #copy data we're interested in to other place
-  cp -R ./demo $HOME/demo
-  cp ./build/material-bootstrap.css $HOME/demo/css/
+  cp -R ./pages $HOME/pages
+  cp ./build/material-bootstrap.css $HOME/pages/css/
 
   #go to home and setup git
   cd $HOME
@@ -22,7 +22,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   git remote rm origin
   git remote add origin https://andrew-waters:$GITAUTH@github.com/band-x-media/SASS-Material-Design-for-Bootstrap.git
   
-  cp -Rf $HOME/demo/* .
+  cp -Rf $HOME/pages/* .
 
   #add, commit and push files
   git add -f .
