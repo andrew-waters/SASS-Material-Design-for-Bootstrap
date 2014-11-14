@@ -8,6 +8,13 @@ The purpose of this repository is to extend, within Bootstrap, the options avail
 
 ## Developing
 
+Install SASS and Bower if you need them
+
+```
+sudo gem install sass
+sudo npm install -g bower
+```
+
 Use Bower to install Bootstrap (SASS) and then launch a watcher (or manually build your files).
 
 ```
