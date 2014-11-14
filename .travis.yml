@@ -1,6 +1,10 @@
 script:
  - "test/travis.rb"
- 
+
+before_script:
+  - npm install -g bower
+  - bower install
+
 language: sass
 before_install:
  - gem install sass
