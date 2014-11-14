@@ -1,7 +1,9 @@
 script:
  - "scripts/travis/travis.rb"
 
-secure: "Lm/eeq9oAdyYyFIqVFfZTZT+/s6L9w4/0IyQoZFHYvl/mHoMj1l3K9q1MxWll5fQ5Cv+fz5GwpuAF9tpO4hHMBlAaSBaFr9Dope1zOsEnj5aVVbfijvtBrJn+OSw040M8LrShR8TQT3/MLh6LOm+fYqASo2+0/SUgIvC5ozZsfc="
+env:
+ global:
+  - secure: "Lm/eeq9oAdyYyFIqVFfZTZT+/s6L9w4/0IyQoZFHYvl/mHoMj1l3K9q1MxWll5fQ5Cv+fz5GwpuAF9tpO4hHMBlAaSBaFr9Dope1zOsEnj5aVVbfijvtBrJn+OSw040M8LrShR8TQT3/MLh6LOm+fYqASo2+0/SUgIvC5ozZsfc="
 
 before_script:
   - npm install -g bower
