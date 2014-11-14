@@ -6,7 +6,6 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
   #copy data we're interested in to other place
   cp -R ./pages $HOME/pages
-  cp ./build/material-bootstrap.css $HOME/pages/css/
 
   #go to home and setup git
   cd $HOME
