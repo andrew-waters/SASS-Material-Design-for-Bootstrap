@@ -1,5 +1,7 @@
 # SASS Material Design for Bootstrap
 
+[![Build Status](https://travis-ci.org/andrew-waters/SASS-Material-Design-for-Bootstrap.svg?branch=master)](https://travis-ci.org/andrew-waters/SASS-Material-Design-for-Bootstrap)
+
 ## Introduction
 
 The purpose of this repository is to extend, within Bootstrap, the options available to the developer / designer in line with the Google Material Design concepts.
