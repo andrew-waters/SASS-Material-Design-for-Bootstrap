@@ -1,0 +1,30 @@
+
+.form-control {
+	border-radius: 0;
+	background-color: rgba(0,0,0,0);
+	box-shadow: none;
+	border: none;
+	border-bottom: 2px solid $color-grey-300;
+	padding-left: 0;
+	padding-right: 0;
+	@include placeholder($color-grey-400);
+}
+
+.form-control:focus {
+	outline: 0;
+	border-bottom: 2px solid $color-light-blue;
+	box-shadow: none;
+	@include placeholder($color-light-blue-100);
+}
+
+.form-control:focus::-webkit-input-placeholder {
+	transition: color ease-in-out 0.3s; 
+}
+
+.form-control::-webkit-input-placeholder {
+	transition: color ease-in-out 0.4s; 
+}
+
+.help-block {
+	color: $color-grey-400;
+}

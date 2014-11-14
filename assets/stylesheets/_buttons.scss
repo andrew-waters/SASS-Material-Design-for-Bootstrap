@@ -1,0 +1,14 @@
+
+.btn {
+	color: $color-light-blue-400;
+	border-radius: 2px;
+}
+
+.btn:hover, .btn:focus, .btn.focus {
+	color: $color-light-blue-700;
+}
+
+.btn-raised {
+	background-color: $color-blue;
+	color: $color-white;
+}

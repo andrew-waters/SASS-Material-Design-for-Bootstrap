@@ -1,6 +1,13 @@
 
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
+
 @import "stylesheets/colors";
+
+@import "stylesheets/depthShadows";
+@import "stylesheets/utilities";
+@import "stylesheets/scaffolding";
+@import "stylesheets/panels";
 @import "stylesheets/text";
 @import "stylesheets/background";
-
-@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
+@import "stylesheets/inputs";
+@import "stylesheets/buttons";
