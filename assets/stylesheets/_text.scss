@@ -1,13 +1,13 @@
 
 @each $color in map-keys(map-get($color-map, colors)) {
 
-	.text-#{$color} {
+	.text-#{"" + $color} {
 		color: map-fetch($color-map, colors $color 500 'primary');
 	}
 
 	@each $hue in map-keys(map-fetch($color-map, colors $color)) {
 
-		.text-#{$color}.text-#{$hue} {
+		.text-#{"" + $color}.text-#{$hue} {
 			color: map-fetch($color-map, colors $color $hue 'primary');
 		}
 

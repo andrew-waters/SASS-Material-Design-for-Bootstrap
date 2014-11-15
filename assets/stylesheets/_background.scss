@@ -4,14 +4,14 @@
 
 @each $color in map-keys(map-get($color-map, colors)) {
 
-	.bg-#{$color} {
+	.bg-#{"" + $color} {
 		background-color: map-fetch($color-map, colors $color 500 'primary');
 		color: map-fetch($color-map, colors $color 500 'text');
 	}
 
 	@each $hue in map-keys(map-fetch($color-map, colors $color)) {
 
-		.bg-#{$color}.bg-#{$hue} {
+		.bg-#{"" + $color}.bg-#{$hue} {
 			background-color: map-fetch($color-map, colors $color $hue 'primary');
 			color: map-fetch($color-map, colors $color $hue 'text');
 		}
