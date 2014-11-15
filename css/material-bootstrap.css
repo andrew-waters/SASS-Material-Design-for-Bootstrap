@@ -7483,4 +7483,8 @@ pre {
   border-radius: 2px;
   background-color: #F5F5F5; }
 
+ol#breadcrumb,
+ul#breadcrumb {
+  border-radius: 2px; }
+
 /*# sourceMappingURL=material-bootstrap.css.map */
