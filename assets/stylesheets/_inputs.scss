@@ -4,17 +4,17 @@
 	background-color: rgba(0,0,0,0);
 	box-shadow: none;
 	border: none;
-	border-bottom: 2px solid $color-grey-300;
+	border-bottom: 2px solid get-color(grey, 300);
 	padding-left: 0;
 	padding-right: 0;
-	@include placeholder($color-grey-400);
+	@include placeholder(get-color(grey, 400));
 }
 
 .form-control:focus {
 	outline: 0;
-	border-bottom: 2px solid $color-light-blue;
+	border-bottom: 2px solid get-color(light-blue);
 	box-shadow: none;
-	@include placeholder($color-light-blue-100);
+	@include placeholder(get-color(light-blue, 100));
 }
 
 .form-control:focus::-webkit-input-placeholder {
@@ -26,5 +26,5 @@
 }
 
 .help-block {
-	color: $color-grey-400;
+	color: get-color(grey, 400);
 }

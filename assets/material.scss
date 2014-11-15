@@ -1,4 +1,19 @@
 
+@function map-fetch($map, $keys) {
+	$key: nth($keys, 1);
+	$length: length($keys);
+	$value: map-get($map, $key);
+	@if ($length > 1) {
+		$rest: ();
+		@for $i from 2 through $length {
+			$rest: append($rest, nth($keys, $i))
+		}
+		@return map-fetch($value, $rest)
+	} @else {
+		@return $value;
+	}
+}
+
 @import "stylesheets/fonts";
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";

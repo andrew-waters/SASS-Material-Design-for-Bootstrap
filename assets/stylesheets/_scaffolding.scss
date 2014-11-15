@@ -1,11 +1,11 @@
 
 body {
-	color: $color-grey-800;
+	color: get-color(grey, 800);
 	font-family: 'Roboto', sans-serif;
 }
 
 p {
-	color: $color-grey-800;
+	color: get-color(grey, 800);
 	letter-spacing: .1px;
 	-webkit-font-smoothing: antialiased;
 	font-family: "RobotoDraft", "Roboto", sans-serif;
@@ -16,24 +16,22 @@ p:last-child {
 }
 
 .well {
-	background-color: $color-grey-100;
+	background-color: get-color(grey, 100);
 }
 
 a {
-	color: $color-light-blue-400;
+	color: get-color(light-blue, 400);
 }
 
 a:hover {
-	color: $color-light-blue-700;
+	color: get-color(light-blue, 700);
 }
-
-
 
 code {
 	font-size: 10px;
 	border-radius: 1px;
-	background-color: $color-grey-200;
-	color: $color-deep-orange;
+	background-color: get-color(grey, 200);
+	color: get-color(deep-orange);
 }
 
 pre {
@@ -41,6 +39,6 @@ pre {
 	padding: 5px;
 	margin: 0;
 	border-radius: 2px;
-	background-color: $color-grey-200;
-	color: $color-deep-orange;
+	background-color: get-color(grey, 200);
+	color: get-color(deep-orange);
 }

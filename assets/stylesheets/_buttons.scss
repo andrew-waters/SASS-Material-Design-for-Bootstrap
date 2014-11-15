@@ -9,6 +9,6 @@
 }
 
 .btn-raised {
-	background-color: $color-blue;
+	background-color: get-color(blue);
 	color: $color-white;
 }
