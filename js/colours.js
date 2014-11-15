@@ -22,13 +22,18 @@ $(document).ready(function() {
 
 		$('<p />').appendTo('#text-color-' + color);
 
-		$.each(textClassesToUse, function(i, textClass) {
-
 			$p = $('#text-color-' + color + ' p');
 
+		$('<span />', {
+			class: 'text-' + color,
+			html: '.text-' + color
+		}).add('<br />').appendTo($p);
+
+		$.each(textClassesToUse, function(i, textClass) {
+
 			$('<span />', {
-				class: 'text-' + color + '-' + textClass,
-				html: '.text-' + color + '-' + textClass
+				class: 'text-' + color + ' text-' + textClass,
+				html: '.text-' + color + '.text-' + textClass
 			}).appendTo($p);
 
 			if(i < (textClasses.length - 1)) {
@@ -39,7 +44,7 @@ $(document).ready(function() {
 
 	//	build the background colours
 		$container = $('<div />', {
-			class: 'background-color-container col-lg-4 col-md-4 col-sm-12 col-xs-12',
+			class: 'background-color-container col-lg-4 col-md-6 col-sm-12 col-xs-12',
 			id: 'background-color-' + color
 		}).appendTo('#background-colors');
 
