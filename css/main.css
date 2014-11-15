@@ -12,12 +12,13 @@ body {
 }
 
 .background-color-container span.center-block {
-	padding: 15px;	
+	padding: 11px 15px;	
 }
 
 .background-color-container span.textClassLabel {
 	float: left;
 	width: 20%;
+	font-weight: 500;
 }
 
 .background-color-container .bg-A100 span.textClassLabel,

@@ -3,8 +3,8 @@ $(document).ready(function() {
 
 	colors = ['red', 'pink', 'purple', 'deep-purple', 'indigo', 'blue', 'light-blue', 'cyan', 'teal', 'green', 'light-green', 'lime', 'yellow', 'amber', 'orange', 'deep-orange', 'brown', 'grey', 'blue-grey'];
 
-	textClasses = [50, 100, 200, 300, 400, 500, 600, 700, 800, 'A100', 'A200', 'A400', 'A700'];
-	textClassesAlt = [50, 100, 200, 300, 400, 500, 600, 700, 800];
+	textClasses = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 'A100', 'A200', 'A400', 'A700'];
+	textClassesAlt = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 	$.each(colors, function(i, color) {
 
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 	//	build the background colours
 		$container = $('<div />', {
-			class: 'background-color-container col-lg-4 col-md-4 col-sm-6 col-xs-6',
+			class: 'background-color-container col-lg-4 col-md-4 col-sm-12 col-xs-12',
 			id: 'background-color-' + color
 		}).appendTo('#background-colors');
 
