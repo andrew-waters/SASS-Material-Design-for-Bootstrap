@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("http://roboto-webfont.googlecode.com/svn/trunk/roboto.all.css");
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
