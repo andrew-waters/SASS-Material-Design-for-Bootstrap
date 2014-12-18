@@ -10,6 +10,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 #	copy bootstrap fonts
 	cp -R ./bower_components/bootstrap-sass-official/assets/fonts $HOME/pages/fonts
 
+#	copy material design fonts
+	cp -R ./assets/fonts $HOME/pages/fonts
+
 #	go to home and setup git
 	cd $HOME
 	git config --global user.email "andrew@band-x-media.co.uk"

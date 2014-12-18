@@ -14,6 +14,8 @@
 	}
 }
 
+$material-font-path: "../fonts" !default;
+
 @import "stylesheets/fonts";
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
@@ -32,3 +34,4 @@
 @import "stylesheets/buttons";
 @import "stylesheets/jumbotron";
 @import "stylesheets/breadcrumbs";
+@import "stylesheets/icons";
