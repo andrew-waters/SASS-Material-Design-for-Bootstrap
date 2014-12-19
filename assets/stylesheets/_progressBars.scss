@@ -1,0 +1,92 @@
+
+.progress {
+	height: 4px;
+	border-radius: 0;
+	box-shadow: none;
+	background: get-color(grey, 200);
+}
+
+.progress .progress-bar {
+	box-shadow: none;
+}
+
+.progress .progress-bar,
+.progress .progress-bar-default {
+	background-color: get-color(grey);
+}
+
+.progress .progress-bar-primary {
+	background-color: get-color(blue);
+}
+
+.progress .progress-bar-success {
+	background-color: get-color(green);
+}
+
+.progress .progress-bar-info {
+	background-color: get-color(cyan);
+}
+
+.progress .progress-bar-warning {
+	background-color: get-color(orange);
+}
+
+.progress .progress-bar-danger {
+	background-color: get-color(red);
+}
+
+
+
+
+
+
+
+
+@-webkit-keyframes progressBarAnimation {
+	0%   { background-position: right bottom;	}
+	100% { background-position: left bottom;	}
+}
+
+@keyframes progressBarAnimation {
+	0%   { background-position: right bottom;	}
+	100% { background-position: left bottom;	}
+}
+
+@mixin animatedProgressBar($color) {
+	background: linear-gradient(to right, get-color($color) 10%, get-color($color, 50) 30%, get-color($color) 80%);
+	background-size: 1000% 100%;
+	background-position: left bottom;
+	-webkit-animation-name: progressBarAnimation;
+	animation-name: progressBarAnimation;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+}
+
+
+
+.progress .progress-bar.active,
+.progress .progress-bar-default.active {
+	@include animatedProgressBar(grey);
+}
+
+.progress .progress-bar-primary.active {
+	@include animatedProgressBar(blue);
+}
+
+.progress .progress-bar-success.active {
+	@include animatedProgressBar(green);
+}
+
+.progress .progress-bar-info.active {
+	@include animatedProgressBar(cyan);
+}
+
+.progress .progress-bar-primary.active {
+	@include animatedProgressBar(orange);
+}
+
+.progress .progress-bar-danger.active {
+	@include animatedProgressBar(red);
+}
+
+
