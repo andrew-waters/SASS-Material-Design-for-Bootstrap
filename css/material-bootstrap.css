@@ -5373,12 +5373,13 @@ button.close {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
+  margin-top: 0;
   margin-bottom: 52px; }
 
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 52px;
+  margin-top: 0;
   margin-bottom: 52px; }
 
 .elevated-1 {
@@ -9759,5 +9760,98 @@ a.btn .icon {
 
 .mdi-toggle-radio-button-on:before {
   content: "\e8e4"; }
+
+.progress {
+  height: 4px;
+  border-radius: 0;
+  box-shadow: none;
+  background: #EEEEEE; }
+
+.progress .progress-bar {
+  box-shadow: none; }
+
+.progress .progress-bar,
+.progress .progress-bar-default {
+  background-color: #9E9E9E; }
+
+.progress .progress-bar-primary {
+  background-color: #2196F3; }
+
+.progress .progress-bar-success {
+  background-color: #4CAF50; }
+
+.progress .progress-bar-info {
+  background-color: #00BCD4; }
+
+.progress .progress-bar-warning {
+  background-color: #FF9800; }
+
+.progress .progress-bar-danger {
+  background-color: #F44336; }
+
+@-webkit-keyframes progressBarAnimation {
+  0% {
+    background-position: right bottom; }
+  100% {
+    background-position: left bottom; } }
+@keyframes progressBarAnimation {
+  0% {
+    background-position: right bottom; }
+  100% {
+    background-position: left bottom; } }
+.progress .progress-bar.active,
+.progress .progress-bar-default.active {
+  background: linear-gradient(to right, #9E9E9E 10%, #FAFAFA 30%, #9E9E9E 80%);
+  background-size: 1000% 100%;
+  background-position: left bottom;
+  -webkit-animation-name: progressBarAnimation;
+  animation-name: progressBarAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+.progress .progress-bar-primary.active {
+  background: linear-gradient(to right, #2196F3 10%, #E3F2FD 30%, #2196F3 80%);
+  background-size: 1000% 100%;
+  background-position: left bottom;
+  -webkit-animation-name: progressBarAnimation;
+  animation-name: progressBarAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+.progress .progress-bar-success.active {
+  background: linear-gradient(to right, #4CAF50 10%, #E8F5E9 30%, #4CAF50 80%);
+  background-size: 1000% 100%;
+  background-position: left bottom;
+  -webkit-animation-name: progressBarAnimation;
+  animation-name: progressBarAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+.progress .progress-bar-info.active {
+  background: linear-gradient(to right, #00BCD4 10%, #E0F7FA 30%, #00BCD4 80%);
+  background-size: 1000% 100%;
+  background-position: left bottom;
+  -webkit-animation-name: progressBarAnimation;
+  animation-name: progressBarAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+.progress .progress-bar-primary.active {
+  background: linear-gradient(to right, #FF9800 10%, #FFF3E0 30%, #FF9800 80%);
+  background-size: 1000% 100%;
+  background-position: left bottom;
+  -webkit-animation-name: progressBarAnimation;
+  animation-name: progressBarAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
+
+.progress .progress-bar-danger.active {
+  background: linear-gradient(to right, #F44336 10%, #FFEBEE 30%, #F44336 80%);
+  background-size: 1000% 100%;
+  background-position: left bottom;
+  -webkit-animation-name: progressBarAnimation;
+  animation-name: progressBarAnimation;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s; }
 
 /*# sourceMappingURL=material-bootstrap.css.map */
