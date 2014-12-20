@@ -9,56 +9,89 @@
 
 
 
-/*
+@mixin inverted-button-variant($color, $background, $alt) {
+  color: $color;
+  background-color: $background;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $alt;
+    background-color: darken($background, 10%);
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+    }
+  }
+
+  .badge {
+    color: $alt;
+    background-color: $color;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .btn {
 	border: none;
 }
 
-.btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+.btn-inverted {
+	background-color: rgba(0,0,0,0);
+	color: $btn-default-color;
+	&:hover,
+	&:focus,
+	&.focus {
+		background: none;
+	}
 }
 
-.btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+.btn-inverted.btn-default {
+	@include inverted-button-variant($btn-default-color, rgba(0,0,0,0), $btn-default-alt);
 }
 
-.btn-success {
-	border: none;
-	background-color: get-color(green, 500);
+.btn-inverted.btn-primary {
+	@include inverted-button-variant($btn-primary-bg, rgba(0,0,0,0), $btn-primary-alt);
 }
 
-.btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+.btn-inverted.btn-success {
+	@include inverted-button-variant($btn-success-bg, rgba(0,0,0,0), $btn-success-alt);
 }
 
-.btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+.btn-inverted.btn-info {
+	@include inverted-button-variant($btn-info-bg, rgba(0,0,0,0), $btn-info-alt);
 }
-// Danger and error appear as red
-.btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+
+.btn-inverted.btn-warning {
+	@include inverted-button-variant($btn-warning-bg, rgba(0,0,0,0), $btn-warning-alt);
 }
-*/
 
-
-
-
-
-
-
-// Button Sizes
-// --------------------------------------------------
-
-/*
-.btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+.btn-inverted.btn-danger {
+	@include inverted-button-variant($btn-danger-bg, rgba(0,0,0,0), $btn-danger-alt);
 }
-.btn-sm {
-  // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-.btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-*/

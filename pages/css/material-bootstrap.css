@@ -7482,49 +7482,99 @@ pre {
   line-height: 1.33;
   border-radius: 2px; }
 
-/*
 .btn {
-	border: none;
-}
+  border: none; }
 
-.btn-default {
-  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
-}
+.btn-inverted {
+  background-color: transparent;
+  color: #424242; }
+  .btn-inverted:hover, .btn-inverted:focus, .btn-inverted.focus {
+    background: none; }
 
-.btn-primary {
-  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-}
+.btn-inverted.btn-default {
+  color: #424242;
+  background-color: transparent; }
+  .btn-inverted.btn-default:hover, .btn-inverted.btn-default:focus, .btn-inverted.btn-default.focus, .btn-inverted.btn-default:active, .btn-inverted.btn-default.active, .open > .btn-inverted.btn-default.dropdown-toggle {
+    color: #000000;
+    background-color: transparent; }
+  .btn-inverted.btn-default:active, .btn-inverted.btn-default.active, .open > .btn-inverted.btn-default.dropdown-toggle {
+    background-image: none; }
+  .btn-inverted.btn-default.disabled, .btn-inverted.btn-default.disabled:hover, .btn-inverted.btn-default.disabled:focus, .btn-inverted.btn-default.disabled.focus, .btn-inverted.btn-default.disabled:active, .btn-inverted.btn-default.disabled.active, .btn-inverted.btn-default[disabled], .btn-inverted.btn-default[disabled]:hover, .btn-inverted.btn-default[disabled]:focus, .btn-inverted.btn-default[disabled].focus, .btn-inverted.btn-default[disabled]:active, .btn-inverted.btn-default[disabled].active, fieldset[disabled] .btn-inverted.btn-default, fieldset[disabled] .btn-inverted.btn-default:hover, fieldset[disabled] .btn-inverted.btn-default:focus, fieldset[disabled] .btn-inverted.btn-default.focus, fieldset[disabled] .btn-inverted.btn-default:active, fieldset[disabled] .btn-inverted.btn-default.active {
+    background-color: transparent; }
+  .btn-inverted.btn-default .badge {
+    color: #000000;
+    background-color: #424242; }
 
-.btn-success {
-	border: none;
-	background-color: get-color(green, 500);
-}
+.btn-inverted.btn-primary {
+  color: #1E88E5;
+  background-color: transparent; }
+  .btn-inverted.btn-primary:hover, .btn-inverted.btn-primary:focus, .btn-inverted.btn-primary.focus, .btn-inverted.btn-primary:active, .btn-inverted.btn-primary.active, .open > .btn-inverted.btn-primary.dropdown-toggle {
+    color: #0D47A1;
+    background-color: transparent; }
+  .btn-inverted.btn-primary:active, .btn-inverted.btn-primary.active, .open > .btn-inverted.btn-primary.dropdown-toggle {
+    background-image: none; }
+  .btn-inverted.btn-primary.disabled, .btn-inverted.btn-primary.disabled:hover, .btn-inverted.btn-primary.disabled:focus, .btn-inverted.btn-primary.disabled.focus, .btn-inverted.btn-primary.disabled:active, .btn-inverted.btn-primary.disabled.active, .btn-inverted.btn-primary[disabled], .btn-inverted.btn-primary[disabled]:hover, .btn-inverted.btn-primary[disabled]:focus, .btn-inverted.btn-primary[disabled].focus, .btn-inverted.btn-primary[disabled]:active, .btn-inverted.btn-primary[disabled].active, fieldset[disabled] .btn-inverted.btn-primary, fieldset[disabled] .btn-inverted.btn-primary:hover, fieldset[disabled] .btn-inverted.btn-primary:focus, fieldset[disabled] .btn-inverted.btn-primary.focus, fieldset[disabled] .btn-inverted.btn-primary:active, fieldset[disabled] .btn-inverted.btn-primary.active {
+    background-color: transparent; }
+  .btn-inverted.btn-primary .badge {
+    color: #0D47A1;
+    background-color: #1E88E5; }
 
-.btn-info {
-  @include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
-}
+.btn-inverted.btn-success {
+  color: #4CAF50;
+  background-color: transparent; }
+  .btn-inverted.btn-success:hover, .btn-inverted.btn-success:focus, .btn-inverted.btn-success.focus, .btn-inverted.btn-success:active, .btn-inverted.btn-success.active, .open > .btn-inverted.btn-success.dropdown-toggle {
+    color: #2E7D32;
+    background-color: transparent; }
+  .btn-inverted.btn-success:active, .btn-inverted.btn-success.active, .open > .btn-inverted.btn-success.dropdown-toggle {
+    background-image: none; }
+  .btn-inverted.btn-success.disabled, .btn-inverted.btn-success.disabled:hover, .btn-inverted.btn-success.disabled:focus, .btn-inverted.btn-success.disabled.focus, .btn-inverted.btn-success.disabled:active, .btn-inverted.btn-success.disabled.active, .btn-inverted.btn-success[disabled], .btn-inverted.btn-success[disabled]:hover, .btn-inverted.btn-success[disabled]:focus, .btn-inverted.btn-success[disabled].focus, .btn-inverted.btn-success[disabled]:active, .btn-inverted.btn-success[disabled].active, fieldset[disabled] .btn-inverted.btn-success, fieldset[disabled] .btn-inverted.btn-success:hover, fieldset[disabled] .btn-inverted.btn-success:focus, fieldset[disabled] .btn-inverted.btn-success.focus, fieldset[disabled] .btn-inverted.btn-success:active, fieldset[disabled] .btn-inverted.btn-success.active {
+    background-color: transparent; }
+  .btn-inverted.btn-success .badge {
+    color: #2E7D32;
+    background-color: #4CAF50; }
 
-.btn-warning {
-  @include button-variant($btn-warning-color, $btn-warning-bg, $btn-warning-border);
-}
-// Danger and error appear as red
-.btn-danger {
-  @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
-}
-*/
-/*
-.btn-lg {
-  // line-height: ensure even-numbered height of button next to large input
-  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
-}
-.btn-sm {
-  // line-height: ensure proper height of button next to small input
-  @include button-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-.btn-xs {
-  @include button-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $line-height-small, $border-radius-small);
-}
-*/
+.btn-inverted.btn-info {
+  color: #81D4FA;
+  background-color: transparent; }
+  .btn-inverted.btn-info:hover, .btn-inverted.btn-info:focus, .btn-inverted.btn-info.focus, .btn-inverted.btn-info:active, .btn-inverted.btn-info.active, .open > .btn-inverted.btn-info.dropdown-toggle {
+    color: #0277BD;
+    background-color: transparent; }
+  .btn-inverted.btn-info:active, .btn-inverted.btn-info.active, .open > .btn-inverted.btn-info.dropdown-toggle {
+    background-image: none; }
+  .btn-inverted.btn-info.disabled, .btn-inverted.btn-info.disabled:hover, .btn-inverted.btn-info.disabled:focus, .btn-inverted.btn-info.disabled.focus, .btn-inverted.btn-info.disabled:active, .btn-inverted.btn-info.disabled.active, .btn-inverted.btn-info[disabled], .btn-inverted.btn-info[disabled]:hover, .btn-inverted.btn-info[disabled]:focus, .btn-inverted.btn-info[disabled].focus, .btn-inverted.btn-info[disabled]:active, .btn-inverted.btn-info[disabled].active, fieldset[disabled] .btn-inverted.btn-info, fieldset[disabled] .btn-inverted.btn-info:hover, fieldset[disabled] .btn-inverted.btn-info:focus, fieldset[disabled] .btn-inverted.btn-info.focus, fieldset[disabled] .btn-inverted.btn-info:active, fieldset[disabled] .btn-inverted.btn-info.active {
+    background-color: transparent; }
+  .btn-inverted.btn-info .badge {
+    color: #0277BD;
+    background-color: #81D4FA; }
+
+.btn-inverted.btn-warning {
+  color: #FFC107;
+  background-color: transparent; }
+  .btn-inverted.btn-warning:hover, .btn-inverted.btn-warning:focus, .btn-inverted.btn-warning.focus, .btn-inverted.btn-warning:active, .btn-inverted.btn-warning.active, .open > .btn-inverted.btn-warning.dropdown-toggle {
+    color: #FF8F00;
+    background-color: transparent; }
+  .btn-inverted.btn-warning:active, .btn-inverted.btn-warning.active, .open > .btn-inverted.btn-warning.dropdown-toggle {
+    background-image: none; }
+  .btn-inverted.btn-warning.disabled, .btn-inverted.btn-warning.disabled:hover, .btn-inverted.btn-warning.disabled:focus, .btn-inverted.btn-warning.disabled.focus, .btn-inverted.btn-warning.disabled:active, .btn-inverted.btn-warning.disabled.active, .btn-inverted.btn-warning[disabled], .btn-inverted.btn-warning[disabled]:hover, .btn-inverted.btn-warning[disabled]:focus, .btn-inverted.btn-warning[disabled].focus, .btn-inverted.btn-warning[disabled]:active, .btn-inverted.btn-warning[disabled].active, fieldset[disabled] .btn-inverted.btn-warning, fieldset[disabled] .btn-inverted.btn-warning:hover, fieldset[disabled] .btn-inverted.btn-warning:focus, fieldset[disabled] .btn-inverted.btn-warning.focus, fieldset[disabled] .btn-inverted.btn-warning:active, fieldset[disabled] .btn-inverted.btn-warning.active {
+    background-color: transparent; }
+  .btn-inverted.btn-warning .badge {
+    color: #FF8F00;
+    background-color: #FFC107; }
+
+.btn-inverted.btn-danger {
+  color: #F44336;
+  background-color: transparent; }
+  .btn-inverted.btn-danger:hover, .btn-inverted.btn-danger:focus, .btn-inverted.btn-danger.focus, .btn-inverted.btn-danger:active, .btn-inverted.btn-danger.active, .open > .btn-inverted.btn-danger.dropdown-toggle {
+    color: #C62828;
+    background-color: transparent; }
+  .btn-inverted.btn-danger:active, .btn-inverted.btn-danger.active, .open > .btn-inverted.btn-danger.dropdown-toggle {
+    background-image: none; }
+  .btn-inverted.btn-danger.disabled, .btn-inverted.btn-danger.disabled:hover, .btn-inverted.btn-danger.disabled:focus, .btn-inverted.btn-danger.disabled.focus, .btn-inverted.btn-danger.disabled:active, .btn-inverted.btn-danger.disabled.active, .btn-inverted.btn-danger[disabled], .btn-inverted.btn-danger[disabled]:hover, .btn-inverted.btn-danger[disabled]:focus, .btn-inverted.btn-danger[disabled].focus, .btn-inverted.btn-danger[disabled]:active, .btn-inverted.btn-danger[disabled].active, fieldset[disabled] .btn-inverted.btn-danger, fieldset[disabled] .btn-inverted.btn-danger:hover, fieldset[disabled] .btn-inverted.btn-danger:focus, fieldset[disabled] .btn-inverted.btn-danger.focus, fieldset[disabled] .btn-inverted.btn-danger:active, fieldset[disabled] .btn-inverted.btn-danger.active {
+    background-color: transparent; }
+  .btn-inverted.btn-danger .badge {
+    color: #C62828;
+    background-color: #F44336; }
+
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 2px;
   background-color: #F5F5F5; }

@@ -7,26 +7,32 @@ $btn-font-weight:                normal !default;
 $btn-default-color:              get-color(grey, 800) !default;
 $btn-default-bg:                 get-color(grey, 100) !default;
 $btn-default-border:             get-color(grey, 100) !default;
+$btn-default-alt:   	            get-color(grey, 1000) !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 get-color(blue, 600) !default;
 $btn-primary-border:             get-color(blue, 600) !default;
+$btn-primary-alt:     	        get-color(blue, 900) !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 get-color(green, 500) !default;
 $btn-success-border:             get-color(green, 500) !default;
+$btn-success-alt:       	      get-color(green, 800) !default;
 
 $btn-info-color:             	 #fff !default;
 $btn-info-bg:                	 get-color(light-blue, 200) !default;
 $btn-info-border:            	 get-color(light-blue, 200) !default;
+$btn-info-alt:            		 get-color(light-blue, 800) !default;
 
 $btn-warning-color:              #fff !default;
 $btn-warning-bg:                 get-color(amber, 500) !default;
 $btn-warning-border:             get-color(amber, 500) !default;
+$btn-warning-alt:             	get-color(amber, 800) !default;
 
 $btn-danger-color:              #fff !default;
 $btn-danger-bg:                 get-color(red, 500) !default;
 $btn-danger-border:             get-color(red, 500) !default;
+$btn-danger-alt:             	get-color(red, 800) !default;
 
 
 $border-radius-base:        2px !default;
