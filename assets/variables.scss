@@ -1,0 +1,48 @@
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                normal !default;
+
+$btn-default-color:              get-color(grey, 800) !default;
+$btn-default-bg:                 get-color(grey, 100) !default;
+$btn-default-border:             get-color(grey, 100) !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 get-color(blue, 600) !default;
+$btn-primary-border:             get-color(blue, 600) !default;
+
+$btn-success-color:              #fff !default;
+$btn-success-bg:                 get-color(green, 500) !default;
+$btn-success-border:             get-color(green, 500) !default;
+
+$btn-info-color:             	 #fff !default;
+$btn-info-bg:                	 get-color(light-blue, 200) !default;
+$btn-info-border:            	 get-color(light-blue, 200) !default;
+
+$btn-warning-color:              #fff !default;
+$btn-warning-bg:                 get-color(amber, 500) !default;
+$btn-warning-border:             get-color(amber, 500) !default;
+
+$btn-danger-color:              #fff !default;
+$btn-danger-bg:                 get-color(red, 500) !default;
+$btn-danger-border:             get-color(red, 500) !default;
+
+
+$border-radius-base:        2px !default;
+$border-radius-large:       2px !default;
+$border-radius-small:       2px !default;
+
+
+
+$padding-extra-large-vertical:    			14px !default;
+$padding-extra-large-horizontal:		 	20px !default;
+$font-size-extra-large:						ceil(($font-size-base * 2)) !default;
+$line-height-extra-large:					1.33 !default;
+$border-radius-extra-large:					2px !default;
+
+$padding-extra-extra-large-vertical:    	24px !default;
+$padding-extra-extra-large-horizontal: 		30px !default;
+$font-size-extra-extra-large:				ceil(($font-size-base * 3)) !default;
+$line-height-extra-extra-large:				1.33 !default;
+$border-radius-extra-extra-large:			2px !default;
