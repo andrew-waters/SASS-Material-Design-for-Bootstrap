@@ -12,3 +12,11 @@
 	display: block;
 	clear: both;
 }
+
+div.modal-backdrop.fade.in {
+	height: 100%;
+	position: fixed;
+	opacity: 0.6;
+	background-color: #000;
+	z-index: 1039 !important;
+}
