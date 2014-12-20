@@ -7490,6 +7490,9 @@ pre {
   color: #424242; }
   .btn-inverted:hover, .btn-inverted:focus, .btn-inverted.focus {
     background: none; }
+  .btn-inverted.disabled, .btn-inverted[disabled],
+  .btn-inverted fieldset[disabled], .btn-inverted:active, .btn-inverted.active {
+    box-shadow: none; }
 
 .btn-inverted.btn-default {
   color: #424242;

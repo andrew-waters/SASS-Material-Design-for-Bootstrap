@@ -70,6 +70,13 @@
 	&.focus {
 		background: none;
 	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled],
+	&:active,
+	&.active {
+		box-shadow: none;
+	}
 }
 
 .btn-inverted.btn-default {
