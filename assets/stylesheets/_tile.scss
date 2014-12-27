@@ -47,15 +47,27 @@
 	background-size: contain;
 }
 
-.tile.background-image.background-top {
+.tile.background-image.background-x-left {
+	background-position-x: left;
+}
+
+.tile.background-image.background-x-center {
+	background-position-x: center;
+}
+
+.tile.background-image.background-x-right {
+	background-position-x: right;
+}
+
+.tile.background-image.background-y-top {
 	background-position-y: top;
 }
 
-.tile.background-image.background-center {
+.tile.background-image.background-y-center {
 	background-position-y: center;
 }
 
-.tile.background-image.background-bottom {
+.tile.background-image.background-y-bottom {
 	background-position-y: bottom;
 }
 
