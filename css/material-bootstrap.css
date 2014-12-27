@@ -9935,7 +9935,7 @@ a.btn .icon {
   height: 100%; }
 
 .tile-top,
-.tile-middle,
+.tile-cover,
 .tile-bottom,
 .tile-left,
 .tile-right {
@@ -9955,8 +9955,9 @@ a.btn .icon {
 .tile-top {
   top: 0; }
 
-.tile-middle {
-  top: 50%; }
+.tile-cover {
+  top: 0;
+  height: 100%; }
 
 .tile-bottom {
   bottom: 0; }
