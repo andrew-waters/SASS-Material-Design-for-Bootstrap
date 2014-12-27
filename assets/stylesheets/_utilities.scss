@@ -20,3 +20,7 @@ div.modal-backdrop.fade.in {
 	background-color: #000;
 	z-index: 1039 !important;
 }
+
+.modal {
+	border-radius: $border-radius-base;
+}

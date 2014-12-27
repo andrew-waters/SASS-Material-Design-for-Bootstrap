@@ -5482,6 +5482,9 @@ div.modal-backdrop.fade.in {
   background-color: #000;
   z-index: 1039 !important; }
 
+.modal {
+  border-radius: 2px; }
+
 body {
   color: #424242;
   font-family: 'Roboto', sans-serif; }
@@ -9864,6 +9867,99 @@ a.btn .icon {
 
 .mdi-toggle-radio-button-on:before {
   content: "\e8e4"; }
+
+.tile {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  position: relative;
+  height: 200px; }
+
+.tile.tile-retain-margin {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0; }
+
+.tile-xs {
+  height: 50px; }
+
+.tile-sm {
+  height: 100px; }
+
+.tile-md {
+  height: 200px; }
+
+.tile-lg {
+  height: 400px; }
+
+.tile-xl {
+  height: 600px; }
+
+.tile-xxl {
+  height: 800px; }
+
+.tile.background-image {
+  background-position-x: center;
+  background-size: cover; }
+
+.tile.background-image.background-contain {
+  background-size: contain; }
+
+.tile.background-image.background-top {
+  background-position-y: top; }
+
+.tile.background-image.background-center {
+  background-position-y: center; }
+
+.tile.background-image.background-bottom {
+  background-position-y: bottom; }
+
+.tile * {
+  color: #FFF !important;
+  font-weight: bold; }
+
+.tile .margin {
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 15px;
+  height: 100%; }
+
+.tile-top,
+.tile-middle,
+.tile-bottom,
+.tile-left,
+.tile-right {
+  display: block;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  margin-left: -15px; }
+
+.tile-left,
+.tile-right {
+  height: 100%;
+  width: 50%;
+  margin-top: -15px; }
+
+.tile-top {
+  top: 0; }
+
+.tile-middle {
+  top: 50%; }
+
+.tile-bottom {
+  bottom: 0; }
+
+.tile-left {
+  left: 0; }
+
+.tile .margin .tile-left {
+  left: 15px; }
+
+.tile-right {
+  right: 0; }
 
 .progress {
   height: 4px;
