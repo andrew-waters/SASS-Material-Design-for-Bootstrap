@@ -1,0 +1,598 @@
+
+
+// Sidebar variables
+// --------------------------------------------------
+
+$sidebar-desktop-width: 200px;
+$sidebar-width: 200px;
+
+$zindex-sidebar-fixed: 1035;
+
+$sidebar-desktop-width: 280px;
+$sidebar-width: 240px;
+
+$sidebar-padding: 16px;
+$sidebar-divider: $sidebar-padding/2;
+
+$sidebar-nav-height: 48px;
+
+$sidebar-icon-width: 40px;
+$sidebar-icon-size: 20px;
+
+$sidebar-badge-size: $sidebar-nav-height/2;
+$sidebar-badge-font-size: 10px;
+
+$sidebar-brand-color: $gray-dark;
+$sidebar-icon-color: $gray-dark;
+$sidebar-menu-color: $gray-darker;
+
+$sidebar-font-weight: 500;
+
+
+
+@mixin translate3d($x, $y, $z) {
+	-webkit-transform: translate3d($x, $y, $z);
+	transform: translate3d($x, $y, $z);
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+	box-shadow: $shadow;
+}
+
+@mixin background-size($background-size) {
+	-webkit-background-size: $background-size;
+	-moz-background-size: $background-size;
+	-o-background-size: $background-size;
+	background-size: $background-size;
+}
+
+
+
+.sidebar-overlay {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	background: #000;
+	z-index: 100;
+	-webkit-transition: visibility 0 linear .4s,opacity .4s cubic-bezier(.4,0,.2,1);
+	-moz-transition: visibility 0 linear .4s,opacity .4s cubic-bezier(.4,0,.2,1);
+	transition: visibility 0 linear .4s,opacity .4s cubic-bezier(.4,0,.2,1);
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+.sidebar-overlay.active {
+	opacity: 0.5;
+	visibility: visible;
+	-webkit-transition-delay: 0;
+	-moz-transition-delay: 0;
+	transition-delay: 0;
+}
+
+.sidebar .top-bar {
+	height: 25px;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+	display: table-cell;
+	vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Sidebar mixins
+// --------------------------------------------------
+
+// Sidebar horizontal block
+//
+// This settings will extended by .sidebar-text, .sidebar-brand and .sidebar-nav>li>a
+@mixin sidebar-block() {
+	display: block;
+	height: $sidebar-nav-height;
+	line-height: $sidebar-nav-height;
+	padding: 0;
+	padding-left: $sidebar-padding;
+	padding-right: ($sidebar-padding + $sidebar-badge-size) + $sidebar-padding;
+	text-decoration: none;
+	clear: both;
+	font-weight: $sidebar-font-weight;
+	//text-overflow();
+	@include transition(all .2s ease-in-out);
+
+	&:hover, &:focus {
+		@include box-shadow(none);
+		outline: none;
+	}
+
+	// positioning caret in sidebar block
+	.caret {
+		position: absolute;
+		right: $sidebar-padding + $sidebar-badge-size/2 - 4px; // caret centered by badge position; 4px - caret width
+		top: $sidebar-nav-height/2;
+	}
+	// positioning badge in sidebar block
+	.sidebar-badge {
+		position: absolute;
+		right: $sidebar-padding;
+		top: ($sidebar-nav-height - $sidebar-badge-size)/2 ;
+	}
+}
+
+// Sidebar design template
+//
+// You can make own sidebar style with this template
+@mixin sidebar-template(
+	$color,
+	$bg,
+	$header-bg,
+	$brand-color,
+	$brand-bg,
+	$brand-hover-color,
+	$brand-hover-bg,
+	$divider,
+	$badge-color,
+	$badge-bg,
+	$icon-color,
+	$icon-hover-color,
+	$link-color,
+	$link-bg,
+	$link-hover-color,
+	$link-hover-bg,
+	$link-active-color,
+	$link-active-bg,
+	$link-disabled-color,
+	$link-disabled-bg
+) {
+
+	background-color: $bg;
+
+
+	.sidebar-toggle {
+		color: $brand-hover-color;
+		background-color: transparent;
+	}
+
+	.sidebar-brand {
+		color: $brand-color;
+		background-color: $brand-bg;
+		&:hover,
+		&:focus {
+			color: $brand-hover-color;
+			background-color: $brand-hover-bg;
+		}
+	}
+
+	.sidebar-badge {
+		color: $badge-color;
+		background-color: $badge-bg;
+	}
+
+	.sidebar-divider, .sidebar-nav .divider {
+		background-color: $divider;
+	}
+
+	.sidebar-text {
+		color: $color;
+	}
+
+	.sidebar-nav {
+		li > a {
+			color: $link-color;
+			background-color: $link-bg;
+
+			i {
+				color: $icon-color;
+			}
+		}
+		li:hover > a, li > a:hover {
+			color: $link-hover-color;
+			background-color: $link-hover-bg;
+
+			i {
+				color: $icon-hover-color;
+			}
+		}
+		li:focus > a, li > a:focus {
+			color: $link-color;
+			background-color: $link-bg;
+
+			i {
+				color: $icon-hover-color;
+			}
+		}
+
+		> .open > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $link-hover-color;
+				background-color: $link-hover-bg;
+			}
+		}
+
+		> .active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $link-active-color;
+				background-color: $link-active-bg;
+			}
+		}
+		> .disabled > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $link-disabled-color;
+				background-color: $link-disabled-bg;
+			}
+		}
+		> li > .ink {
+			//background: #80d8ff;
+			//opacity: 0.5;
+		}
+
+		// Dropdown menu items
+		> .dropdown {
+			// Remove background color from open dropdown
+			> .dropdown-menu {
+
+				background-color: $link-hover-bg;
+
+				> li > a {
+					&:focus {
+						background-color: $link-hover-bg;
+						color: $link-hover-color;
+					}
+					&:hover {
+						background-color: darken($link-hover-bg, 7%);
+						color: $link-hover-color;
+					}
+				}
+
+				> .active > a {
+					&,
+					&:hover,
+					&:focus {
+						color: $link-active-color;
+						background-color: $link-active-bg;
+					}
+				}
+			}
+		}
+	}
+}
+
+//
+// Sidebars
+// --------------------------------------------------
+
+// Wrapper and base class
+//
+// Provide a static sidebar from which we expand to create other sidebar variations.
+.sidebar {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: none;
+	@include transition(all 0.5s cubic-bezier(0.55, 0, 0.1, 1));
+
+
+	// Prevent floats from breaking the sidebar
+	// &:extend(.clearfix all);
+	@include clearfix();
+
+	// Scrollbar style for webkit browsers
+	&::-webkit-scrollbar-track {
+		border-radius: 2px;
+	}
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: #F7F7F7;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: #BFBFBF;
+	}
+}
+
+// Sidebar Elements
+//
+// Basic style of sidebar elements
+.sidebar {
+
+
+	//** Sidebar toggle
+	//
+	// You can bind click on this button and toggle sidebar via javascript
+	.sidebar-toggle {
+		position: relative;
+		float: right;
+		margin: $sidebar-padding;
+		padding: 0;
+		background-image: none; // Reset unusual Firefox-on-Android default style;
+		border: none;
+		height: $sidebar-icon-width;
+		width: $sidebar-icon-width;
+		font-size: $sidebar-icon-size;
+		opacity: 0.7;
+		@include transition(all .2s ease-in-out);
+		@include clearfix();
+	}
+
+	//** Sidebar arrow
+	//----------------
+	.icon-material-sidebar-arrow:before {
+		content: "\e610"; // icon-material-arrow-back
+	}
+
+	//** Brand/project image
+	//
+	// In google guideline used for user profile image
+	.sidebar-image {
+		img {
+			width: $sidebar-desktop-width/4 - $sidebar-padding;
+			height: $sidebar-desktop-width/4 - $sidebar-padding;
+			margin: $sidebar-padding;
+			border-radius: 50%;
+			@include transition(all .2s ease-in-out);
+		}
+	}
+
+	//** Brand/project name
+	//
+	// In google guideline used for email dropdown
+	.sidebar-brand {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		@include sidebar-block();
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	//** Sidebar badge
+	//----------------
+	.sidebar-badge {
+		display: inline-block;
+		min-width: $sidebar-badge-size;
+		height: $sidebar-badge-size;
+		line-height: $sidebar-badge-size;
+		padding: 0 3px;
+		font-size: $sidebar-badge-font-size;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		&.badge-circle {
+			border-radius: 50%;
+		}
+	}
+
+	//** Sidebar divider
+	//----------------
+	.sidebar-divider, .sidebar-nav .divider {
+		position: relative;
+		display: block;
+		height: 1px;
+		margin: $sidebar-divider 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	//** Sidebar text
+	//----------------
+	.sidebar-text {
+		@include sidebar-block();
+	}
+
+	//** Sidebar icons
+	//----------------
+	.sidebar-icon {
+		display: inline-block;
+		margin-right: $sidebar-padding;
+		min-width: $sidebar-icon-width;
+		width: $sidebar-icon-width;
+		text-align: left;
+		font-size: $sidebar-icon-size;
+
+		&:before, &:after {
+			vertical-align: middle;
+		}
+	}
+}
+
+
+
+// Sidebar navigation class
+// ------------------------
+.sidebar .sidebar-nav {
+	margin: 0;
+	padding: 0;
+
+	//** Links
+	//----------------
+	li {
+		position: relative;
+		list-style-type: none;
+
+		a {
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+			@include sidebar-block();
+
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+
+	//** Dropdown menu
+	//----------------
+	.dropdown-menu {
+		position: relative;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+		@include box-shadow(none);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.sidebar-default {
+	@include sidebar-template(
+		$color: $gray-darker,
+		$bg: #fff,
+		$header-bg: #eceff1,
+		$brand-color: $gray-dark,
+		$brand-bg: transparent,
+		$brand-hover-color: $gray-darker,
+		$brand-hover-bg: rgba(0, 0, 0, 0.10),
+		$divider: $gray,
+		$badge-color: #fff,
+		$badge-bg: $gray,
+		$icon-color: $gray-dark,
+		$icon-hover-color: $gray-dark,
+		$link-color: $gray-darker,
+		$link-bg: transparent,
+		$link-hover-color: $gray-darker,
+		$link-hover-bg: $gray-light,
+		$link-active-color: $gray-darker,
+		$link-active-bg: $gray-light,
+		$link-disabled-color: $gray-light,
+		$link-disabled-bg: transparent
+	);
+}
+
+.sidebar-inverse {
+	@include sidebar-template(
+		$color: $gray-lighter,
+		$bg: $gray-darker,
+		$header-bg: #eceff1,
+		$brand-color: $gray-dark,
+		$brand-bg: transparent,
+		$brand-hover-color: $gray-darker,
+		$brand-hover-bg: rgba(0, 0, 0, 0.10),
+		$divider: $gray,
+		$badge-color: $gray-darker,
+		$badge-bg: $gray-light,
+		$icon-color: $gray,
+		$icon-hover-color: $gray,
+		$link-color: $gray-lighter,
+		$link-bg: transparent,
+		$link-hover-color: $gray,
+		$link-hover-bg: #000,
+		$link-active-color: $gray-lighter,
+		$link-active-bg: #000,
+		$link-disabled-color: $gray-dark,
+		$link-disabled-bg: transparent
+	);
+}
+
+// Sidebar toggling
+//
+// Hide sidebar
+.sidebar {
+	width: 0;
+	@include translate3d(-$sidebar-desktop-width, 0, 0);
+
+	&.open {
+		min-width: $sidebar-desktop-width;
+		width: $sidebar-desktop-width;
+		@include translate3d(0, 0, 0);
+	}
+}
+
+// Sidebar positions: fix the left/right sidebars
+.sidebar-fixed-left,
+.sidebar-fixed-right {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: $zindex-sidebar-fixed;
+}
+
+.sidebar-fixed-left {
+	left: 0;
+	box-shadow: 2px 0px 15px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 2px 0px 15px rgba(0,0,0,0.35);
+}
+.sidebar-fixed-right {
+	right: 0;
+	box-shadow: 0px 2px 15px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.35);
+
+	@include translate3d($sidebar-desktop-width, 0, 0);
+	&.open {
+		@include translate3d(0, 0, 0);
+	}
+	.icon-material-sidebar-arrow:before {
+		content: "\e614"; // icon-material-arrow-forward
+	}
+}
+
+// Sidebar size
+//
+// Change size of sidebar and sidebar elements on small screens
+@media (max-width: $screen-tablet) {
+	.sidebar.open {
+		min-width: $sidebar-width;
+		width: $sidebar-width;
+	}
+
+	.sidebar .sidebar-header {
+		height: $sidebar-width * 9/16; // 16:9 header dimension
+	}
+
+	.sidebar .sidebar-image {
+		img {
+			width: $sidebar-width/4 - $sidebar-padding;
+			height: $sidebar-width/4 - $sidebar-padding;
+		}
+	}
+}
