@@ -4,14 +4,18 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
 	echo -e "Starting to update gh-pages\n"
 
+	bundle exec jekyll build ./_docs
+
+	bundle exec htmlproof ./_docs/_site
+
 #	copy pages to the home directory
-	cp -R ./pages $HOME/pages
+	cp -R ./_docs/_site $HOME/pages
 
 #	copy bootstrap fonts
-	cp -R ./bower_components/bootstrap-sass-official/assets/fonts $HOME/pages/fonts
+	cp -R ./bower_components/bootstrap-sass-official/assets/fonts $HOME/pages/assets/fonts
 
 #	copy material design fonts
-	cp -R ./assets/fonts $HOME/pages/fonts
+	cp -R ./assets/fonts $HOME/pages/assets/fonts
 
 #	go to home and setup git
 	cd $HOME

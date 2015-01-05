@@ -2,3 +2,4 @@
 bower_components/
 .sass-cache
 *.css.map
+_docs/_site

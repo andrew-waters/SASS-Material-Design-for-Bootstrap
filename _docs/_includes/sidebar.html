@@ -1,0 +1,93 @@
+
+<div class="sidebar-overlay"></div>
+
+<a class="sidebar-toggle" href="#">
+
+	<i class="icon mdi-navigation-menu icon-lg"></i>
+
+</a>
+
+<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+
+	<div class="sb-brand">
+
+		<h2>Material Design for Bootstrap</h2>
+
+	</div>
+
+	<div class="sidebar-divider"></div>
+
+	<div class="side-navigation">
+
+		<ul class="list-level-1">
+
+			{% for top in site.data.nav %}
+ 
+			{% if top.sub != null %}
+
+			{% assign firstLevel = page.url | replace: '/', ' ' | truncatewords: 1 | remove:'...' %}
+
+			<li role="presentation" class="{% if firstLevel == top.href %}active{% endif %}">
+
+				<a href="#" class="toggle-navigation">
+					{{ top.title }}
+				</a>
+
+				<ul class="list-level-2">
+
+					{% for sub in top.sub %}
+
+					{% capture joined %}{{ firstLevel }} {{ sub.href }}{% endcapture %}
+					{% assign secondLevel = page.url | replace: '/', ' ' | truncatewords: 2 | remove:'...' %}
+
+					<li role="presentation" class="{% if joined == secondLevel %}active current{% endif %}">
+
+						<a href="{{ site.url }}/{{ top.href }}/{{ sub.href }}">
+							{{ sub.title }}
+						</a>
+
+					</li>
+
+					{% endfor %}
+
+				</ul>
+
+			</li>
+
+			{% else %}
+
+			<li>
+
+				<a href="{{ site.url }}/{{ top.href }}">
+					{{ top.title }}
+				</a>
+
+			</li>
+
+			{% endif %}
+
+			{% endfor %}
+
+		</ul>
+
+	</div>
+
+	<div class="sidebar-footer">
+
+		<p>
+			View on
+			<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
+				Github
+			</a>
+		</p>
+
+		<p>
+			Developed by
+			<a href="http://band-x.media" target="_blank">
+				band-x.media
+			</a>
+		</p>
+
+	</div>
+
+</aside>
