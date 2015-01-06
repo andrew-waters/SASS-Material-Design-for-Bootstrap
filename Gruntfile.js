@@ -9,15 +9,15 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'_docs/assets/css/material-bootstrap.css' : 'src/material.scss'
+					'docs/assets/css/material-bootstrap.css' : 'src/material.scss'
 				}
 			}
 		},
 		concat: {
 			docs: {
 				files: {
-					'_docs/assets/css/material-bootstrap.min.css' : 'dist/material-bootstrap.min.css',
-					'_docs/assets/js/material-bootstrap.min.js' : 'dist/material-bootstrap.min.js'
+					'docs/assets/css/material-bootstrap.min.css' : 'dist/material-bootstrap.min.css',
+					'docs/assets/js/material-bootstrap.min.js' : 'dist/material-bootstrap.min.js'
 				}
 			}
 		},

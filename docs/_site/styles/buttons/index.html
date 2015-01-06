@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Material Design based on Bootstrap">
+		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
+		<meta name="author" content="Andrew Waters">
+
+		<title>Buttons &middot; SASS for Bootstrap</title>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="/SASS-Material-Design-for-Bootstrap/assets/css/material-bootstrap.min.css" rel="stylesheet">
+		<link href="/SASS-Material-Design-for-Bootstrap/assets/css/main.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		
+<div class="sidebar-overlay"></div>
+
+<a class="sidebar-toggle" href="#">
+
+	<i class="icon mdi-navigation-menu icon-lg"></i>
+
+</a>
+
+<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+
+	<div class="sb-brand">
+
+		<h2>Material Design for Bootstrap</h2>
+
+	</div>
+
+	<div class="sidebar-divider"></div>
+
+	<div class="side-navigation">
+
+		<ul class="list-level-1">
+
+			
+ 
+			
+
+			<li>
+
+				<a href="/SASS-Material-Design-for-Bootstrap/">
+					Home
+				</a>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="active">
+
+				<a href="#" class="toggle-navigation">
+					Styles
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="active current">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/styles/buttons">
+							Buttons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/styles/colours">
+							Colours
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/styles/elevation">
+							Elevation
+						</a>
+
+					</li>
+
+					
+
+				</ul>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="">
+
+				<a href="#" class="toggle-navigation">
+					Components
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/components/icons">
+							Icons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/components/tiles">
+							Tiles
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/components/sidebar">
+							Sidebar
+						</a>
+
+					</li>
+
+					
+
+				</ul>
+
+			</li>
+
+			
+
+			
+
+		</ul>
+
+	</div>
+
+	<div class="sidebar-footer">
+
+		<p>
+			View on
+			<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
+				Github
+			</a>
+		</p>
+
+		<p>
+			Developed by
+			<a href="http://band-x.media" target="_blank">
+				band-x.media
+			</a>
+		</p>
+
+	</div>
+
+</aside>
+
+		
+<header
+	class="header-panel bg-blue"
+	data-0="height: 255px; box-shadow: 0px 0px 10px rgb(255, 255, 255);"
+	data-205="height: 65px; box-shadow: -0px -5px 15px rgb(0, 0, 0);">
+
+	<div class="container" data-0="top: 125px;" data-205="top: 20px;">
+
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Buttons</h1>
+
+	</div>
+
+</header>
+
+
+		<div class="container">
+
+	<div class="row">
+
+		<div class="col-xs-3">
+
+			<h4>
+				Defaults
+				<small>
+					<a target="_blank" href="http://getbootstrap.com/css/#buttons">
+						reference
+					</a>
+				</small>
+			</h4>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<a role="button" class="btn">No Context</a>
+
+			<a role="button" class="btn btn-default">Default</a>
+
+			<a role="button" class="btn btn-primary">Primary</a>
+
+			<a role="button" class="btn btn-success">Success</a>
+
+			<a role="button" class="btn btn-info">Info</a>
+
+			<a role="button" class="btn btn-warning">Warning</a>
+
+			<a role="button" class="btn btn-danger">Danger</a>
+
+			<a role="button" class="btn btn-link">Link</a>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-xs-3">
+
+			<h4>
+				Sizes
+			</h4>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<a role="button" class="btn btn-primary btn-sm">sm</a>
+			<a role="button" class="btn btn-primary btn-md">md</a>
+			<a role="button" class="btn btn-primary btn-lg">lg</a>
+			<a role="button" class="btn btn-primary btn-xl">xl</a>
+			<a role="button" class="btn btn-primary btn-xxl">xxl</a>
+
+		</div>
+
+	</div>
+
+	<div class="clearfix breather"></div>
+
+	<div class="row">
+
+		<div class="col-xs-3">
+
+			<h4>
+				Inverted
+			</h4>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<a role="button" class="btn btn-inverted">No Context</a>
+
+			<a role="button" class="btn btn-default btn-inverted">Default</a>
+
+			<a role="button" class="btn btn-primary btn-inverted">Primary</a>
+
+			<a role="button" class="btn btn-success btn-inverted">Success</a>
+
+			<a role="button" class="btn btn-info btn-inverted">Info</a>
+
+			<a role="button" class="btn btn-warning btn-inverted">Warning</a>
+
+			<a role="button" class="btn btn-danger btn-inverted">Danger</a>
+
+			<a role="button" class="btn btn-link btn-inverted">Link</a>
+
+		</div>
+
+	</div>
+
+</div>
+
+
+	</body>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/material-bootstrap.min.js"></script>
+	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/main.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
+	
+
+</html>
