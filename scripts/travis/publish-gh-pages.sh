@@ -11,12 +11,6 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 #	copy pages to the home directory
 	cp -R ./_site $HOME/pages
 
-#	copy bootstrap fonts
-	cp -R ./bower_components/bootstrap-sass-official/assets/fonts $HOME/pages/assets/fonts
-
-#	copy material design fonts
-	cp -R ./src/fonts $HOME/pages/assets/fonts
-
 #	go to home and setup git
 	cd $HOME
 	git config --global user.email "andrew@band-x-media.co.uk"

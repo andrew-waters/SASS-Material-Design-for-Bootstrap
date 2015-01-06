@@ -55,10 +55,51 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
+		copy: {
+			docs: {
+				files: [
+					{
+						expand: true,
+						flatten: true,
+						src: ['src/fonts/material/*'],
+						dest: 'docs/assets/fonts/material',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						flatten: true,
+						src: ['bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*'],
+						dest: 'docs/assets/fonts/bootstrap',
+						filter: 'isFile'
+					}
+				]
+			},
+			dist: {
+				files: [
+					{
+						expand: true,
+						flatten: true,
+						src: ['src/fonts/material/*'],
+						dest: 'dist/fonts/material',
+						filter: 'isFile'
+					},
+					{
+						expand: true,
+						flatten: true,
+						src: ['bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*'],
+						dest: 'dist/fonts/bootstrap',
+						filter: 'isFile'
+					}
+				]
+			}
+		},
+
+
 		watch: {
 			dist: {
 				files: ['**/*.scss', '**/*.js'],
-				tasks: ['sass:dist', 'cssmin:dist', 'uglify:dist', 'concat:docs']
+				tasks: ['sass:dist', 'cssmin:dist', 'uglify:dist', 'concat:docs', 'copy:docs', 'copy:dist']
 			}
 		}
 	});
@@ -68,6 +109,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.registerTask('default', ['watch:dist']);
 
 }
