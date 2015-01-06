@@ -2,25 +2,20 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
+
 		pkg: grunt.file.readJSON('package.json'),
+
 		sass: {
 			options: {
 				sourcemap: 'none'
 			},
 			dist: {
 				files: {
-					'docs/assets/css/material-bootstrap.css' : 'src/material.scss'
+					'dist/material-bootstrap.css' : 'src/material.scss'
 				}
 			}
 		},
-		concat: {
-			docs: {
-				files: {
-					'docs/assets/css/material-bootstrap.min.css' : 'dist/material-bootstrap.min.css',
-					'docs/assets/js/material-bootstrap.min.js' : 'dist/material-bootstrap.min.js'
-				}
-			}
-		},
+
 		cssmin: {
 			options: {
 				report: 'gzip'
@@ -30,6 +25,7 @@ module.exports = function(grunt) {
 				dest: 'dist/material-bootstrap.min.css'
 			}
 		},
+
 		uglify: {
 			options: {
 				mangle: true
@@ -75,7 +71,17 @@ module.exports = function(grunt) {
 					}
 				]
 			},
-			dist: {
+			css: {
+				files: [
+					{
+						src: ['dist/material-bootstrap.min.css'],
+						dest: 'docs/assets/css/material-bootstrap.min.css',
+						flatten: true,
+						filter: 'isFile'
+					}
+				]
+			},
+			fonts: {
 				files: [
 					{
 						expand: true,
@@ -95,21 +101,48 @@ module.exports = function(grunt) {
 			}
 		},
 
+		jekyll: {
+			server: {
+				options: {
+					config: 'docs/_config.yml',
+					src: 'docs',
+					dest: 'docs/_site',
+					serve: true,
+					watch: true
+				},
+			}
+		},
 
 		watch: {
-			dist: {
-				files: ['**/*.scss', '**/*.js'],
-				tasks: ['sass:dist', 'cssmin:dist', 'uglify:dist', 'concat:docs', 'copy:docs', 'copy:dist']
+			css: {
+				files: ['src/**/*.scss'],
+				tasks: ['sass:dist', 'cssmin:dist', 'copy:css', 'copy:fonts']
+			},
+			js: {
+				files: ['src/**/*.js'],
+				tasks: ['uglify:dist', 'copy:docs', 'copy:fonts']
+			}
+		},
+
+		concurrent: {
+			watch: {
+				tasks: ['watch:css', 'watch:js', 'jekyll:server'],
+				options: {
+					logConcurrentOutput: true
+				}
 			}
 		}
+
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.registerTask('default', ['watch:dist']);
+	grunt.loadNpmTasks('grunt-jekyll');
+	grunt.loadNpmTasks('grunt-concurrent');
+
+	grunt.registerTask('default', ['concurrent:watch']);
 
 }
