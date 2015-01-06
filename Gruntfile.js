@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				files: {
-					'_docs/assets/css/material-bootstrap.css' : 'assets/material.scss'
+					'_docs/assets/css/material-bootstrap.css' : 'src/material.scss'
 				}
 			}
 		},
