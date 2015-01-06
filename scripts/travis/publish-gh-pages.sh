@@ -6,7 +6,8 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
 	bundle exec jekyll build ./_docs
 
-	bundle exec htmlproof ./_docs/_site
+	echo -e "Jekyll build succesful\n"
+
 
 #	copy pages to the home directory
 	cp -R ./_docs/_site $HOME/pages
