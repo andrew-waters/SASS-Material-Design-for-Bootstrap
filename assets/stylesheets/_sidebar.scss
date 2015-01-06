@@ -63,8 +63,8 @@ $sidebar-font-weight: 500;
 	right: 0;
 	bottom: 0;
 	opacity: 0;
-	background: #000;
 	z-index: 100;
+	background: #000;
 	-webkit-transition: visibility 0 linear .4s,opacity .4s cubic-bezier(.4,0,.2,1);
 	-moz-transition: visibility 0 linear .4s,opacity .4s cubic-bezier(.4,0,.2,1);
 	transition: visibility 0 linear .4s,opacity .4s cubic-bezier(.4,0,.2,1);
@@ -474,6 +474,7 @@ $sidebar-font-weight: 500;
 		@include box-shadow(none);
 	}
 }
+
 
 
 

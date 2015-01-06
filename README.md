@@ -10,19 +10,38 @@ View the [preview site](http://code.band-x.media/SASS-Material-Design-for-Bootst
 
 ## Developing
 
-Install SASS and Bower if you need them
+Install SASS and Bower if you need them then install bower components
 
 ```
 sudo gem install sass
 sudo npm install -g bower
-```
-
-Use Bower to install Bootstrap (SASS) and then launch a watcher (or manually build your files).
-
-```
 bower install
-sass --watch assets/material.scss:pages/css/material-bootstrap.css
 ```
+
+### Install Grunt and plugins:
+
+```
+npm install grunt --save-dev
+npm install grunt-contrib-sass --save-dev
+npm install grunt-contrib-watch --save-dev
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-cssmin --save-dev
+```
+
+Update NPM
+
+```
+npm update -g
+```
+
+Run Grunt:
+
+```
+grunt
+```
+
+Grunt will then watch for changes in the SASS directories and rebuild the files and dist on changes
+
 
 ## Documentation
 

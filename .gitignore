@@ -1,5 +1,7 @@
 *.DS_Store
 bower_components/
+node_modules/
+npm-debug.log
 .sass-cache
 *.css.map
 _docs/_site
