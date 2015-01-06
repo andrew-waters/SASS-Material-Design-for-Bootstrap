@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Material Design based on Bootstrap">
+		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
+		<meta name="author" content="Andrew Waters">
+
+		<title>Sidebar &middot; SASS for Bootstrap</title>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="/assets/css/material-bootstrap.css" rel="stylesheet">
+		<link href="/assets/css/main.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		
+<div class="sidebar-overlay"></div>
+
+<a class="sidebar-toggle" href="#">
+
+	<i class="icon mdi-navigation-menu icon-lg"></i>
+
+</a>
+
+<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+
+	<div class="sb-brand">
+
+		<h2>Material Design for Bootstrap</h2>
+
+	</div>
+
+	<div class="sidebar-divider"></div>
+
+	<div class="side-navigation">
+
+		<ul class="list-level-1">
+
+			
+ 
+			
+
+			<li>
+
+				<a href="/">
+					Home
+				</a>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="">
+
+				<a href="#" class="toggle-navigation">
+					Styles
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/styles/buttons">
+							Buttons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/styles/colours">
+							Colours
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/styles/elevation">
+							Elevation
+						</a>
+
+					</li>
+
+					
+
+				</ul>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="active">
+
+				<a href="#" class="toggle-navigation">
+					Components
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/components/icons">
+							Icons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/components/tiles">
+							Tiles
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="active current">
+
+						<a href="/components/sidebar">
+							Sidebar
+						</a>
+
+					</li>
+
+					
+
+				</ul>
+
+			</li>
+
+			
+
+			
+
+		</ul>
+
+	</div>
+
+	<div class="sidebar-footer">
+
+		<p>
+			View on
+			<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
+				Github
+			</a>
+		</p>
+
+		<p>
+			Developed by
+			<a href="http://band-x.media" target="_blank">
+				band-x.media
+			</a>
+		</p>
+
+	</div>
+
+</aside>
+
+		
+<header
+	class="header-panel bg-blue"
+	data-0="height: 255px; box-shadow: 0px 0px 10px rgb(255, 255, 255);"
+	data-205="height: 65px; box-shadow: -0px -5px 15px rgb(0, 0, 0);">
+
+	<div class="container" data-0="top: 125px;" data-205="top: 20px;">
+
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Sidebar</h1>
+
+	</div>
+
+</header>
+
+
+		<div class="container">
+
+<h4>
+	Sidebar
+</h4>
+
+<div class="row">
+
+	<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+
+		<form>
+
+			<div class="form-group">
+				<label for="sidebar-position">Position</label>
+				<select class="form-control input-sm" id="sidebar-position" name="sidebar-position">
+					<option value="sidebar-fixed-left">Float on left</option>
+					<option value="sidebar-fixed-right">Float on right</option>
+					<option value="">Inline</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="sidebar-theme">Style</label>
+				<select class="form-control input-sm" id="sidebar-theme" name="sidebar-theme">
+					<option value="sidebar-default">Default</option>
+					<option value="sidebar-inverse">Inverse</option>
+				</select>
+			</div>
+
+		</form>
+
+
+		<div class="breather"></div>
+
+	</div>
+
+	<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+
+		<p>Add the Overlay:</p>
+
+		<pre>&lt;div class=&quot;sidebar-overlay&quot;&gt;&lt;/div&gt;</pre>
+
+		<p>Add dividers in the sidebar with <code>&lt;div class=&quot;sidebar-divider&quot;&gt;&lt;/div&gt;</code>
+		<p>Add text to the sidebar with <code>&lt;div class=&quot;sidebar-text&quot;&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/div&gt;</code>
+
+
+		<hr />
+
+		<h4>Position</h4>
+
+		<p>Fix to the left with <code>.sidebar-fixed-left</code></p>
+		<p>Fix to the right with <code>.sidebar-fixed-right</code></p>
+
+		<hr />
+
+		<h4>Style</h4>
+
+		<p>Default with <code>.sidebar-default</code></p>
+		<p>Inverse with <code>.sidebar-inverse</code></p>
+
+		<p>Create your own style with the <code>sidebar-template()</code> mixin:</p>
+		<pre>@mixin sidebar-template(
+$color,
+$bg,
+$header-bg,
+$brand-color,
+$brand-bg,
+$brand-hover-color,
+$brand-hover-bg,
+$divider,
+$badge-color,
+$badge-bg,
+$icon-color,
+$icon-hover-color,
+$link-color,
+$link-bg,
+$link-hover-color,
+$link-hover-bg,
+$link-active-color,
+$link-active-bg,
+$link-disabled-color,
+$link-disabled-bg
+) {
+//	processes css
+}
+</pre>
+
+		<hr />
+
+		<h4>Markup</h4>
+
+		<pre>&lt;aside id=&quot;sidebar&quot; class=&quot;sidebar sidebar-default sidebar-fixed-left&quot; role=&quot;navigation&quot;&gt;
+
+//	content goes here
+
+&lt;/aside&gt;</pre>
+
+
+		<h4>Add the Javascript</h4>
+
+		<pre>
+$(document).ready(function() {
+
+var overlay = $('.sidebar-overlay');
+
+$('.sidebar-toggle').on('click', function() {
+var sidebar = $('#sidebar');
+sidebar.toggleClass('open');
+if((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
+overlay.addClass('active');
+} else {
+overlay.removeClass('active');
+}
+});
+
+overlay.on('click', function() {
+$(this).removeClass('active');
+$('#sidebar').removeClass('open');
+});
+
+});
+
+
+(function($) {
+
+var dropdown = $('.sidebar .dropdown');
+
+//	Add slidedown animation to dropdown
+dropdown.on('show.bs.dropdown', function(e){
+$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+//	Add slideup animation to dropdown
+dropdown.on('hide.bs.dropdown', function(e){
+$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
+})(jQuery);
+</pre>
+
+
+
+	</div>
+
+</div>
+
+</div>
+
+
+	</body>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
+	<script type="text/javascript" src="/assets/js/nav.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
+	
+	<script type="text/javascript" src="/assets/js/pages/sidebar.js"></script>
+	
+
+</html>

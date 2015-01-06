@@ -6,232 +6,416 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Material Design based on Bootstrap">
+		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
+		<meta name="author" content="Andrew Waters">
 
-		<link href="./css/material-bootstrap.css" rel="stylesheet">
-		<link href="./css/main.css" rel="stylesheet">
+		<title>SASS Material Design for Bootstrap &middot; SASS for Bootstrap</title>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<link href="/assets/css/material-bootstrap.css" rel="stylesheet">
+		<link href="/assets/css/main.css" rel="stylesheet">
 
 	</head>
 
 	<body>
 
+		
+<div class="sidebar-overlay"></div>
+
+<a class="sidebar-toggle" href="#">
+
+	<i class="icon mdi-navigation-menu icon-lg"></i>
+
+</a>
+
+<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+
+	<div class="sb-brand">
+
+		<h2>Material Design for Bootstrap</h2>
+
+	</div>
+
+	<div class="sidebar-divider"></div>
+
+	<div class="side-navigation">
+
+		<ul class="list-level-1">
+
+			
+ 
+			
+
+			<li>
+
+				<a href="/">
+					Home
+				</a>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="">
+
+				<a href="#" class="toggle-navigation">
+					Styles
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/styles/buttons">
+							Buttons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/styles/colours">
+							Colours
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/styles/elevation">
+							Elevation
+						</a>
+
+					</li>
+
+					
+
+				</ul>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="">
+
+				<a href="#" class="toggle-navigation">
+					Components
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/components/icons">
+							Icons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/components/tiles">
+							Tiles
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/components/sidebar">
+							Sidebar
+						</a>
+
+					</li>
+
+					
+
+				</ul>
+
+			</li>
+
+			
+
+			
+
+		</ul>
+
+	</div>
+
+	<div class="sidebar-footer">
+
+		<p>
+			View on
+			<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
+				Github
+			</a>
+		</p>
+
+		<p>
+			Developed by
+			<a href="http://band-x.media" target="_blank">
+				band-x.media
+			</a>
+		</p>
+
+	</div>
+
+</aside>
+
+		
+<header
+	class="header-panel bg-blue"
+	data-0="height: 255px; box-shadow: 0px 0px 10px rgb(255, 255, 255);"
+	data-205="height: 65px; box-shadow: -0px -5px 15px rgb(0, 0, 0);">
+
+	<div class="container" data-0="top: 125px;" data-205="top: 20px;">
+
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">SASS Material Design for Bootstrap</h1>
+
+	</div>
+
+</header>
+
+
 		<div class="container">
 
-			<h1>SASS Material Design for Bootstrap</h1>
+	<h3>
+		Default Overrides
+	</h3>
 
-			<div class="row">
+	<p>The following overrides on Bootstrap skinning are available.</p>
 
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-					<a href="index.html" class="btn btn-primary btn-block disabled">Home</a>
+	<div class="row">
+
+		<div class="col-xs-3">
+
+			<h4>
+				Progress Bars
+				<small>
+					<a target="_blank" href="http://www.google.co.uk/design/spec/components/progress-activity.html">
+						reference
+					</a>
+				</small>
+			</h4>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<h5>Default Presentation</h5>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+					<span class="sr-only">10% Complete (success)</span>
 				</div>
-
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-					<a href="colours.html" class="btn btn-primary btn-block">Colours</a>
-				</div>
-
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-					<a href="elevation.html" class="btn btn-primary btn-block">Elevation</a>
-				</div>
-
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-					<a href="icons.html" class="btn btn-primary btn-block">Icons</a>
-				</div>
-
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-					<a href="buttons.html" class="btn btn-primary btn-block">Buttons</a>
-				</div>
-
-				<div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
-					<a href="tiles.html" class="btn btn-primary btn-block">Tiles</a>
-				</div>
-
 			</div>
 
-			<hr />
-
-			<h3>
-				Default Overrides
-			</h3>
-
-			<p>The following overrides on Bootstrap skinning are available.</p>
-
-			<div class="row">
-
-				<div class="col-xs-3">
-
-					<h4>
-						Progress Bars
-						<small>
-							<a target="_blank" href="http://www.google.co.uk/design/spec/components/progress-activity.html">
-								reference
-							</a>
-						</small>
-					</h4>
-
+			<div class="progress">
+				<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+					<span class="sr-only">90% Complete (success)</span>
 				</div>
-
-				<div class="col-xs-9">
-
-					<h5>Default Presentation</h5>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-							<span class="sr-only">10% Complete (success)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-							<span class="sr-only">90% Complete (success)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-							<span class="sr-only">40% Complete (success)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-							<span class="sr-only">20% Complete</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-							<span class="sr-only">60% Complete (warning)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-							<span class="sr-only">80% Complete (danger)</span>
-						</div>
-					</div>
-
-					<h5>Animated</h5>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-							<span class="sr-only">10% Complete (success)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-success active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-							<span class="sr-only">90% Complete (success)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-primary active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-							<span class="sr-only">40% Complete (success)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-info active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-							<span class="sr-only">20% Complete</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-warning active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-							<span class="sr-only">60% Complete (warning)</span>
-						</div>
-					</div>
-
-					<div class="progress">
-						<div class="progress-bar progress-bar-danger active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-							<span class="sr-only">80% Complete (danger)</span>
-						</div>
-					</div>
-
-				</div>
-
 			</div>
 
-			<hr />
-
-			<div class="row">
-
-				<div class="col-xs-3">
-
-					<h4>
-						Additional Classes
-					</h4>
-
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
 				</div>
-
-				<div class="col-xs-9">
-
-					<h5>.ruled</h5>
-					<p>Creates a grey bottom border on any element, particularly useful for headers:</p>
-
-					<h3 class="ruled">h3.ruled</h3>
-
-					<h5>.breather</h5>
-					<p>Adds a 15px margin below an element</p>
-
-
-<!--
-					<h5>.border-left</h5>
-					<h5>.border-right</h5>
--->
-
-				</div>
-
 			</div>
 
-			<hr />
-
-			<div id="forms" class="row">
-
-				<div class="col-xs-3">
-					<h4>
-						Forms
-						<small>
-							<a target="_blank" href="http://www.google.com/design/spec/style/color.html#color-color-palette">
-								reference
-							</a>
-						</small>
-					</h4>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
 				</div>
+			</div>
 
-				<div class="col-xs-9">
-
-					<form role="form">
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputFile">File input</label>
-							<input type="file" id="exampleInputFile">
-							<p class="help-block">Example block-level help text here.</p>
-						</div>
-						<div class="checkbox">
-							<label>
-								<input type="checkbox"> Check me out
-							</label>
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
 				</div>
+			</div>
 
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (danger)</span>
+				</div>
+			</div>
+
+			<h5>Animated</h5>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+					<span class="sr-only">10% Complete (success)</span>
+				</div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-success active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+					<span class="sr-only">90% Complete (success)</span>
+				</div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-primary active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+				</div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-info active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+				</div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				</div>
+			</div>
+
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (danger)</span>
+				</div>
 			</div>
 
 		</div>
+
+	</div>
+
+	<hr />
+
+	<div class="row">
+
+		<div class="col-xs-3">
+
+			<h4>
+				Additional Classes
+			</h4>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<h5>.ruled</h5>
+			<p>Creates a grey bottom border on any element, particularly useful for headers:</p>
+
+			<h3 class="ruled">h3.ruled</h3>
+
+			<h5>.breather</h5>
+			<p>Adds a 15px margin below an element</p>
+
+
+<!--
+			<h5>.border-left</h5>
+			<h5>.border-right</h5>
+-->
+
+		</div>
+
+	</div>
+
+	<hr />
+
+	<div id="forms" class="row">
+
+		<div class="col-xs-3">
+			<h4>
+				Forms
+				<small>
+					<a target="_blank" href="http://www.google.com/design/spec/style/color.html#color-color-palette">
+						reference
+					</a>
+				</small>
+			</h4>
+		</div>
+
+		<div class="col-xs-9">
+
+			<form role="form">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputFile">File input</label>
+					<input type="file" id="exampleInputFile">
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Check me out
+					</label>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+
+		</div>
+
+	</div>
+
+</div>
+
 
 	</body>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
-	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/main.js"></script>
+	<script type="text/javascript" src="/assets/js/nav.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
+	
 
 </html>
