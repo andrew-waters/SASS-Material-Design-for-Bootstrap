@@ -4,7 +4,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
 	echo -e "Starting to update gh-pages\n"
 
-	bundle exec jekyll build ./_docs
+	exec jekyll build --source ./_docs
 
 	echo -e "Jekyll build succesful\n"
 
