@@ -4,10 +4,9 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
 	echo -e "Starting to update gh-pages\n"
 
-	exec jekyll build --source ./_docs
+	exec jekyll build --source ./_docs --watch
 
 	echo -e "Jekyll build succesful\n"
-
 
 #	copy pages to the home directory
 	cp -R ./_site $HOME/pages
