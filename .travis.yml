@@ -8,11 +8,11 @@ env:
 before_script:
   - npm install -g bower
   - bower install
-  - jekyll install
 
 language: sass
 before_install:
  - gem install sass
+ - gem install jekyll
 
 after_success:
  - "scripts/travis/publish-gh-pages.sh"
