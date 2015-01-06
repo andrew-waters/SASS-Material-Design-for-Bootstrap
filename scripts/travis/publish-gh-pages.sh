@@ -15,7 +15,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 	cp -R ./bower_components/bootstrap-sass-official/assets/fonts $HOME/pages/assets/fonts
 
 #	copy material design fonts
-	cp -R ./assets/fonts $HOME/pages/assets/fonts
+	cp -R ./src/fonts $HOME/pages/assets/fonts
 
 #	go to home and setup git
 	cd $HOME
