@@ -10,7 +10,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 
 
 #	copy pages to the home directory
-	cp -R ./_docs/_site $HOME/pages
+	cp -R ./_site $HOME/pages
 
 #	copy bootstrap fonts
 	cp -R ./bower_components/bootstrap-sass-official/assets/fonts $HOME/pages/assets/fonts
