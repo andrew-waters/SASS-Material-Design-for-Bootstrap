@@ -18,19 +18,17 @@ sudo npm install -g bower
 bower install
 ```
 
-### Install Grunt and plugins:
+### Install Grunt, required plugins and update NPM:
 
 ```
 npm install grunt --save-dev
 npm install grunt-contrib-sass --save-dev
 npm install grunt-contrib-watch --save-dev
-npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-uglify --save-dev
 npm install grunt-contrib-cssmin --save-dev
-```
-
-Update NPM
-
-```
+npm install grunt-contrib-copy --save-dev
+npm install grunt-contrib-jekyll --save-dev
+npm install grunt-contrib-concurrent --save-dev
 npm update -g
 ```
 
@@ -40,24 +38,13 @@ Run Grunt:
 grunt
 ```
 
-Grunt will then watch for changes in the SASS directories and rebuild the files and dist on changes
+Grunt will then watch concurrently for changes to docs, js and scss files and build each as required.
 
+### Documentation
 
-## Documentation
+The documentation is generated using [Jekyll](http://jekyllrb.com) and resides in the `docs` directory. When you run `grunt` we automatically set up a Jekyll server [locally](http://127.0.0.1:4000/SASS-Material-Design-for-Bootstrap/) with the docs running.
 
-Documentation is generated using [Jekyll](http://jekyllrb.com) and resides in the `_docs` directory.
-
-To build and serve the docs, install Jekyll, change to the `_docs` directory and then launch the server:
-
-```
-gem install jekyll
-cd _docs
-jekyll serve
-```
-
-You will then get the Server Address, something similar to [http://127.0.0.1:4000/SASS-Material-Design-for-Bootstrap/](http://127.0.0.1:4000/SASS-Material-Design-for-Bootstrap/).
-
-You can then view the docs at that address.
+Any changes to the source files we be built and the local docs will be updated.
 
 ## Links
 
