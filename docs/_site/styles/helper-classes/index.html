@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Buttons &middot; SASS for Bootstrap</title>
+		<title>Helper Classes &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -155,7 +155,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/styles/buttons">
 							Buttons
@@ -194,7 +194,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/styles/helper-classes">
 							Helper Classes
@@ -328,7 +328,7 @@
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Buttons</h1>
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Helper Classes</h1>
 
 	</div>
 
@@ -341,87 +341,129 @@
 
 	<div class="row">
 
-		<div class="col-xs-3">
+		<div class="col-xs-12">
 
-			<h4>
-				Defaults
-			</h4>
+			<h2>Breathers</h2>
 
-		</div>
+			<p class="lead">Breathers add an additional margin below an element.</p>
 
-		<div class="col-xs-9">
-
-			<a role="button" class="btn">No Context</a>
-
-			<a role="button" class="btn btn-default">Default</a>
-
-			<a role="button" class="btn btn-primary">Primary</a>
-
-			<a role="button" class="btn btn-success">Success</a>
-
-			<a role="button" class="btn btn-info">Info</a>
-
-			<a role="button" class="btn btn-warning">Warning</a>
-
-			<a role="button" class="btn btn-danger">Danger</a>
-
-			<a role="button" class="btn btn-link">Link</a>
+			<div class="breather-lg"></div>
 
 		</div>
-
-	</div>
-
-	<div class="row">
 
 		<div class="col-xs-3">
 
-			<h4>
-				Sizes
-			</h4>
+			<code>.breather</code>
+			<p>15px margin</p>
 
 		</div>
 
-		<div class="col-xs-9">
+		<div class="col-xs-8 col-xs-offset-1">
 
-			<a role="button" class="btn btn-primary btn-sm">sm</a>
-			<a role="button" class="btn btn-primary btn-md">md</a>
-			<a role="button" class="btn btn-primary btn-lg">lg</a>
-			<a role="button" class="btn btn-primary btn-xl">xl</a>
-			<a role="button" class="btn btn-primary btn-xxl">xxl</a>
+			<div class="example">
+				<p>Some example Text</p>
+				<div class="breather"></div>
+				<p>Some example Text</p>
+			</div>
+			<div class="example-code">
+				<pre>&lt;p&gt;Some example Text&lt;/p&gt;
+&lt;div class=&quot;breather&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Some example Text&lt;/p&gt;</pre>
+			</div>
 
 		</div>
-
-	</div>
-
-	<div class="clearfix breather"></div>
-
-	<div class="row">
 
 		<div class="col-xs-3">
 
-			<h4>
-				Inverted
-			</h4>
+			<code>.breather-lg</code>
+			<p>60px margin</p>
 
 		</div>
 
-		<div class="col-xs-9">
+		<div class="col-xs-8 col-xs-offset-1">
 
-			<a role="button" class="btn btn-inverted">No Context</a>
+			<div class="example">
+				<p>Some example Text</p>
+				<div class="breather-lg"></div>
+				<p>Some example Text</p>
+			</div>
+			<div class="example-code">
+				<pre>&lt;p&gt;Some example Text&lt;/p&gt;
+&lt;div class=&quot;breather-lg&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Some example Text&lt;/p&gt;</pre>
+			</div>
 
-			<a role="button" class="btn btn-default btn-inverted">Default</a>
+		</div>
 
-			<a role="button" class="btn btn-primary btn-inverted">Primary</a>
+		<div class="clearfix"></div>
 
-			<a role="button" class="btn btn-success btn-inverted">Success</a>
+		<hr />
 
-			<a role="button" class="btn btn-info btn-inverted">Info</a>
+		<div class="col-xs-12">
 
-			<a role="button" class="btn btn-warning btn-inverted">Warning</a>
+			<h2>Misc</h2>
 
-			<a role="button" class="btn btn-danger btn-inverted">Danger</a>
+		</div>
 
-			<a role="button" class="btn btn-link btn-inverted">Link</a>
+		<div class="col-xs-3">
+
+			<code>.ruled</code>
+			<p>Creates a grey bottom border on any element</p>
+
+		</div>
+
+		<div class="col-xs-8 col-xs-offset-1">
+
+			<div class="example">
+				<h3 class="ruled">h3.ruled</h3>
+			</div>
+			<div class="example-code">
+				<pre>&lt;h3 class=&quot;ruled&quot;&gt;h3.ruled&lt;/h3&gt;</pre>
+			</div>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<code>.border-left</code>
+			<p>Creates a left border on any element</p>
+
+		</div>
+
+		<div class="col-xs-8 col-xs-offset-1">
+
+			<div class="example">
+				<div class="border-left">
+					<br />
+				</div>
+			</div>
+			<div class="example-code">
+				<pre>&lt;div class=&quot;border-left&quot;&gt;
+	&lt;br /&gt;
+&lt;/div&gt;</pre>
+			</div>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<code>.border-right</code>
+			<p>Creates a right border on any element</p>
+
+		</div>
+
+		<div class="col-xs-8 col-xs-offset-1">
+
+			<div class="example">
+				<div class="border-right">
+					<br />
+				</div>
+			</div>
+			<div class="example-code">
+				<pre>&lt;div class=&quot;border-right&quot;&gt;
+	&lt;br /&gt;
+&lt;/div&gt;</pre>
+			</div>
 
 		</div>
 

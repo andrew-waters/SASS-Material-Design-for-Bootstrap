@@ -20,8 +20,12 @@
       href: "colours"
     - title: "Typography"
       href: "typography"
+    - title: "Helper Classes"
+      href: "helper-classes"
     - title: "Elevation"
       href: "elevation"
+    - title: "Forms"
+      href: "forms"
 
 - title: "Components"
   href: "components"
@@ -30,3 +34,5 @@
       href: "icons"
     - title: "Tiles"
       href: "tiles"
+    - title: "Progress Bars"
+      href: "progress-bars"

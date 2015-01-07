@@ -5470,12 +5470,18 @@ h6, .h6 {
   border-bottom-style: solid;
   border-bottom-color: #E0E0E0; }
 
+.border-left {
+  border-left: 1px solid #E0E0E0; }
+
+.border-right {
+  border-right: 1px solid #E0E0E0; }
+
 .breather {
   height: 15px;
   display: block;
   clear: both; }
 
-.breather.breather-lg {
+.breather-lg {
   height: 60px; }
 
 div.modal-backdrop.fade.in {
@@ -5522,17 +5528,21 @@ a:hover {
 
 code {
   font-size: 10px;
-  border-radius: 1px;
+  border-radius: 2px;
   background-color: #EEEEEE;
-  color: #FF5722; }
+  color: #26A69A; }
 
 pre {
   font-size: 10px;
-  padding: 5px;
+  padding: 15px;
   margin: 0;
   border-radius: 2px;
-  background-color: #EEEEEE;
-  color: #FF5722; }
+  background-color: #F5F5F5;
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: none;
+  color: #26A69A; }
 
 .panel {
   border-radius: 2px; }

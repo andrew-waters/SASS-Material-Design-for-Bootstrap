@@ -40,16 +40,20 @@ a:hover {
 
 code {
 	font-size: 10px;
-	border-radius: 1px;
+	border-radius: 2px;
 	background-color: get-color(grey, 200);
-	color: get-color(deep-orange);
+	color: get-color(teal, 400);
 }
 
 pre {
 	font-size: 10px;
-	padding: 5px;
+	padding: 15px;
 	margin: 0;
 	border-radius: 2px;
-	background-color: get-color(grey, 200);
-	color: get-color(deep-orange);
+	background-color: get-color(grey, 100);
+	border-radius: 2px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border: none;
+	color: get-color(teal, 400);
 }
