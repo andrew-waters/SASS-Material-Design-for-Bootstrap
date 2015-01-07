@@ -183,6 +183,12 @@ body {
 
 
 
+
+
+
+
+
+
 .header-panel {
 	display: block;
 	position: fixed;
@@ -200,3 +206,40 @@ body {
 	font-size: 25px;
 	position: fixed;
 }
+
+body.has-status-bar .header-panel {
+	top: 20px;
+}
+
+body.has-status-bar .sidebar-toggle {
+	top: 44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

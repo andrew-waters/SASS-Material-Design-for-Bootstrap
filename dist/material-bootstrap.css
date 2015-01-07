@@ -10436,3 +10436,21 @@ a.btn .icon {
   .sidebar .sidebar-image img {
     width: 44px;
     height: 44px; } }
+.status-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+  padding: 0 15px;
+  padding-top: 4px; }
+
+.status-bar .icon {
+  opacity: 0.8;
+  padding: 0 5px; }
+
+.status-bar p {
+  color: #FFF;
+  opacity: 0.8;
+  padding: 0 5px;
+  margin-top: -2px; }

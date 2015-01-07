@@ -8,6 +8,8 @@
       href: "buttons"
     - title: "Colours"
       href: "colours"
+    - title: "Typography"
+      href: "typography"
     - title: "Elevation"
       href: "elevation"
  
@@ -20,3 +22,5 @@
       href: "tiles"
     - title: "Sidebar"
       href: "sidebar"
+    - title: "Status Bar"
+      href: "statusbar"
