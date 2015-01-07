@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Buttons &middot; SASS for Bootstrap</title>
+		<title>Forms &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -155,7 +155,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/styles/buttons">
 							Buttons
@@ -220,7 +220,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/styles/forms">
 							Forms
@@ -328,7 +328,7 @@
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Buttons</h1>
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Forms</h1>
 
 	</div>
 
@@ -339,93 +339,29 @@
 
 			<div class="container">
 
-	<div class="row">
 
-		<div class="col-xs-3">
+			<form role="form">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputFile">File input</label>
+					<input type="file" id="exampleInputFile">
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox"> Check me out
+					</label>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
 
-			<h4>
-				Defaults
-			</h4>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<a role="button" class="btn">No Context</a>
-
-			<a role="button" class="btn btn-default">Default</a>
-
-			<a role="button" class="btn btn-primary">Primary</a>
-
-			<a role="button" class="btn btn-success">Success</a>
-
-			<a role="button" class="btn btn-info">Info</a>
-
-			<a role="button" class="btn btn-warning">Warning</a>
-
-			<a role="button" class="btn btn-danger">Danger</a>
-
-			<a role="button" class="btn btn-link">Link</a>
-
-		</div>
-
-	</div>
-
-	<div class="row">
-
-		<div class="col-xs-3">
-
-			<h4>
-				Sizes
-			</h4>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<a role="button" class="btn btn-primary btn-sm">sm</a>
-			<a role="button" class="btn btn-primary btn-md">md</a>
-			<a role="button" class="btn btn-primary btn-lg">lg</a>
-			<a role="button" class="btn btn-primary btn-xl">xl</a>
-			<a role="button" class="btn btn-primary btn-xxl">xxl</a>
-
-		</div>
-
-	</div>
-
-	<div class="clearfix breather"></div>
-
-	<div class="row">
-
-		<div class="col-xs-3">
-
-			<h4>
-				Inverted
-			</h4>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<a role="button" class="btn btn-inverted">No Context</a>
-
-			<a role="button" class="btn btn-default btn-inverted">Default</a>
-
-			<a role="button" class="btn btn-primary btn-inverted">Primary</a>
-
-			<a role="button" class="btn btn-success btn-inverted">Success</a>
-
-			<a role="button" class="btn btn-info btn-inverted">Info</a>
-
-			<a role="button" class="btn btn-warning btn-inverted">Warning</a>
-
-			<a role="button" class="btn btn-danger btn-inverted">Danger</a>
-
-			<a role="button" class="btn btn-link btn-inverted">Link</a>
-
-		</div>
-
-	</div>
 
 </div>
 

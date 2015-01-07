@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Buttons &middot; SASS for Bootstrap</title>
+		<title>Progress Bars &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -142,7 +142,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Styles
@@ -155,7 +155,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/styles/buttons">
 							Buttons
@@ -242,7 +242,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -281,7 +281,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/progress-bars">
 							Progress Bars
@@ -328,7 +328,7 @@
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Buttons</h1>
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Progress Bars</h1>
 
 	</div>
 
@@ -343,85 +343,95 @@
 
 		<div class="col-xs-3">
 
-			<h4>
-				Defaults
-			</h4>
+			<h5>Default</h5>
 
 		</div>
 
 		<div class="col-xs-9">
 
-			<a role="button" class="btn">No Context</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+					<span class="sr-only">10% Complete (success)</span>
+				</div>
+			</div>
 
-			<a role="button" class="btn btn-default">Default</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+					<span class="sr-only">90% Complete (success)</span>
+				</div>
+			</div>
 
-			<a role="button" class="btn btn-primary">Primary</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+				</div>
+			</div>
 
-			<a role="button" class="btn btn-success">Success</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+				</div>
+			</div>
 
-			<a role="button" class="btn btn-info">Info</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				</div>
+			</div>
 
-			<a role="button" class="btn btn-warning">Warning</a>
-
-			<a role="button" class="btn btn-danger">Danger</a>
-
-			<a role="button" class="btn btn-link">Link</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (danger)</span>
+				</div>
+			</div>
 
 		</div>
 
-	</div>
-
-	<div class="row">
+		<div class="breather breather-lg"></div>
 
 		<div class="col-xs-3">
 
-			<h4>
-				Sizes
-			</h4>
+			<h5>Animated</h5>
 
 		</div>
 
 		<div class="col-xs-9">
 
-			<a role="button" class="btn btn-primary btn-sm">sm</a>
-			<a role="button" class="btn btn-primary btn-md">md</a>
-			<a role="button" class="btn btn-primary btn-lg">lg</a>
-			<a role="button" class="btn btn-primary btn-xl">xl</a>
-			<a role="button" class="btn btn-primary btn-xxl">xxl</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+					<span class="sr-only">10% Complete (success)</span>
+				</div>
+			</div>
 
-		</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-success active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+					<span class="sr-only">90% Complete (success)</span>
+				</div>
+			</div>
 
-	</div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-primary active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+				</div>
+			</div>
 
-	<div class="clearfix breather"></div>
+			<div class="progress">
+				<div class="progress-bar progress-bar-info active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+				</div>
+			</div>
 
-	<div class="row">
+			<div class="progress">
+				<div class="progress-bar progress-bar-warning active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				</div>
+			</div>
 
-		<div class="col-xs-3">
-
-			<h4>
-				Inverted
-			</h4>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<a role="button" class="btn btn-inverted">No Context</a>
-
-			<a role="button" class="btn btn-default btn-inverted">Default</a>
-
-			<a role="button" class="btn btn-primary btn-inverted">Primary</a>
-
-			<a role="button" class="btn btn-success btn-inverted">Success</a>
-
-			<a role="button" class="btn btn-info btn-inverted">Info</a>
-
-			<a role="button" class="btn btn-warning btn-inverted">Warning</a>
-
-			<a role="button" class="btn btn-danger btn-inverted">Danger</a>
-
-			<a role="button" class="btn btn-link btn-inverted">Link</a>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (danger)</span>
+				</div>
+			</div>
 
 		</div>
 
