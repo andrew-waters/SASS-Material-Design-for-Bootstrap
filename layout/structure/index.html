@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Icons &middot; SASS for Bootstrap</title>
+		<title>Structure &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -81,7 +81,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -94,7 +94,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/structure">
 							Structure
@@ -216,7 +216,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -229,7 +229,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/icons">
 							Icons
@@ -289,7 +289,7 @@
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Icons</h1>
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Structure</h1>
 
 	</div>
 
@@ -300,136 +300,123 @@
 
 			<div class="container">
 
-
-	<h4>
-		Additional Classes
-	</h4>
-
 	<div class="row">
 
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<div class="col-lg-8 col-md-8 col-sm-12">
 
-			<p>We provide additional classes for icons as helpers</p>
-
-			<div class="breather"></div>
+			<p class="lead">The structure of a page can consist of several elements such as a <a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar/">Status Bar</a>, App Bar, <a href="/SASS-Material-Design-for-Bootstrap/layout/navigation-drawer/">Navigation Drawer</a> and Modal windows.</p>
+			<p class="lead">Below are examples of how this content is typically displayed.</p>
 
 		</div>
 
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+		<div class="breather breather-lg"></div>
 
-			<table class="table">
+		<div class="col-md-6">
 
+			<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/layout.png" />
+
+			<h5>Standard Layout</h5>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/layout-with-drawer.png" />
+
+			<h5>Navigation Drawer open (window &lt; 1500px)</h5>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/layout-with-drawer-fixed.png" />
+
+			<h5>Navigation Drawer open (window &gt; 1500px)</h5>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/layout-with-modal.png" />
+
+			<h5>With Modal Window</h5>
+
+		</div>
+
+		<div class="breather breather-lg"></div>
+
+		<hr />
+
+		<div class="breather breather-lg"></div>
+
+		<div class="col-md-12">
+
+			<h2>Z Positioning</h2>
+
+		</div>
+
+		<div class="col-lg-5 col-md-5 col-sm-12">
+
+			<p>Elements on the page have the following x-indexes. If you add new elements through plugins or otherwise, please bear in mind you may need to tweak the z-indexes to display correctly.</p>
+
+		</div>
+
+		<div class="breather breather-lg"></div>
+
+		<div class="col-md-3">
+
+			<table class="table table-condensed">
 				<thead>
-
 					<tr>
-						<th>Name</th>
-						<th>Height</th>
-						<th>Class</th>
-						<th>Preview</th>
-						<th>Example</th>
+						<th>Element</th>
+						<th>z-index</th>
 					</tr>
-
 				</thead>
-
 				<tbody>
-
 					<tr>
-						<td>Small</td>
-						<td>12 <small class="text-muted">px</small></td>
-						<td><code>icon-sm</code></td>
-						<td><i class="icon mdi-action-accessibility icon-sm"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-sm&quot;&gt;&lt;/i&gt;</code></td>
+						<td class="text-blue text-800">Status Bar</td>
+						<td>300</td>
 					</tr>
-
 					<tr>
-						<td>Medium</td>
-						<td>16 <small class="text-muted">px</small></td>
-						<td><code>icon-md</code></td>
-						<td><i class="icon mdi-action-accessibility icon-md"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-md&quot;&gt;&lt;/i&gt;</code></td>
+						<td>Modal</td>
+						<td>250</td>
 					</tr>
-
 					<tr>
-						<td>Large</td>
-						<td>20 <small class="text-muted">px</small></td>
-						<td><code>icon-lg</code></td>
-						<td><i class="icon mdi-action-accessibility icon-lg"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-lg&quot;&gt;&lt;/i&gt;</code></td>
+						<td>Modal Overlay</td>
+						<td>249</td>
 					</tr>
-
 					<tr>
-						<td>X Large</td>
-						<td>30 <small class="text-muted">px</small></td>
-						<td><code>icon-xl</code></td>
-						<td><i class="icon mdi-action-accessibility icon-xl"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-xl&quot;&gt;&lt;/i&gt;</code></td>
+						<td>Nav Drawer</td>
+						<td>200</td>
 					</tr>
-
 					<tr>
-						<td>XX Large</td>
-						<td>50 <small class="text-muted">px</small></td>
-						<td><code>icon-xxl</code></td>
-						<td><i class="icon mdi-action-accessibility icon-xxl"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-xxl&quot;&gt;&lt;/i&gt;</code></td>
+						<td class="text-grey text-500">Nav Drawer Overlay</td>
+						<td>199</td>
 					</tr>
-
+					<tr>
+						<td>Nav Drawer Toggle</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td class="text-orange">Floating Action Button</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td class="text-blue">Header Panel</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Content</td>
+						<td>0</td>
+					</tr>
 				</tbody>
-
 			</table>
 
 		</div>
 
-	</div>
+		<div class="col-md-9">
 
-	<h4>
-		Bootstrap Icons
-		<small>
-			<a target="_blank" href="http://getbootstrap.com/components/#glyphicons">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p>All Bootstrap fonts are available to use.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-
-		</div>
-
-	</div>
-
-	<h4>
-		Google Material Design Icons
-		<small>
-			<a target="_blank" href="https://github.com/google/material-design-icons">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p>Icons from Google are also available, h/t to <a href="https://github.com/FezVrasta/bootstrap-material-design">FezVrasta</a>.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<i class="icon mdi-action-accessibility"></i>
+			<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/z-index.png" />
 
 		</div>
 

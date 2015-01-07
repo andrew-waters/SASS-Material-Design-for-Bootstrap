@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Icons &middot; SASS for Bootstrap</title>
+		<title>Navigation Drawer &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -81,7 +81,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -120,7 +120,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/navigation-drawer">
 							Navigation Drawer
@@ -216,7 +216,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -229,7 +229,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/icons">
 							Icons
@@ -289,7 +289,7 @@
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Icons</h1>
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Navigation Drawer</h1>
 
 	</div>
 
@@ -300,140 +300,138 @@
 
 			<div class="container">
 
+<h4>
+	Navigation Drawer
+</h4>
 
-	<h4>
-		Additional Classes
-	</h4>
+<div class="row">
 
-	<div class="row">
+	<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<form>
 
-			<p>We provide additional classes for icons as helpers</p>
+			<div class="form-group">
+				<label>
+					<input type="checkbox" class="navigation-drawer-invert" value="inverse" />
+					&nbsp;Invert Nav Drawer
+				</label>
+			</div>
 
-			<div class="breather"></div>
+		</form>
 
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<table class="table">
-
-				<thead>
-
-					<tr>
-						<th>Name</th>
-						<th>Height</th>
-						<th>Class</th>
-						<th>Preview</th>
-						<th>Example</th>
-					</tr>
-
-				</thead>
-
-				<tbody>
-
-					<tr>
-						<td>Small</td>
-						<td>12 <small class="text-muted">px</small></td>
-						<td><code>icon-sm</code></td>
-						<td><i class="icon mdi-action-accessibility icon-sm"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-sm&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Medium</td>
-						<td>16 <small class="text-muted">px</small></td>
-						<td><code>icon-md</code></td>
-						<td><i class="icon mdi-action-accessibility icon-md"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-md&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Large</td>
-						<td>20 <small class="text-muted">px</small></td>
-						<td><code>icon-lg</code></td>
-						<td><i class="icon mdi-action-accessibility icon-lg"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-lg&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>X Large</td>
-						<td>30 <small class="text-muted">px</small></td>
-						<td><code>icon-xl</code></td>
-						<td><i class="icon mdi-action-accessibility icon-xl"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-xl&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>XX Large</td>
-						<td>50 <small class="text-muted">px</small></td>
-						<td><code>icon-xxl</code></td>
-						<td><i class="icon mdi-action-accessibility icon-xxl"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-xxl&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-				</tbody>
-
-			</table>
-
-		</div>
+		<div class="breather"></div>
 
 	</div>
 
-	<h4>
-		Bootstrap Icons
-		<small>
-			<a target="_blank" href="http://getbootstrap.com/components/#glyphicons">
-				reference
-			</a>
-		</small>
-	</h4>
+	<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
 
-	<div class="row">
+		<p>Add the Overlay:</p>
 
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<pre>&lt;div class=&quot;navigation-drawer-overlay&quot;&gt;&lt;/div&gt;</pre>
 
-			<p>All Bootstrap fonts are available to use.</p>
+		<p>Add dividers in the sidebar with <code>&lt;div class=&quot;sidebar-divider&quot;&gt;&lt;/div&gt;</code>
+		<p>Add text to the sidebar with <code>&lt;div class=&quot;sidebar-text&quot;&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/div&gt;</code>
 
-			<div class="breather"></div>
 
-		</div>
+		<hr />
 
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+		<h4>Position</h4>
 
-			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		<p>Fix to the left with <code>.sidebar-fixed-left</code></p>
+		<p>Fix to the right with <code>.sidebar-fixed-right</code></p>
 
-		</div>
+		<hr />
+
+		<h4>Style</h4>
+
+		<p>Default with <code>.sidebar-default</code></p>
+		<p>Inverse with <code>.sidebar-inverse</code></p>
+
+		<p>Create your own style with the <code>sidebar-template()</code> mixin:</p>
+		<pre>@mixin sidebar-template(
+$color,
+$bg,
+$header-bg,
+$brand-color,
+$brand-bg,
+$brand-hover-color,
+$brand-hover-bg,
+$divider,
+$badge-color,
+$badge-bg,
+$icon-color,
+$icon-hover-color,
+$link-color,
+$link-bg,
+$link-hover-color,
+$link-hover-bg,
+$link-active-color,
+$link-active-bg,
+$link-disabled-color,
+$link-disabled-bg
+) {
+//	processes css
+}
+</pre>
+
+		<hr />
+
+		<h4>Markup</h4>
+
+		<pre>&lt;aside id=&quot;sidebar&quot; class=&quot;sidebar sidebar-default sidebar-fixed-left&quot; role=&quot;navigation&quot;&gt;
+
+//	content goes here
+
+&lt;/aside&gt;</pre>
+
+
+		<h4>Add the Javascript</h4>
+
+		<pre>
+$(document).ready(function() {
+
+var overlay = $('.sidebar-overlay');
+
+$('.sidebar-toggle').on('click', function() {
+var sidebar = $('#sidebar');
+sidebar.toggleClass('open');
+if((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
+overlay.addClass('active');
+} else {
+overlay.removeClass('active');
+}
+});
+
+overlay.on('click', function() {
+$(this).removeClass('active');
+$('#sidebar').removeClass('open');
+});
+
+});
+
+
+(function($) {
+
+var dropdown = $('.sidebar .dropdown');
+
+//	Add slidedown animation to dropdown
+dropdown.on('show.bs.dropdown', function(e){
+$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+//	Add slideup animation to dropdown
+dropdown.on('hide.bs.dropdown', function(e){
+$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
+})(jQuery);
+</pre>
+
+
 
 	</div>
 
-	<h4>
-		Google Material Design Icons
-		<small>
-			<a target="_blank" href="https://github.com/google/material-design-icons">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p>Icons from Google are also available, h/t to <a href="https://github.com/FezVrasta/bootstrap-material-design">FezVrasta</a>.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<i class="icon mdi-action-accessibility"></i>
-
-		</div>
-
-	</div>
+</div>
 
 </div>
 
@@ -447,6 +445,8 @@
 	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/main.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
 	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
+	
+	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/pages/navigation-drawer.js"></script>
 	
 
 </html>

@@ -23,28 +23,41 @@
 
 	</head>
 
-	<body class="has-status-bar">
+	<body class="no-transition has-status-bar">
 
 		
-<div class="sidebar-overlay"></div>
+<header class="status-bar bg-red bg-800">
 
-<a class="sidebar-toggle" href="#">
+	<div class="pull-right">
+
+		<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
+			<i class="icon fa fa-github"></i>
+		</a>
+
+	</div>
+
+</header>
+
+		
+<div class="navigation-drawer-overlay"></div>
+
+<a class="navigation-drawer-toggle" href="#">
 
 	<i class="icon mdi-navigation-menu icon-lg"></i>
 
 </a>
 
-<aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+<aside id="navigation-drawer" class="navigation-drawer navigation-drawer-default navigation-drawer-fixed-left" role="navigation">
 
-	<div class="sb-brand">
+	<div class="navigation-drawer-brand">
 
-		<h2>Material Design for Bootstrap</h2>
+		<h4>Material Design for Bootstrap</h4>
 
 	</div>
 
-	<div class="sidebar-divider"></div>
+	<div class="navigation-drawer-divider"></div>
 
-	<div class="side-navigation">
+	<div class="navigation-drawer-nav">
 
 		<ul class="list-level-1">
 
@@ -57,6 +70,67 @@
 				<a href="/SASS-Material-Design-for-Bootstrap/">
 					Home
 				</a>
+
+			</li>
+
+			
+
+			
+ 
+			
+
+			
+
+			<li role="presentation" class="">
+
+				<a href="#" class="toggle-navigation">
+					Layout
+				</a>
+
+				<ul class="list-level-2">
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/layout/structure">
+							Structure
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">
+							Status Bar
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/layout/navigation-drawer">
+							Navigation Drawer
+						</a>
+
+					</li>
+
+					
+
+				</ul>
 
 			</li>
 
@@ -178,32 +252,6 @@
 
 					
 
-					
-					
-
-					<li role="presentation" class="">
-
-						<a href="/SASS-Material-Design-for-Bootstrap/components/sidebar">
-							Sidebar
-						</a>
-
-					</li>
-
-					
-
-					
-					
-
-					<li role="presentation" class="">
-
-						<a href="/SASS-Material-Design-for-Bootstrap/components/statusbar">
-							Status Bar
-						</a>
-
-					</li>
-
-					
-
 				</ul>
 
 			</li>
@@ -216,7 +264,7 @@
 
 	</div>
 
-	<div class="sidebar-footer">
+	<div class="navigation-drawer-footer">
 
 		<p>
 			View on
@@ -237,30 +285,7 @@
 </aside>
 
 		
-<header class="status-bar bg-blue bg-800">
-
-	<div class="pull-right">
-
-		<p>
-			Account
-		</p>
-
-	</div>
-
-	<div class="pull-right">
-
-		<i class="icon mdi-social-person icon-md"></i>
-
-	</div>
-
-</header>
-
-		
-<header
-	class="header-panel bg-blue"
-	data-0="height: 255px; box-shadow: 0px 0px 10px rgb(255, 255, 255);"
-	data-205="height: 65px; box-shadow: -0px -5px 15px rgb(0, 0, 0);"
->
+<header class="app-bar app-bar-large bg-red">
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
@@ -271,7 +296,9 @@
 </header>
 
 
-		<div class="container">
+		<div class="content-container">
+
+			<div class="container">
 
 	<h4>
 		Tiles
@@ -369,6 +396,8 @@
 
 </div>
 
+
+		</div>
 
 	</body>
 

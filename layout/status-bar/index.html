@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Icons &middot; SASS for Bootstrap</title>
+		<title>Status Bar &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -81,7 +81,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -107,7 +107,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">
 							Status Bar
@@ -216,7 +216,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -229,7 +229,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/icons">
 							Icons
@@ -289,7 +289,7 @@
 
 	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Icons</h1>
+		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Status Bar</h1>
 
 	</div>
 
@@ -300,138 +300,31 @@
 
 			<div class="container">
 
-
-	<h4>
-		Additional Classes
-	</h4>
-
 	<div class="row">
 
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12">
 
-			<p>We provide additional classes for icons as helpers</p>
-
-			<div class="breather"></div>
+			<p class="lead">The Status Bar is a very compact area (25px high) which is fixed to the top of the page so you should use it with discretion. Whilst an operating system will usually provide it's own status bar, you may want to add one to your page.</p>
 
 		</div>
 
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+		<div class="breather breather-lg"></div>
 
-			<table class="table">
+		<div class="col-sm-12">
 
-				<thead>
+			<p>The status bar, by default, is fixed to the top of the page and has an opacity of <code>0.8</code>.</p>
 
-					<tr>
-						<th>Name</th>
-						<th>Height</th>
-						<th>Class</th>
-						<th>Preview</th>
-						<th>Example</th>
-					</tr>
+			<p>When displaying a status bar, make sure you add <code>.has-status-bar</code> class to the <code>&lt;body&gt;</code> element. This adds the correct padding to other elements on the page.</p>
 
-				</thead>
+			<pre>&lt;body class="has-status-bar"&gt;
 
-				<tbody>
+	// body content
 
-					<tr>
-						<td>Small</td>
-						<td>12 <small class="text-muted">px</small></td>
-						<td><code>icon-sm</code></td>
-						<td><i class="icon mdi-action-accessibility icon-sm"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-sm&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Medium</td>
-						<td>16 <small class="text-muted">px</small></td>
-						<td><code>icon-md</code></td>
-						<td><i class="icon mdi-action-accessibility icon-md"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-md&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Large</td>
-						<td>20 <small class="text-muted">px</small></td>
-						<td><code>icon-lg</code></td>
-						<td><i class="icon mdi-action-accessibility icon-lg"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-lg&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>X Large</td>
-						<td>30 <small class="text-muted">px</small></td>
-						<td><code>icon-xl</code></td>
-						<td><i class="icon mdi-action-accessibility icon-xl"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-xl&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>XX Large</td>
-						<td>50 <small class="text-muted">px</small></td>
-						<td><code>icon-xxl</code></td>
-						<td><i class="icon mdi-action-accessibility icon-xxl"></i></td>
-						<td><code>&lt;i class=&quot;icon mdi-action-accessibility icon-xxl&quot;&gt;&lt;/i&gt;</code></td>
-					</tr>
-
-				</tbody>
-
-			</table>
+&lt;/body&gt;
+</pre>
 
 		</div>
 
-	</div>
-
-	<h4>
-		Bootstrap Icons
-		<small>
-			<a target="_blank" href="http://getbootstrap.com/components/#glyphicons">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p>All Bootstrap fonts are available to use.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-
-		</div>
-
-	</div>
-
-	<h4>
-		Google Material Design Icons
-		<small>
-			<a target="_blank" href="https://github.com/google/material-design-icons">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p>Icons from Google are also available, h/t to <a href="https://github.com/FezVrasta/bootstrap-material-design">FezVrasta</a>.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<i class="icon mdi-action-accessibility"></i>
-
-		</div>
 
 	</div>
 
