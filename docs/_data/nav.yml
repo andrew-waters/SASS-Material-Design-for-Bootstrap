@@ -1,6 +1,16 @@
 - title: "Home"
   href: ""
- 
+
+- title: "Layout"
+  href: "layout"
+  sub:
+    - title: "Structure"
+      href: "structure"
+    - title: "Status Bar"
+      href: "status-bar"
+    - title: "Navigation Drawer"
+      href: "navigation-drawer"
+
 - title: "Styles"
   href: "styles"
   sub:
@@ -12,7 +22,7 @@
       href: "typography"
     - title: "Elevation"
       href: "elevation"
- 
+
 - title: "Components"
   href: "components"
   sub:
@@ -20,7 +30,3 @@
       href: "icons"
     - title: "Tiles"
       href: "tiles"
-    - title: "Sidebar"
-      href: "sidebar"
-    - title: "Status Bar"
-      href: "statusbar"

@@ -16,6 +16,7 @@
 
 $material-font-path: "../fonts/material" !default;
 
+@import "mixins";
 @import "stylesheets/fonts";
 @import "stylesheets/colors";
 @import "variables";
@@ -38,5 +39,7 @@ $material-font-path: "../fonts/material" !default;
 @import "stylesheets/icons";
 @import "stylesheets/tile";
 @import "stylesheets/progressBars";
-@import "stylesheets/sidebar";
-@import "stylesheets/statusbar";
+
+@import "stylesheets/layout/app-bar";
+@import "stylesheets/layout/navigation-drawer";
+@import "stylesheets/layout/status-bar";

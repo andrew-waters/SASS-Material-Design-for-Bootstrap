@@ -1,0 +1,131 @@
+---
+layout: default
+title: Structure
+google: http://www.google.co.uk/design/spec/layout/structure.html#structure-ui-regions-guidance
+---
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-lg-8 col-md-8 col-sm-12">
+
+			<p class="lead">The structure of a page can consist of several elements such as a <a href="{{ site.baseurl }}/layout/status-bar/">Status Bar</a>, App Bar, <a href="{{ site.baseurl }}/layout/navigation-drawer/">Navigation Drawer</a> and Modal windows.</p>
+			<p class="lead">Below are examples of how this content is typically displayed.</p>
+
+		</div>
+
+		<div class="breather breather-lg"></div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/layout.png" />
+
+			<h5>Standard Layout</h5>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/layout-with-drawer.png" />
+
+			<h5>Navigation Drawer open (window &lt; 1500px)</h5>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/layout-with-drawer-fixed.png" />
+
+			<h5>Navigation Drawer open (window &gt; 1500px)</h5>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/layout-with-modal.png" />
+
+			<h5>With Modal Window</h5>
+
+		</div>
+
+		<div class="breather breather-lg"></div>
+
+		<hr />
+
+		<div class="breather breather-lg"></div>
+
+		<div class="col-md-12">
+
+			<h2>Z Positioning</h2>
+
+		</div>
+
+		<div class="col-lg-5 col-md-5 col-sm-12">
+
+			<p>Elements on the page have the following x-indexes. If you add new elements through plugins or otherwise, please bear in mind you may need to tweak the z-indexes to display correctly.</p>
+
+		</div>
+
+		<div class="breather breather-lg"></div>
+
+		<div class="col-md-3">
+
+			<table class="table table-condensed">
+				<thead>
+					<tr>
+						<th>Element</th>
+						<th>z-index</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-blue text-800">Status Bar</td>
+						<td>300</td>
+					</tr>
+					<tr>
+						<td>Modal</td>
+						<td>250</td>
+					</tr>
+					<tr>
+						<td>Modal Overlay</td>
+						<td>249</td>
+					</tr>
+					<tr>
+						<td>Nav Drawer</td>
+						<td>200</td>
+					</tr>
+					<tr>
+						<td class="text-grey text-500">Nav Drawer Overlay</td>
+						<td>199</td>
+					</tr>
+					<tr>
+						<td>Nav Drawer Toggle</td>
+						<td>80</td>
+					</tr>
+					<tr>
+						<td class="text-orange">Floating Action Button</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td class="text-blue">Header Panel</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Content</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+
+		<div class="col-md-9">
+
+			<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/z-index.png" />
+
+		</div>
+
+	</div>
+
+</div>

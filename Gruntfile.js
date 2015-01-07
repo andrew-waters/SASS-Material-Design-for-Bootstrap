@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
-						'src/javascripts/sidebar.js',
+						'src/javascripts/navigation-drawer.js',
 						'src/javascripts/smooth-scrolling.js'
 					]
 				}
@@ -81,6 +81,26 @@ module.exports = function(grunt) {
 					}
 				]
 			},
+			js: {
+				files: [
+					{
+						src: ['dist/material-bootstrap.min.js'],
+						dest: 'docs/assets/js/material-bootstrap.min.js',
+						flatten: true,
+						filter: 'isFile'
+					}
+				]
+			},
+			images: {
+				files: [
+					{
+						cwd: 'docs/assets/images/src/',
+						src: '**',
+						expand: true,
+						dest: 'docs/assets/images/prod/'
+					}
+				]
+			},
 			fonts: {
 				files: [
 					{
@@ -97,7 +117,21 @@ module.exports = function(grunt) {
 						dest: 'dist/fonts/bootstrap',
 						filter: 'isFile'
 					}
-				]
+				],
+			}
+		},
+
+		imagemin: {
+			png: {
+				options: {
+					optimizationLevel: 2
+				},
+				files: [{
+					expand: true,
+					cwd: 'docs/assets/images/prod',
+					src: ['**/*.png'],
+					dest: 'docs/assets/images/prod'
+				}]
 			}
 		},
 
@@ -120,13 +154,17 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: ['src/**/*.js'],
-				tasks: ['uglify:dist', 'copy:docs', 'copy:fonts']
+				tasks: ['uglify:dist', 'copy:docs', 'copy:js']
+			},
+			png: {
+				files: ['docs/assets/images/src/**/*.png'],
+				tasks: ['copy:images'/* , 'imagemin:png' */]
 			}
 		},
 
 		concurrent: {
 			watch: {
-				tasks: ['watch:css', 'watch:js', 'jekyll:server'],
+				tasks: ['watch:css', 'watch:js', 'watch:png', 'jekyll:server'],
 				options: {
 					logConcurrentOutput: true
 				}
@@ -142,6 +180,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-concurrent');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	grunt.registerTask('default', ['concurrent:watch']);
 

@@ -8,13 +8,15 @@ The purpose of this repository is to extend, within Bootstrap, the options avail
 
 View the [preview site](http://code.band-x.media/SASS-Material-Design-for-Bootstrap/)
 
-## Developing
+## Installation
 
-Install SASS and Bower if you need them then install bower components
+Install Grunt, SASS, Jekyll and Bower if you need them then install bower components
 
 ```
-sudo gem install sass
-sudo npm install -g bower
+npm install -g grunt-cli
+gem install sass
+gem install jekyll
+npm install -g bower
 bower install
 ```
 
@@ -27,8 +29,9 @@ npm install grunt-contrib-watch --save-dev
 npm install grunt-contrib-uglify --save-dev
 npm install grunt-contrib-cssmin --save-dev
 npm install grunt-contrib-copy --save-dev
-npm install grunt-contrib-jekyll --save-dev
-npm install grunt-contrib-concurrent --save-dev
+npm install grunt-contrib-imagemin --save-dev
+npm install grunt-jekyll --save-dev
+npm install grunt-concurrent --save-dev
 npm update -g
 ```
 

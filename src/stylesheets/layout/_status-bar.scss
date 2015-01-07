@@ -1,0 +1,41 @@
+
+body.has-status-bar {
+	padding-top: 425px;
+}
+
+.status-bar {
+
+	height: 25px;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2000;
+	padding: 0 15px;
+
+	& a {
+		opacity: 0.8;
+	}
+
+	& a:hover {
+		opacity: 1;
+	}
+
+	& .icon {
+		padding: 0 5px;
+		color: #FFF;
+	}
+
+	& p {
+		color: #FFF;
+		opacity: 0.8;
+		padding: 0 5px;
+		margin-top: -2px;
+	}
+
+	body.no-transition &{
+		@include transition(none);
+	}
+
+}

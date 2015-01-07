@@ -1,0 +1,550 @@
+
+
+/**
+ *
+ *	Navigation Drawer Variables
+ *
+ */
+$navigation-drawer-desktop-width: 200px;
+$navigation-drawer-width: 200px;
+
+$zindex-navigation-drawer-fixed: 200;
+
+$navigation-drawer-desktop-width: 280px;
+$navigation-drawer-width: 240px;
+
+$navigation-drawer-padding: 15px 30px;
+$navigation-drawer-divider-margin: 8px;
+
+$navigation-drawer-nav-height: 48px;
+
+$navigation-drawer-icon-width: 40px;
+$navigation-drawer-icon-size: 20px;
+
+$navigation-drawer-brand-color: get-color(grey, 800);
+$navigation-drawer-icon-color: get-color(grey, 800);
+$navigation-drawer-menu-color: get-color(grey, 1000);
+
+$navigation-drawer-font-weight: 500;
+
+
+
+/**
+ *
+ *	Navigation Drawer mixins
+ *
+ */
+
+// navigation-drawer horizontal block
+//
+// This settings will extended by .navigation-drawer-text, .navigation-drawer-brand and .navigation-drawer-nav>li>a
+@mixin navigation-drawer-block() {
+
+	display: block;
+	height: $navigation-drawer-nav-height;
+	line-height: $navigation-drawer-nav-height;
+	padding: 0;
+	padding-left: $navigation-drawer-padding;
+	padding-right: $navigation-drawer-padding;
+	text-decoration: none;
+	clear: both;
+	font-weight: $navigation-drawer-font-weight;
+
+}
+
+// navigation-drawer design template
+//
+// You can make own navigation-drawer style with this template
+@mixin navigation-drawer-template(
+	$color,
+	$bg,
+	$border-color,
+	$brand-color,
+	$brand-bg,
+	$divider,
+	$icon-color,
+	$icon-hover-color,
+	$link-color,
+	$link-bg,
+	$link-hover-color,
+	$link-hover-bg,
+	$link-active-color,
+	$link-active-bg,
+	$link-current-color,
+	$link-current-bg
+) {
+
+	color: $color;
+	background-color: $bg;
+	border-color: $border-color;
+
+	p {
+		color: $color;
+	}
+
+	.navigation-drawer-toggle {
+		background-color: transparent;
+	}
+
+	.navigation-drawer-brand {
+		color: $brand-color;
+		background-color: $brand-bg;
+	}
+
+	.navigation-drawer-divider, .navigation-drawer-nav .divider {
+		background-color: $divider;
+	}
+
+	.navigation-drawer-footer {
+		border-top-color: $divider;
+	}
+
+	.navigation-drawer-text {
+		color: $color;
+	}
+
+	.navigation-drawer-nav {
+
+		ul:first-child {
+			font-weight: bold;
+			padding-left: 15px;
+		}
+
+		ul:first-child > li {
+			margin-bottom: 15px;
+		}
+
+		ul:first-child > li > a {
+			font-weight: bold;
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		ul > li > ul > li > a {
+			padding: 0;
+		}
+
+		li:not(.active) ul {
+			display: none;
+		}
+
+		li > a {
+			height: 35px;
+			color: $link-color;
+			font-weight: normal;
+			background-color: $link-bg;
+			i {
+				color: $icon-color;
+			}
+		}
+
+		li:hover > a, li > a:hover {
+			color: $link-hover-color;
+			background-color: $link-hover-bg;
+			i {
+				color: $icon-hover-color;
+			}
+		}
+
+		li:focus > a, li > a:focus {
+			color: $link-color;
+			background-color: $link-bg;
+			i {
+				color: $icon-hover-color;
+			}
+		}
+
+		.current > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $link-current-color;
+				background-color: $link-current-bg;
+			}
+		}
+
+		.active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: $link-active-color;
+				background-color: $link-active-bg;
+			}
+		}
+
+	}
+}
+
+
+/**
+ *
+ *	Overlay
+ *
+ */
+.navigation-drawer-overlay {
+
+   	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: 199;
+	background: #000;
+	@include transition(visibility 0 linear .4s,opacity .4s ease-in-out);
+	@include transition(translateZ(0));
+
+	&.active {
+		opacity: 0.5;
+		visibility: visible;
+		-webkit-transition-delay: 0;
+		-moz-transition-delay: 0;
+		transition-delay: 0;
+	}
+
+}
+
+
+
+/**
+ *
+ *	Toggle Button
+ *
+ */
+body.has-status-bar .navigation-drawer-toggle {
+	top: 45px;
+}
+
+.navigation-drawer-toggle {
+	z-index: 80;
+	position: fixed;
+	top: 20px;
+	left: 25px;
+	color: get-color(grey, 800);
+}
+
+.navigation-drawer-toggle:hover {
+	color: get-color(grey, 1000);
+	opacity: 0.8;
+	text-decoration: none;
+}
+
+.navigation-drawer-toggle i.icon.icon-lg {
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+/**
+ *
+ *	Navigation Drawer Showing (browser > 1500px width)
+ *
+ */
+body.navigation-drawer-showing {
+
+	& .content-container {
+		margin-left: 200px;
+	}
+
+	& .app-bar {
+		padding-left: 270px;
+		@include transition(padding-left 0.4s ease-in-out);
+	}
+
+	& .status-bar {
+		width: calc(100% - 280px);
+ 		margin-left: 280px;
+		@include transition(width 0.4s ease-in-out);
+		@include transition(margin-left 0.4s ease-in-out);
+	}
+
+}
+
+
+/**
+ *
+ *	Navigation Drawer
+ *
+ */
+.navigation-drawer {
+
+	position: relative;
+	display: block;
+	min-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	border: none;
+	@include transition(all 0.5s ease-in-out);
+	@include clearfix();
+
+	&::-webkit-scrollbar-track {
+		border-radius: 2px;
+	}
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		background-color: #F7F7F7;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+		background-color: #BFBFBF;
+	}
+
+	body.has-status-bar &{
+		padding-top: 25px;
+	}
+
+	body.no-transition &{
+		@include transition(none);
+	}
+
+}
+
+
+/**
+ *
+ *	Navigation Drawer Elements
+ *
+ */
+.navigation-drawer {
+
+//	brand
+	.navigation-drawer-brand {
+
+		@include navigation-drawer-block();
+		height: 56px;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+		}
+
+	}
+
+//	divider
+	.navigation-drawer-divider, .navigation-drawer-nav .divider {
+		position: relative;
+		display: block;
+		height: 1px;
+		margin: $navigation-drawer-divider-margin 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	//** navigation-drawer text
+	//----------------
+	.navigation-drawer-text {
+		@include navigation-drawer-block();
+	}
+
+	//** navigation-drawer icons
+	//----------------
+	.navigation-drawer-icon {
+		display: inline-block;
+		margin-right: $navigation-drawer-padding;
+		min-width: $navigation-drawer-icon-width;
+		width: $navigation-drawer-icon-width;
+		text-align: left;
+		font-size: $navigation-drawer-icon-size;
+
+		&:before, &:after {
+			vertical-align: middle;
+		}
+	}
+
+	.navigation-drawer-footer {
+		border-top: 1px solid get-color(grey, 300);
+		position: fixed;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		padding: $navigation-drawer-padding;
+	}
+
+}
+
+
+
+/**
+ *
+ *	Navigation Drawer Nav
+ *
+ */
+.navigation-drawer .navigation-drawer-nav {
+
+	margin: 0;
+	padding: 0;
+
+	li {
+
+		position: relative;
+		list-style-type: none;
+
+		a {
+
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+
+			@include navigation-drawer-block();
+
+			&:hover {
+				background: transparent;
+			}
+
+		}
+
+	}
+
+}
+
+.navigation-drawer-default {
+
+	@include navigation-drawer-template(
+
+		$color: get-color(grey, 700),
+		$bg: $color-white,
+		$border-color: get-color(grey, 200),
+
+		$brand-color: get-color(grey, 600),
+		$brand-bg: transparent,
+
+		$divider: get-color(grey, 200),
+
+		$icon-color: get-color(grey, 600),
+		$icon-hover-color: get-color(grey, 600),
+
+		$link-color: get-color(grey, 600),
+		$link-bg: transparent,
+		$link-hover-color: get-color(grey, 900),
+		$link-hover-bg: transparent,
+		$link-active-color: get-color(grey, 900),
+		$link-active-bg: transparent,
+		$link-current-color: get-color(grey, 1000),
+		$link-current-bg: transparent
+
+	);
+
+}
+
+.navigation-drawer-inverse {
+
+	@include navigation-drawer-template(
+
+		$color: get-color(grey, 400),
+		$bg: get-color(grey, 900),
+		$border-color: get-color(grey, 900),
+
+		$brand-color: get-color(grey, 400),
+		$brand-bg: transparent,
+
+		$divider: get-color(grey, 800),
+
+		$icon-color: get-color(grey, 600),
+		$icon-hover-color: get-color(grey, 600),
+
+		$link-color: get-color(grey, 600),
+		$link-bg: get-color(grey, 900),
+		$link-hover-color: get-color(grey, 100),
+		$link-hover-bg: get-color(grey, 900),
+		$link-active-color: get-color(grey, 400),
+		$link-active-bg: get-color(grey, 900),
+		$link-current-color: get-color(grey, 50),
+		$link-current-bg: get-color(grey, 900)
+
+	);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// navigation-drawer toggling
+//
+// Hide navigation-drawer
+.navigation-drawer {
+	width: 0;
+	@include translate3d(-$navigation-drawer-desktop-width, 0, 0);
+
+	&.open {
+		min-width: $navigation-drawer-desktop-width;
+		width: $navigation-drawer-desktop-width;
+		@include translate3d(0, 0, 0);
+	}
+}
+
+// navigation-drawer positions: fix the left/right navigation-drawers
+.navigation-drawer-fixed-left,
+.navigation-drawer-fixed-right {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: $zindex-navigation-drawer-fixed;
+}
+
+.navigation-drawer-fixed-left {
+	left: 0;
+	border-right-style: solid;
+	border-right-width: 1px;
+}
+.navigation-drawer-fixed-right {
+	right: 0;
+	border-left-style: solid;
+	border-left-width: 1px;
+
+	@include translate3d($navigation-drawer-desktop-width, 0, 0);
+	&.open {
+		@include translate3d(0, 0, 0);
+	}
+	.icon-material-navigation-drawer-arrow:before {
+		content: "\e614"; // icon-material-arrow-forward
+	}
+}
+
+
+
+
+
+
+// navigation-drawer size
+//
+// Change size of navigation-drawer and navigation-drawer elements on small screens
+@media (max-width: $screen-tablet) {
+
+	.navigation-drawer.open {
+		min-width: $navigation-drawer-width;
+		width: $navigation-drawer-width;
+	}
+
+	.navigation-drawer-footer {
+		position: relative;
+	}
+
+}
+

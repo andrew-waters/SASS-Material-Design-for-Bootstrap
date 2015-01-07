@@ -23,13 +23,17 @@
 
 	</head>
 
-	<body class="has-status-bar">
+	<body class="no-transition has-status-bar">
 
-		{% include sidebar.html %}
-		{% include statusbar.html %}
-		{% include header.html %}
+		{% include status-bar.html %}
+		{% include navigation-drawer.html %}
+		{% include appbar.html %}
 
-		{{ content }}
+		<div class="content-container">
+
+			{{ content }}
+
+		</div>
 
 	</body>
 

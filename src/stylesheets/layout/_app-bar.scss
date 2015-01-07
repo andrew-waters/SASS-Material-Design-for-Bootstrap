@@ -1,0 +1,31 @@
+
+.app-bar {
+
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 16px;
+
+	body.no-transition &{
+		@include transition(none !important);
+	}
+
+	& .container {
+		margin-left: 15px;
+		font-size: 25px;
+		position: fixed;
+	}
+
+	body.has-status-bar &{
+		padding-top: 25px;
+	}
+
+	body.has-status-bar.status-bar-is-fixed &{
+		padding-top: 0;
+	}
+
+}
