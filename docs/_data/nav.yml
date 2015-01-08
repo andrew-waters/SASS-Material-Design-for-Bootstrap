@@ -8,6 +8,8 @@
       href: "structure"
     - title: "Status Bar"
       href: "status-bar"
+    - title: "App Bar"
+      href: "app-bar"
     - title: "Navigation Drawer"
       href: "navigation-drawer"
 
