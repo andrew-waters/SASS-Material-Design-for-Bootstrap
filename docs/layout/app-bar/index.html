@@ -1,0 +1,209 @@
+---
+layout: default
+title: App Bar
+---
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-8">
+
+			<p class="lead">The App Bar is an alternative to the Bootstrap Navbar. It is intended to be more flexible and suit a variety of requirements.</p>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Basics</h2>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<h4>Container</h4>
+			<p>Use <code>nav</code> with an <code>.app-bar</code> class.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar&quot;&gt;&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/app-bar-small.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-xs-12">
+
+			<h2>Tabs</h2>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<p>An App Bar can contain tabs. When they are used, you must add the <code>.app-bar-has-tabs</code> to the nav. This extends the nav so that extended navs that aren't static (ie they grow smaller as the user scrolls) maintain a height in which the tabs still display.</p>
+			<p>You may also want to add a <code>&gt;div class="container" /&lt;</code> to the tabs to center them on screen.</p>
+
+			<p>Tabs can be coloured using the base colour scheme (i.e. you don't define the gradient, we use fixed colours).</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-has-tabs</strong>&quot;&gt;
+	&lt;!-- other content --&gt;
+	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/app-bar-small-with-tabs.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Height</h2>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<p>By Default, the App Bar is a fixed height of 65px. You can optionally increase the size by adding an <code>.app-bar-extended</code> class to the container which increases the height to 255px.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-extended</strong> app-bar-has-tabs&quot;&gt;
+	&lt;!-- other content --&gt;
+	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/app-bar-extended.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Behaviour</h2>
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<p>The App Bar will be fixed to the top of the page (taking account of whether or not a <a href="{{ site.baseurl }}/layout/status-bar">Status Bar</a> is present).</p>
+
+			<p>If the App Bar is extended, it will, by default, shrink when the user moves the page (until it reaches the default height). If you would like it to remain fixed, add <code>.app-bar-static</code> to the container class.</p>
+
+			<p>If you have tabs in the App Bar (see below), it shrinks to 115px, not the default (65px).
+
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-1">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;!-- App Bar doesn't change height when the page scrolls --&gt;
+&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-static</strong>&quot;&gt;
+
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Floating Action Button</h2>
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<p>By adding a Floating Action Button you make a very bold action clear to the user. When you use it as part of the App Bar, it is fixed in position on the right hand side.</p>
+
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-1">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar app-bar-has-tabs&quot;&gt;
+	&lt;a class=&quot;btn btn-fab btn-md bg-cyan bg-200&quot;&gt;
+		&lt;i class=&quot;icon mdi-content-add&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Action Buttons</h2>
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<p>The Action Buttons are fixed to the top right of the app bar and offer a way for the user to access common functionality.</p>
+
+			<p>They should be wrapped in a div with a <code>.action-icons</code> class which help position them correctly.</p>
+
+			<p>An anchor item within that which has the <code>.search-icon</code> class has special functionality. When pressed, the nav toggle, title and action buttons are removed and replaced with a standard search interface.</p>
+
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-1">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar&quot;&gt;
+	&lt;div class=&quot;action-icons&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;search-icon&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-search icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-view-module icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
