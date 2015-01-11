@@ -189,6 +189,10 @@ module.exports = function(grunt) {
 					'app-bar-small',
 					'app-bar-translucent',
 					'app-bar-small-with-tabs',
+					'app-bar-small-with-fab',
+					'app-bar-with-action-bar',
+					'app-bar-with-active-search',
+					'app-bar-extended-with-tabs',
 					'app-bar-extended'
 				],
 				overwrite: true,

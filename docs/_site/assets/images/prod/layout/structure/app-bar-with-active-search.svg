@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1200px" height="80px" viewBox="0 0 1200 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="1200px" height="66px" viewBox="0 0 1200 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: bin/sketchtool 1.3 (252) - http://www.bohemiancoding.com/sketch -->
-    <title>app-bar-small</title>
+    <title>app-bar-with-active-search</title>
     <desc>Created with bin/sketchtool.</desc>
     <defs>
         <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
@@ -15,17 +15,16 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="app-bar-small" sketch:type="MSArtboardGroup">
+        <g id="app-bar-with-active-search" sketch:type="MSArtboardGroup">
             <rect id="App-Bar" fill="#03A9F4" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="65"></rect>
-            <text id="Page-Title" sketch:type="MSTextLayer" font-family="Helvetica" font-size="20" font-weight="normal" fill="#FFFFFF">
-                <tspan x="70" y="38.2000008">Page Title</tspan>
+            <rect id="Nav-Drawer-Shadow" fill-opacity="0.7" fill="#000000" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="65"></rect>
+            <text id="-Search" opacity="0.601620802" sketch:type="MSTextLayer" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="79" y="40.2294922"> Search</tspan>
             </text>
-            <g id="Nav" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)" fill="#FFFFFF">
-                <path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <g id="back" sketch:type="MSLayerGroup" transform="translate(26.000000, 23.000000)" fill="#FFFFFF">
+                <path d="M22,9.625 L5.225,9.625 L12.925,1.925 L11,0 L0,11 L11,22 L12.925,20.075 L5.225,12.375 L22,12.375 L22,9.625 L22,9.625 Z" id="Shape" sketch:type="MSShapeGroup"></path>
             </g>
-            <g id="menu" sketch:type="MSLayerGroup" transform="translate(69.000000, 21.000000)">
-                <rect id="bounds" sketch:type="MSShapeGroup" x="0" y="0" width="24" height="24"></rect>
-            </g>
+            <path d="M70,21 L70,46" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

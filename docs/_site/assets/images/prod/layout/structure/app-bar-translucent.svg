@@ -108,7 +108,10 @@
                 <path d="M0.55078125,0.25 L170.417126,462.781935 L27.8214877,462.781935 L0.55078125,0.25 Z" id="Rectangle-30" fill="#FC4945" filter="url(#filter-8)" sketch:type="MSShapeGroup"></path>
                 <path d="M906.069564,103.755464 L1271.84075,103.755464 L1271.84075,462.781935 L1254.73981,462.781935 L906.069564,103.755464 Z" id="Rectangle-35" fill="#FC4945" filter="url(#filter-9)" sketch:type="MSShapeGroup"></path>
             </g>
-            <rect id="App-Bar" opacity="0.9" fill="#03A9F4" filter="url(#filter-10)" sketch:type="MSShapeGroup" x="-1" y="0" width="1200" height="65"></rect>
+            <rect id="App-Bar" opacity="0.95" fill="#03A9F4" filter="url(#filter-10)" sketch:type="MSShapeGroup" x="-1" y="0" width="1200" height="65"></rect>
+            <text id="Page-Title" sketch:type="MSTextLayer" font-family="Helvetica" font-size="20" font-weight="normal" fill="#FFFFFF">
+                <tspan x="70" y="38.2000008">Page Title</tspan>
+            </text>
             <g id="Nav" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)" fill="#FFFFFF">
                 <path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
             </g>

@@ -17,6 +17,9 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="app-bar-small" sketch:type="MSArtboardGroup">
             <rect id="App-Bar" fill="#03A9F4" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="65"></rect>
+            <text id="Page-Title" sketch:type="MSTextLayer" font-family="Helvetica" font-size="20" font-weight="normal" fill="#FFFFFF">
+                <tspan x="70" y="38.2000008">Page Title</tspan>
+            </text>
             <g id="Nav" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)" fill="#FFFFFF">
                 <path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
             </g>
