@@ -187,6 +187,7 @@ module.exports = function(grunt) {
 					'layout-with-modal',
 					'z-index',
 					'app-bar-small',
+					'app-bar-translucent',
 					'app-bar-small-with-tabs',
 					'app-bar-extended'
 				],

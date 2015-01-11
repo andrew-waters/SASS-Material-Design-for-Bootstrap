@@ -43,15 +43,6 @@ $(document).ready(function() {
 
 	});
 
-	$(window).resize(function() {
-
-	//	when the window is > 1500px wide, fix the nav in place
-		if($(window).width() > 1500) {
-			
-		}
-
-	});
-
 	$navigationDrawer = $('.navigation-drawer');
 	$contentContainer = $('.content-container');
 
@@ -75,14 +66,14 @@ $(document).ready(function() {
 
 	}
 
-	if($(window).width() > 1500) {
+	if($(window).width() > 1300) {
 		showFixedNavigationDrawer();
 	}
 
 	$(window).resize(function() {
 
-	//	when the window is > 1500px wide, fix the nav in place
-		if($(window).width() > 1500) {
+	//	when the window is > 1300px wide, fix the nav in place
+		if($(window).width() > 1300) {
 			showFixedNavigationDrawer();
 		} else {
 			hideFixedNavigationDrawer();

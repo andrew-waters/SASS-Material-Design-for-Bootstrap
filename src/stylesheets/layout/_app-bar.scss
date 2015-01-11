@@ -1,6 +1,10 @@
 
 .app-bar {
 
+	&.app-bar-translucent {
+		opacity: 0.95;
+	}
+
 	display: block;
 	position: fixed;
 	top: 0;

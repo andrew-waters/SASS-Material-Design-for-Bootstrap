@@ -246,17 +246,26 @@ body.has-status-bar .navigation-drawer-toggle {
 
 /**
  *
- *	Navigation Drawer Showing (browser > 1500px width)
+ *	Navigation Drawer Showing (browser > 1200px width)
  *
  */
 body.navigation-drawer-showing {
 
-	& .content-container {
-		margin-left: 200px;
+	& .content-container > .container {
+
+		width: calc(100% - 300px);
+		margin-left: 290px;
+		@include transition(width 0.4s ease-in-out);
+
 	}
 
+	&.no-transition .content-container > .container {
+		@include transition(none);
+	}
+
+
 	& .app-bar {
-		padding-left: 270px;
+		padding-left: 290px;
 		@include transition(padding-left 0.4s ease-in-out);
 	}
 
