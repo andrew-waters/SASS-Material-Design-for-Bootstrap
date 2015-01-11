@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Navigation Drawer &middot; SASS for Bootstrap</title>
+		<title>App Bar &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -118,7 +118,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/app-bar">
 							App Bar
@@ -131,7 +131,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/navigation-drawer">
 							Navigation Drawer
@@ -344,7 +344,7 @@
 
 	</a>
 
-	<h1 class="title">Navigation Drawer</h1>
+	<h1 class="title">App Bar</h1>
 
 	<div class="app-bar-overlay"></div>
 
@@ -407,138 +407,206 @@
 
 			<div class="container">
 
-<h4>
-	Navigation Drawer
-</h4>
+	<div class="row">
 
-<div class="row">
+		<div class="col-md-8">
 
-	<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+			<p class="lead">The App Bar is an alternative to the Bootstrap Navbar. It is intended to be more flexible and suit a variety of requirements.</p>
 
-		<form>
+		</div>
 
-			<div class="form-group">
-				<label>
-					<input type="checkbox" class="navigation-drawer-invert" value="inverse" />
-					&nbsp;Invert Nav Drawer
-				</label>
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Basics</h2>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<h4>Container</h4>
+			<p>Use <code>nav</code> with an <code>.app-bar</code> class.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar&quot;&gt;&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small.svg" />
+				</div>
 			</div>
 
-		</form>
+		</div>
 
-		<div class="breather"></div>
+		<div class="col-xs-12">
+
+			<h2>Tabs</h2>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<p>An App Bar can contain tabs. When they are used, you must add the <code>.app-bar-has-tabs</code> to the nav. This extends the nav so that extended navs that aren't static (ie they grow smaller as the user scrolls) maintain a height in which the tabs still display.</p>
+			<p>You may also want to add a <code>&gt;div class="container" /&lt;</code> to the tabs to center them on screen.</p>
+
+			<p>Tabs can be coloured using the base colour scheme (i.e. you don't define the gradient, we use fixed colours).</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-has-tabs</strong>&quot;&gt;
+	&lt;!-- other content --&gt;
+	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-tabs.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Height</h2>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<p>By Default, the App Bar is a fixed height of 65px. You can optionally increase the size by adding an <code>.app-bar-extended</code> class to the container which increases the height to 255px.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-extended</strong> app-bar-has-tabs&quot;&gt;
+	&lt;!-- other content --&gt;
+	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Behaviour</h2>
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<p>The App Bar will be fixed to the top of the page (taking account of whether or not a <a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">Status Bar</a> is present).</p>
+
+			<p>If the App Bar is extended, it will, by default, shrink when the user moves the page (until it reaches the default height). If you would like it to remain fixed, add <code>.app-bar-static</code> to the container class.</p>
+
+			<p>If you have tabs in the App Bar (see below), it shrinks to 115px, not the default (65px).
+
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-1">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;!-- App Bar doesn't change height when the page scrolls --&gt;
+&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-static</strong>&quot;&gt;
+
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Floating Action Button</h2>
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<p>By adding a Floating Action Button you make a very bold action clear to the user. When you use it as part of the App Bar, it is fixed in position on the right hand side.</p>
+
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-1">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar app-bar-has-tabs&quot;&gt;
+	&lt;a class=&quot;btn btn-fab btn-md bg-cyan bg-200&quot;&gt;
+		&lt;i class=&quot;icon mdi-content-add&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-12">
+
+			<h2>Action Buttons</h2>
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<p>The Action Buttons are fixed to the top right of the app bar and offer a way for the user to access common functionality.</p>
+
+			<p>They should be wrapped in a div with a <code>.action-icons</code> class which help position them correctly.</p>
+
+			<p>An anchor item within that which has the <code>.search-icon</code> class has special functionality. When pressed, the nav toggle, title and action buttons are removed and replaced with a standard search interface.</p>
+
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-1">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar&quot;&gt;
+	&lt;div class=&quot;action-icons&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;search-icon&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-search icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-view-module icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
 
 	</div>
-
-	<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-		<p>Add the Overlay:</p>
-
-		<pre>&lt;div class=&quot;navigation-drawer-overlay&quot;&gt;&lt;/div&gt;</pre>
-
-		<p>Add dividers in the sidebar with <code>&lt;div class=&quot;sidebar-divider&quot;&gt;&lt;/div&gt;</code>
-		<p>Add text to the sidebar with <code>&lt;div class=&quot;sidebar-text&quot;&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/div&gt;</code>
-
-
-		<hr />
-
-		<h4>Position</h4>
-
-		<p>Fix to the left with <code>.sidebar-fixed-left</code></p>
-		<p>Fix to the right with <code>.sidebar-fixed-right</code></p>
-
-		<hr />
-
-		<h4>Style</h4>
-
-		<p>Default with <code>.sidebar-default</code></p>
-		<p>Inverse with <code>.sidebar-inverse</code></p>
-
-		<p>Create your own style with the <code>sidebar-template()</code> mixin:</p>
-		<pre>@mixin sidebar-template(
-$color,
-$bg,
-$header-bg,
-$brand-color,
-$brand-bg,
-$brand-hover-color,
-$brand-hover-bg,
-$divider,
-$badge-color,
-$badge-bg,
-$icon-color,
-$icon-hover-color,
-$link-color,
-$link-bg,
-$link-hover-color,
-$link-hover-bg,
-$link-active-color,
-$link-active-bg,
-$link-disabled-color,
-$link-disabled-bg
-) {
-//	processes css
-}
-</pre>
-
-		<hr />
-
-		<h4>Markup</h4>
-
-		<pre>&lt;aside id=&quot;sidebar&quot; class=&quot;sidebar sidebar-default sidebar-fixed-left&quot; role=&quot;navigation&quot;&gt;
-
-//	content goes here
-
-&lt;/aside&gt;</pre>
-
-
-		<h4>Add the Javascript</h4>
-
-		<pre>
-$(document).ready(function() {
-
-var overlay = $('.sidebar-overlay');
-
-$('.sidebar-toggle').on('click', function() {
-var sidebar = $('#sidebar');
-sidebar.toggleClass('open');
-if((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
-overlay.addClass('active');
-} else {
-overlay.removeClass('active');
-}
-});
-
-overlay.on('click', function() {
-$(this).removeClass('active');
-$('#sidebar').removeClass('open');
-});
-
-});
-
-
-(function($) {
-
-var dropdown = $('.sidebar .dropdown');
-
-//	Add slidedown animation to dropdown
-dropdown.on('show.bs.dropdown', function(e){
-$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-});
-
-//	Add slideup animation to dropdown
-dropdown.on('hide.bs.dropdown', function(e){
-$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
-
-})(jQuery);
-</pre>
-
-
-
-	</div>
-
-</div>
 
 </div>
 
@@ -552,8 +620,6 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/main.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
 	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
-	
-	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/pages/navigation-drawer.js"></script>
 	
 
 	<script>
