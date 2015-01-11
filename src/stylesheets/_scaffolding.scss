@@ -15,6 +15,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+body.noscroll {
+	overflow: hidden;
+}
+
 p {
 	color: get-color(grey, 800);
 	letter-spacing: .1px;
@@ -38,6 +42,55 @@ a:hover {
 	color: get-color(light-blue, 700);
 }
 
+
+
+
+.ruled {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: get-color(grey, 300);
+}
+
+.border-left {
+	border-left: 1px solid get-color(grey, 300);
+}
+
+.border-right {
+	border-right: 1px solid get-color(grey, 300);
+}
+
+.breather {
+	height: 15px;
+	display: block;
+	clear: both;
+}
+
+.breather-lg {
+	height: 60px;
+	clear: both;
+}
+
+div.modal-backdrop.fade.in {
+	height: 100%;
+	position: fixed;
+	opacity: 0.6;
+	background-color: #000;
+	z-index: 1039 !important;
+}
+
+.modal {
+	border-radius: $border-radius-base;
+}
+
+
+
+
+
+
+
+
 code {
 	font-size: 10px;
 	border-radius: 2px;
@@ -55,5 +108,49 @@ pre {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border: none;
-	color: get-color(teal, 400);
+	color: get-color(pink, 300);
 }
+
+.example {
+
+	margin-bottom: 30px;
+
+	& .example-code {
+		padding: 15px;
+		background-color: get-color(grey, 100);
+		& pre {
+			background-color: transparent;
+		}
+		&::before {
+			content: "Code";
+			opacity: 0.4;
+			display: block;
+			text-align: right;
+			letter-spacing: 0.5em;
+			text-transform: uppercase;
+			color: get-color(grey, 400);
+		}
+	}
+
+	& .example-output {
+		padding: 30px;
+		border-radius: 2px;
+		background-color: $color-white;
+		border: 10px solid get-color(grey, 100);
+		&::before {
+			content: "Output";
+			opacity: 0.4;
+			right: -25px;
+			top: -25px;
+			display: block;
+			position: relative;
+			text-align: right;
+			letter-spacing: 0.5em;
+			text-transform: uppercase;
+			color: get-color(grey, 400);
+		}
+	}
+
+}
+
+

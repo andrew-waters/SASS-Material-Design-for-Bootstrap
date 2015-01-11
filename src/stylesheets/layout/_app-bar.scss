@@ -5,27 +5,153 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: 50;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	padding: 0 16px;
+	height: 65px;
 
 	body.no-transition &{
 		@include transition(none !important);
 	}
 
-	& .container {
-		margin-left: 15px;
+	body.has-status-bar &{
+		padding-top: 25px;
+		height: 90px;
+	}
+
+	& .title {
+		padding-left: 90px;
+		padding-top: 20px;
 		font-size: 25px;
-		position: fixed;
+	}
+
+	&.app-bar-extended {
+
+		height: 255px;
+
+		& .title {
+			padding-top: 105px;
+			font-size: 55px;
+		}
+
+		body.has-status-bar &{
+			padding-top: 25px;
+			height: 280px;
+		}
+
 	}
 
 	body.has-status-bar &{
 		padding-top: 25px;
 	}
 
-	body.has-status-bar.status-bar-is-fixed &{
-		padding-top: 0;
+	& .btn-fab {
+		float: right;
+		margin-right: 20px;
+		z-index: 60;
+	}
+
+	& .action-icons {
+
+		position: fixed;
+		top: 20px;
+		right: 15px;
+
+		> * {
+			padding-left: 15px;
+			color: $color-white;
+		}
+
+		> .btn-group a {
+			color: $color-white;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		body.has-status-bar &{
+			top: 45px;
+		}
+
+	}
+
+	& ul.nav.nav-tabs {
+		margin-top: 2px;
+		@include container-fixed($gutter: $grid-gutter-width);
+	}
+
+	& .search-form {
+
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 65px;
+		padding: 15px;
+		z-index: 100;
+		background-color: rgba(0, 0, 0, 0.02);
+
+		& a.back-icon {
+
+			float: left;
+			color: $color-white !important;
+			padding-left: 5px;
+			padding-top: 5px;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			& > .icon {
+				font-size: 30px;
+			}
+
+		}
+
+		& .form-control {
+			float: left;
+			width: calc(100% - 90px);
+			margin-left: 30px;
+			border: none;
+			color: $color-white;
+			font-weight: bold;
+			font-size: 14px;
+			margin-top: 5px;
+			@include placeholder(get-color(grey, 300));
+		}
+
+		body.has-status-bar &{
+			top: 25px;
+		}
+
+	}
+
+}
+
+
+.app-bar-overlay {
+
+   	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	z-index: 90;
+	background: #000;
+	@include transition(visibility 0 linear .4s,opacity .4s ease-in-out);
+	@include transition(translateZ(0));
+
+	&.active {
+		opacity: 0.5;
+		visibility: visible;
+		-webkit-transition-delay: 0;
+		-moz-transition-delay: 0;
+		transition-delay: 0;
 	}
 
 }

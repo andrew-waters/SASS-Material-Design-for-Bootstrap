@@ -1,10 +1,10 @@
 
 .btn-xl {
-  @include button-size($padding-extra-large-vertical, $padding-extra-large-horizontal, $font-size-extra-large, $line-height-extra-large, $border-radius-extra-large);
+  @include button-size($padding-extra-large-horizontal, $padding-extra-large-horizontal, $font-size-extra-large, $line-height-extra-large, $border-radius-extra-large);
 }
 
 .btn-xxl {
-  @include button-size($padding-extra-extra-large-vertical, $padding-extra-extra-large-horizontal, $font-size-extra-extra-large, $line-height-extra-extra-large, $border-radius-extra-extra-large);
+  @include button-size($padding-extra-extra-large-horizontal, $padding-extra-extra-large-horizontal, $font-size-extra-extra-large, $line-height-extra-extra-large, $border-radius-extra-extra-large);
 }
 
 
@@ -59,7 +59,89 @@
 
 
 .btn {
+
 	border: none;
+
+	&.btn-fab {
+
+		border-radius: 50%;
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		color: $color-white;
+		
+		width: 36px;
+		height: 36px;
+
+		& > .icon {
+			margin: 0 !important;
+			margin-left: -1px !important;
+		}
+
+		&.btn-xs {
+			width: $padding-small-horizontal * 3;
+			height: $padding-small-horizontal * 3;
+			padding-top: $padding-small-horizontal / 4;
+			& > .icon {
+				font-size: $padding-small-horizontal * 2;
+			}
+		}
+		
+		&.btn-sm {
+			width: $padding-small-horizontal * 4;
+			height: $padding-small-horizontal * 4;
+			padding-top: $padding-small-horizontal / 2;
+			& > .icon {
+				font-size: $padding-small-horizontal * 3;
+			}
+		}
+
+		&.btn-md {
+			width: $padding-base-horizontal * 5;
+			height: $padding-base-horizontal * 5;
+			padding-top: $padding-base-horizontal;
+			& > .icon {
+				font-size: $padding-base-horizontal * 3;
+			}
+		}
+		
+		&.btn-lg {
+			width: $padding-large-horizontal * 4;
+			height: $padding-large-horizontal * 4;
+			padding-top: $padding-large-horizontal / 2;
+			& > .icon {
+				font-size: $padding-large-horizontal * 3;
+			}
+		}
+
+		&.btn-xl {
+			width: $padding-extra-large-horizontal * 4;
+			height: $padding-extra-large-horizontal * 4;
+			padding-top: $padding-extra-large-horizontal / 2;
+			& > .icon {
+				font-size: $padding-extra-large-horizontal * 3;
+			}
+		}
+
+		&.btn-xxl {
+			width: $padding-extra-extra-large-horizontal * 4;
+			height: $padding-extra-extra-large-horizontal * 4;
+			padding-top: $padding-extra-extra-large-horizontal / 2;
+			& > .icon {
+				font-size: $padding-extra-extra-large-horizontal * 3;
+			}
+		}
+
+		.app-bar &{
+			margin-top: -24px;
+		}
+
+	}
+	
+	&:hover {
+		box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+	}
+
 }
 
 .btn-inverted {

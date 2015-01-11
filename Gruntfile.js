@@ -45,6 +45,7 @@ module.exports = function(grunt) {
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
+						'src/javascripts/app-bar.js',
 						'src/javascripts/navigation-drawer.js',
 						'src/javascripts/smooth-scrolling.js'
 					]
@@ -159,17 +160,50 @@ module.exports = function(grunt) {
 			png: {
 				files: ['docs/assets/images/src/**/*.png'],
 				tasks: ['copy:images'/* , 'imagemin:png' */]
+			},
+			sketch: {
+				files: ['docs/assets/images/src/**/*.sketch'],
+				tasks: ['sketch_export'/* , 'imagemin:png' */]
 			}
 		},
 
 		concurrent: {
 			watch: {
-				tasks: ['watch:css', 'watch:js', 'watch:png', 'jekyll:server'],
+				tasks: ['watch:css', 'watch:js', /* 'watch:png',  */'watch:sketch', 'jekyll:server'],
 				options: {
 					logConcurrentOutput: true
 				}
 			}
+		},
+
+		sketch_export: {
+			options: {
+				type: 'artboards',
+				items: [
+					'app-bar',
+					'layout',
+					'layout-with-drawer',
+					'layout-with-drawer-fixed',
+					'layout-with-modal',
+					'z-index',
+					'app-bar-small',
+					'app-bar-small-with-tabs',
+					'app-bar-extended'
+				],
+				overwrite: true,
+				scales: [
+					1.0
+				],
+				formats: [
+					'svg'
+				]
+			},
+			files: {
+				src: 'docs/assets/images/src/layout/structure.sketch',
+				dest: 'docs/assets/images/prod/layout/structure'
+			}
 		}
+
 
 	});
 
@@ -181,6 +215,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-jekyll');
 	grunt.loadNpmTasks('grunt-concurrent');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-sketch');
 
 	grunt.registerTask('default', ['concurrent:watch']);
 

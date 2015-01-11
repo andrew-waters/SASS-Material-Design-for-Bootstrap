@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="804px" height="313px" viewBox="0 0 804 313" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.3 (252) - http://www.bohemiancoding.com/sketch -->
+    <title>z-index</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="z-index" sketch:type="MSArtboardGroup" stroke-linecap="square">
+            <path d="M3,311 L3,1" id="Y" stroke="#607D8B" stroke-dasharray="6,3" sketch:type="MSShapeGroup"></path>
+            <path id="Y-decoration-1" d="M0,1 C2.1,1 3.9,1 6,1" stroke="#607D8B" stroke-dasharray="6,3"></path>
+            <path d="M3,311 L803,311" id="X" stroke="#607D8B" stroke-dasharray="6,3" sketch:type="MSShapeGroup"></path>
+            <path id="X-decoration-1" d="M803,308 C803,310.1 803,311.9 803,314" stroke="#607D8B" stroke-dasharray="6,3"></path>
+            <path d="M263,311 L803,311" id="0---Content" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M18,261 L263,261" id="50---App-Bar" stroke="#2196F3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M243,251 L283,251" id="60---FAB" stroke="#FF9800" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <g id="80---Nav-Drawer-Toggle" sketch:type="MSLayerGroup" transform="translate(29.000000, 230.000000)" stroke="#000000" stroke-width="2">
+                <path d="M30,1 L40,1" id="3" sketch:type="MSShapeGroup"></path>
+                <path d="M15,1 L25,1" id="2" sketch:type="MSShapeGroup"></path>
+                <path d="M0,1 L10,1" id="1" sketch:type="MSShapeGroup"></path>
+            </g>
+            <path d="M3,226 L793,226" id="90---Nav-Search-Overlay" stroke="#9E9E9E" sketch:type="MSShapeGroup"></path>
+            <path d="M29,221 L88,221" id="90---Nav-Search-Overlay-2" stroke="#FF5722" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M3,116 L793,116" id="199---Navigation-Drawer-Dropshadow" stroke="#9E9E9E" sketch:type="MSShapeGroup"></path>
+            <path d="M3,111 L793,111" id="200---Navigation-Drawer" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M3,71 L793,71" id="249---Modal-Dropshadow" stroke="#9E9E9E" sketch:type="MSShapeGroup"></path>
+            <path d="M193,61 L593,61" id="250---Modal-Window" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M4,11 L29,11" id="300---Status-Bar" stroke="#2196F3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

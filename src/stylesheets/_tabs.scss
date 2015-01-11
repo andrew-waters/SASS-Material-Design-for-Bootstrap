@@ -1,0 +1,85 @@
+
+.nav-tabs,
+.nav-justified {
+
+	border: none;
+	margin: 0;
+
+	@each $color in map-keys(map-get($color-map, colors)) {
+
+		&.nav-tabs-#{"" + $color} {
+
+			> li > a {
+				&:hover {
+					border-color: map-fetch($color-map, colors $color 500 'primary');
+				}
+			}
+
+			& > li.active > a {
+
+				&,
+				&:hover,
+				&:focus {
+					border-color: map-fetch($color-map, colors $color 500 'primary');
+				}
+
+			}
+
+		}
+
+	}
+
+	> li {
+
+		border: none;
+		margin: 0;
+
+		> a {
+
+			text-transform: uppercase;
+			opacity: 0.7;
+			font-weight: bold;
+			border-radius: none;
+			border: none;
+			margin-right: 0;
+
+			&:hover {
+				margin-bottom: 0;
+				background-color: transparent;
+ 				border: none;
+ 				border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+			}
+
+		}
+
+		&.active > a {
+
+			opacity: 1;
+
+			&,
+			&:hover,
+			&:focus {
+				background-color: transparent;
+				border: none;
+				border-bottom: 3px solid $color-white;
+			}
+
+		}
+
+	}
+
+	.app-bar &{
+
+		> li > a {
+
+			&,
+			&:hover,
+			&:focus {
+				color: $color-white;
+			}
+
+		}
+
+	}
+
+}

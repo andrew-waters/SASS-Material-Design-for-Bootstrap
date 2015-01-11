@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 	$('.navigation-drawer-toggle').on('click', function(e) {
 		e.preventDefault();
+		$('body').addClass('noscroll');
 		var navigationDrawer = $('#navigation-drawer');
 		navigationDrawer.toggleClass('open');
 		if((navigationDrawer.hasClass('navigation-drawer-fixed-left') || navigationDrawer.hasClass('navigation-drawer-fixed-right')) && navigationDrawer.hasClass('open')) {
@@ -16,6 +17,7 @@ $(document).ready(function() {
 
 	overlay.on('click', function() {
 		$(this).removeClass('active');
+		$('body').removeClass('noscroll');
 		$('#navigation-drawer').removeClass('open');
 	});
 
