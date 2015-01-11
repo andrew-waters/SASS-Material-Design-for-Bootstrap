@@ -10377,6 +10377,8 @@ a.btn .icon {
   -moz-box-sizing: border-box;
   padding: 0 16px;
   height: 65px; }
+  .app-bar.app-bar-translucent {
+    opacity: 0.95; }
   body.no-transition .app-bar {
     -webkit-transition: none !important;
     -o-transition: none !important;
@@ -10550,13 +10552,21 @@ body.has-status-bar .navigation-drawer-toggle {
 
 /**
  *
- *	Navigation Drawer Showing (browser > 1500px width)
+ *	Navigation Drawer Showing (browser > 1200px width)
  *
  */
-body.navigation-drawer-showing .content-container {
-  margin-left: 200px; }
+body.navigation-drawer-showing .content-container > .container {
+  width: calc(100% - 300px);
+  margin-left: 290px;
+  -webkit-transition: width 0.4s ease-in-out;
+  -o-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out; }
+body.navigation-drawer-showing.no-transition .content-container > .container {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
 body.navigation-drawer-showing .app-bar {
-  padding-left: 270px;
+  padding-left: 290px;
   -webkit-transition: padding-left 0.4s ease-in-out;
   -o-transition: padding-left 0.4s ease-in-out;
   transition: padding-left 0.4s ease-in-out; }
