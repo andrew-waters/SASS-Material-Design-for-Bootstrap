@@ -10633,8 +10633,7 @@ body.navigation-drawer-showing .status-bar {
   text-decoration: none;
   clear: both;
   font-weight: 500;
-  height: 56px; }
-  pad
+  height: 36px; }
   .navigation-drawer .navigation-drawer-brand:hover, .navigation-drawer .navigation-drawer-brand:focus {
     text-decoration: none; }
 .navigation-drawer .navigation-drawer-divider, .navigation-drawer .navigation-drawer-nav .divider {
@@ -10786,25 +10785,25 @@ body.navigation-drawer-showing .status-bar {
     height: 35px;
     color: #757575;
     font-weight: normal;
-    background-color: #212121; }
+    background-color: transparent; }
     .navigation-drawer-inverse .navigation-drawer-nav li > a i {
       color: #757575; }
   .navigation-drawer-inverse .navigation-drawer-nav li:hover > a, .navigation-drawer-inverse .navigation-drawer-nav li > a:hover {
     color: #F5F5F5;
-    background-color: #212121; }
+    background-color: transparent; }
     .navigation-drawer-inverse .navigation-drawer-nav li:hover > a i, .navigation-drawer-inverse .navigation-drawer-nav li > a:hover i {
       color: #757575; }
   .navigation-drawer-inverse .navigation-drawer-nav li:focus > a, .navigation-drawer-inverse .navigation-drawer-nav li > a:focus {
     color: #757575;
-    background-color: #212121; }
+    background-color: transparent; }
     .navigation-drawer-inverse .navigation-drawer-nav li:focus > a i, .navigation-drawer-inverse .navigation-drawer-nav li > a:focus i {
       color: #757575; }
   .navigation-drawer-inverse .navigation-drawer-nav .current > a, .navigation-drawer-inverse .navigation-drawer-nav .current > a:hover, .navigation-drawer-inverse .navigation-drawer-nav .current > a:focus {
     color: #FAFAFA;
-    background-color: #212121; }
+    background-color: transparent; }
   .navigation-drawer-inverse .navigation-drawer-nav .active > a, .navigation-drawer-inverse .navigation-drawer-nav .active > a:hover, .navigation-drawer-inverse .navigation-drawer-nav .active > a:focus {
     color: #BDBDBD;
-    background-color: #212121; }
+    background-color: transparent; }
 
 .navigation-drawer {
   width: 0;

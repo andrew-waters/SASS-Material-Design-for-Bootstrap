@@ -339,8 +339,7 @@ body.navigation-drawer-showing {
 	.navigation-drawer-brand {
 
 		@include navigation-drawer-block();
-		height: 56px;
-		pad
+		height: 36px;
 
 		&:hover,
 		&:focus {
@@ -472,13 +471,13 @@ body.navigation-drawer-showing {
 		$icon-hover-color: get-color(grey, 600),
 
 		$link-color: get-color(grey, 600),
-		$link-bg: get-color(grey, 900),
+		$link-bg: transparent,
 		$link-hover-color: get-color(grey, 100),
-		$link-hover-bg: get-color(grey, 900),
+		$link-hover-bg: transparent,
 		$link-active-color: get-color(grey, 400),
-		$link-active-bg: get-color(grey, 900),
+		$link-active-bg: transparent,
 		$link-current-color: get-color(grey, 50),
-		$link-current-bg: get-color(grey, 900)
+		$link-current-bg: transparent
 
 	);
 
