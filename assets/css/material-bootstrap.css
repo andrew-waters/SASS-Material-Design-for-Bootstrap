@@ -10436,8 +10436,7 @@ a.btn .icon {
     width: 100%;
     height: 65px;
     padding: 15px;
-    z-index: 100;
-    background-color: rgba(0, 0, 0, 0.02); }
+    z-index: 100; }
     .app-bar .search-form a.back-icon {
       float: left;
       color: #FFFFFF !important;
@@ -10483,7 +10482,7 @@ a.btn .icon {
   -o-transition: translateZ(0);
   transition: translateZ(0); }
   .app-bar-overlay.active {
-    opacity: 0.5;
+    opacity: 0.7;
     visibility: visible;
     -webkit-transition-delay: 0;
     -moz-transition-delay: 0;
@@ -10556,7 +10555,7 @@ body.has-status-bar .navigation-drawer-toggle {
  *
  */
 body.navigation-drawer-showing .content-container > .container {
-  width: calc(100% - 300px);
+  width: calc(100% - 290px);
   margin-left: 290px;
   -webkit-transition: width 0.4s ease-in-out;
   -o-transition: width 0.4s ease-in-out;
@@ -10570,6 +10569,9 @@ body.navigation-drawer-showing .app-bar {
   -webkit-transition: padding-left 0.4s ease-in-out;
   -o-transition: padding-left 0.4s ease-in-out;
   transition: padding-left 0.4s ease-in-out; }
+  body.navigation-drawer-showing .app-bar .search-form {
+    margin-left: 290px;
+    width: calc(100% - 290px); }
 body.navigation-drawer-showing .status-bar {
   width: calc(100% - 280px);
   margin-left: 280px;

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200px" height="80px" viewBox="0 0 1200 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.3 (252) - http://www.bohemiancoding.com/sketch -->
+    <title>app-bar-with-action-bar</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.525 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="app-bar-with-action-bar" sketch:type="MSArtboardGroup">
+            <rect id="App-Bar" fill="#03A9F4" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="65"></rect>
+            <text id="Page-Title" sketch:type="MSTextLayer" font-family="Helvetica" font-size="20" font-weight="normal" fill="#FFFFFF">
+                <tspan x="70" y="38.2000008">Page Title</tspan>
+            </text>
+            <g id="Nav-Toggle" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)" fill="#FFFFFF">
+                <path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="more" sketch:type="MSLayerGroup" transform="translate(1164.000000, 20.000000)">
+                <rect id="bounds" sketch:type="MSShapeGroup" x="0" y="0" width="12" height="24"></rect>
+                <path d="M6,8 C7.1,8 8,7.1 8,6 C8,4.9 7.1,4 6,4 C4.9,4 4,4.9 4,6 C4,7.1 4.9,8 6,8 L6,8 Z M6,10 C4.9,10 4,10.9 4,12 C4,13.1 4.9,14 6,14 C7.1,14 8,13.1 8,12 C8,10.9 7.1,10 6,10 L6,10 Z M6,16 C4.9,16 4,16.9 4,18 C4,19.1 4.9,20 6,20 C7.1,20 8,19.1 8,18 C8,16.9 7.1,16 6,16 L6,16 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="favorite" sketch:type="MSLayerGroup" transform="translate(1110.000000, 19.000000)">
+                <rect id="bounds" sketch:type="MSShapeGroup" x="0" y="0" width="24" height="24"></rect>
+                <path d="M12,8 C11.33,6.268 9.453,5 7.5,5 C4.957,5 3,6.932 3,9.5 C3,13.029 6.793,15.758 12,21 C17.207,15.758 21,13.029 21,9.5 C21,6.932 19.043,5 16.5,5 C14.545,5 12.67,6.268 12,8 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+            <path d="M1079.502,28.7455 L1078.708,28.7455 L1078.432,29.0195 C1079.407,30.1565 1080,31.6305 1080,33.2455 C1080,36.8355 1077.09,39.7455 1073.5,39.7455 C1069.91,39.7455 1067,36.8355 1067,33.2455 C1067,29.6555 1069.91,26.7455 1073.5,26.7455 C1075.115,26.7455 1076.588,27.3375 1077.725,28.3115 L1078.001,28.0375 L1078.001,27.2455 L1082.999,22.2545 L1084.49,23.7455 L1079.502,28.7455 L1079.502,28.7455 Z M1073.5,28.7455 C1071.014,28.7455 1069,30.7595 1069,33.2455 C1069,35.7305 1071.014,37.7455 1073.5,37.7455 C1075.985,37.7455 1078,35.7305 1078,33.2455 C1078,30.7595 1075.985,28.7455 1073.5,28.7455 L1073.5,28.7455 Z" id="Shape" fill="#FFFFFF" sketch:type="MSShapeGroup" transform="translate(1075.745000, 31.000000) scale(1, -1) translate(-1075.745000, -31.000000) "></path>
+        </g>
+    </g>
+</svg>
