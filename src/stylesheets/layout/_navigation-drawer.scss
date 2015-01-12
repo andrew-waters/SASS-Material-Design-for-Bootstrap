@@ -318,7 +318,7 @@ body.navigation-drawer-showing {
 	}
 
 	body.has-status-bar &{
-		padding-top: 25px;
+		padding-top: 45px;
 	}
 
 	body.no-transition &{
@@ -340,6 +340,7 @@ body.navigation-drawer-showing {
 
 		@include navigation-drawer-block();
 		height: 56px;
+		pad
 
 		&:hover,
 		&:focus {

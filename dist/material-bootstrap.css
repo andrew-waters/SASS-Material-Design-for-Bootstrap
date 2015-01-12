@@ -10612,7 +10612,7 @@ body.navigation-drawer-showing .status-bar {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #BFBFBF; }
   body.has-status-bar .navigation-drawer {
-    padding-top: 25px; }
+    padding-top: 45px; }
   body.no-transition .navigation-drawer {
     -webkit-transition: none;
     -o-transition: none;
@@ -10634,6 +10634,7 @@ body.navigation-drawer-showing .status-bar {
   clear: both;
   font-weight: 500;
   height: 56px; }
+  pad
   .navigation-drawer .navigation-drawer-brand:hover, .navigation-drawer .navigation-drawer-brand:focus {
     text-decoration: none; }
 .navigation-drawer .navigation-drawer-divider, .navigation-drawer .navigation-drawer-nav .divider {
