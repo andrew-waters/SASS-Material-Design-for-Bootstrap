@@ -186,6 +186,7 @@ module.exports = function(grunt) {
 					'layout-with-drawer-fixed',
 					'layout-with-modal',
 					'z-index',
+					'status-bar',
 					'app-bar-small',
 					'app-bar-translucent',
 					'app-bar-small-with-tabs',

@@ -16,18 +16,34 @@ google: http://www.google.co.uk/design/spec/patterns/scrolling-techniques.html#s
 
 		<div class="breather breather-lg"></div>
 
-		<div class="col-sm-12">
+		<div class="col-sm-3">
 
 			<p>The status bar, by default, is fixed to the top of the page and has an opacity of <code>0.8</code>.</p>
 
 			<p>When displaying a status bar, make sure you add <code>.has-status-bar</code> class to the <code>&lt;body&gt;</code> element. This adds the correct padding to other elements on the page.</p>
 
+			<p>Icon heights are manually set so you don't need to worry about sizing or padding.</p>
+
+		</div>
+
+		<div class="col-sm-9">
+
+			<div class="example">
+				<div class="example-code">
 			<pre>&lt;body class="has-status-bar"&gt;
-
-	// body content
-
+	&lt;header class=&quot;status-bar bg-cyan bg-800&quot;&gt;
+		&lt;div class=&quot;pull-right&quot;&gt;
+			&lt;!-- icons go here --&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
 &lt;/body&gt;
 </pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="{{ site.baseurl }}/assets/images/prod/layout/structure/status-bar.svg" />
+				</div>
+			</div>
+
 
 		</div>
 

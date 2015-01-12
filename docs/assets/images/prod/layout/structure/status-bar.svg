@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200px" height="108px" viewBox="0 0 1200 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.3 (252) - http://www.bohemiancoding.com/sketch -->
+    <title>status-bar</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.525 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path id="path-2" d="M1.70530257e-13,0 L8,12 L16,0 L1.70530257e-13,0 Z"></path>
+        <path id="path-4" d="M12,12 L12,0 L-1.13686838e-13,12 L12,12 Z"></path>
+        <path id="path-6" d="M7,1 L6,1 L6,0 L2,0 L2,1 L1,1 C0.4,1 -1.13686838e-13,1.4 -1.13686838e-13,2 L-1.13686838e-13,12 C-1.13686838e-13,12.6 0.4,13 1,13 L7,13 C7.6,13 8,12.6 8,12 L8,2 C8,1.4 7.6,1 7,1 L7,1 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="status-bar" sketch:type="MSArtboardGroup">
+            <rect id="App-Bar" fill="#03A9F4" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="25" width="1200" height="83"></rect>
+            <rect id="App-Bar-2" fill="#2196F3" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="25"></rect>
+            <g id="menu" sketch:type="MSLayerGroup" transform="translate(69.000000, 46.000000)">
+                <rect id="bounds" sketch:type="MSShapeGroup" x="0" y="0" width="24" height="24"></rect>
+            </g>
+            <g id="status-bar-content" sketch:type="MSLayerGroup" transform="translate(1115.000000, 0.000000)">
+                <rect id="bounds" sketch:type="MSShapeGroup" x="0" y="0" width="118" height="24"></rect>
+                <g id="wifi" transform="translate(8.000000, 6.000000)">
+                    <mask id="mask-3" sketch:name="wifi mask" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="wifi-mask"></g>
+                    <path d="M8,0 C1.4,0 -4,5.4 -4,12 C-4,18.6 1.4,24 8,24 C14.6,24 20,18.6 20,12 C20,5.4 14.6,0 8,0 L8,0 Z M8,21 C3,21 -1,17 -1,12 C-1,7 3,3 8,3 C13,3 17,7 17,12 C17,17 13,21 8,21 L8,21 Z" id="Shape" fill-opacity="0.3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                    <path d="M8,3 C3,3 -1,7 -1,12 C-1,17 3,21 8,21 C13,21 17,17 17,12 C17,7 13,3 8,3 L8,3 Z M8,18 C4.7,18 2,15.3 2,12 C2,8.7 4.7,6 8,6 C11.3,6 14,8.7 14,12 C14,15.3 11.3,18 8,18 L8,18 Z" id="Shape" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                    <path d="M8,6 C4.7,6 2,8.7 2,12 C2,15.3 4.7,18 8,18 C11.3,18 14,15.3 14,12 C14,8.7 11.3,6 8,6 L8,6 Z M8,15 C6.3,15 5,13.7 5,12 C5,10.3 6.3,9 8,9 C9.7,9 11,10.3 11,12 C11,13.7 9.7,15 8,15 L8,15 Z" id="Shape" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                    <circle id="Oval" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-3)" cx="8" cy="12" r="3"></circle>
+                </g>
+                <g id="reception" transform="translate(34.000000, 6.000000)">
+                    <mask id="mask-5" sketch:name="reception mask" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <g id="reception-mask"></g>
+                    <rect id="Rectangle-path" fill-opacity="0.3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-5)" x="9" y="0" width="3" height="12"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-5)" x="6" y="0" width="3" height="12"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-5)" x="3" y="0" width="3" height="12"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-5)" x="0" y="0" width="3" height="12"></rect>
+                </g>
+                <g id="battery" transform="translate(60.000000, 5.000000)">
+                    <mask id="mask-7" sketch:name="battery mask" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <g id="battery-mask"></g>
+                    <rect id="Rectangle-path" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-7)" x="0" y="10" width="8" height="3"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.9" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-7)" x="0" y="7" width="8" height="3"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-7)" x="0" y="4" width="8" height="3"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-7)" x="0" y="1" width="8" height="3"></rect>
+                    <rect id="Rectangle-path" fill-opacity="0.3" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-7)" x="2" y="0" width="4" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
