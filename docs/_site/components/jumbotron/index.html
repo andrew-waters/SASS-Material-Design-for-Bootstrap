@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>App Bar &middot; SASS for Bootstrap</title>
+		<title>Jumbotron &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -79,7 +79,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -118,7 +118,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/app-bar">
 							App Bar
@@ -253,7 +253,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -270,6 +270,19 @@
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/icons">
 							Icons
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="active current">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/components/jumbotron">
+							Jumbotron
 						</a>
 
 					</li>
@@ -344,7 +357,7 @@
 
 	</a>
 
-	<h1 class="title">App Bar</h1>
+	<h1 class="title">Jumbotron</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -417,191 +430,13 @@
 
 	<div class="row">
 
-		<div class="col-md-8">
+		<div class="jumbotron">
 
-			<p class="lead">The App Bar is an alternative to the Bootstrap Navbar. It is intended to be more flexible and suit a variety of requirements.</p>
+			<h1>Hello, world!</h1>
 
-		</div>
+			<p>Donec id elit non mi porta gravida at eget metus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
 
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Basics</h2>
-
-			<p>Use <code>nav</code> with an <code>.app-bar</code> class.</p>
-
-			<p>Adding <code>.app-bar-translucent</code> will give the App Bar a 0.95 opacity.</p>
-
-			<p>By Default, the App Bar is a fixed height of 65px. You can optionally increase the size by adding an <code>.app-bar-extended</code> class to the container which increases the height to 255px.</p>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<div class="example">
-				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar&quot;&gt;&lt;/nav&gt;
-
-&lt;nav class=&quot;app-bar <strong>app-bar-translucent</strong>&quot;&gt;&lt;/nav&gt;
-
-&lt;nav class=&quot;app-bar app-bar-translucent <strong>app-bar-extended</strong>&quot;&gt;&lt;/nav&gt;</pre>
-				</div>
-				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small.svg" />
-					<div class="breather"></div>
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-translucent.svg" />
-					<div class="breather"></div>
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended.svg" />
-				</div>
-			</div>
-
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Tabs</h2>
-
-			<p>An App Bar can contain tabs. When they are used, you must add the <code>.app-bar-has-tabs</code> to the nav. This extends the nav so that extended navs that aren't static (ie they grow smaller as the user scrolls) maintain a height in which the tabs still display.</p>
-			<p>You <em>probably</em> want to add a <code>&lt;div class="container" /&gt;</code> to the tabs to center them on screen.</p>
-
-			<p>Tabs can be coloured using the base colour scheme (i.e. you don't define the gradient, we use fixed colours).</p>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<div class="example">
-				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-has-tabs</strong>&quot;&gt;
-	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
-		&lt;!-- tab li's --&gt;
-	&lt;/ul&gt;
-&lt;/nav&gt;
-&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-has-tabs</strong>&quot;&gt;
-	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
-		&lt;!-- tab li's --&gt;
-	&lt;/ul&gt;
-&lt;/nav&gt;</pre>
-				</div>
-				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-tabs.svg" />
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended-with-tabs.svg" />
-				</div>
-			</div>
-
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-7">
-
-			<h2>Behaviour</h2>
-
-			<p>The App Bar will be fixed to the top of the page (taking account of whether or not a <a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">Status Bar</a> is present).</p>
-
-			<p>If the App Bar is extended, it will, by default, shrink when the user moves the page (until it reaches the default height). If you would like it to remain fixed, add <code>.app-bar-static</code> to the container class.</p>
-
-			<p>If you have tabs in the App Bar (see below), it shrinks to 115px, not the default (65px).
-
-		</div>
-
-		<div class="col-xs-5">
-
-			<div class="example">
-				<div class="example-code">
-					<pre>&lt;!-- App Bar doesn't change height when the page scrolls --&gt;
-&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-static</strong>&quot;&gt;
-
-&lt;/nav&gt;</pre>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Floating Action Button</h2>
-
-			<p>By adding a Floating Action Button you make a very bold action clear to the user. When you use it as part of the App Bar, it is fixed in position on the right hand side.</p>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<div class="example">
-				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar app-bar-has-tabs&quot;&gt;
-	&lt;a class=&quot;btn btn-fab btn-md bg-orange&quot;&gt;
-		&lt;i class=&quot;icon mdi-content-add&quot;&gt;&lt;/i&gt;
-	&lt;/a&gt;
-&lt;/nav&gt;</pre>
-				</div>
-				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-fab.svg" />
-				</div>
-			</div>
-
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Action Buttons</h2>
-
-			<p>The Action Buttons are fixed to the top right of the app bar and offer a way for the user to access common functionality.</p>
-
-			<p>They should be wrapped in a div with a <code>.action-icons</code> class which help position them correctly.</p>
-
-			<p>An anchor item within that which has the <code>.search-icon</code> class has special functionality. When pressed, the nav toggle, title and action buttons are removed and replaced with a search interface. In addition, an overlay becomes active to focus the users gone.</p>
-
-			<p>When adding a search icon, you also need to include the wrapper for the search form and the <code>.app-bar-overlay</code>.</p>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<div class="example">
-				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar&quot;&gt;
-
-	&lt;div class=&quot;action-icons&quot;&gt;
-		&lt;a href=&quot;#&quot; class=&quot;search-icon&quot;&gt;
-			&lt;i class=&quot;icon mdi-action-search icon-lg&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;
-			&lt;i class=&quot;icon mdi-action-favorite icon-lg&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;
-			&lt;i class=&quot;icon mdi-action-view-module icon-lg&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-	&lt;/div&gt;
-
-	&lt;div class=&quot;app-bar-overlay&quot;&gt;&lt;/div&gt;
-
-	&lt;div class=&quot;search-form&quot;&gt;
-		&lt;a href=&quot;#&quot; class=&quot;back-icon&quot;&gt;
-			&lt;i class=&quot;icon mdi-navigation-arrow-back&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
-	&lt;/div&gt;
-
-&lt;/nav&gt;</pre>
-				</div>
-				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-with-action-bar.svg" />
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-with-active-search.svg" />
-				</div>
-			</div>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 
 		</div>
 

@@ -34,6 +34,8 @@
   sub:
     - title: "Icons"
       href: "icons"
+    - title: "Jumbotron"
+      href: "jumbotron"
     - title: "Tiles"
       href: "tiles"
     - title: "Progress Bars"

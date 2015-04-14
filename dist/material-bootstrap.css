@@ -7700,7 +7700,7 @@ pre {
 
 .container .jumbotron, .container-fluid .jumbotron {
   border-radius: 2px;
-  background-color: #F5F5F5; }
+  background-color: #EEEEEE; }
 
 ol#breadcrumb,
 ul#breadcrumb {
@@ -10555,8 +10555,8 @@ body.has-status-bar .navigation-drawer-toggle {
  *
  */
 body.navigation-drawer-showing .content-container > .container {
-  width: calc(100% - 290px);
-  margin-left: 290px;
+  width: calc(100% - 280px);
+  margin-left: 280px;
   -webkit-transition: width 0.4s ease-in-out;
   -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out; }
@@ -10847,7 +10847,7 @@ body.navigation-drawer-showing .status-bar {
   .navigation-drawer-footer {
     position: relative; } }
 body.has-status-bar {
-  padding-top: 425px; }
+  padding-top: 400px; }
 
 .status-bar {
   height: 25px;

@@ -253,8 +253,8 @@ body.navigation-drawer-showing {
 
 	& .content-container > .container {
 
-		width: calc(100% - 290px);
-		margin-left: 290px;
+		width: calc(100% - 280px);
+		margin-left: 280px;
 		@include transition(width 0.4s ease-in-out);
 
 	}
