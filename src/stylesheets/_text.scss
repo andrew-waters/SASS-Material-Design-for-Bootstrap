@@ -1,4 +1,12 @@
 
+.text-white {
+	color: #FFF;
+}
+
+.text-black {
+	color: #000;
+}
+
 @each $color in map-keys(map-get($color-map, colors)) {
 
 	.text-#{"" + $color} {
