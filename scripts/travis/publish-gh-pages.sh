@@ -20,7 +20,7 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
 	curl -H 'Authorization: token $GITAUTH' https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap.git
 	git clone --quiet --branch=gh-pages https://andrew-waters:$GITAUTH@github.com/band-x-media/SASS-Material-Design-for-Bootstrap.git gh-pages > /dev/null
 
-#	go into diractory and copy data we're interested in to that directory
+#	go into directory and copy data we're interested in to that directory
 	cd gh-pages
 	git remote rm origin
 	git remote add origin https://andrew-waters:$GITAUTH@github.com/band-x-media/SASS-Material-Design-for-Bootstrap.git
