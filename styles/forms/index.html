@@ -428,29 +428,109 @@
 
 			<div class="container">
 
+<!--
+
+	<form role="form">
+		<div class="form-group">
+			<label for="exampleInputEmail1">Email address</label>
+			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputFile">File input</label>
+			<input type="file" id="exampleInputFile">
+			<p class="help-block">Example block-level help text here.</p>
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox"> Check me out
+			</label>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+	</form>
+-->
+
+	<div class="breather-lg"></div>
+
+
+	<h2>Material Design Form</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>To add floating labels to a text input or textarea, you need to do two things:</p>
+
+			<ol>
+				<li>Don't include the standard label</li>
+				<li>Add a <code>material</code> class to the <code>form-group</code></li>
+			</ol>
+
+			<p>So this:</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot;&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+			<p>Becomes this:</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group <strong>material</strong>&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot;&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
 
 			<form role="form">
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+
+				<div class="form-group material">
+
+					<input type="text" class="form-control" placeholder="What's your name">
+
 				</div>
-				<div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+				<div class="form-group material">
+
+					<input type="email" class="form-control" placeholder="What's your email">
+
 				</div>
-				<div class="form-group">
-					<label for="exampleInputFile">File input</label>
-					<input type="file" id="exampleInputFile">
-					<p class="help-block">Example block-level help text here.</p>
+
+				<div class="form-group material">
+
+					<input type="password" class="form-control" placeholder="Choose a Password">
+
 				</div>
-				<div class="checkbox">
-					<label>
-						<input type="checkbox"> Check me out
-					</label>
+
+				<div class="form-group material">
+
+					<input type="number" class="form-control" placeholder="Choose A Number">
+
 				</div>
-				<button type="submit" class="btn btn-default">Submit</button>
+
+				<div class="form-group material">
+
+					<textarea placeholder="Write a Message" class="form-control"></textarea>
+
+				</div>
+
 			</form>
 
+		</div>
+
+	</div>
 
 </div>
 
