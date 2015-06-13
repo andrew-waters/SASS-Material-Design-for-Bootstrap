@@ -28,3 +28,68 @@
 .help-block {
 	color: get-color(grey, 400);
 }
+
+
+
+
+/* Material input */
+
+.material .material-input {
+	position: relative;
+	padding-top: 18px;
+	margin-bottom: 10px;
+}
+
+.material .material-input:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.material .material-input input, 
+.material .material-input textarea {
+	width: 100%;
+	outline: none;
+	background: 0;
+	float: left;
+}
+
+.material .material-input textarea {
+	height: 120px;
+	padding: 7px 0;
+}
+
+.material .material-input input {
+	height: 32px;
+}
+
+.material .material-input label {
+	font-weight: normal;
+	line-height: 32px;
+}
+
+.material .material-input label {
+	color: get-color(grey, 400);
+	position: absolute;
+	left: 0;
+	top: 18px;
+}
+
+.material .material-input :focus ~ label,
+.material .material-input .filled ~ label,
+.material .error:focus ~ label{
+	color: get-color(grey, 400);
+	font-size: 12px;
+	top: 0;
+	line-height: 24px;
+}
+
+
+/* Animation */
+.material .material-bar:before, 
+.material .material-bar:after,
+.material .material-input label {
+	transition: .2s ease all; 
+	-moz-transition: .2s ease all; 
+	-webkit-transition: .2s ease all;
+}

@@ -1,7 +1,5 @@
 @charset "UTF-8";
 @import url("https://roboto-webfont.googlecode.com/svn/trunk/roboto.all.css");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
@@ -7808,6 +7806,57 @@ pre {
 
 .help-block {
   color: #BDBDBD; }
+
+/* Material input */
+.material .material-input {
+  position: relative;
+  padding-top: 18px;
+  margin-bottom: 10px; }
+
+.material .material-input:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+.material .material-input input,
+.material .material-input textarea {
+  width: 100%;
+  outline: none;
+  background: 0;
+  float: left; }
+
+.material .material-input textarea {
+  height: 120px;
+  padding: 7px 0; }
+
+.material .material-input input {
+  height: 32px; }
+
+.material .material-input label {
+  font-weight: normal;
+  line-height: 32px; }
+
+.material .material-input label {
+  color: #BDBDBD;
+  position: absolute;
+  left: 0;
+  top: 18px; }
+
+.material .material-input :focus ~ label,
+.material .material-input .filled ~ label,
+.material .error:focus ~ label {
+  color: #BDBDBD;
+  font-size: 12px;
+  top: 0;
+  line-height: 24px; }
+
+/* Animation */
+.material .material-bar:before,
+.material .material-bar:after,
+.material .material-input label {
+  transition: .2s ease all;
+  -moz-transition: .2s ease all;
+  -webkit-transition: .2s ease all; }
 
 .btn-xl {
   padding: 20px 20px;

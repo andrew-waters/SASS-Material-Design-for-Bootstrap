@@ -45,6 +45,8 @@ module.exports = function(grunt) {
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
+						'bower_components/inputs/assets/javascripts/inputs.js',
+						'src/javascripts/material-form.js',
 						'src/javascripts/app-bar.js',
 						'src/javascripts/navigation-drawer.js',
 						'src/javascripts/smooth-scrolling.js'
@@ -56,13 +58,6 @@ module.exports = function(grunt) {
 		copy: {
 			docs: {
 				files: [
-					{
-						expand: true,
-						flatten: true,
-						src: ['src/fonts/material/*'],
-						dest: 'docs/assets/fonts/material',
-						filter: 'isFile'
-					},
 					{
 						expand: true,
 						flatten: true,
