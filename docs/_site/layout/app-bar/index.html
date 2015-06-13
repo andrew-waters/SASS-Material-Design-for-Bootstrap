@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Icons &middot; SASS for Bootstrap</title>
+		<title>App Bar &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -79,7 +79,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -118,7 +118,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/app-bar">
 							App Bar
@@ -253,7 +253,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -266,7 +266,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/icons">
 							Icons
@@ -357,7 +357,7 @@
 
 	</a>
 
-	<h1 class="title">Icons</h1>
+	<h1 class="title">App Bar</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -428,231 +428,197 @@
 
 			<div class="container">
 
-
-	<h4>
-		Bootstrap Icons
-		<small>
-			<a target="_blank" href="http://getbootstrap.com/components/#glyphicons">
-				reference
-			</a>
-		</small>
-	</h4>
-
 	<div class="row">
 
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<div class="col-md-8">
 
-			<p class="text-muted">All Bootstrap fonts are available to use.</p>
-
-			<div class="breather"></div>
+			<p class="lead">The App Bar is an alternative to the Bootstrap Navbar. It is intended to be more flexible and suit a variety of requirements.</p>
 
 		</div>
 
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+		<div class="breather-lg"></div>
 
-			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		<div class="col-xs-3">
 
-			<p><code>&lt;span class=&quot;glyphicon glyphicon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;</code></p>
+			<h2>Basics</h2>
 
-			<p>To see all the available icons, refer to the <a target="_blank" href="http://getbootstrap.com/components/#glyphicons">Bootstrap Page</a>.</p>
+			<p>Use <code>nav</code> with an <code>.app-bar</code> class.</p>
+
+			<p>Adding <code>.app-bar-translucent</code> will give the App Bar a 0.95 opacity.</p>
+
+			<p>By Default, the App Bar is a fixed height of 65px. You can optionally increase the size by adding an <code>.app-bar-extended</code> class to the container which increases the height to 255px.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar&quot;&gt;&lt;/nav&gt;
+
+&lt;nav class=&quot;app-bar <strong>app-bar-translucent</strong>&quot;&gt;&lt;/nav&gt;
+
+&lt;nav class=&quot;app-bar app-bar-translucent <strong>app-bar-extended</strong>&quot;&gt;&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small.svg" />
+					<div class="breather"></div>
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-translucent.svg" />
+					<div class="breather"></div>
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-3">
+
+			<h2>Tabs</h2>
+
+			<p>An App Bar can contain tabs. When they are used, you must add the <code>.app-bar-has-tabs</code> to the nav. This extends the nav so that extended navs that aren't static (ie they grow smaller as the user scrolls) maintain a height in which the tabs still display.</p>
+			<p>You <em>probably</em> want to add a <code>&lt;div class="container" /&gt;</code> to the tabs to center them on screen.</p>
+
+			<p>Tabs can be coloured using the base colour scheme (i.e. you don't define the gradient, we use fixed colours).</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-has-tabs</strong>&quot;&gt;
+	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
+		&lt;!-- tab li's --&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-has-tabs</strong>&quot;&gt;
+	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
+		&lt;!-- tab li's --&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-tabs.svg" />
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended-with-tabs.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-7">
+
+			<h2>Behaviour</h2>
+
+			<p>The App Bar will be fixed to the top of the page (taking account of whether or not a <a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">Status Bar</a> is present).</p>
+
+			<p>If the App Bar is extended, it will, by default, shrink when the user moves the page (until it reaches the default height). If you would like it to remain fixed, add <code>.app-bar-static</code> to the container class.</p>
+
+			<p>If you have tabs in the App Bar (see below), it shrinks to 115px, not the default (65px).
+
+		</div>
+
+		<div class="col-xs-5">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;!-- App Bar doesn't change height when the page scrolls --&gt;
+&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-static</strong>&quot;&gt;
+
+&lt;/nav&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-3">
+
+			<h2>Floating Action Button</h2>
+
+			<p>By adding a Floating Action Button you make a very bold action clear to the user. When you use it as part of the App Bar, it is fixed in position on the right hand side.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar app-bar-has-tabs&quot;&gt;
+	&lt;a class=&quot;btn btn-fab btn-md bg-orange&quot;&gt;
+		&lt;i class=&quot;icon mdi-content-add&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-fab.svg" />
+				</div>
+			</div>
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+		<div class="breather-lg"></div>
+
+		<div class="col-xs-3">
+
+			<h2>Action Buttons</h2>
+
+			<p>The Action Buttons are fixed to the top right of the app bar and offer a way for the user to access common functionality.</p>
+
+			<p>They should be wrapped in a div with a <code>.action-icons</code> class which help position them correctly.</p>
+
+			<p>An anchor item within that which has the <code>.search-icon</code> class has special functionality. When pressed, the nav toggle, title and action buttons are removed and replaced with a search interface. In addition, an overlay becomes active to focus the users gone.</p>
+
+			<p>When adding a search icon, you also need to include the wrapper for the search form and the <code>.app-bar-overlay</code>.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;nav class=&quot;app-bar&quot;&gt;
+
+	&lt;div class=&quot;action-icons&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;search-icon&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-search icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-favorite icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;
+			&lt;i class=&quot;icon mdi-action-view-module icon-lg&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;app-bar-overlay&quot;&gt;&lt;/div&gt;
+
+	&lt;div class=&quot;search-form&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;back-icon&quot;&gt;
+			&lt;i class=&quot;icon mdi-navigation-arrow-back&quot;&gt;&lt;/i&gt;
+		&lt;/a&gt;
+		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
+	&lt;/div&gt;
+
+&lt;/nav&gt;</pre>
+				</div>
+				<div class="example-output">
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-with-action-bar.svg" />
+					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-with-active-search.svg" />
+				</div>
+			</div>
 
 		</div>
 
 	</div>
-
-	<div class="breather-lg"></div>
-
-	<h4>
-		Google Material Design Icons
-		<small>
-			<a target="_blank" href="https://www.google.com/design/icons">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p class="text-muted">The Material Design Icons from Google are also available via Google Web Fonts.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<i class="icon material-icons">card_membership</i>
-
-			<p><code>&lt;i class=&quot;icon material-icons&quot;&gt;card_membership&lt;/i&gt;</code></p>
-
-			<p>To see all the available icons, refer to the <a target="_blank" href="https://www.google.com/design/icons">Google Page</a>.</p>
-
-		</div>
-
-	</div>
-
-	<div class="breather-lg"></div>
-
-	<h4>
-		FontAwesome
-		<small>
-			<a target="_blank" href="http://fortawesome.github.io/Font-Awesome">
-				reference
-			</a>
-		</small>
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p class="text-muted">The FontAwesome Icons are also available.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<i class="icon fa fa-cloud"></i>
-
-			<p><code>&lt;i class=&quot;icon fa fa-cloud&quot;&gt;&lt;/i&gt;</code></p>
-
-			<p>To see all the available icons, refer to the <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/icons/">FontAwesome Page</a>.</p>
-
-		</div>
-
-	</div>
-
-	<hr />
-
-	<h4>
-		Additional Classes
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p class="text-muted">We provide additional classes for icons as helpers. Simply give your icon an addition <code>.icon</code> class to start using them.</p>
-
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
-
-			<h4>States:</h4>
-
-			<table class="table">
-
-				<thead>
-
-					<tr>
-						<th>State</th>
-						<th>Class</th>
-						<th class="text-center">Preview</th>
-						<th>Example</th>
-					</tr>
-
-				</thead>
-
-				<tbody>
-
-					<tr>
-						<td>Inactive</td>
-						<td><code>icon-inactive</code></td>
-						<td class="text-center"><i class="icon icon-inactive material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon icon-inactive material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Light</td>
-						<td><code>icon-light</code></td>
-						<td class="text-center"><div style="background-color: rgba(0,0,0,0.8); padding-top: 7px; border-radius: 3px;"><i class="icon icon-light material-icons">insert_emoticon</i></div></td>
-						<td><code>&lt;i class=&quot;icon icon-light material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Combine with <a href="/SASS-Material-Design-for-Bootstrap/styles/colours">Text Colours</a></td>
-						<td><code>icon-light</code></td>
-						<td class="text-center"><i class="icon text-pink material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon text-pink material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-				</tbody>
-
-			</table>
-
-			<h4>Sizes:</h4>
-
-			<table class="table">
-
-				<thead>
-
-					<tr>
-						<th>Name</th>
-						<th>Height</th>
-						<th>Class</th>
-						<th class="text-center">Preview</th>
-						<th>Example</th>
-					</tr>
-
-				</thead>
-
-				<tbody>
-
-					<tr>
-						<td>Small</td>
-						<td>12 <small class="text-muted">px</small></td>
-						<td><code>icon-sm</code></td>
-						<td class="text-center"><i class="icon icon-sm material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon icon-sm material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Medium</td>
-						<td>18 <small class="text-muted">px</small></td>
-						<td><code>icon-md</code></td>
-						<td class="text-center"><i class="icon icon-md material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon icon-md material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>Large</td>
-						<td>24 <small class="text-muted">px</small></td>
-						<td><code>icon-lg</code></td>
-						<td class="text-center"><i class="icon icon-lg material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon icon-lg material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>X Large</td>
-						<td>36 <small class="text-muted">px</small></td>
-						<td><code>icon-xl</code></td>
-						<td class="text-center"><i class="icon icon-xl material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon icon-xl material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-					<tr>
-						<td>XX Large</td>
-						<td>48 <small class="text-muted">px</small></td>
-						<td><code>icon-xxl</code></td>
-						<td class="text-center"><i class="icon icon-xxl material-icons">insert_emoticon</i></td>
-						<td><code>&lt;i class=&quot;icon icon-xxl material-icons&quot;&gt;insert_emoticon&lt;/i&gt;</code></td>
-					</tr>
-
-				</tbody>
-
-			</table>
-
-		</div>
-
-	</div>
-
-
 
 </div>
 

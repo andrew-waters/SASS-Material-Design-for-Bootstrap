@@ -26,9 +26,13 @@
 	<body class="no-transition has-status-bar">
 
 		
-<header class="status-bar bg-red bg-800">
+<header class="status-bar bg-cyan bg-800">
 
 	<div class="pull-right">
+
+		<a href="http://www.google.co.uk/design/spec/material-design/introduction.html" target="_blank">
+			<i class="icon fa fa-google"></i>
+		</a>
 
 		<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
 			<i class="icon fa fa-github"></i>
@@ -40,12 +44,6 @@
 
 		
 <div class="navigation-drawer-overlay"></div>
-
-<a class="navigation-drawer-toggle" href="#">
-
-	<i class="icon mdi-navigation-menu icon-lg"></i>
-
-</a>
 
 <aside id="navigation-drawer" class="navigation-drawer navigation-drawer-default navigation-drawer-fixed-left" role="navigation">
 
@@ -111,6 +109,19 @@
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">
 							Status Bar
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
+						<a href="/SASS-Material-Design-for-Bootstrap/layout/app-bar">
+							App Bar
 						</a>
 
 					</li>
@@ -270,6 +281,19 @@
 
 					<li role="presentation" class="">
 
+						<a href="/SASS-Material-Design-for-Bootstrap/components/jumbotron">
+							Jumbotron
+						</a>
+
+					</li>
+
+					
+
+					
+					
+
+					<li role="presentation" class="">
+
 						<a href="/SASS-Material-Design-for-Bootstrap/components/tiles">
 							Tiles
 						</a>
@@ -324,15 +348,80 @@
 </aside>
 
 		
-<header class="app-bar app-bar-large bg-red">
 
-	<div class="container" data-0="top: 125px;" data-205="top: 44px;">
+<nav class="app-bar app-bar-extended app-bar-translucent bg-cyan">
 
-		<h1 data-0="font-size: 60px; padding-left: 0px;" data-205="font-size: 25px; padding-left: 30px;">Helper Classes</h1>
+	<a class="navigation-drawer-toggle" href="#">
+
+		<i class="icon mdi-navigation-menu icon-lg"></i>
+
+	</a>
+
+	<h1 class="title">Helper Classes</h1>
+
+<!--
+	<div class="app-bar-overlay"></div>
+
+	<div class="search-form">
+
+		<a href="#" class="back-icon">
+			<i class="icon mdi-navigation-arrow-back"></i>
+		</a>
+
+		<input type="text" class="form-control" placeholder="Search">
+
+	</div>
+-->
+
+<!--
+	<div class="action-icons">
+
+		<a href="#" class="search-icon">
+			<i class="icon mdi-action-search icon-lg"></i>
+		</a>
+
+		<a href="#">
+			<i class="icon mdi-action-view-module icon-lg"></i>
+		</a>
+
+		<div class="btn-group">
+			<a href="#">
+				<i class="icon mdi-navigation-more-vert icon-lg"></i>
+			</a>
+			<ul class="dropdown-menu" role="menu">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
+		</div>
+
+	</div>
+-->
+
+<!--
+	<div class="container">
+
+		<div class="row">
+
+			<ul class="nav nav-tabs nav-tabs-yellow" role="tablist">
+				<li role="presentation" class="active"><a class="border-green" href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+			</ul>
+
+		</div>
 
 	</div>
 
-</header>
+	<a class="btn btn-fab btn-md bg-cyan bg-200">
+		<i class="icon mdi-content-add"></i>
+	</a>
+-->
+
+</nav>
 
 
 		<div class="content-container">
@@ -361,14 +450,16 @@
 		<div class="col-xs-8 col-xs-offset-1">
 
 			<div class="example">
-				<p>Some example Text</p>
-				<div class="breather"></div>
-				<p>Some example Text</p>
-			</div>
-			<div class="example-code">
-				<pre>&lt;p&gt;Some example Text&lt;/p&gt;
-&lt;div class=&quot;breather&quot;&gt;&lt;/div&gt;
+				<div class="example-code">
+					<pre>&lt;p&gt;Some example Text&lt;/p&gt;
+	&lt;div class=&quot;breather&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Some example Text&lt;/p&gt;</pre>
+				</div>
+				<div class="example-output">
+					<p>Some example Text</p>
+					<div class="breather"></div>
+					<p>Some example Text</p>
+				</div>
 			</div>
 
 		</div>
@@ -383,14 +474,16 @@
 		<div class="col-xs-8 col-xs-offset-1">
 
 			<div class="example">
-				<p>Some example Text</p>
-				<div class="breather-lg"></div>
-				<p>Some example Text</p>
-			</div>
-			<div class="example-code">
-				<pre>&lt;p&gt;Some example Text&lt;/p&gt;
+				<div class="example-code">
+					<pre>&lt;p&gt;Some example Text&lt;/p&gt;
 &lt;div class=&quot;breather-lg&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Some example Text&lt;/p&gt;</pre>
+				</div>
+				<div class="example-output">
+					<p>Some example Text</p>
+					<div class="breather-lg"></div>
+					<p>Some example Text</p>
+				</div>
 			</div>
 
 		</div>
@@ -415,10 +508,12 @@
 		<div class="col-xs-8 col-xs-offset-1">
 
 			<div class="example">
-				<h3 class="ruled">h3.ruled</h3>
-			</div>
-			<div class="example-code">
-				<pre>&lt;h3 class=&quot;ruled&quot;&gt;h3.ruled&lt;/h3&gt;</pre>
+				<div class="example-code">
+					<pre>&lt;h3 class=&quot;ruled&quot;&gt;h3.ruled&lt;/h3&gt;</pre>
+				</div>
+				<div class="example-output">
+					<h3 class="ruled">h3.ruled</h3>
+				</div>
 			</div>
 
 		</div>
@@ -428,25 +523,6 @@
 			<code>.border-left</code>
 			<p>Creates a left border on any element</p>
 
-		</div>
-
-		<div class="col-xs-8 col-xs-offset-1">
-
-			<div class="example">
-				<div class="border-left">
-					<br />
-				</div>
-			</div>
-			<div class="example-code">
-				<pre>&lt;div class=&quot;border-left&quot;&gt;
-	&lt;br /&gt;
-&lt;/div&gt;</pre>
-			</div>
-
-		</div>
-
-		<div class="col-xs-3">
-
 			<code>.border-right</code>
 			<p>Creates a right border on any element</p>
 
@@ -455,14 +531,23 @@
 		<div class="col-xs-8 col-xs-offset-1">
 
 			<div class="example">
-				<div class="border-right">
-					<br />
-				</div>
-			</div>
-			<div class="example-code">
-				<pre>&lt;div class=&quot;border-right&quot;&gt;
+				<div class="example-code">
+					<pre>&lt;div class=&quot;border-left&quot;&gt;
+	&lt;br /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;border-right&quot;&gt;
 	&lt;br /&gt;
 &lt;/div&gt;</pre>
+				</div>
+				<div class="example-output">
+					<div class="border-left">
+						<br />
+					</div>
+					<div class="border-right">
+						<br />
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -491,6 +576,5 @@
 		ga('create', 'UA-49883964-3', 'auto');
 		ga('send', 'pageview');
 	</script>
-
 
 </html>

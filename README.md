@@ -32,8 +32,11 @@ npm install grunt-contrib-copy --save-dev
 npm install grunt-contrib-imagemin --save-dev
 npm install grunt-jekyll --save-dev
 npm install grunt-concurrent --save-dev
+npm install grunt-sketch --save-dev
 npm update -g
 ```
+
+You will also need to download the latest [Sketch Tool](http://sketchtool.bohemiancoding.com/sketchtool-latest.zip), unzip it and run the `./install.sh`
 
 Run Grunt:
 
