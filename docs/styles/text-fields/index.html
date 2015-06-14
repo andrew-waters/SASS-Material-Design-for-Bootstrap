@@ -72,11 +72,41 @@ google: http://www.google.co.uk/design/spec/components/text-fields.html
 
 				<div class="form-group material">
 
-					<textarea placeholder="Write a Message" class="form-control"></textarea>
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
 
 				</div>
 
 			</form>
+
+		</div>
+
+	</div>
+
+	<h2>Multi Line Text Field</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>Use a textarea as you normally would, but add an <code>autogrow</code> class and add the <code>row</code> attribute to the element.</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material&quot;&gt;
+	&lt;textarea rows=&quot;1&quot; placeholder=&quot;Write a Message&quot; class=&quot;form-control autosize&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+			<div class="example-output">
+				<div class="form-group material">
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
+				</div>
+			</div>
 
 		</div>
 
@@ -156,7 +186,7 @@ google: http://www.google.co.uk/design/spec/components/text-fields.html
 
 					<i class="icon material-icons icon-right">chat_bubble</i>
 
-					<textarea placeholder="Write a Message" class="form-control"></textarea>
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
 
 				</div>
 
@@ -215,7 +245,7 @@ google: http://www.google.co.uk/design/spec/components/text-fields.html
 
 				<div class="form-group material">
 
-					<textarea class="form-control character-count" placeholder="Write a Message" data-cc-limit="50" data-cc-low="10"></textarea>
+					<textarea rows="1" class="form-control character-count autosize" placeholder="Write a Message" data-cc-limit="50" data-cc-low="10"></textarea>
 
 				</div>
 

@@ -45,11 +45,13 @@ module.exports = function(grunt) {
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
+						'bower_components/autosize/dist/autosize.js',
 						'src/javascripts/material-form.js',
 						'src/javascripts/character-count.js',
 						'src/javascripts/app-bar.js',
 						'src/javascripts/navigation-drawer.js',
-						'src/javascripts/smooth-scrolling.js'
+						'src/javascripts/smooth-scrolling.js',
+						'src/javascripts/_init.js'
 					]
 				}
 			}

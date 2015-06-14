@@ -7813,6 +7813,9 @@ pre {
 .help-block {
   color: #BDBDBD; }
 
+textarea.autosize {
+  resize: none; }
+
 /* Material input */
 .material {
   /* Animation */ }
@@ -7885,11 +7888,6 @@ pre {
     outline: none;
     background: 0;
     float: left; }
-  .material .material-input textarea {
-    height: 120px;
-    padding: 7px 0; }
-  .material .material-input input {
-    height: 32px; }
   .material .material-input label {
     font-weight: normal;
     line-height: 32px; }

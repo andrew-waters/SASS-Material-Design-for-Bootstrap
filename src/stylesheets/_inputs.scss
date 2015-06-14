@@ -29,7 +29,9 @@
 	color: get-color(grey, 400);
 }
 
-
+textarea.autosize {
+	resize: none;
+}
 
 
 /* Material input */
@@ -170,14 +172,6 @@
 		float: left;
 	}
 	
-	.material-input textarea {
-		height: 120px;
-		padding: 7px 0;
-	}
-	
-	.material-input input {
-		height: 32px;
-	}
 	
 	.material-input label {
 		font-weight: normal;
