@@ -13,6 +13,12 @@
     - title: "Navigation Drawer"
       href: "navigation-drawer"
 
+- title: "Forms"
+  href: "forms"
+  sub:
+    - title: "Text Fields"
+      href: "text-fields"
+
 - title: "Styles"
   href: "styles"
   sub:
@@ -26,8 +32,6 @@
       href: "helper-classes"
     - title: "Elevation"
       href: "elevation"
-    - title: "Text Fields"
-      href: "text-fields"
 
 - title: "Components"
   href: "components"

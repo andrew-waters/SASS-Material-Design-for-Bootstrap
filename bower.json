@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
+    "jquery-validation": "~1.13.1",
     "autosize": "~3.0.6"
   }
 }
