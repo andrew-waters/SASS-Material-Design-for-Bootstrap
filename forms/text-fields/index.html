@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Progress Bars &middot; SASS for Bootstrap</title>
+		<title>Text Fields &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -153,7 +153,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Forms
@@ -166,7 +166,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/forms/text-fields">
 							Text Fields
@@ -275,7 +275,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -327,7 +327,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/progress-bars">
 							Progress Bars
@@ -379,7 +379,7 @@
 
 	</a>
 
-	<h1 class="title">Progress Bars</h1>
+	<h1 class="title">Text Fields</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -450,99 +450,320 @@
 
 			<div class="container">
 
+	<h2>Floating Labels</h2>
+
 	<div class="row">
 
-		<div class="col-xs-3">
+		<div class="col-md-8 border-right">
 
-			<h5>Default</h5>
+			<p>To add floating labels to a text input or textarea, you need to do two things:</p>
 
-		</div>
+			<ol>
+				<li>Don't include the standard label</li>
+				<li>Add a <code>material</code> class to the <code>form-group</code></li>
+			</ol>
 
-		<div class="col-xs-9">
+			<p>So this:</p>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-					<span class="sr-only">10% Complete (success)</span>
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group&quot;&gt;
+	&lt;label&gt;Email address&lt;/label&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot;&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-					<span class="sr-only">90% Complete (success)</span>
-				</div>
-			</div>
+			<p>Becomes this:</p>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-					<span class="sr-only">40% Complete (success)</span>
-				</div>
-			</div>
-
-			<div class="progress">
-				<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-					<span class="sr-only">20% Complete</span>
-				</div>
-			</div>
-
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-					<span class="sr-only">60% Complete (warning)</span>
-				</div>
-			</div>
-
-			<div class="progress">
-				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-					<span class="sr-only">80% Complete (danger)</span>
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group <strong>material</strong>&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Your Name&quot;&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
 
 		</div>
 
-		<div class="breather breather-lg"></div>
+		<div class="col-md-4">
 
-		<div class="col-xs-3">
+			<form role="form">
 
-			<h5>Animated</h5>
+				<div class="form-group material">
+
+					<input type="text" class="form-control" placeholder="What's your name">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="email" class="form-control" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="password" class="form-control" placeholder="Choose a Password">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="number" class="form-control" placeholder="Choose A Number">
+
+				</div>
+
+				<div class="form-group material">
+
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
+
+				</div>
+
+			</form>
 
 		</div>
 
-		<div class="col-xs-9">
+	</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar active" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
-					<span class="sr-only">10% Complete (success)</span>
+	<h2>Full Width Inputs</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>Full-width text fields are useful for more in-depth tasks.</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material <strong>full-width</strong>&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Subject&quot;&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-success active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-					<span class="sr-only">90% Complete (success)</span>
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="form-group material full-width">
+
+					<input type="text" class="form-control" placeholder="To">
+
+				</div>
+
+				<div class="form-group material full-width">
+
+					<input type="text" class="form-control" placeholder="Subject">
+
+				</div>
+
+				<div class="form-group material full-width">
+
+					<textarea rows="1" placeholder="Message" class="form-control autosize"></textarea>
+
+				</div>
+
+			</form>
+
+			<hr />
+
+			<form role="form">
+
+				<div class="form-group material full-width">
+
+					<input type="text" class="form-control character-count" data-cc-limit="10" data-cc-low="2" placeholder="To">
+
+				</div>
+
+				<div class="form-group material full-width">
+
+					<input type="text" class="form-control character-count" data-cc-limit="100" data-cc-low="50" placeholder="Subject">
+
+				</div>
+
+				<div class="form-group material full-width">
+
+					<textarea rows="1" placeholder="Message" class="form-control autosize character-count" data-cc-limit="100" data-cc-low="10"></textarea>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<h2>Multi Line Text Field</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>Use a textarea as you normally would, but add an <code>autogrow</code> class and add the <code>row</code> attribute to the element.</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material&quot;&gt;
+	&lt;textarea rows=&quot;1&quot; placeholder=&quot;Write a Message&quot; class=&quot;form-control autosize&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-primary active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-					<span class="sr-only">40% Complete (success)</span>
+		</div>
+
+		<div class="col-md-4">
+
+			<div class="example-output">
+				<div class="form-group material">
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
 				</div>
 			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-info active" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-					<span class="sr-only">20% Complete</span>
+		</div>
+
+	</div>
+
+	<h2>Adding Icons</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>To add icons, you need to:</p>
+			<ol>
+				<li>Add a <code>.with-icon</code> class to the containing <code>.form-group</code></li>
+				<li>Add an <a href="">icon</a> <em>above</em> the input.</li>
+			</ol>
+
+			<p>If you want to add the icon to the right of the input field, add an <code>icon-right</code> class</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material <strong>with-icon</strong>&quot;&gt;
+	&lt;i class=&quot;icon material-icons&quot;&gt;person&lt;/i&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;What's your name&quot;&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-warning active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-					<span class="sr-only">60% Complete (warning)</span>
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material <strong>with-icon</strong>&quot;&gt;
+	&lt;i class=&quot;icon material-icons <strong>icon-right</strong>&quot;&gt;info&lt;/i&gt;
+	&lt;input type=&quot;number&quot; class=&quot;form-control&quot; placeholder=&quot;Choose A Number&quot;&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
 
-			<div class="progress">
-				<div class="progress-bar progress-bar-danger active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-					<span class="sr-only">80% Complete (danger)</span>
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons">person</i>
+
+					<input type="text" class="form-control" placeholder="What's your name">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons">email</i>
+
+					<input type="email" class="form-control" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons">lock</i>
+
+					<input type="password" class="form-control" placeholder="Choose a Password">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons icon-right">info</i>
+
+					<input type="number" class="form-control" placeholder="Choose A Number">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons icon-right">chat_bubble</i>
+
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<h2>Character Limit</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>If you want to restrict the number of characters an input form can accept, you should:</p>
+
+			<ol>
+				<li>Add a <code>character-count</code> to the input / textarea field.</li>
+				<li>
+					Add Parameters using the data attribute:
+					<ul>
+						<li><code>data-cc-limit</code>: the total number of characters allowed</li>
+						<li><code>data-cc-low</code>: the number of characters left at which point we warn the user</li>
+					</ul>
+				</li>
+			</ol>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material&quot;&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control <strong>character-count</strong>&quot; data-cc-limit=&quot;10&quot; data-cc-low=&quot;2&quot; placeholder=&quot;What's your email&quot;&gt;
+&lt;/div&gt;</pre>
 				</div>
 			</div>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material&quot;&gt;
+	&lt;textarea class=&quot;form-control <strong>character-count</strong>&quot; placeholder=&quot;Write a Message&quot; data-cc-limit=&quot;100&quot; data-cc-low=&quot;10&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="form-group material">
+
+					<input type="email" class="form-control character-count" data-cc-limit="10" data-cc-low="2" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material">
+
+					<textarea rows="1" class="form-control character-count autosize" placeholder="Write a Message" data-cc-limit="50" data-cc-low="10"></textarea>
+
+				</div>
+
+			</form>
 
 		</div>
 
