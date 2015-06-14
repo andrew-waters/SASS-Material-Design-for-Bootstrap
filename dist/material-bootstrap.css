@@ -7907,27 +7907,41 @@ textarea.autosize {
     outline: none;
     background: 0;
     float: left; }
-  .material .material-input label {
+  .material .material-input label:not(.error) {
     font-weight: normal;
     line-height: 32px; }
-  .material .material-input label {
+  .material .material-input label:not(.error) {
     color: #BDBDBD;
     position: absolute;
     left: 0;
     top: 18px; }
-  .material .material-input :focus ~ label,
-  .material .material-input .filled ~ label,
-  .material .error:focus ~ label {
+  .material .material-input :focus ~ label:not(.error),
+  .material .material-input .filled ~ label:not(.error),
+  .material .error:focus ~ label:not(.error) {
     color: #BDBDBD;
     font-size: 12px;
     top: 0;
     line-height: 24px; }
   .material .material-bar:before,
   .material .material-bar:after,
-  .material .material-input label {
+  .material .material-input label:not(.error) {
     transition: .2s ease all;
     -moz-transition: .2s ease all;
     -webkit-transition: .2s ease all; }
+
+.form-group label.error {
+  color: #D32F2F !important;
+  top: auto;
+  line-height: 26px;
+  font-size: 11px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  font-weight: 500;
+  height: 0;
+  overflow: visible; }
+.form-group .form-control.error {
+  border-color: #D32F2F !important; }
 
 .btn-xl {
   padding: 20px 20px;

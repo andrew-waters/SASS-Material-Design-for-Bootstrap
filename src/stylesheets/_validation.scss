@@ -1,0 +1,27 @@
+
+.form-group {
+
+	label.error {
+		color: get-color(red, 700) !important;
+		top: auto;
+		line-height: 26px;
+		font-size: 11px;
+		position: absolute;
+		left: 0;
+		bottom: -3px;
+		font-weight: 500;
+		height: 0;
+		overflow: visible;
+	}
+
+	.form-control {
+
+		&.error {
+
+			border-color: get-color(red, 700) !important;
+
+		}
+
+	}
+
+}

@@ -45,6 +45,8 @@ module.exports = function(grunt) {
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js',
+						'bower_components/jquery-validation/dist/jquery.validate.js',
+						'bower_components/jquery-validation/dist/additional-methods.js',
 						'bower_components/autosize/dist/autosize.js',
 						'src/javascripts/material-form.js',
 						'src/javascripts/character-count.js',

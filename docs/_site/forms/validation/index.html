@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Material Design for Bootstrap &middot; SASS for Bootstrap</title>
+		<title>Validation &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -155,7 +155,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Forms
@@ -181,7 +181,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/forms/validation">
 							Validation
@@ -394,7 +394,7 @@
 
 	</a>
 
-	<h1 class="title">Material Design for Bootstrap</h1>
+	<h1 class="title">Validation</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -465,31 +465,91 @@
 
 			<div class="container">
 
-	<div class="col-xs-12">
+	<div class="row">
 
-		<p class="lead"><strong>Material Design</strong> is a set of design principles that Google developed in 2014.</p>
-		<p class="lead"><strong>Bootstrap</strong> is one of the most popular CSS / JS Frameworks on the web.</p>
-		<p class="lead"><strong>Material Design for Bootstrap</strong> joins the two.</p>
+		<div class="col-md-6">
 
-		<div class="breather-lg"></div>
+			<p class="lead">Validate User Input on the Client Side.</p>
 
-		<p>We use the power of Bootstrap and adapt it to Material Design principles. Furthermore, Material Design introduced some new UI elements which this library brings to Boostrap.</p>
-		<p>Some things are the same, some are better and some are new.</p>
+			<p>By adding a <code>validate</code> class to a form you can engage jQuery Form validation.</p>
 
-		<div class="breather-lg"></div>
+			<p>To add your validation conditions, use the data rules on the input elements, rather than manually adding in Javascript.</p>
 
-		<hr />
+			<p>For more information on the data attributes please <a href="http://johnnycode.com/2014/03/27/using-jquery-validate-plugin-html5-data-attribute-rules/" target="_blank">see here</a></p>
 
-		<h3>Quick Start</h3>
-		<p>Including this library in your project is as simple as replacing the original Bootstrap files with these ones:</p>
+		</div>
 
-		<pre>&lt;link href=&quot;https://cdn.rawgit.com/band-x-media/SASS-Material-Design-for-Bootstrap/master/dist/material-bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;</pre>
-		<div class="breather"></div>
-		<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.rawgit.com/band-x-media/SASS-Material-Design-for-Bootstrap/master/dist/material-bootstrap.min.js&quot;&gt;&lt;/script&gt;</pre>
+		<div class="col-md-6">
+
+			<form class="validate">
+
+				<div class="form-group material">
+
+					<input type="text" name="name" class="form-control" placeholder="What's your name" data-rule-required="true">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="email" name="email" class="form-control" data-rule-required="true" data-rule-email="true" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="password" class="form-control" placeholder="Choose a Password">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="number" class="form-control" placeholder="Choose A Number">
+
+				</div>
+
+				<div class="form-group material">
+
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
+
+				</div>
+
+				<input type="submit" class="btn pull-right btn-primary" value="Submit">
+
+			</form>
+
+		</div>
+
+<!--
+<form class="cmxform" id="commentForm" method="get" action="">
+  <fieldset>
+    <legend>Please provide your name, email address (won't be published) and a comment</legend>
+    <p>
+      <label for="cname">Name (required, at least 2 characters)</label>
+      <input id="cname" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail (required)</label>
+      <input id="cemail" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="curl">URL (optional)</label>
+      <input id="curl" type="url" name="url">
+    </p>
+    <p>
+      <label for="ccomment">Your comment (required)</label>
+      <textarea id="ccomment" name="comment" required></textarea>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+  </fieldset>
+</form>
+-->
 
 	</div>
 
 </div>
+
 
 		</div>
 

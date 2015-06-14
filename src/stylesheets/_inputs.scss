@@ -209,21 +209,21 @@ textarea.autosize {
 	}
 	
 	
-	.material-input label {
+	.material-input label:not(.error) {
 		font-weight: normal;
 		line-height: 32px;
 	}
 	
-	.material-input label {
+	.material-input label:not(.error) {
 		color: get-color(grey, 400);
 		position: absolute;
 		left: 0;
 		top: 18px;
 	}
 	
-	.material-input :focus ~ label,
-	.material-input .filled ~ label,
-	.error:focus ~ label{
+	.material-input :focus ~ label:not(.error),
+	.material-input .filled ~ label:not(.error),
+	.error:focus ~ label:not(.error) {
 		color: get-color(grey, 400);
 		font-size: 12px;
 		top: 0;
@@ -234,7 +234,7 @@ textarea.autosize {
 	/* Animation */
 	.material-bar:before, 
 	.material-bar:after,
-	.material-input label {
+	.material-input label:not(.error) {
 		transition: .2s ease all; 
 		-moz-transition: .2s ease all; 
 		-webkit-transition: .2s ease all;

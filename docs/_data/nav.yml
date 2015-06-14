@@ -18,6 +18,8 @@
   sub:
     - title: "Text Fields"
       href: "text-fields"
+    - title: "Validation"
+      href: "validation"
 
 - title: "Styles"
   href: "styles"

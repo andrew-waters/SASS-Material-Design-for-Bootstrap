@@ -1,0 +1,91 @@
+---
+layout: default
+title: Validation
+---
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-md-6">
+
+			<p class="lead">Validate User Input on the Client Side.</p>
+
+			<p>By adding a <code>validate</code> class to a form you can engage jQuery Form validation.</p>
+
+			<p>To add your validation conditions, use the data rules on the input elements, rather than manually adding in Javascript.</p>
+
+			<p>For more information on the data attributes please <a href="http://johnnycode.com/2014/03/27/using-jquery-validate-plugin-html5-data-attribute-rules/" target="_blank">see here</a></p>
+
+		</div>
+
+		<div class="col-md-6">
+
+			<form class="validate">
+
+				<div class="form-group material">
+
+					<input type="text" name="name" class="form-control" placeholder="What's your name" data-rule-required="true">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="email" name="email" class="form-control" data-rule-required="true" data-rule-email="true" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="password" class="form-control" placeholder="Choose a Password">
+
+				</div>
+
+				<div class="form-group material">
+
+					<input type="number" class="form-control" placeholder="Choose A Number">
+
+				</div>
+
+				<div class="form-group material">
+
+					<textarea rows="1" placeholder="Write a Message" class="form-control autosize"></textarea>
+
+				</div>
+
+				<input type="submit" class="btn pull-right btn-primary" value="Submit">
+
+			</form>
+
+		</div>
+
+<!--
+<form class="cmxform" id="commentForm" method="get" action="">
+  <fieldset>
+    <legend>Please provide your name, email address (won't be published) and a comment</legend>
+    <p>
+      <label for="cname">Name (required, at least 2 characters)</label>
+      <input id="cname" name="name" minlength="2" type="text" required>
+    </p>
+    <p>
+      <label for="cemail">E-Mail (required)</label>
+      <input id="cemail" type="email" name="email" required>
+    </p>
+    <p>
+      <label for="curl">URL (optional)</label>
+      <input id="curl" type="url" name="url">
+    </p>
+    <p>
+      <label for="ccomment">Your comment (required)</label>
+      <textarea id="ccomment" name="comment" required></textarea>
+    </p>
+    <p>
+      <input class="submit" type="submit" value="Submit">
+    </p>
+  </fieldset>
+</form>
+-->
+
+	</div>
+
+</div>
