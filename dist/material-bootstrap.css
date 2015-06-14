@@ -7816,6 +7816,19 @@ pre {
 textarea.autosize {
   resize: none; }
 
+.full-width .form-control {
+  padding: 14px;
+  border-bottom: none; }
+.full-width .form-control:focus {
+  border-bottom: none; }
+  .full-width .form-control:focus::-moz-placeholder {
+    color: #BDBDBD;
+    opacity: 1; }
+  .full-width .form-control:focus:-ms-input-placeholder {
+    color: #BDBDBD; }
+  .full-width .form-control:focus::-webkit-input-placeholder {
+    color: #BDBDBD; }
+
 /* Material input */
 .material {
   /* Animation */ }
@@ -7825,6 +7838,12 @@ textarea.autosize {
     color: #03A9F4 !important; }
   .material .chars-remaining {
     margin-top: -10px; }
+  .material.full-width .chars-remaining {
+    margin-top: -30px; }
+  .material.full-width input[type="text"].character-count {
+    padding-right: 70px; }
+  .material.full-width textarea.character-count {
+    margin-bottom: 20px; }
   .material.count-low .material-input label {
     color: #FF9800 !important; }
   .material.count-low .form-control {
@@ -7863,7 +7882,7 @@ textarea.autosize {
     top: 0px;
     right: 0px;
     float: right;
-    width: 100%; }
+    width: 60px; }
     .material .chars-remaining > span {
       position: relative;
       right: 0px;

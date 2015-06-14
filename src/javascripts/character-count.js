@@ -46,27 +46,29 @@ function countCharacters(string) {
 
 				var $t = $(this), opts = $.extend({},$.charCount.defaults,options);
 
-				setInterval(function() {
+				$(this).on("keyup keypress blur change", function() {
 
-					rm = countCharacters($t.val()) + "/" + options.limit;
+					rm = countCharacters($t.val()) + " / " + options.limit;
 					frc = false;
+
+					wrapper = $t.closest(".form-group");
 
 					countCharacters($t.val()) == options.limit ?
 						(
-							$("span[data-value='cc_" + sid + "']").parent().parent().addClass(opts.overlimitclass)
+							wrapper.addClass(opts.overlimitclass)
 						) :
 						(
 							countCharacters($t.val()) >= (options.limit  - options.low) ?
-								$("span[data-value='cc_" + sid + "']").parent().parent().addClass(opts.lowcountclass).removeClass(opts.overlimitclass) :
-								$("span[data-value='cc_" + sid + "']").parent().parent().removeClass(opts.overlimitclass).addClass(opts.lowcountclass)
+								wrapper.addClass(opts.lowcountclass).removeClass(opts.overlimitclass) :
+								wrapper.removeClass(opts.overlimitclass).addClass(opts.lowcountclass)
 						);
 
 					if(countCharacters($t.val()) < (options.limit  - options.low))
-						$("span[data-value='cc_" + sid + "']").parent().parent().removeClass(opts.lowcountclass).removeClass(opts.overlimitclass);
+						wrapper.removeClass(opts.lowcountclass).removeClass(opts.overlimitclass);
 
-					$("span[data-value='cc_" + sid + "']").html(opts.charmessage.replace(n, rm) );    
+					wrapper.find("span[data-value='cc_" + sid + "']").html(opts.charmessage.replace(n, rm) );    
 
-				}, 50)
+				})
 
 				$t.after("<div class='" + opts.charsremainingclass + "'><span data-value='cc_" + sid + "'>" + opts.charmessage.replace("[n]",opts.limit) + "</span></div>");
 
@@ -91,6 +93,7 @@ function countCharacters(string) {
 		el.attr("maxlength", settings.limit);
 
 		el.charCount(settings)
+		el.blur()
 
 	});
 

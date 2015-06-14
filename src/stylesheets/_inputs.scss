@@ -34,6 +34,26 @@ textarea.autosize {
 }
 
 
+.full-width {
+
+	.form-control {
+
+		padding: 14px;
+		border-bottom: none;
+
+	}
+
+	.form-control:focus {
+
+		@include placeholder(get-color(grey, 400));
+		border-bottom: none;
+
+	}
+
+}
+
+
+
 /* Material input */
 
 .material {
@@ -56,6 +76,22 @@ textarea.autosize {
 
 	.chars-remaining {
 		margin-top: -10px;
+	}
+
+	&.full-width {
+
+		.chars-remaining {
+			margin-top: -30px;
+		}
+
+		input[type="text"].character-count {
+			padding-right: 70px;
+		}
+
+		textarea.character-count {
+			margin-bottom: 20px;
+		}
+
 	}
 
 	&.count-low {
@@ -138,7 +174,7 @@ textarea.autosize {
 		top: 0px;
 		right: 0px;
 		float: right;
-		width: 100%;
+		width: 60px;
 
 		> span {
 

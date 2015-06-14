@@ -53,11 +53,13 @@ $(function() {
 
 
 
-		// Radio
-
 		function isValidType($el) {
+
+			if($el.parent().hasClass("full-width")) return false;
+
 			var type = $el.attr('type');
 			return (type = 'hidden' && type != 'submit' && type != 'checkbox' && type != 'radio' && type != 'file' ? 1 : 0);
+
 		}
 
 		function isType($el, type) {
