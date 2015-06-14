@@ -9035,7 +9035,8 @@ body.has-status-bar {
   z-index: 2000;
   padding: 0 15px; }
   .status-bar a {
-    opacity: 0.8; }
+    opacity: 0.8;
+    margin-right: 10px; }
   .status-bar a:hover {
     opacity: 1; }
   .status-bar .icon {
