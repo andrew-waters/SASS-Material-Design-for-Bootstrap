@@ -7816,6 +7816,10 @@ pre {
 /* Material input */
 .material {
   /* Animation */ }
+  .material.focussed.with-icon .icon {
+    color: #03A9F4; }
+  .material.focussed label {
+    color: #03A9F4 !important; }
   .material .chars-remaining {
     margin-top: -10px; }
   .material.count-low .material-input label {
@@ -7844,8 +7848,6 @@ pre {
     width: 30px;
     margin-top: 24px;
     color: #9E9E9E; }
-    .material.with-icon .icon.focussed {
-      color: #03A9F4; }
     .material.with-icon .icon.icon-right {
       text-align: right;
       float: right; }

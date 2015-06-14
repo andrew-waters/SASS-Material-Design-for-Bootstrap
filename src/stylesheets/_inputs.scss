@@ -36,6 +36,22 @@
 
 .material {
 
+	&.focussed {
+
+		&.with-icon {
+
+			.icon {
+				color: get-color(light-blue);
+			}
+
+		}
+
+		label {
+			color: get-color(light-blue) !important;
+		}
+
+	}
+
 	.chars-remaining {
 		margin-top: -10px;
 	}
@@ -98,10 +114,6 @@
 			width: 30px;
 			margin-top: 24px;
 			color: get-color(grey, 500);
-
-			&.focussed {
-				color: get-color(light-blue);
-			}
 
 			&.icon-right {
 				text-align: right;

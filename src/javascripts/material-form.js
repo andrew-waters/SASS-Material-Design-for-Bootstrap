@@ -38,8 +38,7 @@ $(function() {
 
 		this.find('input, textarea').on('blur', function() {
 
-			if($(this).parent().parent().find('.icon'))
-				$(this).parent().parent().find('.icon').removeClass('focussed')
+			$(this).parent().parent().removeClass('focussed')
 
 			if(isValidType($(this)))
 				addFilled($(this))
@@ -48,8 +47,7 @@ $(function() {
 
 		this.find('input, textarea').on('focus', function() {
 
-			if($(this).parent().parent().find('.icon'))
-				$(this).parent().parent().find('.icon').addClass('focussed')
+			$(this).parent().parent().addClass('focussed')
 
 		});
 
