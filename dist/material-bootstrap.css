@@ -7816,6 +7816,9 @@ pre {
 textarea.autosize {
   resize: none; }
 
+.form-group {
+  position: relative; }
+
 .full-width .form-control {
   padding: 14px;
   border-bottom: none; }
@@ -7843,7 +7846,8 @@ textarea.autosize {
   .material.full-width input[type="text"].character-count {
     padding-right: 70px; }
   .material.full-width textarea.character-count {
-    margin-bottom: 20px; }
+    margin-bottom: 10px;
+    margin-top: -10px; }
   .material.count-low .material-input label {
     color: #FF9800 !important; }
   .material.count-low .form-control {
@@ -7942,6 +7946,9 @@ textarea.autosize {
   overflow: visible; }
 .form-group .form-control.error {
   border-color: #D32F2F !important; }
+.form-group.full-width label.error {
+  left: 14px;
+  bottom: 2px; }
 
 .btn-xl {
   padding: 20px 20px;
