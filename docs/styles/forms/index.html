@@ -6,35 +6,7 @@ google: http://www.google.com/design/spec/style/color.html#color-color-palette
 
 <div class="container">
 
-<!--
-
-	<form role="form">
-		<div class="form-group">
-			<label for="exampleInputEmail1">Email address</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-		</div>
-		<div class="form-group">
-			<label for="exampleInputPassword1">Password</label>
-			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-		</div>
-		<div class="form-group">
-			<label for="exampleInputFile">File input</label>
-			<input type="file" id="exampleInputFile">
-			<p class="help-block">Example block-level help text here.</p>
-		</div>
-		<div class="checkbox">
-			<label>
-				<input type="checkbox"> Check me out
-			</label>
-		</div>
-		<button type="submit" class="btn btn-default">Submit</button>
-	</form>
--->
-
-	<div class="breather-lg"></div>
-
-
-	<h2>Material Design Form</h2>
+	<h2>Floating Labels</h2>
 
 	<div class="row">
 
@@ -101,6 +73,149 @@ google: http://www.google.com/design/spec/style/color.html#color-color-palette
 				<div class="form-group material">
 
 					<textarea placeholder="Write a Message" class="form-control"></textarea>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<h2>Adding Icons</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>To add icons, you need to:</p>
+			<ol>
+				<li>Add a <code>.with-icon</code> class to the containing <code>.form-group</code></li>
+				<li>Add an <a href="">icon</a> <em>above</em> the input.</li>
+			</ol>
+
+			<p>If you want to add the icon to the right of the input field, add an <code>icon-right</code> class</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material <strong>with-icon</strong>&quot;&gt;
+	&lt;i class=&quot;icon material-icons&quot;&gt;person&lt;/i&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;What's your name&quot;&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material <strong>with-icon</strong>&quot;&gt;
+	&lt;i class=&quot;icon material-icons <strong>icon-right</strong>&quot;&gt;info&lt;/i&gt;
+	&lt;input type=&quot;number&quot; class=&quot;form-control&quot; placeholder=&quot;Choose A Number&quot;&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons">person</i>
+
+					<input type="text" class="form-control" placeholder="What's your name">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons">email</i>
+
+					<input type="email" class="form-control" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons">lock</i>
+
+					<input type="password" class="form-control" placeholder="Choose a Password">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons icon-right">info</i>
+
+					<input type="number" class="form-control" placeholder="Choose A Number">
+
+				</div>
+
+				<div class="form-group material with-icon">
+
+					<i class="icon material-icons icon-right">chat_bubble</i>
+
+					<textarea placeholder="Write a Message" class="form-control"></textarea>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<h2>Character Limit</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<p>If you want to restrict the number of characters an input form can accept, you should:</p>
+
+			<ol>
+				<li>Add a <code>character-count</code> to the input / textarea field.</li>
+				<li>
+					Add Parameters using the data attribute:
+					<ul>
+						<li><code>data-cc-limit</code>: the total number of characters allowed</li>
+						<li><code>data-cc-low</code>: the number of characters left at which point we warn the user</li>
+					</ul>
+				</li>
+			</ol>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material&quot;&gt;
+	&lt;input type=&quot;email&quot; class=&quot;form-control <strong>character-count</strong>&quot; data-cc-limit=&quot;10&quot; data-cc-low=&quot;2&quot; placeholder=&quot;What's your email&quot;&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material&quot;&gt;
+	&lt;textarea class=&quot;form-control <strong>character-count</strong>&quot; placeholder=&quot;Write a Message&quot; data-cc-limit=&quot;100&quot; data-cc-low=&quot;10&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="form-group material">
+
+					<input type="email" class="form-control character-count" data-cc-limit="10" data-cc-low="2" placeholder="What's your email">
+
+				</div>
+
+				<div class="form-group material">
+
+					<textarea class="form-control character-count" placeholder="Write a Message" data-cc-limit="50" data-cc-low="10"></textarea>
 
 				</div>
 

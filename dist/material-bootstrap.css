@@ -5851,6 +5851,12 @@ pre {
 .panel {
   border-radius: 2px; }
 
+.text-white {
+  color: #FFF; }
+
+.text-black {
+  color: #000; }
+
 .text-red {
   color: #F44336; }
 
@@ -7791,12 +7797,12 @@ pre {
   border-bottom: 2px solid #03A9F4;
   box-shadow: none; }
   .form-control:focus::-moz-placeholder {
-    color: #B3E5FC;
+    color: #03A9F4;
     opacity: 1; }
   .form-control:focus:-ms-input-placeholder {
-    color: #B3E5FC; }
+    color: #03A9F4; }
   .form-control:focus::-webkit-input-placeholder {
-    color: #B3E5FC; }
+    color: #03A9F4; }
 
 .form-control:focus::-webkit-input-placeholder {
   transition: color ease-in-out 0.3s; }
@@ -7808,55 +7814,101 @@ pre {
   color: #BDBDBD; }
 
 /* Material input */
-.material .material-input {
-  position: relative;
-  padding-top: 18px;
-  margin-bottom: 10px; }
-
-.material .material-input:after {
-  display: block;
-  clear: both;
-  content: ""; }
-
-.material .material-input input,
-.material .material-input textarea {
-  width: 100%;
-  outline: none;
-  background: 0;
-  float: left; }
-
-.material .material-input textarea {
-  height: 120px;
-  padding: 7px 0; }
-
-.material .material-input input {
-  height: 32px; }
-
-.material .material-input label {
-  font-weight: normal;
-  line-height: 32px; }
-
-.material .material-input label {
-  color: #BDBDBD;
-  position: absolute;
-  left: 0;
-  top: 18px; }
-
-.material .material-input :focus ~ label,
-.material .material-input .filled ~ label,
-.material .error:focus ~ label {
-  color: #BDBDBD;
-  font-size: 12px;
-  top: 0;
-  line-height: 24px; }
-
-/* Animation */
-.material .material-bar:before,
-.material .material-bar:after,
-.material .material-input label {
-  transition: .2s ease all;
-  -moz-transition: .2s ease all;
-  -webkit-transition: .2s ease all; }
+.material {
+  /* Animation */ }
+  .material .chars-remaining {
+    margin-top: -10px; }
+  .material.count-low .material-input label {
+    color: #FF9800 !important; }
+  .material.count-low .form-control {
+    border-color: #FF9800; }
+  .material.count-low .chars-remaining {
+    color: #FF9800 !important; }
+  .material.error .material-input label {
+    color: #D32F2F !important; }
+  .material.error .form-control {
+    border-color: #D32F2F; }
+  .material.error .chars-remaining {
+    color: #D32F2F !important; }
+  .material.with-icon:before, .material.with-icon:after {
+    content: " ";
+    display: table; }
+  .material.with-icon:after {
+    clear: both; }
+  .material.with-icon.count-low .icon {
+    color: #FFA000 !important; }
+  .material.with-icon.error .icon {
+    color: #D32F2F !important; }
+  .material.with-icon .icon {
+    float: left;
+    width: 30px;
+    margin-top: 24px;
+    color: #9E9E9E; }
+    .material.with-icon .icon.focussed {
+      color: #03A9F4; }
+    .material.with-icon .icon.icon-right {
+      text-align: right;
+      float: right; }
+  .material.with-icon .material-input {
+    float: left;
+    width: calc(100% - 30px); }
+  .material .chars-remaining {
+    color: #BDBDBD;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    float: right;
+    width: 100%; }
+    .material .chars-remaining > span {
+      position: relative;
+      right: 0px;
+      top: 0;
+      float: right; }
+  .material .material-input {
+    position: relative;
+    padding-top: 18px;
+    margin-bottom: 10px; }
+    .material .material-input:before, .material .material-input:after {
+      content: " ";
+      display: table; }
+    .material .material-input:after {
+      clear: both; }
+  .material .material-input:after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .material .material-input input,
+  .material .material-input textarea {
+    width: 100%;
+    outline: none;
+    background: 0;
+    float: left; }
+  .material .material-input textarea {
+    height: 120px;
+    padding: 7px 0; }
+  .material .material-input input {
+    height: 32px; }
+  .material .material-input label {
+    font-weight: normal;
+    line-height: 32px; }
+  .material .material-input label {
+    color: #BDBDBD;
+    position: absolute;
+    left: 0;
+    top: 18px; }
+  .material .material-input :focus ~ label,
+  .material .material-input .filled ~ label,
+  .material .error:focus ~ label {
+    color: #BDBDBD;
+    font-size: 12px;
+    top: 0;
+    line-height: 24px; }
+  .material .material-bar:before,
+  .material .material-bar:after,
+  .material .material-input label {
+    transition: .2s ease all;
+    -moz-transition: .2s ease all;
+    -webkit-transition: .2s ease all; }
 
 .btn-xl {
   padding: 20px 20px;

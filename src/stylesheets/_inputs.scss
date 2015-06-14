@@ -12,9 +12,9 @@
 
 .form-control:focus {
 	outline: 0;
-	border-bottom: 2px solid get-color(light-blue);
+	border-bottom: 2px solid get-color(light-blue, 500);
 	box-shadow: none;
-	@include placeholder(get-color(light-blue, 100));
+	@include placeholder(get-color(light-blue, 500));
 }
 
 .form-control:focus::-webkit-input-placeholder {
@@ -34,62 +34,168 @@
 
 /* Material input */
 
-.material .material-input {
-	position: relative;
-	padding-top: 18px;
-	margin-bottom: 10px;
-}
+.material {
 
-.material .material-input:after {
-	display: block;
-	clear: both;
-	content: "";
-}
+	.chars-remaining {
+		margin-top: -10px;
+	}
 
-.material .material-input input, 
-.material .material-input textarea {
-	width: 100%;
-	outline: none;
-	background: 0;
-	float: left;
-}
+	&.count-low {
 
-.material .material-input textarea {
-	height: 120px;
-	padding: 7px 0;
-}
+		.material-input label {
+			color: get-color(orange, 500) !important;
+		}
 
-.material .material-input input {
-	height: 32px;
-}
+		.form-control {
+			border-color: get-color(orange, 500);
+		}
 
-.material .material-input label {
-	font-weight: normal;
-	line-height: 32px;
-}
+		.chars-remaining {
+			color: get-color(orange, 500) !important;
+		}
 
-.material .material-input label {
-	color: get-color(grey, 400);
-	position: absolute;
-	left: 0;
-	top: 18px;
-}
+	}
 
-.material .material-input :focus ~ label,
-.material .material-input .filled ~ label,
-.material .error:focus ~ label{
-	color: get-color(grey, 400);
-	font-size: 12px;
-	top: 0;
-	line-height: 24px;
-}
+	&.error {
 
+		.material-input label {
+			color: get-color(red, 700) !important;
+		}
 
-/* Animation */
-.material .material-bar:before, 
-.material .material-bar:after,
-.material .material-input label {
-	transition: .2s ease all; 
-	-moz-transition: .2s ease all; 
-	-webkit-transition: .2s ease all;
+		.form-control {
+			border-color: get-color(red, 700);
+		}
+
+		.chars-remaining {
+			color: get-color(red, 700) !important;
+		}
+
+	}
+
+	&.with-icon {
+
+		@include clearfix();
+
+		&.count-low {
+
+			.icon {
+				color: get-color(amber, 700) !important;
+			}
+
+		}
+
+		&.error {
+
+			.icon {
+				color: get-color(red, 700) !important;
+			}
+
+		}
+
+		.icon {
+
+			float: left;
+			width: 30px;
+			margin-top: 24px;
+			color: get-color(grey, 500);
+
+			&.focussed {
+				color: get-color(light-blue);
+			}
+
+			&.icon-right {
+				text-align: right;
+				float: right;
+			}
+
+		}
+
+		.material-input {
+			float: left;
+			width: calc(100% - 30px);
+		}
+
+	}
+
+	.chars-remaining {
+
+		color: get-color(grey, 400);
+		position: relative;
+		top: 0px;
+		right: 0px;
+		float: right;
+		width: 100%;
+
+		> span {
+
+			position: relative;
+			right: 0px;
+			top: 0;
+			float: right;
+
+		}
+		
+	}
+
+	.material-input {
+		position: relative;
+		padding-top: 18px;
+		margin-bottom: 10px;
+		@include clearfix();
+	}
+	
+	.material-input:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+	
+	.material-input input, 
+	.material-input textarea {
+		width: 100%;
+		outline: none;
+		background: 0;
+		float: left;
+	}
+	
+	.material-input textarea {
+		height: 120px;
+		padding: 7px 0;
+	}
+	
+	.material-input input {
+		height: 32px;
+	}
+	
+	.material-input label {
+		font-weight: normal;
+		line-height: 32px;
+	}
+	
+	.material-input label {
+		color: get-color(grey, 400);
+		position: absolute;
+		left: 0;
+		top: 18px;
+	}
+	
+	.material-input :focus ~ label,
+	.material-input .filled ~ label,
+	.error:focus ~ label{
+		color: get-color(grey, 400);
+		font-size: 12px;
+		top: 0;
+		line-height: 24px;
+	}
+	
+	
+	/* Animation */
+	.material-bar:before, 
+	.material-bar:after,
+	.material-input label {
+		transition: .2s ease all; 
+		-moz-transition: .2s ease all; 
+		-webkit-transition: .2s ease all;
+	}
+
 }
