@@ -53,6 +53,7 @@ module.exports = function(grunt) {
 						'src/javascripts/app-bar.js',
 						'src/javascripts/navigation-drawer.js',
 						'src/javascripts/smooth-scrolling.js',
+						'src/javascripts/empty-state.js',
 						'src/javascripts/_init.js'
 					]
 				}

@@ -25,6 +25,7 @@ $material-font-path: "../fonts/material" !default;
 
 
 @import "stylesheets/headers";
+@import "stylesheets/paper";
 @import "stylesheets/elevation";
 @import "stylesheets/scaffolding";
 @import "stylesheets/panels";
@@ -39,6 +40,7 @@ $material-font-path: "../fonts/material" !default;
 @import "stylesheets/tile";
 @import "stylesheets/progressBars";
 @import "stylesheets/tabs";
+@import "stylesheets/emptyState";
 
 @import "stylesheets/layout/app-bar";
 @import "stylesheets/layout/navigation-drawer";

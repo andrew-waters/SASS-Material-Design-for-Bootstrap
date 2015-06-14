@@ -1,0 +1,120 @@
+---
+layout: default
+title: Empty State
+google: http://www.google.co.uk/design/spec/patterns/empty-states.html
+---
+
+<div class="container">
+
+	<div class="col-xs-9">
+
+		<p class="lead">An empty state is presented to the user when there is no content available</p>
+		<p class="lead">Content inside the empty state is automatically centered for you.</p>
+
+	</div>
+
+	<div class="breather-lg"></div>
+
+	<div class="col-xs-12">
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<h4>Basic</h4>
+
+				<pre>&lt;div class=&quot;empty-state&quot;&gt;
+	&lt;i class=&quot;icon icon-xxl material-icons&quot;&gt;done_all&lt;/i&gt;
+	&lt;h3&gt;You don't have any content here&lt;/h3&gt;
+	&lt;p&gt;Why not add a &lt;a class=&quot;btn btn-success&quot;&gt;call to action&lt;/a&gt; so that you can change that?&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<div class="empty-state">
+					<i class="icon icon-xxl material-icons">done_all</i>
+					<h3>You don't have any content here</h3>
+					<p>Why not add a <a class="btn btn-success">call to action</a> so that you can change that?</p>
+				</div>
+
+			</div>
+
+			<div class="breather-lg"></div>
+
+			<div class="col-md-6">
+
+				<h4>Spacious</h4>
+
+				<p>Adds extra padding around the content.</p>
+
+				<pre>&lt;div class=&quot;empty-state <strong>spacious</strong>&quot;&gt;
+	...
+&lt;/div&gt;</pre>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<div class="empty-state spacious">
+					<i class="icon icon-xxl material-icons">done_all</i>
+					<h3>You don't have any content here</h3>
+					<p>Why not add a <a class="btn btn-success">call to action</a> so that you can change that?</p>
+				</div>
+
+			</div>
+
+			<div class="breather-lg"></div>
+
+			<div class="col-md-6">
+
+				<h4>Background Image</h4>
+
+				<p>Adds a background image to the container when you define a <code>data-empty-bg</code> attribute with a path to an image URL.</p>
+
+				<pre>&lt;div class=&quot;empty-state&quot; <strong>data-empty-bg=&quot;/path/to/img.jpg&quot;</strong>&gt;
+	...
+&lt;/div&gt;</pre>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<div class="empty-state" data-empty-bg="{{ site.baseurl }}/assets/images/empty-state.jpg">
+					<i class="icon icon-xxl material-icons">done_all</i>
+					<h3>You don't have any content here</h3>
+					<p>Why not add a <a class="btn btn-success">call to action</a> so that you can change that?</p>
+				</div>
+
+			</div>
+
+			<div class="breather-lg"></div>
+
+			<div class="col-md-6">
+
+				<h4>Clean</h4>
+
+				<p>Remove the border and background colour</p>
+				<pre>&lt;div class=&quot;empty-state <strong>clean</strong>&quot;&gt;
+	...
+&lt;/div&gt;</pre>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<div class="empty-state clean">
+					<i class="icon icon-xxl material-icons">done_all</i>
+					<h3>You don't have any content here</h3>
+					<p>Why not add a <a class="btn btn-success">call to action</a> so that you can change that?</p>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+</div>

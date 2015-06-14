@@ -38,6 +38,10 @@
 - title: "Components"
   href: "components"
   sub:
+    - title: "Paper"
+      href: "paper"
+    - title: "Empty State"
+      href: "empty-state"
     - title: "Icons"
       href: "icons"
     - title: "Jumbotron"

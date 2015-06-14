@@ -1,0 +1,32 @@
+
+.empty-state {
+
+	background-color: get-color(grey, 100);
+	border: 1px solid get-color(grey, 300);
+	border-radius: 3px;
+	padding: 60px;
+	text-align: center;
+
+	background-position: top center;
+	background-clip: border-box;
+	background-size: cover;
+
+	&.no-border {
+		border: none;
+	}
+
+	&.spacious {
+		padding: 120px;
+	}
+
+	&.clean {
+		border: none;
+		background: none;
+	}
+
+	.icon {
+		margin-bottom: 45px;
+		color: get-color(grey, 400);
+	}
+
+}
