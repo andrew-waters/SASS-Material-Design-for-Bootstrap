@@ -4,4 +4,4 @@ node_modules/
 npm-debug.log
 .sass-cache
 *.css.map
-docs/_site
+docs/_site/*
