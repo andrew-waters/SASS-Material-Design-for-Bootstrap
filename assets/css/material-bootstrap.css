@@ -5650,6 +5650,17 @@ h6, .h6 {
   margin-top: 0;
   margin-bottom: 26px; }
 
+.paper {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #FFF;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .paper.seamless {
+    margin: 0; }
+
+.elevated-0 {
+  box-shadow: none; }
+
 .elevated-1 {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
@@ -8542,6 +8553,26 @@ a.btn .icon {
   .nav-justified > li > a:hover, .app-bar
   .nav-justified > li > a:focus {
     color: #FFFFFF; }
+
+.empty-state {
+  background-color: #F5F5F5;
+  border: 1px solid #E0E0E0;
+  border-radius: 3px;
+  padding: 60px;
+  text-align: center;
+  background-position: top center;
+  background-clip: border-box;
+  background-size: cover; }
+  .empty-state.no-border {
+    border: none; }
+  .empty-state.spacious {
+    padding: 120px; }
+  .empty-state.clean {
+    border: none;
+    background: none; }
+  .empty-state .icon {
+    margin-bottom: 45px;
+    color: #BDBDBD; }
 
 .app-bar {
   display: block;
