@@ -50,17 +50,12 @@
 
 
 
-
-
-
-
-
-
-
-
 .btn {
 
 	border: none;
+	overflow:hidden;
+	position:relative;
+	display:inline-block;
 
 	&.btn-fab {
 
@@ -140,6 +135,26 @@
 	
 	&:hover {
 		box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+	}
+
+	.inner {
+		background: rgb(100,100,100);
+		height: 50px;
+		width: 50px;
+		margin: -25px 0 0 -25px;
+		position: absolute;
+		display: block;
+		border-radius: 50%;
+		opacity: 0;
+		vertical-align: middle;
+	}
+
+	.overlay {
+		background: rgba(200,200,200,0);
+		height: 120%;
+		width: 120%;
+		position: absolute;
+		display: table;
 	}
 
 }

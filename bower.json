@@ -19,6 +19,7 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
     "jquery-validation": "~1.13.1",
+    "velocity": "~1.2.2",
     "autosize": "~3.0.6"
   }
 }

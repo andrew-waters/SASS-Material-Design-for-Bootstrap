@@ -12,6 +12,8 @@
       href: "app-bar"
     - title: "Navigation Drawer"
       href: "navigation-drawer"
+    - title: "Morphing Animations"
+      href: "morphing-animations"
 
 - title: "Forms"
   href: "forms"
