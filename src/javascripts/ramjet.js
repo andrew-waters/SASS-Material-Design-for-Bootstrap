@@ -510,9 +510,16 @@ $(document).ready(function() {
 
 			a.attr("data-morph-showing", "true");
 
-			ramjet.transform(a, b, {
+			tf = a.attr("data-morph-trigger-from");
+			target = tf ? $('#' + tf) : a;
+
+			if(a.attr("data-morph-hide") == "true") {
+				ramjet.hide(target);
+			}
+
+			ramjet.transform(target, b, {
 				duration: 500,
-				easing: ramjet.easeInOut,
+				easing: ramjet.easeIn,
 				done: function() {
 					ramjet.show(b);
 					b.show();
@@ -535,17 +542,23 @@ $(document).ready(function() {
 		//	button
 		var a = $('[data-morph-target="' + b.attr('id') + '"]');
 
+		tf = a.attr("data-morph-trigger-from");
+		target = tf ? $('#' + tf) : a;
+
 		if(a.attr("data-morph-showing") == "true") {
 
 			a.attr("data-morph-showing", "false");
 
 			ramjet.hide(b);
 
-			ramjet.transform(b, a, {
+			ramjet.transform(b, target, {
 				duration: 350,
-				easing: ramjet.easeInOut,
+				easing: ramjet.easeOut,
 				done: function() {
-					b.hide()
+					b.hide();
+					if(a.attr("data-morph-hide") == "true") {
+						ramjet.show(target);
+					}
 				}
 			});
 

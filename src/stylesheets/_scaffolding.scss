@@ -151,6 +151,22 @@ pre {
 		}
 	}
 
+	&.example-right {
+
+		@include clearfix();
+
+		.example-code {
+			float: left;
+			width: 50%;
+		}
+
+		.example-output {
+			float: right;
+			width: 50%;
+		}
+
+	}
+
 }
 
 
