@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Navigation Drawer &middot; SASS for Bootstrap</title>
+		<title>Morphing Animation &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -133,7 +133,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/navigation-drawer">
 							Navigation Drawer
@@ -146,7 +146,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/morphing-animations">
 							Morphing Animations
@@ -433,7 +433,7 @@
 
 	</a>
 
-	<h1 class="title">Navigation Drawer</h1>
+	<h1 class="title">Morphing Animation</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -504,140 +504,83 @@
 
 			<div class="container">
 
-<h4>
-	Navigation Drawer
-</h4>
+	<div class="row">
 
-<div class="row">
+		<div class="col-xs-3">
 
-	<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 
-		<form>
+		</div>
 
-			<div class="form-group">
-				<label>
-					<input type="checkbox" class="navigation-drawer-invert" value="inverse" />
-					&nbsp;Invert Nav Drawer
-				</label>
+		<div class="col-xs-9">
+
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore <a id="a" class="btn btn-info morph-trigger" data-morph-target="b">link here</a> veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam <a id="c" class="btn btn-info morph-trigger" data-morph-target="d">link here</a> voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+			<div id="b" class="paper morph-target">
+
+				<a class="close morph-dismiss">
+					<i class="icon material-icons">close</i>
+				</a>
+
+				<h4>Say Hello</h4>
+
+				<form class="clearfix">
+
+					<div class="form-group material">
+
+						<input type="text" class="form-control" id="name" placeholder="Your Name">
+
+					</div>
+
+					<button type="submit" class="pull-right btn btn-primary" onclick="alert('Hello ' + $('#name').val()); return false;">Say Hello</button>
+
+				</form>
+
 			</div>
 
-		</form>
+			<div id="d" class="paper morph-target">
 
-		<div class="breather"></div>
+				<a class="close morph-dismiss">
+					<i class="icon material-icons">close</i>
+				</a>
 
-	</div>
+				<h4>Say Goodbye</h4>
 
-	<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+				<form class="clearfix">
 
-		<p>Add the Overlay:</p>
+					<div class="form-group material">
 
-		<pre>&lt;div class=&quot;navigation-drawer-overlay&quot;&gt;&lt;/div&gt;</pre>
+						<input type="text" class="form-control" id="byename" placeholder="Your Name">
 
-		<p>Add dividers in the sidebar with <code>&lt;div class=&quot;sidebar-divider&quot;&gt;&lt;/div&gt;</code>
-		<p>Add text to the sidebar with <code>&lt;div class=&quot;sidebar-text&quot;&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/div&gt;</code>
+					</div>
 
+					<button type="submit" class="pull-right btn btn-primary" onclick="alert('Good Bye ' + $('#byename').val()); return false;">Say Bye</button>
 
-		<hr />
+				</form>
 
-		<h4>Position</h4>
+			</div>
 
-		<p>Fix to the left with <code>.sidebar-fixed-left</code></p>
-		<p>Fix to the right with <code>.sidebar-fixed-right</code></p>
-
-		<hr />
-
-		<h4>Style</h4>
-
-		<p>Default with <code>.sidebar-default</code></p>
-		<p>Inverse with <code>.sidebar-inverse</code></p>
-
-		<p>Create your own style with the <code>sidebar-template()</code> mixin:</p>
-		<pre>@mixin sidebar-template(
-$color,
-$bg,
-$header-bg,
-$brand-color,
-$brand-bg,
-$brand-hover-color,
-$brand-hover-bg,
-$divider,
-$badge-color,
-$badge-bg,
-$icon-color,
-$icon-hover-color,
-$link-color,
-$link-bg,
-$link-hover-color,
-$link-hover-bg,
-$link-active-color,
-$link-active-bg,
-$link-disabled-color,
-$link-disabled-bg
-) {
-//	processes css
-}
-</pre>
-
-		<hr />
-
-		<h4>Markup</h4>
-
-		<pre>&lt;aside id=&quot;sidebar&quot; class=&quot;sidebar sidebar-default sidebar-fixed-left&quot; role=&quot;navigation&quot;&gt;
-
-//	content goes here
-
-&lt;/aside&gt;</pre>
-
-
-		<h4>Add the Javascript</h4>
-
-		<pre>
-$(document).ready(function() {
-
-var overlay = $('.sidebar-overlay');
-
-$('.sidebar-toggle').on('click', function() {
-var sidebar = $('#sidebar');
-sidebar.toggleClass('open');
-if((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
-overlay.addClass('active');
-} else {
-overlay.removeClass('active');
-}
-});
-
-overlay.on('click', function() {
-$(this).removeClass('active');
-$('#sidebar').removeClass('open');
-});
-
-});
-
-
-(function($) {
-
-var dropdown = $('.sidebar .dropdown');
-
-//	Add slidedown animation to dropdown
-dropdown.on('show.bs.dropdown', function(e){
-$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-});
-
-//	Add slideup animation to dropdown
-dropdown.on('hide.bs.dropdown', function(e){
-$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
-
-})(jQuery);
-</pre>
-
-
+		</div>
 
 	</div>
 
 </div>
 
-</div>
+<style>
+
+	#b, #d {
+		position: absolute;
+		top: -50px;
+		left: auto;
+		width: 200px;
+	}
+
+	#d {
+		width: 400px;
+	}
+
+</style>
 
 
 		</div>
@@ -648,8 +591,6 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/main.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
 	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
-	
-	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/pages/navigation-drawer.js"></script>
 	
 
 	<script>
