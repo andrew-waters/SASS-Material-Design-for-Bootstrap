@@ -5802,7 +5802,8 @@ button.close {
   z-index: 1; }
 
 .morph-target {
-  z-index: 2; }
+  z-index: 2;
+  position: absolute; }
 
 h1, .h1,
 h2, .h2,
@@ -6024,6 +6025,17 @@ pre {
       letter-spacing: 0.5em;
       text-transform: uppercase;
       color: #BDBDBD; }
+  .example.example-right:before, .example.example-right:after {
+    content: " ";
+    display: table; }
+  .example.example-right:after {
+    clear: both; }
+  .example.example-right .example-code {
+    float: left;
+    width: 50%; }
+  .example.example-right .example-output {
+    float: right;
+    width: 50%; }
 
 .panel {
   border-radius: 2px; }

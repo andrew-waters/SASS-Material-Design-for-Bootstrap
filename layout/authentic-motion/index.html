@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Elevation &middot; SASS for Bootstrap</title>
+		<title>Authentic Motion &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -81,7 +81,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -146,7 +146,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/authentic-motion">
 							Authentic Motion
@@ -216,7 +216,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Styles
@@ -281,7 +281,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/styles/elevation">
 							Elevation
@@ -433,7 +433,7 @@
 
 	</a>
 
-	<h1 class="title">Elevation</h1>
+	<h1 class="title">Authentic Motion</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -504,47 +504,140 @@
 
 			<div class="container">
 
-	<h4>
-		Elevation
-	</h4>
-
 	<div class="row">
 
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<div class="col-xs-3">
 
-			<p>There are five elevation levels across the z-axis and the classes can be applied to any element.</p>
+			<p>We use the <a href="https://github.com/Rich-Harris/ramjet" target="_blank">ramjet</a> library to add authentic motion to the page.</p>
 
-			<div class="breather"></div>
+			<p>You need two elements to make a motion work - the trigger and target.</p>
+			<p>The trigger should have a <code>.morph-trigger</code> class and the target should have a <code>.morph-target</code> class.</p>
 
 		</div>
 
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+		<div class="col-xs-9">
 
-			<div class="row" id="elevationExamples">
+			<div class="example example-right">
+
+				<div class="example-code">
+					<pre>&lt;a id=&quot;a&quot; class=&quot;btn btn-info morph-trigger&quot; data-morph-target=&quot;b&quot;&gt;Eat Me&lt;/a&gt;
+
+&lt;div id=&quot;b&quot; class=&quot;paper morph-target&quot;&gt;
+
+	&lt;a class=&quot;close morph-dismiss&quot;&gt;&lt;i class=&quot;icon material-icons&quot;&gt;close&lt;/i&gt;&lt;/a&gt;
+
+	&lt;h4&gt;Hey there&lt;/h4&gt;
+
+&lt;/div&gt;</pre>
+				</div>
+
+				<div class="example-output">
+
+					<a id="a" class="btn btn-info morph-trigger" data-morph-target="b">Eat Me</a>
+
+					<div id="b" class="paper morph-target">
+
+						<a class="close morph-dismiss">
+							<i class="icon material-icons">close</i>
+						</a>
+
+						<h4>Hey there</h4>
+
+					</div>
+
+				</div>
 
 			</div>
 
 		</div>
 
-	</div>
+		<div class="col-xs-3">
 
-	<h4>
-		Animating Elevation
-	</h4>
-
-	<div class="row">
-
-		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
-
-			<p>Elevation can be animated by adding an additional class to an element. It can be applied in either direction - to either increase or decrease the elevation of the element.</p>
-
-			<div class="breather"></div>
+			<p>By adding <code>data-morph-hide="true"</code> when we transition we will remove the trigger when the target is displayed.</p>
 
 		</div>
 
-		<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+		<div class="col-xs-9">
 
-			<div class="row" id="animatedElevationExamples">
+			<div class="example example-right">
+
+				<div class="example-code">
+					<pre>&lt;a id=&quot;a&quot; class=&quot;btn btn-info morph-trigger bg-red bg-50&quot; data-morph-hide="true" data-morph-target=&quot;b&quot;&gt;Drink Me&lt;/a&gt;
+
+&lt;div id=&quot;b&quot; class=&quot;paper morph-target bg-purple bg-300&quot;&gt;
+
+	&lt;a class=&quot;close morph-dismiss&quot;&gt;&lt;i class=&quot;icon material-icons&quot;&gt;close&lt;/i&gt;&lt;/a&gt;
+
+	&lt;h4&gt;Refreshing&lt;/h4&gt;
+
+&lt;/div&gt;</pre>
+				</div>
+
+				<div class="example-output">
+
+					<div id="c" class="morph-trigger bg-red bg-50" data-morph-hide="true" data-morph-target="d">Drink Me</div>
+
+					<div id="d" class="paper morph-target bg-purple bg-300">
+
+						<a class="close morph-dismiss">
+							<i class="icon material-icons">close</i>
+						</a>
+
+						<h4>Refreshing</h4>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-xs-3">
+
+			<p>To use one element as a trigger, but morph <em>from</em> another element to the target use the <code>data-morph-trigger-from=""</code> attribute and add the element's id.</p>
+
+		</div>
+
+		<div class="col-xs-9">
+
+			<div class="example example-right">
+
+				<div class="example-code">
+					<pre>&lt;div id=&quot;e&quot; class=&quot;bg-blue bg-50&quot;&gt;
+	&lt;p&gt;Sleep&lt;/p&gt;
+	&lt;p&gt;&lt;a class=&quot;btn btn-primary morph-trigger&quot; data-morph-hide=&quot;true&quot; data-morph-trigger-from=&quot;e&quot; data-morph-target=&quot;f&quot;&gt;Now&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;f&quot; class=&quot;paper morph-target bg-pink bg-300&quot;&gt;
+
+	&lt;a class=&quot;close morph-dismiss&quot;&gt;
+		&lt;i class=&quot;icon material-icons&quot;&gt;close&lt;/i&gt;
+	&lt;/a&gt;
+
+	&lt;h4&gt;zzzZZZzZZZZZZZzzz&lt;/h4&gt;
+
+&lt;/div&gt;</pre>
+				</div>
+
+				<div class="example-output">
+
+					<div id="e" class="bg-blue bg-50">
+						<p>Sleep</p>
+						<p><a class="btn btn-primary morph-trigger" data-morph-hide="true" data-morph-trigger-from="e" data-morph-target="f">Now</a></p>
+					</div>
+
+					<div id="f" class="paper morph-target bg-pink bg-300">
+
+						<a class="close morph-dismiss">
+							<i class="icon material-icons">close</i>
+						</a>
+
+						<h4>zzzZZZzZZZZZZZzzz</h4>
+
+					</div>
+
+				</div>
 
 			</div>
 
@@ -553,6 +646,22 @@
 	</div>
 
 </div>
+
+<style>
+
+	#b, #d, #f {
+		top: 60px;
+		left: auto;
+		width: 200px;
+	}
+
+	#c, #e, #g {
+		text-align: center;
+		padding: 100px;
+	}
+
+
+</style>
 
 
 		</div>
@@ -563,8 +672,6 @@
 	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/main.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
 	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
-	
-	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/pages/elevation.js"></script>
 	
 
 	<script>
