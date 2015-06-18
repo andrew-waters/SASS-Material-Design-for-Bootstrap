@@ -43,7 +43,15 @@ a:hover {
 }
 
 
+.dropdown-menu {
+	padding: 0;
+	top: -10px;
+	left: 0;
+}
 
+.dropdown-menu a {
+	margin-right: 0 !important;
+}
 
 .ruled {
 	padding-bottom: 15px;
