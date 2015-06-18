@@ -53,9 +53,16 @@
 .btn {
 
 	border: none;
-	overflow:hidden;
-	position:relative;
-	display:inline-block;
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+
+	&.btn-no-style,
+	&.btn-no-style:hover, {
+		background: none;
+		border: none;
+		box-shadow: none !important;
+	}
 
 	&.btn-fab {
 

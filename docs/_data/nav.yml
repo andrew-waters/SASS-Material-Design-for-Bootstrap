@@ -42,6 +42,8 @@
   sub:
     - title: "Paper"
       href: "paper"
+    - title: "Cards"
+      href: "cards"
     - title: "Empty State"
       href: "empty-state"
     - title: "Icons"

@@ -3,36 +3,42 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
 .icon {
+
 	font-size: 18px;
+	float: left;
+	color: get-color(grey, 600);
+
+	&.icon-sm {
+		font-size: 12px;
+	}
+
+	&.icon-md {
+		font-size: 18px;
+	}
+
+	&.icon-lg {
+		font-size: 24px;
+	}
+
+	&.icon-xl {
+		font-size: 36px;
+	}
+
+	&.icon-xxl {
+		font-size: 48px;
+	}
+
+	&.icon-light {
+		color: rgba(255, 255, 255, 1);
+	}
+
+	&.icon-inactive {
+		color: rgba(0, 0, 0, 0.3);
+	}
+
 }
 
-.icon.icon-sm {
-	font-size: 12px;
-}
 
-.icon.icon-md {
-	font-size: 18px;
-}
-
-.icon.icon-lg {
-	font-size: 24px;
-}
-
-.icon.icon-xl {
-	font-size: 36px;
-}
-
-.icon.icon-xxl {
-	font-size: 48px;
-}
-
-.icon.icon-light {
-	color: rgba(255, 255, 255, 1);
-}
-
-.icon.icon-inactive {
-	color: rgba(0, 0, 0, 0.3);
-}
 
 a.btn-bg-danger .icon {
 	color: #cf3f41;
@@ -46,7 +52,9 @@ a.btn-bg-success .icon {
 	color: #4dae4a;
 }
 
+/*
 button.btn .icon,
 a.btn .icon {
 	margin-left: 2px;
 }
+*/

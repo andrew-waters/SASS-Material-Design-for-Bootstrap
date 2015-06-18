@@ -5648,14 +5648,16 @@ button.close {
 h1, .h1,
 h2, .h2,
 h3, .h3 {
+  font-weight: 400 !important;
   margin-top: 0;
-  margin-bottom: 39px; }
+  margin-bottom: 15px; }
 
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  font-weight: 400 !important;
   margin-top: 0;
-  margin-bottom: 26px; }
+  margin-bottom: 15px; }
 
 .paper {
   padding: 15px;
@@ -5664,6 +5666,57 @@ h6, .h6 {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
   .paper.seamless {
     margin: 0; }
+
+.card {
+  border-radius: 3px;
+  padding-bottom: 0; }
+  .card .tile .title {
+    padding-bottom: 0; }
+  .card .tile.top {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+  .card .title {
+    font-weight: medium !important;
+    padding: 9px 0 24px 0;
+    font-size: 2em;
+    line-height: 1em; }
+    .card .title small {
+      color: #9E9E9E;
+      font-size: 0.6em; }
+    .card .title img {
+      margin-right: 15px; }
+  .card .media {
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative; }
+    .card .media .title {
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #FFF;
+      font-weight: medium;
+      position: absolute;
+      bottom: 0;
+      padding: 15px;
+      display: inline-block; }
+  .card .content {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .card .action-area {
+    padding: 8px 5px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0; }
+    .card .action-area a {
+      text-transform: uppercase;
+      margin-right: 5px; }
+    .card .action-area .btn-icon {
+      height: 32px;
+      margin-right: 5px;
+      padding: 4px; }
+      .card .action-area .btn-icon .icon {
+        font-size: 24px;
+        padding: 0;
+        text-align: center; }
 
 .elevated-0 {
   box-shadow: none; }
@@ -5791,11 +5844,17 @@ a:hover {
   border-bottom-style: solid;
   border-bottom-color: #E0E0E0; }
 
-.border-left {
-  border-left: 1px solid #E0E0E0; }
+.border-top {
+  border-top: 1px solid #E0E0E0; }
 
 .border-right {
   border-right: 1px solid #E0E0E0; }
+
+.border-bottom {
+  border-bottom: 1px solid #E0E0E0; }
+
+.border-left {
+  border-left: 1px solid #E0E0E0; }
 
 .breather {
   height: 15px;
@@ -7996,6 +8055,10 @@ textarea.autosize {
   overflow: hidden;
   position: relative;
   display: inline-block; }
+  .btn.btn-no-style, .btn.btn-no-style:hover {
+    background: none;
+    border: none;
+    box-shadow: none !important; }
   .btn.btn-fab {
     border-radius: 50%;
     margin: 0;
@@ -8166,28 +8229,23 @@ ul#breadcrumb {
   border-radius: 2px; }
 
 .icon {
-  font-size: 18px; }
-
-.icon.icon-sm {
-  font-size: 12px; }
-
-.icon.icon-md {
-  font-size: 18px; }
-
-.icon.icon-lg {
-  font-size: 24px; }
-
-.icon.icon-xl {
-  font-size: 36px; }
-
-.icon.icon-xxl {
-  font-size: 48px; }
-
-.icon.icon-light {
-  color: white; }
-
-.icon.icon-inactive {
-  color: rgba(0, 0, 0, 0.3); }
+  font-size: 18px;
+  float: left;
+  color: #757575; }
+  .icon.icon-sm {
+    font-size: 12px; }
+  .icon.icon-md {
+    font-size: 18px; }
+  .icon.icon-lg {
+    font-size: 24px; }
+  .icon.icon-xl {
+    font-size: 36px; }
+  .icon.icon-xxl {
+    font-size: 48px; }
+  .icon.icon-light {
+    color: white; }
+  .icon.icon-inactive {
+    color: rgba(0, 0, 0, 0.3); }
 
 a.btn-bg-danger .icon {
   color: #cf3f41; }
@@ -8198,10 +8256,12 @@ a.btn-bg-primary .icon {
 a.btn-bg-success .icon {
   color: #4dae4a; }
 
+/*
 button.btn .icon,
 a.btn .icon {
-  margin-left: 2px; }
-
+	margin-left: 2px;
+}
+*/
 .tile {
   margin-left: -15px;
   margin-right: -15px;
@@ -8260,7 +8320,7 @@ a.btn .icon {
 
 .tile * {
   color: #FFF !important;
-  font-weight: bold; }
+  font-weight: medium; }
 
 .tile .margin {
   margin-left: 15px;
@@ -8610,6 +8670,33 @@ a.btn .icon {
   .empty-state .icon {
     margin-bottom: 45px;
     color: #BDBDBD; }
+
+.no-top-margin {
+  margin-top: 0 !important; }
+
+.no-right-margin {
+  margin-right: 0 !important; }
+
+.no-bottom-margin {
+  margin-bottom: 0 !important; }
+
+.no-left-margin {
+  margin-left: 0 !important; }
+
+.no-top-padding {
+  padding-top: 0 !important; }
+
+.no-right-padding {
+  padding-right: 0 !important; }
+
+.no-bottom-padding {
+  padding-bottom: 0 !important; }
+
+.no-left-padding {
+  padding-left: 0 !important; }
+
+.no-bg {
+  background: none !important; }
 
 .app-bar {
   display: block;
