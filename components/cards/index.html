@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Authentic Motion &middot; SASS for Bootstrap</title>
+		<title>Cards &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -81,7 +81,7 @@
 
 			
 
-			<li role="presentation" class="active">
+			<li role="presentation" class="">
 
 				<a href="#" class="toggle-navigation">
 					Layout
@@ -146,7 +146,7 @@
 					
 					
 
-					<li role="presentation" class="active current">
+					<li role="presentation" class="">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/layout/authentic-motion">
 							Authentic Motion
@@ -303,7 +303,7 @@
 
 			
 
-			<li role="presentation" class="">
+			<li role="presentation" class="active">
 
 				<a href="#" class="toggle-navigation">
 					Components
@@ -329,7 +329,7 @@
 					
 					
 
-					<li role="presentation" class="">
+					<li role="presentation" class="active current">
 
 						<a href="/SASS-Material-Design-for-Bootstrap/components/cards">
 							Cards
@@ -459,7 +459,7 @@
 
 	</a>
 
-	<h1 class="title">Authentic Motion</h1>
+	<h1 class="title">Cards</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -530,44 +530,81 @@
 
 			<div class="container">
 
-	<div class="row">
+	<div class="col-xs-12">
 
-		<div class="col-xs-3">
+		<div class="row">
 
-			<p>We use the <a href="https://github.com/Rich-Harris/ramjet" target="_blank">ramjet</a> library to add authentic motion to the page.</p>
+			<div class="col-xs-4">
 
-			<p>You need two elements to make a motion work - the trigger and target.</p>
-			<p>The trigger should have a <code>.morph-trigger</code> class and the target should have a <code>.morph-target</code> class.</p>
+				<div class="card paper">
 
-		</div>
+					<div class="tile background-image tile-md background-top" style="background-image: url('/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg');">
 
-		<div class="col-xs-9">
+						<div class="margin">
 
-			<div class="example example-right">
+							<div class="tile-bottom">
 
-				<div class="example-code">
-					<pre>&lt;a id=&quot;a&quot; class=&quot;btn btn-info morph-trigger&quot; data-morph-target=&quot;b&quot;&gt;Eat Me&lt;/a&gt;
+								Combined with Tile
 
-&lt;div id=&quot;b&quot; class=&quot;paper morph-target&quot;&gt;
+							</div>
 
-	&lt;a class=&quot;close morph-dismiss&quot;&gt;&lt;i class=&quot;icon material-icons&quot;&gt;close&lt;/i&gt;&lt;/a&gt;
+						</div>
 
-	&lt;h4&gt;Hey there&lt;/h4&gt;
+					</div>
 
-&lt;/div&gt;</pre>
+					<div class="title">
+
+						Title of Card<br />
+						<small>subtitle as well</small>
+
+					</div>
+
+					<div class="content">
+
+						<p>Use hierarchy within the card to direct users’ attention to the most important information. For example, place primary content at the top of the card, or use typography to emphasize primary content.</p>
+
+					</div>
+
+					<div class="action-area clearfix">
+
+						<span class="pull-right">
+
+							<a class="btn btn-default btn-icon btn-no-style">
+								<i class="icon icon-lg material-icons">expand_less</i>
+							</a>
+
+						</span>
+
+					</div>
+
 				</div>
 
-				<div class="example-output">
+				<div class="card paper">
 
-					<a id="a" class="btn btn-info morph-trigger" data-morph-target="b">Eat Me</a>
+					<div class="media">
+						<img src="/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg" class="img-responsive" />
+						<span class="title no-bg">
+							Media Element
+						</span>
+					</div>
 
-					<div id="b" class="paper morph-target">
+					<div class="action-area border-top border-bottom clearfix">
 
-						<a class="close morph-dismiss">
-							<i class="icon material-icons">close</i>
+						<a class="btn btn-inverted">
+							Action
 						</a>
 
-						<h4>Hey there</h4>
+						<a class="btn btn-inverted">
+							Action
+						</a>
+
+					</div>
+
+					<div class="content">
+
+						<h3>Content Element</h3>
+
+						<p>Use hierarchy within the card to direct users’ attention to the most important information. For example, place primary content at the top of the card, or use typography to emphasize primary content.</p>
 
 					</div>
 
@@ -575,41 +612,73 @@
 
 			</div>
 
-		</div>
+			<div class="col-xs-4 border-left border-right">
 
-		<div class="col-xs-3">
+				<div class="card paper">
 
-			<p>By adding <code>data-morph-hide="true"</code> when we transition we will remove the trigger when the target is displayed.</p>
+					<div class="title no-top-padding">
 
-		</div>
+						<img src="/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg" class="img-circle pull-left" height="50" width="50" />
 
-		<div class="col-xs-9">
+						Top 10 Die Hard Moments<br />
+						<small>Yippee ki-yay!</small>
 
-			<div class="example example-right">
+					</div>
 
-				<div class="example-code">
-					<pre>&lt;a id=&quot;a&quot; class=&quot;btn btn-info morph-trigger bg-red bg-50&quot; data-morph-hide="true" data-morph-target=&quot;b&quot;&gt;Drink Me&lt;/a&gt;
+					<div class="media embed-responsive embed-responsive-16by9">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/8YXi9JAgdf0" frameborder="0" allowfullscreen></iframe>
+					</div>
 
-&lt;div id=&quot;b&quot; class=&quot;paper morph-target bg-purple bg-300&quot;&gt;
+					<div class="content">
 
-	&lt;a class=&quot;close morph-dismiss&quot;&gt;&lt;i class=&quot;icon material-icons&quot;&gt;close&lt;/i&gt;&lt;/a&gt;
+						<p>Use hierarchy within the card to direct users’ attention to the most important information. For example, place primary content at the top of the card, or use typography to emphasize primary content.</p>
 
-	&lt;h4&gt;Refreshing&lt;/h4&gt;
+					</div>
 
-&lt;/div&gt;</pre>
+					<div class="action-area clearfix">
+
+						<span class="pull-right">
+
+							<a class="btn btn-default btn-icon btn-no-style">
+								<i class="icon icon-lg material-icons">expand_less</i>
+							</a>
+
+						</span>
+
+					</div>
+
 				</div>
 
-				<div class="example-output">
+				<div class="card paper">
 
-					<div id="c" class="morph-trigger bg-red bg-50" data-morph-hide="true" data-morph-target="d">Drink Me</div>
+					<div class="tile background-image tile-lg background-top" style="background-image: url('/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg');">
 
-					<div id="d" class="paper morph-target bg-purple bg-300">
+						<div class="margin">
 
-						<a class="close morph-dismiss">
-							<i class="icon material-icons">close</i>
-						</a>
+							<div class="tile-bottom">
 
-						<h4>Refreshing</h4>
+								<div class="title">
+
+									Title of Card<br />
+									<small>subtitle as well</small>
+
+								</div>
+
+								<div class="action-area no-bottom-padding clearfix">
+
+									<a class="btn btn-inverted">
+										Action 1
+									</a>
+
+									<a class="btn btn-inverted">
+										Action 2
+									</a>
+
+								</div>
+
+							</div>
+
+						</div>
 
 					</div>
 
@@ -617,49 +686,122 @@
 
 			</div>
 
-		</div>
+			<div class="col-xs-4">
 
-		<div class="col-xs-3">
+				<div class="card paper">
 
-			<p>To use one element as a trigger, but morph <em>from</em> another element to the target use the <code>data-morph-trigger-from=""</code> attribute and add the element's id.</p>
+					<div class="tile no-bottom-margin background-image tile-sm background-top" style="background-image: url('/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg');">
 
-		</div>
+						<div class="margin">
 
-		<div class="col-xs-9">
+							<div class="tile-bottom no-bg">
 
-			<div class="example example-right">
+								Title of Card
 
-				<div class="example-code">
-					<pre>&lt;div id=&quot;e&quot; class=&quot;bg-blue bg-50&quot;&gt;
-	&lt;p&gt;Sleep&lt;/p&gt;
-	&lt;p&gt;&lt;a class=&quot;btn btn-primary morph-trigger&quot; data-morph-hide=&quot;true&quot; data-morph-trigger-from=&quot;e&quot; data-morph-target=&quot;f&quot;&gt;Now&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
+							</div>
 
-&lt;div id=&quot;f&quot; class=&quot;paper morph-target bg-pink bg-300&quot;&gt;
+						</div>
 
-	&lt;a class=&quot;close morph-dismiss&quot;&gt;
-		&lt;i class=&quot;icon material-icons&quot;&gt;close&lt;/i&gt;
-	&lt;/a&gt;
-
-	&lt;h4&gt;zzzZZZzZZZZZZZzzz&lt;/h4&gt;
-
-&lt;/div&gt;</pre>
-				</div>
-
-				<div class="example-output">
-
-					<div id="e" class="bg-blue bg-50">
-						<p>Sleep</p>
-						<p><a class="btn btn-primary morph-trigger" data-morph-hide="true" data-morph-trigger-from="e" data-morph-target="f">Now</a></p>
 					</div>
 
-					<div id="f" class="paper morph-target bg-pink bg-300">
+					<div class="action-area clearfix">
 
-						<a class="close morph-dismiss">
-							<i class="icon material-icons">close</i>
+						<a class="btn btn-default btn-icon btn-no-style">
+							<i class="icon icon-sm material-icons">close</i>
+							Close
 						</a>
 
-						<h4>zzzZZZzZZZZZZZzzz</h4>
+						<a class="btn btn-inverted pull-right">
+							Action 2
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-xs-6">
+
+						<div class="card paper">
+		
+							<div class="tile no-bottom-margin background-image tile-sm background-top" style="background-image: url('/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg');">
+		
+								<div class="margin">
+		
+									<div class="tile-bottom no-bg">
+		
+										Title of Card
+		
+									</div>
+		
+								</div>
+		
+							</div>
+		
+							<div class="action-area clearfix">
+		
+									<div class="col-xs-4 center-block">
+										<a class="btn btn-default btn-icon btn-no-style">
+											<i class="icon icon-sm material-icons">favorite</i>
+										</a>
+									</div>
+									<div class="col-xs-4 center-block">
+										<a class="btn btn-default btn-icon btn-no-style">
+											<i class="icon icon-sm material-icons">bookmark</i>
+										</a>
+									</div>
+									<div class="col-xs-4 center-block">
+										<a class="btn btn-default btn-icon btn-no-style">
+											<i class="icon icon-sm material-icons">reply</i>
+										</a>
+									</div>
+
+							</div>
+		
+						</div>
+
+					</div>
+
+					<div class="col-xs-6">
+
+						<div class="card paper">
+		
+							<div class="tile no-bottom-margin background-image tile-sm background-top" style="background-image: url('/SASS-Material-Design-for-Bootstrap/assets/images/material-cover.jpg');">
+		
+								<div class="margin">
+		
+									<div class="tile-bottom no-bg">
+		
+										Title of Card
+		
+									</div>
+		
+								</div>
+		
+							</div>
+		
+							<div class="action-area clearfix">
+		
+									<div class="col-xs-4 center-block">
+										<a class="btn btn-default btn-icon btn-no-style">
+											<i class="icon icon-sm material-icons">favorite</i>
+										</a>
+									</div>
+									<div class="col-xs-4 center-block">
+										<a class="btn btn-default btn-icon btn-no-style">
+											<i class="icon icon-sm material-icons">bookmark</i>
+										</a>
+									</div>
+									<div class="col-xs-4 center-block">
+										<a class="btn btn-default btn-icon btn-no-style">
+											<i class="icon icon-sm material-icons">reply</i>
+										</a>
+									</div>
+		
+							</div>
+		
+						</div>
 
 					</div>
 
@@ -672,22 +814,6 @@
 	</div>
 
 </div>
-
-<style>
-
-	#b, #d, #f {
-		top: 60px;
-		left: auto;
-		width: 200px;
-	}
-
-	#c, #e, #g {
-		text-align: center;
-		padding: 100px;
-	}
-
-
-</style>
 
 
 		</div>
