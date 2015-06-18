@@ -19,18 +19,21 @@ $(document).ready(function() {
 			{
 				breakpoint: 1200,
 				settings: {
+					slidesToScroll: 2,
 					slidesToShow: 3
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
+					slidesToScroll: 2,
 					slidesToShow: 2
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
+					slidesToScroll: 1,
 					slidesToShow: 1
 				}
 			}
