@@ -8,34 +8,31 @@ $('.your-class').slick({
   slidesToShow: 1,
 */
   dots: true,
-  arrows: false,
+  arrows: true,
 //  appendArrows: $('.your-class-arrows'),
-  centerMode: true,
+  prevArrow: $('.slick-prev'),
+  nextArrow: $('.slick-next'),
+  centerMode: false,
   variableWidth: false,
   infinite: false,
-  slidesToShow: 2
-/*
+  initialSlide: 0,
+  slidesToShow: 3,
+  rows: 1,
+  slidesToScroll: 2,
   responsive: [
+  {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+	 },
     {
       breakpoint: 768,
       settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
         slidesToShow: 1
       }
     }
   ]
-*/
 
 });
 
