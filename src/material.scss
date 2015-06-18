@@ -23,7 +23,6 @@ $material-font-path: "../fonts/material" !default;
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
 
-
 @import "stylesheets/animation";
 @import "stylesheets/headers";
 @import "stylesheets/paper";
@@ -46,3 +45,5 @@ $material-font-path: "../fonts/material" !default;
 @import "stylesheets/layout/app-bar";
 @import "stylesheets/layout/navigation-drawer";
 @import "stylesheets/layout/status-bar";
+
+@import "../bower_components/slick.js/slick/slick";

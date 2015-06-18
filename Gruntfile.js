@@ -50,6 +50,7 @@ module.exports = function(grunt) {
 						'bower_components/velocity/velocity.min.js',
 						'bower_components/velocity/velocity.ui.min.js',
 						'bower_components/autosize/dist/autosize.js',
+						'bower_components/slick.js/slick/slick.js',
 						'src/javascripts/ramjet.js',
 						'src/javascripts/button-ripple.js',
 						'src/javascripts/material-form.js',
