@@ -53,12 +53,20 @@ a:hover {
 	border-bottom-color: get-color(grey, 300);
 }
 
-.border-left {
-	border-left: 1px solid get-color(grey, 300);
+.border-top {
+	border-top: 1px solid get-color(grey, 300);
 }
 
 .border-right {
 	border-right: 1px solid get-color(grey, 300);
+}
+
+.border-bottom {
+	border-bottom: 1px solid get-color(grey, 300);
+}
+
+.border-left {
+	border-left: 1px solid get-color(grey, 300);
 }
 
 .breather {
