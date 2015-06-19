@@ -44,6 +44,7 @@ $(document).ready(function() {
 	});
 
 	$navigationDrawer = $('.navigation-drawer');
+
 	$contentContainer = $('.content-container');
 
 	$originalNavigationDrawerPlacement = $navigationDrawer.hasClass('navigation-drawer-fixed-left') ? 'left' : false;
@@ -66,13 +67,13 @@ $(document).ready(function() {
 
 	}
 
-	if($(window).width() > 1300) {
+	if($navigationDrawer.html() !== undefined && $(window).width() > 1300) {
 		showFixedNavigationDrawer();
 	}
 
 	$(window).resize(function() {
 
-		if($('body').has('aside.navigation-drawer')) {
+		if($navigationDrawer.html() !== undefined) {
 
 		//	when the window is > 1300px wide, fix the nav in place
 			if($(window).width() > 1300) {
