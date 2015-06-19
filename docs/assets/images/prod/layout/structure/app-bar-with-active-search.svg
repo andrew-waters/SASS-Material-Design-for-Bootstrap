@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200px" height="66px" viewBox="0 0 1200 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.4 (305) - http://www.bohemiancoding.com/sketch -->
+    <title>app-bar-with-active-search</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.525 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="app-bar-with-active-search" sketch:type="MSArtboardGroup">
+            <rect id="App-Bar" fill="#03A9F4" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="65"></rect>
+            <rect id="Nav-Drawer-Shadow" fill-opacity="0.7" fill="#000000" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="65"></rect>
+            <text id="-Search" opacity="0.601620802" sketch:type="MSTextLayer" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
+                <tspan x="79" y="40.2294922"> Search</tspan>
+            </text>
+            <g id="back" sketch:type="MSLayerGroup" transform="translate(26.000000, 23.000000)" fill="#FFFFFF">
+                <path d="M22,9.625 L5.225,9.625 L12.925,1.925 L11,0 L0,11 L11,22 L12.925,20.075 L5.225,12.375 L22,12.375 L22,9.625 L22,9.625 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+            <path d="M70,21 L70,46" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

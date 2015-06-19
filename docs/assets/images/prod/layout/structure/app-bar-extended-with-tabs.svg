@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200px" height="295px" viewBox="0 0 1200 295" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.4 (305) - http://www.bohemiancoding.com/sketch -->
+    <title>app-bar-extended-with-tabs</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="360" height="48"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="app-bar-extended-with-tabs" sketch:type="MSArtboardGroup">
+            <rect id="App-Bar" fill="#03A9F4" sketch:type="MSShapeGroup" x="0" y="0" width="1200" height="255"></rect>
+            <text id="Page-Title" sketch:type="MSTextLayer" font-family="Helvetica" font-size="20" font-weight="normal" fill="#FFFFFF">
+                <tspan x="70" y="38.2000008">Page Title</tspan>
+            </text>
+            <g id="Tabs" sketch:type="MSLayerGroup" transform="translate(75.000000, 207.000000)">
+                <mask id="mask-2" sketch:name="bounds" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="bounds" fill-opacity="0" fill="#FFFFFF" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <text id="ITEM-THREE" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Helvetica" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="244.423828" y="26.2978516">ITEM THREE</tspan>
+                </text>
+                <text id="ITEM-TWO" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Helvetica" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="131.820312" y="26.2978516">ITEM TWO</tspan>
+                </text>
+                <text id="ITEM-ONE" sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Helvetica" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="16" fill="#FFFFFF">
+                    <tspan x="12.855957" y="26.2978516">ITEM ONE</tspan>
+                </text>
+                <rect id="indicator" fill="#FFFF8C" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="0" y="46" width="120" height="2"></rect>
+            </g>
+            <g id="Nav-Toggle" sketch:type="MSLayerGroup" transform="translate(25.000000, 25.000000)" fill="#FFFFFF">
+                <path d="M0,12 L18,12 L18,10 L0,10 L0,12 L0,12 Z M0,7 L18,7 L18,5 L0,5 L0,7 L0,7 Z M0,0 L0,2 L18,2 L18,0 L0,0 L0,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
