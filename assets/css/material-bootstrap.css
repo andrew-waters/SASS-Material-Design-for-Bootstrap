@@ -8398,8 +8398,7 @@ ul#breadcrumb {
 
 .icon {
   font-size: 18px;
-  float: left;
-  color: #757575; }
+  float: left; }
   .icon.icon-sm {
     font-size: 12px; }
   .icon.icon-md {
