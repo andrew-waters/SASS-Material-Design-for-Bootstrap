@@ -72,11 +72,15 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 
-	//	when the window is > 1300px wide, fix the nav in place
-		if($(window).width() > 1300) {
-			showFixedNavigationDrawer();
-		} else {
-			hideFixedNavigationDrawer();
+		if($('body').has('aside.navigation-drawer')) {
+
+		//	when the window is > 1300px wide, fix the nav in place
+			if($(window).width() > 1300) {
+				showFixedNavigationDrawer();
+			} else {
+				hideFixedNavigationDrawer();
+			}
+
 		}
 
 	});
