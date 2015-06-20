@@ -8875,7 +8875,25 @@ a.btn .icon {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 0 16px;
-  height: 65px; }
+  height: 65px;
+  /*
+  	@media (min-width: $screen-sm-min) {
+  		& .title {
+  		font-size: 14px;
+  		}
+  	}
+  	@media (min-width: $screen-md-min) {
+  		& .title {
+  			font-size: 18px;
+  		}
+  	}
+  	
+  	@media (min-width: $screen-lg-min) {
+  		& .title {
+  			font-size: 24px;
+  		}
+  	}
+  */ }
   .app-bar.app-bar-translucent {
     opacity: 0.95; }
   body.no-transition .app-bar {
@@ -8888,12 +8906,11 @@ a.btn .icon {
   .app-bar .title {
     padding-left: 90px;
     padding-top: 20px;
-    font-size: 25px; }
+    font-size: 21px; }
   .app-bar.app-bar-extended {
     height: 255px; }
     .app-bar.app-bar-extended .title {
-      padding-top: 105px;
-      font-size: 55px; }
+      padding-top: 105px; }
     body.has-status-bar .app-bar.app-bar-extended {
       padding-top: 25px;
       height: 280px; }
