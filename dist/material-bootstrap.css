@@ -7997,6 +7997,8 @@ textarea.autosize {
       display: table; }
     .material .material-input:after {
       clear: both; }
+    .material .material-input label {
+      pointer-events: none; }
   .material .material-input:after {
     display: block;
     clear: both;

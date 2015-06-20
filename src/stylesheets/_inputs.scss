@@ -192,10 +192,16 @@ textarea.autosize {
 	}
 
 	.material-input {
+
 		position: relative;
 		padding-top: 18px;
 		margin-bottom: 10px;
 		@include clearfix();
+
+		label {
+			pointer-events: none;
+		}
+
 	}
 	
 	.material-input:after {
