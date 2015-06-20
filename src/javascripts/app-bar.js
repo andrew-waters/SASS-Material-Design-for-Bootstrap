@@ -90,8 +90,9 @@
 			var title = $(this).find('.title');
 
 			if(title) {
-				title.attr("data-0", "padding-left: 90px; font-size: 55px; padding-top: 105px;");
-				title.attr("data-205", "padding-left: 60px; font-size: 25px; padding-top: 20px;");
+				var normalSize = $(title).css('font-size');
+				title.attr("data-0", "padding-left: 80px; font-size: 40px; padding-top: 100px;");
+				title.attr("data-205", "padding-left: 60px; font-size: " + normalSize  + "; padding-top: 22px;");
 			}
 
 		});
