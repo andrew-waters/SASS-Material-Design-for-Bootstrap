@@ -97,6 +97,7 @@ $navigation-drawer-font-weight: 500;
 
 	.navigation-drawer-footer {
 		border-top-color: $divider;
+		background-color: $bg;
 	}
 
 	.navigation-drawer-text {
@@ -302,6 +303,10 @@ body.navigation-drawer-showing {
 	@include transition(all 0.5s ease-in-out);
 	@include clearfix();
 
+	.navigation-drawer-footer {
+		@include transition(all 0.5s ease-in-out);
+	}
+
 	&::-webkit-scrollbar-track {
 		border-radius: 2px;
 	}
@@ -381,11 +386,12 @@ body.navigation-drawer-showing {
 
 	.navigation-drawer-footer {
 		border-top: 1px solid get-color(grey, 300);
-		position: fixed;
-		bottom: 0;
 		display: block;
 		width: 100%;
 		padding: $navigation-drawer-padding;
+		position: absolute;
+		bottom: 0px;
+		height: 96px;
 	}
 
 }
@@ -401,6 +407,10 @@ body.navigation-drawer-showing {
 
 	margin: 0;
 	padding: 0;
+	padding-bottom: 96px;
+	visibility: visible;
+	display: block;
+	box-sizing: border-box;
 
 	li {
 
@@ -423,6 +433,12 @@ body.navigation-drawer-showing {
 
 	}
 
+}
+
+.navigation-drawer > .wrapper {
+	position: relative;
+	padding-bottom: 96px;
+	min-height: 100%;
 }
 
 .navigation-drawer-default {

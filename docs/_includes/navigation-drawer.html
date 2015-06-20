@@ -3,84 +3,85 @@
 
 <aside id="navigation-drawer" class="navigation-drawer navigation-drawer-default navigation-drawer-fixed-left" role="navigation">
 
-	<div class="navigation-drawer-brand">
+	<div class="wrapper">
 
-		<h4>Material Design for Bootstrap</h4>
+		<div class="navigation-drawer-brand">
 
-	</div>
+			<h4>Material Design for Bootstrap</h4>
 
-	<div class="navigation-drawer-divider"></div>
+		</div>
 
-	<div class="navigation-drawer-nav">
+		<div class="navigation-drawer-divider"></div>
 
-		<ul class="list-level-1">
+		<nav class="navigation-drawer-nav">
 
-			{% for top in site.data.nav %}
+			<ul class="list-level-1">
+
+				{% for top in site.data.nav %}
  
-			{% if top.sub != null %}
+				{% if top.sub != null %}
 
-			{% assign firstLevel = page.url | replace: '/', ' ' | truncatewords: 1 | remove:'...' %}
+				{% assign firstLevel = page.url | replace: '/', ' ' | truncatewords: 1 | remove:'...' %}
 
-			<li role="presentation" class="{% if firstLevel == top.href %}active{% endif %}">
+				<li role="presentation" class="{% if firstLevel == top.href %}active{% endif %}">
 
-				<a href="#" class="toggle-navigation">
-					{{ top.title }}
-				</a>
+					<a href="#" class="toggle-navigation">
+						{{ top.title }}
+					</a>
 
-				<ul class="list-level-2">
+					<ul class="list-level-2">
 
-					{% for sub in top.sub %}
+						{% for sub in top.sub %}
 
-					{% capture joined %}{{ firstLevel }} {{ sub.href }}{% endcapture %}
-					{% assign secondLevel = page.url | replace: '/', ' ' | truncatewords: 2 | remove:'...' %}
+						{% capture joined %}{{ firstLevel }} {{ sub.href }}{% endcapture %}
+						{% assign secondLevel = page.url | replace: '/', ' ' | truncatewords: 2 | remove:'...' %}
 
-					<li role="presentation" class="{% if joined == secondLevel %}active current{% endif %}">
+						<li role="presentation" class="{% if joined == secondLevel %}active current{% endif %}">
 
-						<a href="{{ site.baseurl }}/{{ top.href }}/{{ sub.href }}">
-							{{ sub.title }}
-						</a>
+							<a href="{{ site.baseurl }}/{{ top.href }}/{{ sub.href }}">
+								{{ sub.title }}
+							</a>
 
-					</li>
+						</li>
 
-					{% endfor %}
+						{% endfor %}
 
-				</ul>
+					</ul>
 
-			</li>
+				</li>
 
-			{% else %}
+				{% else %}
 
-			<li>
+				<li>
 
-				<a href="{{ site.baseurl }}/{{ top.href }}">
-					{{ top.title }}
-				</a>
+					<a href="{{ site.baseurl }}/{{ top.href }}">
+						{{ top.title }}
+					</a>
 
-			</li>
+				</li>
 
-			{% endif %}
+				{% endif %}
 
-			{% endfor %}
+				{% endfor %}
 
-		</ul>
+			</ul>
 
-	</div>
+		</nav>
 
-	<div class="navigation-drawer-footer">
+		<div class="navigation-drawer-footer">
 
-		<p>
-			View on
-			<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
-				Github
+			<a class="btn btn-inverted" href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
+				<i class="icon icon-lg fa fa-github"></i>
 			</a>
-		</p>
 
-		<p>
-			Developed by
-			<a href="http://band-x.media" target="_blank">
-				band-x.media
-			</a>
-		</p>
+			<p>
+				Developed by
+				<a href="http://band-x.media" target="_blank">
+					band-x.media
+				</a>
+			</p>
+
+		</div>
 
 	</div>
 
