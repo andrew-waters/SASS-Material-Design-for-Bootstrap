@@ -9101,6 +9101,10 @@ body.navigation-drawer-showing .status-bar {
     display: table; }
   .navigation-drawer:after {
     clear: both; }
+  .navigation-drawer .navigation-drawer-footer {
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
   .navigation-drawer::-webkit-scrollbar-track {
     border-radius: 2px; }
   .navigation-drawer::-webkit-scrollbar {
@@ -9163,11 +9167,12 @@ body.navigation-drawer-showing .status-bar {
     vertical-align: middle; }
 .navigation-drawer .navigation-drawer-footer {
   border-top: 1px solid #E0E0E0;
-  position: fixed;
-  bottom: 0;
   display: block;
   width: 100%;
-  padding: 15px 30px; }
+  padding: 15px 30px;
+  position: absolute;
+  bottom: 0px;
+  height: 96px; }
 
 /**
  *
@@ -9176,7 +9181,11 @@ body.navigation-drawer-showing .status-bar {
  */
 .navigation-drawer .navigation-drawer-nav {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-bottom: 96px;
+  visibility: visible;
+  display: block;
+  box-sizing: border-box; }
   .navigation-drawer .navigation-drawer-nav li {
     position: relative;
     list-style-type: none; }
@@ -9196,6 +9205,11 @@ body.navigation-drawer-showing .status-bar {
       .navigation-drawer .navigation-drawer-nav li a:hover {
         background: transparent; }
 
+.navigation-drawer > .wrapper {
+  position: relative;
+  padding-bottom: 96px;
+  min-height: 100%; }
+
 .navigation-drawer-default {
   color: #616161;
   background-color: #FFFFFF;
@@ -9210,7 +9224,8 @@ body.navigation-drawer-showing .status-bar {
   .navigation-drawer-default .navigation-drawer-divider, .navigation-drawer-default .navigation-drawer-nav .divider {
     background-color: #EEEEEE; }
   .navigation-drawer-default .navigation-drawer-footer {
-    border-top-color: #EEEEEE; }
+    border-top-color: #EEEEEE;
+    background-color: #FFFFFF; }
   .navigation-drawer-default .navigation-drawer-text {
     color: #616161; }
   .navigation-drawer-default .navigation-drawer-nav ul:first-child {
@@ -9264,7 +9279,8 @@ body.navigation-drawer-showing .status-bar {
   .navigation-drawer-inverse .navigation-drawer-divider, .navigation-drawer-inverse .navigation-drawer-nav .divider {
     background-color: #424242; }
   .navigation-drawer-inverse .navigation-drawer-footer {
-    border-top-color: #424242; }
+    border-top-color: #424242;
+    background-color: #212121; }
   .navigation-drawer-inverse .navigation-drawer-text {
     color: #BDBDBD; }
   .navigation-drawer-inverse .navigation-drawer-nav ul:first-child {
