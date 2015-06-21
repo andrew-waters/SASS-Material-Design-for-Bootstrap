@@ -45,3 +45,17 @@ body {
 .bg-A100 {
 	margin-top: 5px;
 }
+
+.version {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.version.major {
+	width: 64px;
+	height: 64px;
+}

@@ -5798,6 +5798,47 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+.alert {
+  border-radius: 0; }
+  .alert.rounded {
+    border-radius: 5px; }
+
+.alert-success {
+  background-color: #66BB6A;
+  border-color: #66BB6A;
+  color: #FFF; }
+  .alert-success hr {
+    border-top-color: #54b359; }
+  .alert-success .alert-link {
+    color: #e6e6e6; }
+
+.alert-info {
+  background-color: #29B6F6;
+  border-color: #29B6F6;
+  color: #FFF; }
+  .alert-info hr {
+    border-top-color: #11aef5; }
+  .alert-info .alert-link {
+    color: #e6e6e6; }
+
+.alert-warning {
+  background-color: #FFE082;
+  border-color: #FFE082;
+  color: #333333; }
+  .alert-warning hr {
+    border-top-color: #ffda68; }
+  .alert-warning .alert-link {
+    color: #1a1a1a; }
+
+.alert-danger {
+  background-color: #EF5350;
+  border-color: #EF5350;
+  color: #FFF; }
+  .alert-danger hr {
+    border-top-color: #ed3c39; }
+  .alert-danger .alert-link {
+    color: #e6e6e6; }
+
 .morph-trigger {
   z-index: 1; }
 
@@ -6103,6 +6144,20 @@ pre {
   .example.example-right .example-output {
     float: right;
     width: 50%; }
+
+.body-feature {
+  margin-right: -15px;
+  padding: 30px;
+  width: 100%; }
+  @media (max-width: 768px) {
+    .body-feature {
+      padding: 15px; } }
+  @media (max-width: 992px) {
+    .body-feature {
+      padding: 30px; } }
+  @media (max-width: 1200px) {
+    .body-feature {
+      padding: 30px; } }
 
 .panel {
   border-radius: 2px; }
@@ -9070,13 +9125,14 @@ body.has-status-bar .navigation-drawer-toggle {
  *	Navigation Drawer Showing (browser > 1200px width)
  *
  */
-body.navigation-drawer-showing .content-container > .container {
+body.navigation-drawer-showing .content-container > .container, body.navigation-drawer-showing .content-container > .body-feature {
   width: calc(100% - 280px);
   margin-left: 280px;
   -webkit-transition: width 0.4s ease-in-out;
   -o-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out; }
-body.navigation-drawer-showing.no-transition .content-container > .container {
+body.navigation-drawer-showing.no-transition .content-container > .container
+body.navigation-drawer-showing.no-transition .content-container > .body-feature {
   -webkit-transition: none;
   -o-transition: none;
   transition: none; }
