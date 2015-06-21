@@ -252,7 +252,8 @@ body.has-status-bar .navigation-drawer-toggle {
  */
 body.navigation-drawer-showing {
 
-	& .content-container > .container {
+	& .content-container > .container,
+	& .content-container > .body-feature {
 
 		width: calc(100% - 280px);
 		margin-left: 280px;
@@ -260,7 +261,8 @@ body.navigation-drawer-showing {
 
 	}
 
-	&.no-transition .content-container > .container {
+	&.no-transition .content-container > .container
+	&.no-transition .content-container > .body-feature {
 		@include transition(none);
 	}
 
