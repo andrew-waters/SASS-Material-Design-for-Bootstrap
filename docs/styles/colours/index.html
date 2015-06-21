@@ -7,20 +7,36 @@ google: http://www.google.com/design/spec/style/color.html#color-color-palette
 
 <div class="container">
 
+	<div class="alert alert-info">
+
+		When writing colours in SASS, there is a utility function to get the colour value.
+
+		<pre>element {
+	background-color: <strong>get-color(blue, 600)</strong>;
+	color: <strong>get-color(pink, 50)</strong>;
+}</pre>
+
+	</div>
+
+	<hr />
+
 	<div id="background-colors" class="row">
 
 		<div class="col-xs-12">
 
 			<div class="row">
 
-				<div class="background-color-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-xs-12">
 
-					<h3>
+					<h2>
 						Background Colours
-					</h3>
-					<p>Add the following classes to use additional background colours. The <code>color</code> for each one is also set to black or white.</p>
+					</h2>
 
-					<div class="breather"></div>
+					<p class="lead">Add the following classes to any html element to apply a background colour. The <code>color</code> for each one is also set to black or white.</p>
+
+				</div>
+
+				<div class="background-color-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 					<p>
 						<span class="center-block bg-black">
@@ -49,16 +65,16 @@ google: http://www.google.com/design/spec/style/color.html#color-color-palette
 
 		<div class="col-xs-12">
 
-			<h3>Text Colours
+			<h2>
+				Text Colours
 				<small>
 					<a target="_blank" href="http://www.google.com/design/spec/style/color.html#color-color-palette">
 						reference
 					</a>
 				</small>
-			</h3>
-			<p>Add the following classes to use additional text colours</p>
+			</h2>
 
-			<div class="breather"></div>
+			<p class="lead">Add the following classes to use additional text colours</p>
 
 		</div>
 
