@@ -15,9 +15,8 @@
 	"bootstrap",
 	"material",
 	"design"
-  ]
+  ],
   "license": "MIT",
-  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
