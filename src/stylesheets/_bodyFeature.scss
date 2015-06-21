@@ -1,0 +1,20 @@
+
+.body-feature {
+
+	margin-right: -15px;
+	padding: 30px;
+	width: 100%;
+
+	@media (max-width: $screen-sm-min) {
+		padding: 15px;
+	}
+
+	@media (max-width: $screen-md-min) {
+		padding: 30px;
+	}
+
+	@media (max-width: $screen-lg-min) {
+		padding: 30px;
+	}
+
+}
