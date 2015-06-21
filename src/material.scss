@@ -23,12 +23,14 @@ $material-font-path: "../fonts/material" !default;
 
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
 
+@import "stylesheets/alerts";
 @import "stylesheets/animation";
 @import "stylesheets/headers";
 @import "stylesheets/paper";
 @import "stylesheets/cards";
 @import "stylesheets/elevation";
 @import "stylesheets/scaffolding";
+@import "stylesheets/bodyFeature";
 @import "stylesheets/panels";
 @import "stylesheets/text";
 @import "stylesheets/background";

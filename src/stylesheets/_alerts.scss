@@ -1,0 +1,26 @@
+
+.alert {
+
+	border-radius: 0;
+
+	&.rounded {
+		border-radius: 5px;
+	}
+}
+
+
+.alert-success {
+	@include alert-variant(get-color(green, 400), get-color(green, 400), #FFF);
+}
+
+.alert-info {
+	@include alert-variant(get-color(light-blue, 400), get-color(light-blue, 400), #FFF);
+}
+
+.alert-warning {
+	@include alert-variant(get-color(amber, 400), get-color(amber, 400), #000);
+}
+
+.alert-danger {
+	@include alert-variant(get-color(red, 400), get-color(red, 400), #FFF);
+}

@@ -36,6 +36,8 @@
       href: "helper-classes"
     - title: "Elevation"
       href: "elevation"
+    - title: "Alerts"
+      href: "alerts"
 
 - title: "Components"
   href: "components"
