@@ -18,7 +18,7 @@
 }
 
 .alert-warning {
-	@include alert-variant(get-color(amber, 400), get-color(amber, 400), #000);
+	@include alert-variant(get-color(amber, 300), get-color(amber, 300), $text-color);
 }
 
 .alert-danger {
