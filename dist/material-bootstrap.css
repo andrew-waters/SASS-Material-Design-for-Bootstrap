@@ -5686,7 +5686,6 @@ button.close {
   .list .list-header {
     color: #757575;
     padding: 16px;
-    padding-bottom: 16px;
     font-weight: 400; }
     .list .list-header:before, .list .list-header:after {
       content: " ";
@@ -5721,6 +5720,8 @@ button.close {
         padding-bottom: 16px; }
       .list .list-item .list-item-content .list-item-primary-content {
         float: left;
+        width: 100%; }
+      .list .list-item .list-item-content.with-secondary-action .list-item-primary-content {
         width: calc(100% - 36px); }
       .list .list-item .list-item-content .list-item-secondary-action {
         float: right;

@@ -62,7 +62,17 @@
 			.list-item-primary-content {
 
 				float: left;
-				width: calc(100% - 36px);
+				width: 100%;
+
+			}
+
+			&.with-secondary-action {
+
+				.list-item-primary-content {
+
+					width: calc(100% - 36px);
+
+				}
 
 			}
 
