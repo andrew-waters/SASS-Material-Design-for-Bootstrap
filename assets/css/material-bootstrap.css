@@ -6146,18 +6146,8 @@ pre {
     width: 50%; }
 
 .body-feature {
-  margin-right: -15px;
-  padding: 30px;
-  width: 100%; }
-  @media (max-width: 768px) {
-    .body-feature {
-      padding: 15px; } }
-  @media (max-width: 992px) {
-    .body-feature {
-      padding: 30px; } }
-  @media (max-width: 1200px) {
-    .body-feature {
-      padding: 30px; } }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .panel {
   border-radius: 2px; }
