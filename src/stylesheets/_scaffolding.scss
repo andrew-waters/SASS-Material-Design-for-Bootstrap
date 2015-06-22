@@ -42,6 +42,9 @@ a:hover {
 	color: get-color(light-blue, 700);
 }
 
+a.no-decoration:hover {
+	text-decoration: none;
+}
 
 .dropdown-menu {
 	padding: 0;
