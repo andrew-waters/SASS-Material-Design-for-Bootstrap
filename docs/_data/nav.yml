@@ -50,6 +50,8 @@
       href: "empty-state"
     - title: "Icons"
       href: "icons"
+    - title: "Lists"
+      href: "lists"
     - title: "Jumbotron"
       href: "jumbotron"
     - title: "Tiles"

@@ -1,0 +1,114 @@
+.list {
+
+	background-color: #FFF;
+	padding-top: 8px;
+	padding-bottom: 8px;
+
+	.list-header {
+
+		@include clearfix();
+
+		color: get-color(grey, 600);
+		padding: 16px;
+		font-weight: 400;
+
+		&.with-primary-image {
+
+			padding-left: 72px;
+
+		}
+
+	}
+
+	.list-item {
+
+		@include clearfix();
+
+		padding: 16px;
+		padding-right: 0;
+		padding-bottom: 0;
+		position: relative;
+		min-height: 72px;
+
+		.list-item-primary-image {
+
+			float: left;
+			width: 56px;
+
+		}
+
+		&.with-primary-image {
+
+			.list-item-content {
+
+				width: calc(100% - 56px);
+
+			}
+
+		}
+
+		.list-item-content {
+
+			float: left;
+			padding-right: 16px;
+			margin-bottom: 0;
+			padding-bottom: 16px;
+			position: relative;
+
+			&.ruled {
+				padding-bottom: 16px;
+			}
+
+			.list-item-primary-content {
+
+				float: left;
+				width: calc(100% - 36px);
+
+			}
+
+			.list-item-secondary-action {
+
+				float: right;
+				display: table-row;
+
+				i {
+
+					display: table-cell;
+					vertical-align: middle;
+
+				}
+
+			}
+
+			.line-1 {
+
+				font-size: 1.3em;
+				line-height: 1.5;
+				color: get-color(grey, 1000);
+				padding-bottom: 0;
+				margin-bottom: 0;
+
+			}
+
+			.line-2 {
+
+				font-size: 1.1em;
+				line-height: 1.5;
+				margin-bottom: 0;
+				color: get-color(grey, 900);
+
+			}
+
+			.line-3 {
+
+				line-height: 1.5;
+				margin-bottom: 0;
+				color: get-color(grey, 600);
+
+			}
+
+		}
+
+	}
+
+}

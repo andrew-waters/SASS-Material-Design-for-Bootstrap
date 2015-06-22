@@ -34,6 +34,13 @@
 		color: rgba(0, 0, 0, 0.3);
 	}
 
+	&.icon-circle {
+		color: #FFF;
+		background-color: get-color(grey, 300);
+		border-radius: 50%;
+		padding: 10px;
+	}
+
 }
 
 
