@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Paper &middot; SASS for Bootstrap</title>
+		<title>Tabs &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -331,7 +331,7 @@
 						
 						
 
-						<li role="presentation" class="active current">
+						<li role="presentation" class="">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/components/paper">
 								Paper
@@ -448,7 +448,7 @@
 						
 						
 
-						<li role="presentation" class="">
+						<li role="presentation" class="active current">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/components/tabs">
 								Tabs
@@ -547,7 +547,7 @@
 
 	</a>
 
-	<h1 class="title">Paper</h1>
+	<h1 class="title">Tabs</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -618,46 +618,45 @@
 
 			<div class="container">
 
-	<div class="col-xs-9">
+	<div class="row">
 
-		<p class="lead">Use Paper to break up content on your page</p>
+		<div class="col-xs-4">
 
-	</div>
+			<p>Default Tabs</p>
 
-	<div class="breather-lg"></div>
+		</div>
 
-	<div class="col-xs-12">
+		<div class="col-xs-8 paper bg-cyan">
 
-		<div class="row">
+			<pre>&lt;ul class=&quot;nav nav-tabs nav-tab-yellow&quot; role=&quot;tablist&quot;&gt;&lt;/ul&gt;</pre>
 
-			<div class="col-md-6">
-
-				<div class="paper elevated-0">
-					<code>.paper.elevated-0</code>
-				</div>
-
-				<div class="paper">
-					<code>.paper</code>
-				</div>
-
-				<div class="paper elevated-2">
-					<code>.paper.elevated-2</code>
-				</div>
-
-				<div class="paper elevated-3">
-					<code>.paper.elevated-3</code>
-				</div>
-
-				<div class="paper elevated-4">
-					<code>.paper.elevated-4</code>
-				</div>
-
-			</div>
-
-			<div class="col-md-6">
-
-
-			</div>
+			<ul class="nav nav-tabs nav-tab-yellow" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#a1">
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#a2">
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#a3">
+						Item 3
+					</a>
+	
+				</li>
+	
+			</ul>
 
 		</div>
 
@@ -665,40 +664,394 @@
 
 	<div class="breather-lg"></div>
 
-	<div class="col-xs-12">
+	<div class="row">
 
-		<h4>Seamless</h4>
+		<div class="col-xs-4">
 
-		<div class="row">
+			<p>With Icons</p>
 
-			<div class="col-md-6">
+		</div>
 
-				<div class="paper seamless">
-					<code>.paper.seamless</code>
-				</div>
+		<div class="col-xs-8 paper bg-cyan">
 
-				<div class="paper">
-					<code>.paper</code>
-				</div>
+			<pre>&lt;li role=&quot;presentation&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon material-icons&quot;&gt;payment&lt;/i&gt;&lt;/a&gt;
+&lt;/li&gt;</pre>
 
-				<div class="paper seamless elevated-2">
-					<code>.paper.seamless</code>
-				</div>
+			<ul class="nav nav-tabs nav-tab-yellow" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#b1">
+						<i class="icon material-icons">home</i>
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b2">
+						<i class="icon material-icons">payment</i>
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b3">
+						<i class="icon material-icons">autorenew</i>
+					</a>
+	
+				</li>
+	
+			</ul>
 
-				<div class="paper seamless elevated-2">
-					<code>.paper.seamless</code>
-				</div>
+		</div>
 
-				<div class="paper elevated-2">
-					<code>.paper</code>
-				</div>
+	</div>
 
-			</div>
+	<div class="breather-lg"></div>
 
-			<div class="col-md-6">
+	<div class="row">
 
+		<div class="col-xs-4">
 
-			</div>
+			<p>With Icons and text</p>
+
+		</div>
+
+		<div class="col-xs-8 paper bg-cyan">
+
+			<pre>&lt;li role=&quot;presentation&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon material-icons&quot;&gt;payment&lt;/i&gt;Item 2&lt;/a&gt;
+&lt;/li&gt;</pre>
+
+			<ul class="nav nav-tabs nav-tab-yellow" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#b1">
+						<i class="icon material-icons">home</i>
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b2">
+						<i class="icon material-icons">payment</i>
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b3">
+						<i class="icon material-icons">autorenew</i>
+						Item 3
+					</a>
+	
+				</li>
+	
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="breather-lg"></div>
+
+	<div class="row">
+
+		<div class="col-xs-4">
+
+			<p>With Icons that match the tab colour.</p>
+
+		</div>
+
+		<div class="col-xs-8 paper bg-cyan">
+
+			<pre>&lt;ul class=&quot;nav nav-tabs <strong>nav-color-mimic</strong> nav-tab-yellow&quot; role=&quot;tablist&quot;&gt;&lt;/ul&gt;</pre>
+
+			<ul class="nav nav-tabs nav-tab-yellow nav-color-mimic" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#b1">
+						<i class="icon material-icons">home</i>
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b2">
+						<i class="icon material-icons">payment</i>
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b3">
+						<i class="icon material-icons">autorenew</i>
+					</a>
+	
+				</li>
+	
+			</ul>
+
+			<ul class="nav nav-tabs nav-tab-amber nav-color-mimic" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#b1">
+						<i class="icon material-icons">home</i>
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b2">
+						<i class="icon material-icons">payment</i>
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#b3">
+						<i class="icon material-icons">autorenew</i>
+					</a>
+	
+				</li>
+	
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="breather-lg"></div>
+
+	<div class="row">
+
+		<div class="col-xs-4">
+
+			<p>Justified Tabs</p>
+
+		</div>
+
+		<div class="col-xs-8 paper bg-cyan">
+
+			<pre>&lt;ul class=&quot;nav nav-tabs <strong>nav-justified</strong> nav-tab-yellow&quot; role=&quot;tablist&quot;&gt;&lt;/ul&gt;</pre>
+
+			<ul class="nav nav-tabs nav-justified nav-tab-yellow" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#c1">
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#c2">
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#c3">
+						Item 3
+					</a>
+	
+				</li>
+	
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="breather-lg"></div>
+
+	<div class="row">
+
+		<div class="col-xs-4">
+
+			<p>Colour</p>
+			<p>To change the colour of the tab border (the line underneath), apply the name of a <a href="/SASS-Material-Design-for-Bootstrap/styles/colours/">colour</a> to the containing list.</p>
+
+		</div>
+
+		<div class="col-xs-8 paper bg-cyan">
+
+			<pre>&lt;ul class=&quot;nav nav-tabs nav-justified <strong>nav-tab-yellow-300</strong>&quot; role=&quot;tablist&quot;&gt;</pre>
+			<pre>&lt;ul class=&quot;nav nav-tabs nav-justified nav-color-mimic <strong>nav-tab-yellow-700</strong>&quot; role=&quot;tablist&quot;&gt;</pre>
+
+			<ul class="nav nav-tabs nav-justified nav-tab-yellow-300" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#d1">
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#d2">
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#d3">
+						Item 3
+					</a>
+	
+				</li>
+	
+			</ul>
+
+			<ul class="nav nav-tabs nav-justified nav-color-mimic nav-tab-yellow-700" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#d1">
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#d2">
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#d3">
+						Item 3
+					</a>
+	
+				</li>
+	
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="breather-lg"></div>
+
+	<div class="row">
+
+		<div class="col-xs-4">
+
+			<p>Ripple</p>
+
+		</div>
+
+		<div class="col-xs-8 paper bg-cyan">
+
+			<pre>&lt;ul class=&quot;nav nav-tabs nav-justified <strong>nav-ripple</strong> nav-tab-yellow&quot; role=&quot;tablist&quot;&gt;&lt;/ul&gt;</pre>
+
+			<ul class="nav nav-tabs nav-ripple nav-justified nav-tab-yellow" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#e1">
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#e2">
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#e3">
+						Item 3
+					</a>
+	
+				</li>
+	
+			</ul>
+
+		</div>
+
+	</div>
+
+	<div class="breather-lg"></div>
+
+	<div class="row">
+
+		<div class="col-xs-4">
+
+			<p>Dropdown</p>
+
+		</div>
+
+		<div class="col-xs-8 paper bg-cyan">
+
+			<pre>&lt;ul class=&quot;nav nav-tabs nav-justified <strong>nav-ripple</strong> nav-tab-yellow&quot; role=&quot;tablist&quot;&gt;&lt;/ul&gt;</pre>
+
+			<ul class="nav nav-tabs nav-ripple nav-justified nav-tab-yellow" role="tablist">
+	
+				<li role="presentation" class="active">
+	
+					<a href="#f1">
+						Item 1
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+	
+					<a href="#f2">
+						Item 2
+					</a>
+	
+				</li>
+	
+				<li role="presentation">
+
+					<a href="#f3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Item 3
+						<i class="icon material-icons">arrow_drop_down</i>
+					</a>
+
+					<ul class="dropdown-menu" aria-labelledby="dLabel">
+						<li><a>Maps</a></li>
+						<li><a>Books</a></li>
+						<li><a>Flight</a></li>
+						<li><a>Apps</a></li>
+					</ul>
+	
+				</li>
+	
+			</ul>
 
 		</div>
 
