@@ -60,6 +60,8 @@
       href: "progress-bars"
     - title: "Carousel"
       href: "carousel"
+    - title: "Tabs"
+      href: "tabs"
 
 - title: "Development"
   href: "development"

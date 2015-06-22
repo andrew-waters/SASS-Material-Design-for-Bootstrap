@@ -47,9 +47,17 @@ a.no-decoration:hover {
 }
 
 .dropdown-menu {
-	padding: 0;
+
+	padding: 8px 0;
 	top: -10px;
 	left: 0;
+
+	> li > a {
+
+		padding: 10px 0 10px 16px;
+
+	}
+
 }
 
 .dropdown-menu a {
