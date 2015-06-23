@@ -1,0 +1,277 @@
+---
+layout: default
+title: Controls
+---
+
+<div class="container">
+
+	<h2>Controls</h2>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<h4>Switch</h4>
+
+			<p>Add a <code>.switch</code> class to any checkbox element to turn it into a switch.</p>
+
+			<p>To customise the colour of the switch, use the primary colour name. We do not offer hues for colouring as the background "rail" is based off the primary.</p>
+
+			<div class="example">
+
+				<div class="example-code">
+
+					<pre>&lt;div class=&quot;switch&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;switch1Value&quot; id=&quot;switch1&quot; checked&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;switch <strong>switch-pink</strong>&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;switch2Value&quot; id=&quot;switch2&quot; checked&gt;
+&lt;/div&gt;</pre>
+
+				</div>
+
+			</div>
+
+			<p class="alert alert-warning">Please note, we initialise the switch control via javascript, so it is important you do not add a <strong>&lt;label&gt;</strong> to your wrapper!</p>
+
+			<hr />
+
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="switch">
+
+					<input type="checkbox" name="switch1Value" id="switch1" checked>
+
+				</div>
+
+				<div class="switch switch-pink">
+
+					<input type="checkbox" name="switch3Value" id="switch2" checked>
+
+				</div>
+
+				<div class="aterial switch switch-orange">
+
+					<input type="checkbox" name="switch3Value" id="switch3" checked>
+
+				</div>
+
+				<div class="switch switch-blue">
+
+					<input type="checkbox" name="switch4Value" id="switch4" disabled="disabled" checked>
+
+				</div>
+
+				<div class="switch switch-light-blue">
+
+					<input type="checkbox" name="switch5Value" id="switch5" disabled="disabled">
+
+				</div>
+
+				<div class="switch switch-light-blue">
+
+					<input type="checkbox" name="switch6Value" id="switch6" checked>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<h4>Checkbox</h4>
+
+			<div class="example">
+
+				<div class="example-code">
+
+					<pre>&lt;div class=&quot;checkbox&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;checkbox2Value&quot; id=&quot;checkbox2&quot; disabled=&quot;disabled&quot; checked&gt;
+	&lt;label for=&quot;checkbox2&quot;&gt;Checkbox 2&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;checkbox checkbox-light-blue&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;checkbox4Value&quot; id=&quot;checkbox4&quot;&gt;
+	&lt;label for=&quot;checkbox4&quot;&gt;Checkbox 4&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;checkbox checkbox-pink&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;checkbox6Value&quot; id=&quot;checkbox6&quot; checked=&quot;&quot;&gt;
+	&lt;label class=&quot;checkbox-inline&quot; for=&quot;checkbox6&quot;&gt;Checkbox 6&lt;/label&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;checkbox7Value&quot; id=&quot;checkbox7&quot;&gt;
+	&lt;label class=&quot;checkbox-inline&quot; for=&quot;checkbox7&quot;&gt;Checkbox 7 extra &lt;/label&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;checkbox8Value&quot; id=&quot;checkbox8&quot; checked=&quot;&quot; disabled=&quot;disabled&quot;&gt;
+	&lt;label class=&quot;checkbox-inline&quot; for=&quot;checkbox8&quot;&gt;Checkbox 8&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+
+				</div>
+
+			</div>
+
+			<hr />
+
+		</div>
+
+		<div class="col-md-4">
+
+			<form role="form">
+
+				<div class="checkbox">
+
+					<input type="checkbox" name="checkbox1Value" id="checkbox1" checked>
+					<label for="checkbox1">Checkbox 1</label>
+
+				</div>
+
+				<div class="checkbox">
+
+					<input type="checkbox" name="checkbox2Value" id="checkbox2" disabled="disabled" checked>
+					<label for="checkbox2">Checkbox 2</label>
+
+				</div>
+
+				<div class="checkbox">
+
+					<input type="checkbox" name="checkbox3Value" id="checkbox3" disabled="disabled">
+					<label for="checkbox3">Checkbox 3</label>
+
+				</div>
+
+				<div class="checkbox checkbox-light-blue">
+
+					<input type="checkbox" name="checkbox4Value" id="checkbox4">
+					<label for="checkbox4">Checkbox 4</label>
+
+				</div>
+
+				<div class="checkbox checkbox-brown">
+
+					<input type="checkbox" name="checkbox5Value" id="checkbox5" checked="">
+					<label for="checkbox5">Checkbox 5</label>
+
+				</div>
+
+				<div class="checkbox checkbox-pink">
+
+					<input type="checkbox" name="checkbox6Value" id="checkbox6" checked="">
+					<label class="checkbox-inline" for="checkbox6">Checkbox 6</label>
+
+					<input type="checkbox" name="checkbox7Value" id="checkbox7">
+					<label class="checkbox-inline" for="checkbox7">Checkbox 7 extra </label>
+
+					<input type="checkbox" name="checkbox8Value" id="checkbox8" checked="" disabled="disabled">
+					<label class="checkbox-inline" for="checkbox8">Checkbox 8</label>
+
+				</div>
+
+			</form>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<h4>Radio Button</h4>
+
+			<div class="example">
+
+				<div class="example-code">
+
+<pre>&lt;label class=&quot;radio&quot;&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;optionsRadios&quot; id=&quot;optionsRadios1&quot; value=&quot;option1&quot; checked&gt; Radio 1
+&lt;/label&gt;
+
+&lt;label class=&quot;radio-inline <strong>radio-light-green</strong>&quot;&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio1&quot; value=&quot;option1&quot;&gt; Radio A
+&lt;/label&gt;
+
+&lt;label class=&quot;radio-inline radio-light-green <strong>radio-rest-light-green</strong>&quot;&gt;
+	&lt;input type=&quot;radio&quot; name=&quot;inlineRadioOptions&quot; id=&quot;inlineRadio4&quot; value=&quot;option1&quot;&gt; Radio D
+&lt;/label&gt;</pre>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+			<label class="radio">
+
+				<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Radio 1
+
+			</label>
+
+			<label class="radio">
+
+				<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Radio 2
+
+			</label>
+
+			<label class="radio">
+
+				<input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled> Radio 3
+
+			</label>
+
+			<hr />
+
+			<label class="radio-inline radio-light-green">
+
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Radio A
+
+			</label>
+
+			<label class="radio-inline radio-orange">
+
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Radio B
+
+			</label>
+
+			<label class="radio-inline radio-red">
+
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Radio C
+
+			</label>
+
+			<hr />
+
+			<label class="radio-inline radio-light-green radio-rest-light-green">
+
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option1"> Radio D
+
+			</label>
+
+			<label class="radio-inline radio-orange radio-rest-orange">
+
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2"> Radio E
+
+			</label>
+
+			<label class="radio-inline radio-red radio-rest-red">
+
+				<input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3"> Radio F
+
+			</label>
+
+
+		</div>
+
+	</div>
+
+</div>

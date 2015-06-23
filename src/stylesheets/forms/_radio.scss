@@ -1,0 +1,168 @@
+
+@mixin radio-variant($color) {
+
+	.radio.radio-#{'' + $color},
+	.radio-inline.radio-#{'' + $color} {
+
+		input[type="radio"] {
+
+			&:checked {
+
+				+ .outer .inner {
+
+					background-color: get-color($color, 500);
+
+				}
+
+				+ .outer {
+
+					border-color: get-color($color, 500);
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@mixin radio-rest-variant($color) {
+
+	.radio.radio-rest-#{'' + $color},
+	.radio-inline.radio-rest-#{'' + $color} {
+
+		input[type="radio"] {
+
+			+ .outer .inner {
+
+				background-color: get-color($color, 200);
+
+			}
+
+			+ .outer {
+
+				border-color: get-color($color, 200);
+
+			}
+
+		}
+
+	}
+
+}
+
+
+.radio,
+.radio-inline {
+
+	font-weight: normal;
+	padding-left: 0;
+	margin-right: 16px;
+
+	input {
+
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+
+	}
+
+	input:focus,
+	input:checked {
+
+		+ .outer .inner {
+
+			opacity: 1;
+			background-color: get-color(teal, 500);
+
+			@include scale(1);
+
+		}
+
+		+ .outer {
+
+			border-color: get-color(teal, 500);
+
+		}
+
+	}
+
+	/**
+	 *
+	 *	@TODO: this isn't working!
+	 *
+	 */
+	input:disabled &:hover & {
+		cursor: not-allowed !important;
+	}
+
+	input:disabled {
+
+		color: get-color(grey, 300);
+
+		+ .inner {
+			background: none;
+		}
+
+		+ .outer {
+			border-color: get-color(grey, 300);
+		}
+
+	}
+
+	&:hover {
+
+		cursor: pointer;
+
+		.outer .inner {
+
+			opacity: 1;
+			background-color: get-color(grey, 300);
+
+			@include scale(1.3);
+
+		}
+
+	}
+
+	.inner {
+
+		width: 10px;
+		height: 10px;
+		display: block;
+		margin: 3px;
+		border-radius: 50%;
+		background-color: get-color(grey, 700);
+		opacity: 0;
+
+		@include scale(0);
+		@include transition(all .28s cubic-bezier(0.4,0,.2,1));
+
+	}
+
+	.outer {
+
+		width: 20px;
+		height: 20px;
+		display: block;
+		float: left;
+		margin-right: 8px;
+		margin-top: 2px;
+		border: 2px solid get-color(grey, 700);
+		border-radius: 50%;
+
+		@include transition(all .28s cubic-bezier(0.4,0,.2,1));
+
+	}
+
+}
+
+
+@each $color in map-keys(map-get($color-map, colors)) {
+
+	@include radio-variant($color);
+	@include radio-rest-variant($color);
+
+}
