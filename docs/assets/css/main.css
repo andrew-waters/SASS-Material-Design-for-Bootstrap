@@ -69,3 +69,19 @@ body {
 	width: 64px;
 	height: 64px;
 }
+
+h1.title {
+	text-transform: capitalize;
+}
+
+.app-bar-static h1.title {
+	padding-left: 69px !important;
+	padding-top: 22px !important;
+	font-weight: 300 !important;
+	font-size: 21px !important;
+}
+
+.title .divider {
+	margin-left: 16px;
+	margin-right: 16px;
+}

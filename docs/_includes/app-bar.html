@@ -1,6 +1,9 @@
 
+{% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
+{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
+{% assign previous="" %}
 
-<nav class="app-bar app-bar-extended app-bar-translucent bg-cyan">
+<nav class="app-bar{% if num_parts == "0" or num_parts == "-1" %} app-bar-extended{% else %} elevated-1 app-bar-static{% endif %} app-bar-translucent bg-cyan">
 
 	<a class="navigation-drawer-toggle" href="#">
 
@@ -8,7 +11,29 @@
 
 	</a>
 
-	<h1 class="title">{{ page.title }}</h1>
+	<h1 class="title">
+
+		{% if num_parts == "0" or num_parts == "-1" %}
+			&nbsp;
+		{% else %}
+
+			{% for unused in page.content limit:num_parts %}
+				{% capture first_word %}{{ url_parts | truncatewords:1 | remove:"..."}}{% endcapture %}
+				{% capture previous %}{{ previous }}/{{ first_word }}{% endcapture %}
+		
+				{{ first_word }} <span class="divider">&#10095;</span>
+
+				{% capture url_parts %}{{ url_parts | remove_first:first_word }}{% endcapture %}
+			{% endfor %}
+
+		{% endif %}
+
+		{{ page.title }}
+
+	</h1>
+
+
+
 
 <!--
 	<div class="app-bar-overlay"></div>
