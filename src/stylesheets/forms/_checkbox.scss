@@ -1,0 +1,285 @@
+
+@mixin checkbox-variant($color) {
+
+	.form-group.checkbox.checkbox-#{'' + $color} {
+
+		input[type="checkbox"] {
+
+			+ label {
+
+				&::before {
+
+					border-color: get-color($color, 500);
+					background-color: get-color($color, 500);
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+.form-group.checkbox {
+
+	padding-left: 20px;
+
+	label {
+
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+		padding-left: 5px;
+
+		&::before {
+
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			left: 0;
+			top: 3px;
+			margin-left: -20px;
+			border: 2px solid get-color(grey, 700);
+			border-radius: 1px;
+			background-color: transparent;
+
+			@include transition(all .28s cubic-bezier(0.4,0,.2,1));
+
+		}
+		
+		&::after {
+
+			display: inline-block;
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			left: 0;
+			top: -4px;
+			margin-left: -20px;
+			padding-left: 0;
+			padding-top: 0;
+			font-size: 17px;
+			color: get-color(grey, 100);
+			background-color: transparent;
+
+		}
+
+		&.checkbox-inline {
+			margin-right: 40px;
+		}
+
+	}
+
+
+	input[type="checkbox"] {
+
+		&:checked {
+
+			+ label {
+				
+				&::before {
+
+					border-color: get-color(teal, 500);
+					background-color: get-color(teal, 500);
+
+				}
+
+				&::after {
+
+					background: none !important;
+				    font-family: 'Material Icons';
+				    content: "\E5CA";
+
+
+				}
+
+			}
+
+			&:disabled {
+
+				+ label {
+
+					&::before {
+
+						border-color: get-color(grey, 500) !important;
+						background-color: get-color(grey, 500) !important;
+
+					}
+
+				}
+
+			}
+
+		}
+
+		&:disabled {
+
+			+ label {
+
+				&:hover {
+
+					cursor: not-allowed;
+
+				}
+
+				&::before {
+
+					border-color: get-color(grey, 500) !important;
+					background-color: get-color(grey, 500) !important;
+					cursor: not-allowed;
+
+				}
+
+			}
+
+			&:checked + label::after {
+
+				color: get-color(grey, 300) !important;
+				cursor: not-allowed;
+
+			}
+
+		}
+
+	}
+
+}
+
+@each $color in map-keys(map-get($color-map, colors)) {
+
+	@include checkbox-variant($color);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+// Radios
+// --------------------------------------------------
+
+@mixin radio-variant($parent, $color) {
+  #{$parent} input[type="radio"]{
+    & + label{
+      &::after{
+        background-color: $color;
+      }
+    }
+    &:checked + label{
+      &::before {
+        border-color: $color;
+      }
+      &::after{
+        background-color: $color;
+      }
+    }
+  }
+}
+
+.radio{
+  padding-left: 20px;
+
+  label{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      left: 0;
+      margin-left: -20px;
+      border: 1px solid $input-border;
+      border-radius: 50%;
+      background-color: #fff;
+      @include transition(border 0.15s ease-in-out);
+    }
+
+    &::after{
+      display: inline-block;
+      position: absolute;
+      content: " ";
+      width: 11px;
+      height: 11px;
+      left: 3px;
+      top: 3px;
+      margin-left: -20px;
+      border-radius: 50%;
+      background-color: $input-color;
+      @include scale(0, 0);
+
+      @include transition-transform(.1s cubic-bezier(.8,-0.33,.2,1.33));
+      //curve - http://cubic-bezier.com/#.8,-0.33,.2,1.33
+    }
+  }
+
+  input[type="radio"]{
+    opacity: 0;
+    z-index: 1;
+
+    &:focus + label::before{
+      @include tab-focus();
+    }
+
+    &:checked + label::after{
+      @include scale(1, 1);
+    }
+
+    &:disabled + label{
+      opacity: 0.65;
+
+      &::before{
+        cursor: not-allowed;
+      }
+    }
+
+  }
+
+  &.radio-inline{
+    margin-top: 0;
+  }
+}
+
+
+
+/*
+input[type="checkbox"],
+input[type="radio"] {
+  &.styled:checked + label:after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+  }
+  & .styled:checked + label {
+    &::before {
+      color: #fff;
+    }
+    &::after {
+      color: #fff;
+    }
+  }
+}
+*/
