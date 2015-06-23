@@ -59,6 +59,20 @@
 
 		}
 
+		&:disabled + label {
+
+			border-color: get-color(grey, 300) !important;
+
+			> .button {
+
+				background: get-color(grey, 400) !important;
+				border-color: get-color(grey, 400) !important;
+				box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+
+			}
+
+		}
+
 	}
 
 	> label {

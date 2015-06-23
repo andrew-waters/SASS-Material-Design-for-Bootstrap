@@ -8165,6 +8165,12 @@ textarea.autosize {
         box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3); }
       .switch > input[type="checkbox"]:checked + label > .rail {
         margin-left: 0; }
+    .switch > input[type="checkbox"]:disabled + label {
+      border-color: #E0E0E0 !important; }
+      .switch > input[type="checkbox"]:disabled + label > .button {
+        background: #BDBDBD !important;
+        border-color: #BDBDBD !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.35); }
   .switch > label {
     display: block;
     overflow: hidden;
