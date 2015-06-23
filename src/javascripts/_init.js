@@ -44,11 +44,17 @@ $(document).ready(function() {
 
 
 
-	$('.form-group.switch').each(function() {
+	$('.switch').each(function() {
 
 		var inputId = $(this).find('input').attr('id');
 
 		$(this).append($('<label for="' + inputId + '"><span class="rail"></span><span class="button"></span><span class="focus"></span></label>'));
+
+	});
+
+	$('.radio, .radio-inline').each(function() {
+
+		$(this).append($('<span class="outer"><span class="inner"></span></span>'));
 
 	});
 

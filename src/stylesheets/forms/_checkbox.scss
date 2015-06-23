@@ -1,7 +1,7 @@
 
 @mixin checkbox-variant($color) {
 
-	.form-group.checkbox.checkbox-#{'' + $color} {
+	.checkbox.checkbox-#{'' + $color} {
 
 		input[type="checkbox"] {
 
@@ -23,7 +23,7 @@
 }
 
 
-.form-group.checkbox {
+.checkbox {
 
 	padding-left: 20px;
 
@@ -32,7 +32,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		position: relative;
-		padding-left: 5px;
+		padding-left: 8px;
 
 		&::before {
 
@@ -77,6 +77,10 @@
 
 
 	input[type="checkbox"] {
+
+		width: 1px;
+		height: 1px;
+		opacity: 0;
 
 		&:checked {
 
