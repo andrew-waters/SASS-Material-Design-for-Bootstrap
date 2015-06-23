@@ -20,6 +20,8 @@
   sub:
     - title: "Text Fields"
       href: "text-fields"
+    - title: "Controls"
+      href: "controls"
     - title: "Validation"
       href: "validation"
 

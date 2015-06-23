@@ -44,5 +44,14 @@ $(document).ready(function() {
 
 
 
+	$('.form-group.switch').each(function() {
+
+		var inputId = $(this).find('input').attr('id');
+
+		$(this).append($('<label for="' + inputId + '"><span class="rail"></span><span class="button"></span></label>'));
+
+	});
+
+
 
 });
