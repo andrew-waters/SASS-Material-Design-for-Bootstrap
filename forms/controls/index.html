@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Navigation Drawer &middot; SASS for Bootstrap</title>
+		<title>Controls &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -83,7 +83,7 @@
 
 				
 
-				<li role="presentation" class="active">
+				<li role="presentation" class="">
 
 					<a href="#" class="toggle-navigation">
 						Layout
@@ -135,7 +135,7 @@
 						
 						
 
-						<li role="presentation" class="active current">
+						<li role="presentation" class="">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/layout/navigation-drawer">
 								Navigation Drawer
@@ -170,7 +170,7 @@
 
 				
 
-				<li role="presentation" class="">
+				<li role="presentation" class="active">
 
 					<a href="#" class="toggle-navigation">
 						Forms
@@ -196,7 +196,7 @@
 						
 						
 
-						<li role="presentation" class="">
+						<li role="presentation" class="active current">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/forms/controls">
 								Controls
@@ -560,7 +560,7 @@
 
 	</a>
 
-	<h1 class="title">Navigation Drawer</h1>
+	<h1 class="title">Controls</h1>
 
 <!--
 	<div class="app-bar-overlay"></div>
@@ -631,138 +631,136 @@
 
 			<div class="container">
 
-<h4>
-	Navigation Drawer
-</h4>
+	<h2>Controls</h2>
 
-<div class="row">
+	<div class="row">
 
-	<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+		<div class="col-md-8 border-right">
 
-		<form>
+			<h4>Switch</h4>
 
-			<div class="form-group">
-				<label>
-					<input type="checkbox" class="navigation-drawer-invert" value="inverse" />
-					&nbsp;Invert Nav Drawer
-				</label>
+			<p>Add a <code>.switch</code> class to any checkbox element to turn it into a switch.</p>
+
+			<p>To customise the colour of the switch, use the primary colour name. We do not offer hues for colouring as the background "rail" is based off the primary.</p>
+
+			<div class="example">
+				<div class="example-code">
+					<pre>&lt;div class=&quot;form-group material switch&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;switch1Value&quot; id=&quot;switch1&quot; checked&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group material switch <strong>switch-pink</strong>&quot;&gt;
+	&lt;input type=&quot;checkbox&quot; name=&quot;switch2Value&quot; id=&quot;switch2&quot; checked&gt;
+&lt;/div&gt;</pre>
+				</div>
 			</div>
 
-		</form>
+		</div>
 
-		<div class="breather"></div>
+		<div class="col-md-4">
 
-	</div>
+			<form role="form">
 
-	<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+				<div class="form-group material switch">
 
-		<p>Add the Overlay:</p>
+					<input type="checkbox" name="switch1Value" id="switch1" checked>
 
-		<pre>&lt;div class=&quot;navigation-drawer-overlay&quot;&gt;&lt;/div&gt;</pre>
+				</div>
 
-		<p>Add dividers in the sidebar with <code>&lt;div class=&quot;sidebar-divider&quot;&gt;&lt;/div&gt;</code>
-		<p>Add text to the sidebar with <code>&lt;div class=&quot;sidebar-text&quot;&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/div&gt;</code>
+				<div class="form-group material switch switch-pink">
 
+					<input type="checkbox" name="switch3Value" id="switch2" checked>
 
-		<hr />
+				</div>
 
-		<h4>Position</h4>
+				<div class="form-group material switch switch-orange">
 
-		<p>Fix to the left with <code>.sidebar-fixed-left</code></p>
-		<p>Fix to the right with <code>.sidebar-fixed-right</code></p>
+					<input type="checkbox" name="switch3Value" id="switch3" checked>
 
-		<hr />
+				</div>
 
-		<h4>Style</h4>
+				<div class="form-group material switch switch-blue">
 
-		<p>Default with <code>.sidebar-default</code></p>
-		<p>Inverse with <code>.sidebar-inverse</code></p>
+					<input type="checkbox" name="switch4Value" id="switch4" disabled="disabled" checked>
 
-		<p>Create your own style with the <code>sidebar-template()</code> mixin:</p>
-		<pre>@mixin sidebar-template(
-$color,
-$bg,
-$header-bg,
-$brand-color,
-$brand-bg,
-$brand-hover-color,
-$brand-hover-bg,
-$divider,
-$badge-color,
-$badge-bg,
-$icon-color,
-$icon-hover-color,
-$link-color,
-$link-bg,
-$link-hover-color,
-$link-hover-bg,
-$link-active-color,
-$link-active-bg,
-$link-disabled-color,
-$link-disabled-bg
-) {
-//	processes css
-}
-</pre>
+				</div>
 
-		<hr />
+				<div class="form-group material switch switch-light-blue">
 
-		<h4>Markup</h4>
+					<input type="checkbox" name="switch5Value" id="switch5" disabled="disabled">
 
-		<pre>&lt;aside id=&quot;sidebar&quot; class=&quot;sidebar sidebar-default sidebar-fixed-left&quot; role=&quot;navigation&quot;&gt;
+				</div>
 
-//	content goes here
+				<div class="form-group material switch switch-light-blue">
 
-&lt;/aside&gt;</pre>
+					<input type="checkbox" name="switch6Value" id="switch6" checked>
 
+				</div>
 
-		<h4>Add the Javascript</h4>
+			</form>
 
-		<pre>
-$(document).ready(function() {
-
-var overlay = $('.sidebar-overlay');
-
-$('.sidebar-toggle').on('click', function() {
-var sidebar = $('#sidebar');
-sidebar.toggleClass('open');
-if((sidebar.hasClass('sidebar-fixed-left') || sidebar.hasClass('sidebar-fixed-right')) && sidebar.hasClass('open')) {
-overlay.addClass('active');
-} else {
-overlay.removeClass('active');
-}
-});
-
-overlay.on('click', function() {
-$(this).removeClass('active');
-$('#sidebar').removeClass('open');
-});
-
-});
-
-
-(function($) {
-
-var dropdown = $('.sidebar .dropdown');
-
-//	Add slidedown animation to dropdown
-dropdown.on('show.bs.dropdown', function(e){
-$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-});
-
-//	Add slideup animation to dropdown
-dropdown.on('hide.bs.dropdown', function(e){
-$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
-
-})(jQuery);
-</pre>
-
-
+		</div>
 
 	</div>
 
-</div>
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<h4>Radio Button</h4>
+
+			<div class="example">
+				<div class="example-code">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<h4>Checkbox</h4>
+
+			<div class="example">
+				<div class="example-code">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+		</div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-8 border-right">
+
+			<h4>Range Slider</h4>
+
+			<div class="example">
+				<div class="example-code">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="col-md-4">
+
+		</div>
+
+	</div>
+
+
 
 </div>
 
@@ -775,8 +773,6 @@ $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/main.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
 	<script type="text/javascript" src="https://raw.githubusercontent.com/liabru/jquery-match-height/master/jquery.matchHeight-min.js"></script>
-	
-	<script type="text/javascript" src="/SASS-Material-Design-for-Bootstrap/assets/js/pages/navigation-drawer.js"></script>
 	
 
 	<script>
