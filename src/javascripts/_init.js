@@ -48,10 +48,8 @@ $(document).ready(function() {
 
 		var inputId = $(this).find('input').attr('id');
 
-		$(this).append($('<label for="' + inputId + '"><span class="rail"></span><span class="button"></span></label>'));
+		$(this).append($('<label for="' + inputId + '"><span class="rail"></span><span class="button"></span><span class="focus"></span></label>'));
 
 	});
-
-
 
 });
