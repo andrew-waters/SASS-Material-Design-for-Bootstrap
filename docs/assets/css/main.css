@@ -46,6 +46,16 @@ body {
 	margin-top: 5px;
 }
 
+.feature .lead {
+	padding-left: 32px;
+}
+
+.feature .icon {
+	left: 4px;
+	top: 2px;
+	position: absolute;
+}
+
 .version {
 	width: 42px;
 	height: 42px;
