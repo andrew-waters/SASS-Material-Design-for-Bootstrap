@@ -39,17 +39,10 @@ $navigation-drawer-font-weight: 500;
 //
 // This settings will extended by .navigation-drawer-text, .navigation-drawer-brand and .navigation-drawer-nav>li>a
 @mixin navigation-drawer-block() {
-
 	display: block;
-	height: $navigation-drawer-nav-height;
-	line-height: $navigation-drawer-nav-height;
-	padding: 0;
-	padding-left: $navigation-drawer-padding;
-	padding-right: $navigation-drawer-padding;
 	text-decoration: none;
 	clear: both;
 	font-weight: $navigation-drawer-font-weight;
-
 }
 
 // navigation-drawer design template
@@ -89,6 +82,7 @@ $navigation-drawer-font-weight: 500;
 	.navigation-drawer-brand {
 		color: $brand-color;
 		background-color: $brand-bg;
+		padding-left: 22px;
 	}
 
 	.navigation-drawer-divider, .navigation-drawer-nav .divider {
@@ -108,23 +102,26 @@ $navigation-drawer-font-weight: 500;
 
 		ul:first-child {
 			font-weight: bold;
-			padding-left: 15px;
-		}
-
-		ul:first-child > li {
-			margin-bottom: 15px;
+			padding-left: 0;
 		}
 
 		ul:first-child > li > a {
-			font-weight: bold;
+			font-weight: 600;
+			padding: 9px 0 9px 22px !important;
 		}
 
 		ul {
 			margin: 0;
+			padding: 0;
 		}
 
 		ul > li > ul > li > a {
-			padding: 0;
+			padding: 5px 0 5px 46px;
+		}
+
+		ul > li > ul > li.current > a {
+			color: $link-active-color;
+			font-weight: 500;
 		}
 
 		li:not(.active) ul {
@@ -132,7 +129,6 @@ $navigation-drawer-font-weight: 500;
 		}
 
 		li > a {
-			height: 35px;
 			color: $link-color;
 			font-weight: normal;
 			background-color: $link-bg;
@@ -171,12 +167,24 @@ $navigation-drawer-font-weight: 500;
 			&:hover,
 			&:focus {
 				color: $link-active-color;
-				background-color: $link-active-bg;
 			}
+		}
+
+		ul.list-level-1 > li.clicked > a {
+			background-color: $link-active-bg;
 		}
 
 	}
 }
+
+
+
+
+
+
+
+
+
 
 
 /**
@@ -459,12 +467,14 @@ body.navigation-drawer-showing {
 		$icon-color: get-color(grey, 600),
 		$icon-hover-color: get-color(grey, 600),
 
-		$link-color: get-color(grey, 600),
+
+		$link-color: get-color(grey, 700),
+		$link-hover-color: get-color(grey, 1000),
+
 		$link-bg: transparent,
-		$link-hover-color: get-color(grey, 900),
 		$link-hover-bg: transparent,
 		$link-active-color: get-color(grey, 900),
-		$link-active-bg: transparent,
+		$link-active-bg: get-color(grey, 100),
 		$link-current-color: get-color(grey, 1000),
 		$link-current-bg: transparent
 
@@ -488,9 +498,11 @@ body.navigation-drawer-showing {
 		$icon-color: get-color(grey, 600),
 		$icon-hover-color: get-color(grey, 600),
 
-		$link-color: get-color(grey, 600),
+
+		$link-color: get-color(grey, 400),
+		$link-hover-color: get-color(grey, 300),
+
 		$link-bg: transparent,
-		$link-hover-color: get-color(grey, 100),
 		$link-hover-bg: transparent,
 		$link-active-color: get-color(grey, 400),
 		$link-active-bg: transparent,

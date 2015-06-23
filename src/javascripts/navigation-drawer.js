@@ -27,15 +27,26 @@ $(document).ready(function() {
 
 		if($(this).parent().has("ul")) e.preventDefault();
 
-		if(!$(this).hasClass("active")) {
-
-			$(this).next("ul").slideDown(350);
-			$(this).addClass("active");
-
-		} else if($(this).hasClass("active")) {
+		if($(this).hasClass("active")) {
 
 			$(this).removeClass("active");
+
+/*
+			$('.navigation-drawer-nav > ul > li').each(function() {
+				$(this).removeClass("clicked");
+			});
+*/
+
 			$(this).next("ul").slideUp(350);
+
+		} else {
+
+			$('.navigation-drawer-nav > ul > li').each(function() {
+				$(this).removeClass("clicked");
+			});
+
+			$(this).next("ul").slideDown(350);
+			$(this).addClass("active").parent().addClass("clicked");
 
 		}
 
