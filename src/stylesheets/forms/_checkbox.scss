@@ -14,6 +14,32 @@
 
 				}
 
+				&:hover {
+
+					&::before {
+
+						border-color: get-color($color, 400);
+						background-color: get-color($color, 300);
+
+					}
+
+				}
+
+			}
+
+			&:checked {
+				+ label {
+				&:hover {
+
+					&::before {
+
+						border-color: get-color($color, 400);
+						background-color: get-color($color, 400);
+
+					}
+
+				}
+				}
 			}
 
 		}
@@ -28,6 +54,17 @@
 	padding-left: 20px;
 
 	label {
+
+		&:hover {
+
+			&::before {
+
+				border-color: get-color(teal, 900);
+				background-color: get-color(grey, 100);
+
+			}
+
+		}
 
 		display: inline-block;
 		vertical-align: middle;
