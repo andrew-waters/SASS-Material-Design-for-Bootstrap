@@ -25,9 +25,14 @@
 
 	</head>
 
-	<body class="no-transition has-status-bar">
+	{% capture url_parts %} {{ page.url | remove: "/index.html" | replace:'/'," " }}{% endcapture %}
+	{% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 
-		{% include status-bar.html %}
+	<body class="no-transition{% if num_parts == "0" or num_parts == "-1" %} has-status-bar{% endif %}">
+
+		{% if num_parts == "0" or num_parts == "-1" %}
+			{% include status-bar.html %}
+		{% endif %}
 		{% include navigation-drawer.html %}
 		{% include app-bar.html %}
 

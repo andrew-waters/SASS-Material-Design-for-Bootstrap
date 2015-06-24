@@ -230,7 +230,7 @@ body.has-status-bar .navigation-drawer-toggle {
 .navigation-drawer-toggle {
 	z-index: 80;
 	position: fixed;
-	top: 15px;
+	top: 20px;
 	left: 25px;
 	color: get-color(grey, 800);
 }
@@ -332,11 +332,12 @@ body.navigation-drawer-showing {
 		background-color: #BFBFBF;
 	}
 
-	body.has-status-bar &{
+	body.has-status-bar & {
+
 		padding-top: 45px;
 	}
 
-	body.no-transition &{
+	body.no-transition & {
 		@include transition(none);
 	}
 
@@ -354,7 +355,17 @@ body.navigation-drawer-showing {
 	.navigation-drawer-brand {
 
 		@include navigation-drawer-block();
-		height: 36px;
+
+		padding-top: 22px;
+		height: 56px;
+
+		body.has-status-bar & {
+
+			height: 36px;
+			padding-top: 0;
+
+		}
+
 
 		&:hover,
 		&:focus {

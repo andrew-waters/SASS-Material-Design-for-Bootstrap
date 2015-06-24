@@ -5,7 +5,11 @@ html, body {
 
 body {
 	margin-bottom: 100px;
-	padding-top: 400px;
+	padding-top: 140px;
+}
+
+body.has-status-bar {
+	padding-top: 340px;
 }
 
 .background-color-container {

@@ -13,6 +13,8 @@
 
 	<h1 class="title">
 
+		<span class="hidden-sm hidden-xs">
+
 		{% if num_parts == "0" or num_parts == "-1" %}
 			&nbsp;
 		{% else %}
@@ -27,6 +29,8 @@
 			{% endfor %}
 
 		{% endif %}
+
+		</span>
 
 		{{ page.title }}
 
