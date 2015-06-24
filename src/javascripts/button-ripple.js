@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 
 
-	$('.btn, .nav-ripple a').click(function(e) {
+	$('a.btn, button.btn, .nav-ripple a').click(function(e) {
 
 		var posX = $(this).offset().left,
 			posY = $(this).offset().top;
