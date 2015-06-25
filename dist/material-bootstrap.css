@@ -16635,9 +16635,12 @@ a.btn-bg-success .icon {
 .tool-bar {
   height: 60px;
   padding: 18px 8px;
-  margin: -15px;
+  margin: -16px;
   margin-bottom: 15px;
   border-bottom: 1px solid #E0E0E0; }
+  .app-bar .tool-bar {
+    margin-top: 0;
+    margin-bottom: 0; }
   .tool-bar a {
     padding-left: 8px;
     padding-right: 8px;
@@ -16675,6 +16678,14 @@ a.btn-bg-success .icon {
   		}
   	}
   */ }
+  .app-bar.has-tool-bar {
+    margin-top: 60px; }
+    body.has-status-bar .app-bar.has-tool-bar {
+      margin-top: 85px; }
+    .app-bar.has-tool-bar .tool-bar {
+      margin-top: -60px; }
+      body.has-status-bar .app-bar.has-tool-bar .tool-bar {
+        margin-top: -85px; }
   .app-bar.app-bar-translucent {
     opacity: 0.95; }
   body.no-transition .app-bar {
@@ -16830,6 +16841,12 @@ a.btn-bg-success .icon {
  */
 body.has-status-bar .navigation-drawer-toggle {
   top: 45px; }
+
+.app-bar.has-tool-bar .navigation-drawer-toggle {
+  top: 80px; }
+
+body.has-status-bar .app-bar.has-tool-bar .navigation-drawer-toggle {
+  top: 105px; }
 
 .navigation-drawer-toggle {
   z-index: 80;

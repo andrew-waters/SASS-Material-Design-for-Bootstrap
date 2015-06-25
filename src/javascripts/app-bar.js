@@ -68,7 +68,7 @@
 		$.each($('.app-bar.app-bar-extended:not(.app-bar-static)'), function() {
 
 			var statusBarLargeHeight = bodyHasStatusBar ? 280 : 255;
-			var statusBarSmallHeight = bodyHasStatusBar ? 90 : 65;
+			var statusBarSmallHeight = bodyHasStatusBar ? ($(this).hasClass('has-tool-bar') ? 65 : 90) : 65;
 
 			var appBarHasTabs = $(this).hasClass('app-bar-has-tabs');
 

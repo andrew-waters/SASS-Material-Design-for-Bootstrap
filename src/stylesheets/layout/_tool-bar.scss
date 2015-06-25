@@ -3,9 +3,16 @@
 
 	height: 60px;
 	padding: 18px 8px;
-	margin: -15px;
+	margin: -16px;
 	margin-bottom: 15px;
 	border-bottom: 1px solid get-color(grey, 300);
+
+	.app-bar & {
+
+		margin-top: 0;
+		margin-bottom: 0;
+
+	}
 
 	a {
 

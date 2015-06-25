@@ -227,6 +227,14 @@ body.has-status-bar .navigation-drawer-toggle {
 	top: 45px;
 }
 
+.app-bar.has-tool-bar .navigation-drawer-toggle {
+	top: 80px;
+}
+
+body.has-status-bar .app-bar.has-tool-bar .navigation-drawer-toggle {
+	top: 105px;
+}
+
 .navigation-drawer-toggle {
 	z-index: 80;
 	position: fixed;

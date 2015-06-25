@@ -1,6 +1,28 @@
 
 .app-bar {
 
+	&.has-tool-bar {
+
+		margin-top: 60px;
+
+		body.has-status-bar & {
+			margin-top: 85px;
+		}
+
+		.tool-bar {
+
+			margin-top: -60px;
+
+			body.has-status-bar & {
+
+				margin-top: -85px;
+
+			}
+
+		}
+
+	}
+
 	&.app-bar-translucent {
 		opacity: 0.95;
 	}
