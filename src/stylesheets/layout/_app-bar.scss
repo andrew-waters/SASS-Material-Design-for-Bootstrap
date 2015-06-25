@@ -23,6 +23,23 @@
 
 	}
 
+	&.app-bar-has-tabs {
+
+		height: 111px;
+
+		.app-bar-extended & {
+
+			height: 255px;
+
+			& ul.nav.nav-tabs {
+				margin-top: 159px;
+			}
+
+		}
+
+	}
+
+
 	&.app-bar-translucent {
 		opacity: 0.95;
 	}
@@ -51,6 +68,8 @@
 		padding-top: 20px;
 		font-size: 21px;
 	}
+
+	
 
 /*
 	@media (min-width: $screen-sm-min) {

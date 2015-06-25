@@ -16711,6 +16711,12 @@ a.btn-bg-success .icon {
       margin-top: -60px; }
       body.has-status-bar .app-bar.has-tool-bar .tool-bar {
         margin-top: -85px; }
+  .app-bar.app-bar-has-tabs {
+    height: 111px; }
+    .app-bar-extended .app-bar.app-bar-has-tabs {
+      height: 255px; }
+      .app-bar-extended .app-bar.app-bar-has-tabs ul.nav.nav-tabs {
+        margin-top: 159px; }
   .app-bar.app-bar-translucent {
     opacity: 0.95; }
   body.no-transition .app-bar {
