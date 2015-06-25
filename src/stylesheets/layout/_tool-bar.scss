@@ -1,0 +1,26 @@
+
+.tool-bar {
+
+	height: 60px;
+	padding: 18px 8px;
+	margin: -15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid get-color(grey, 300);
+
+	a {
+
+		padding-left: 8px;
+		padding-right: 8px;
+		display: table-cell;
+		vertical-align: middle;
+		opacity: 0.8;
+
+		&:hover {
+
+			opacity: 1;
+
+		}
+
+	}
+
+}

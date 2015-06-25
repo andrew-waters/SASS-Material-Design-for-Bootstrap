@@ -200,7 +200,9 @@ module.exports = function(grunt) {
 					'app-bar-with-action-bar',
 					'app-bar-with-active-search',
 					'app-bar-extended-with-tabs',
-					'app-bar-extended'
+					'app-bar-extended',
+					'tool-bar',
+					'tool-bar-inline'
 				],
 				overwrite: true,
 				scales: [

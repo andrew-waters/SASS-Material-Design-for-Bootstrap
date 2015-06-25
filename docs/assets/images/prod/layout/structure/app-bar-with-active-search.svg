@@ -21,7 +21,7 @@
             <text id="-Search" opacity="0.601620802" sketch:type="MSTextLayer" font-family="Helvetica" font-size="18" font-weight="normal" fill="#FFFFFF">
                 <tspan x="79" y="40.2294922"> Search</tspan>
             </text>
-            <g id="back" sketch:type="MSLayerGroup" transform="translate(26.000000, 23.000000)" fill="#FFFFFF">
+            <g id="back" sketch:type="MSLayerGroup" transform="translate(26.000000, 23.000000)" fill="#424242">
                 <path d="M22,9.625 L5.225,9.625 L12.925,1.925 L11,0 L0,11 L11,22 L12.925,20.075 L5.225,12.375 L22,12.375 L22,9.625 L22,9.625 Z" id="Shape" sketch:type="MSShapeGroup"></path>
             </g>
             <path d="M70,21 L70,46" id="Line" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" sketch:type="MSShapeGroup"></path>

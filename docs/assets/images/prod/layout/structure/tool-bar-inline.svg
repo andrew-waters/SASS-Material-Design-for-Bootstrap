@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200px" height="450px" viewBox="0 0 1200 450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.4 (305) - http://www.bohemiancoding.com/sketch -->
+    <title>tool-bar-inline</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.525 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="tool-bar-inline" sketch:type="MSArtboardGroup">
+            <g id="App-Bar" sketch:type="MSLayerGroup" transform="translate(200.000000, 49.000000)">
+                <rect fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" x="0" y="0" width="800" height="344"></rect>
+                <g id="menu" transform="translate(46.000000, 111.138462)" sketch:type="MSShapeGroup">
+                    <rect id="bounds" x="0" y="0" width="16" height="127.015385"></rect>
+                </g>
+            </g>
+            <g id="Tool-Bar" sketch:type="MSLayerGroup" transform="translate(200.000000, 50.000000)">
+                <rect id="App-Bar" fill="#F1F1F1" sketch:type="MSShapeGroup" x="0" y="0" width="800" height="60"></rect>
+                <g id="menu" transform="translate(46.000000, 19.384615)" sketch:type="MSShapeGroup">
+                    <rect id="bounds" x="0" y="0" width="16" height="22.1538462"></rect>
+                </g>
+            </g>
+            <path d="M976,76 L972,80 L975,80 C975,83.31 972.31,86 969,86 C967.99,86 967.03,85.75 966.2,85.3 L964.74,86.76 C965.97,87.54 967.43,88 969,88 C973.42,88 977,84.42 977,80 L980,80 L976,76 L976,76 Z M963,80 C963,76.69 965.69,74 969,74 C970.01,74 970.97,74.25 971.8,74.7 L973.26,73.24 C972.03,72.46 970.57,72 969,72 C964.58,72 961,75.58 961,80 L958,80 L962,84 L966,80 L963,80 L963,80 Z" id="Shape" fill-opacity="0.7" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M936.432209,79.98 C936.472209,79.66 936.502209,79.34 936.502209,79 C936.502209,78.66 936.472209,78.34 936.432209,78.02 L938.542209,76.37 C938.732209,76.22 938.782209,75.95 938.662209,75.73 L936.662209,72.27 C936.542209,72.05 936.272209,71.97 936.052209,72.05 L933.562209,73.05 C933.042209,72.65 932.482209,72.32 931.872209,72.07 L931.492209,69.42 C931.462209,69.18 931.252209,69 931.002209,69 L927.002209,69 C926.752209,69 926.542209,69.18 926.512209,69.42 L926.132209,72.07 C925.522209,72.32 924.962209,72.66 924.442209,73.05 L921.952209,72.05 C921.722209,71.96 921.462209,72.05 921.342209,72.27 L919.342209,75.73 C919.212209,75.95 919.272209,76.22 919.462209,76.37 L921.572209,78.02 C921.532209,78.34 921.502209,78.67 921.502209,79 C921.502209,79.33 921.532209,79.66 921.572209,79.98 L919.462209,81.63 C919.272209,81.78 919.222209,82.05 919.342209,82.27 L921.342209,85.73 C921.462209,85.95 921.732209,86.03 921.952209,85.95 L924.442209,84.95 C924.962209,85.35 925.522209,85.68 926.132209,85.93 L926.512209,88.58 C926.542209,88.82 926.752209,89 927.002209,89 L931.002209,89 C931.252209,89 931.462209,88.82 931.492209,88.58 L931.872209,85.93 C932.482209,85.68 933.042209,85.34 933.562209,84.95 L936.052209,85.95 C936.282209,86.04 936.542209,85.95 936.662209,85.73 L938.662209,82.27 C938.782209,82.05 938.732209,81.78 938.542209,81.63 L936.432209,79.98 L936.432209,79.98 Z M929.002209,82.5 C927.072209,82.5 925.502209,80.93 925.502209,79 C925.502209,77.07 927.072209,75.5 929.002209,75.5 C930.932209,75.5 932.502209,77.07 932.502209,79 C932.502209,80.93 930.932209,82.5 929.002209,82.5 L929.002209,82.5 Z" id="Shape" fill-opacity="0.7" fill="#000000" sketch:type="MSShapeGroup"></path>
+            <path d="M232.5,83 L231.71,83 L231.43,82.73 C232.41,81.59 233,80.11 233,78.5 C233,74.91 230.09,72 226.5,72 C222.91,72 220,74.91 220,78.5 C220,82.09 222.91,85 226.5,85 C228.11,85 229.59,84.41 230.73,83.43 L231,83.71 L231,84.5 L236,89.49 L237.49,88 L232.5,83 L232.5,83 Z M226.5,83 C224.01,83 222,80.99 222,78.5 C222,76.01 224.01,74 226.5,74 C228.99,74 231,76.01 231,78.5 C231,80.99 228.99,83 226.5,83 L226.5,83 Z" id="Shape" fill-opacity="0.7" fill="#000000" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

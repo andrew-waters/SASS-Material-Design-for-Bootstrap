@@ -51,6 +51,7 @@ $material-font-path: "../fonts/material" !default;
 @import "stylesheets/emptyState";
 @import "stylesheets/utilities";
 
+@import "stylesheets/layout/tool-bar";
 @import "stylesheets/layout/app-bar";
 @import "stylesheets/layout/navigation-drawer";
 @import "stylesheets/layout/status-bar";

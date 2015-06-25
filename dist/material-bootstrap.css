@@ -16632,6 +16632,21 @@ a.btn-bg-success .icon {
 .no-bg {
   background: none !important; }
 
+.tool-bar {
+  height: 60px;
+  padding: 18px 8px;
+  margin: -15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #E0E0E0; }
+  .tool-bar a {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0.8; }
+    .tool-bar a:hover {
+      opacity: 1; }
+
 .app-bar {
   display: block;
   position: fixed;

@@ -10,6 +10,8 @@
       href: "status-bar"
     - title: "App Bar"
       href: "app-bar"
+    - title: "Tool Bar"
+      href: "tool-bar"
     - title: "Navigation Drawer"
       href: "navigation-drawer"
     - title: "Authentic Motion"
