@@ -5,12 +5,14 @@
 	padding: 18px 8px;
 	margin: -16px;
 	margin-bottom: 15px;
-	border-bottom: 1px solid get-color(grey, 300);
+	border: 1px solid get-color(grey, 300);
 
 	.app-bar & {
 
 		margin-top: 0;
 		margin-bottom: 0;
+		border: 0;
+		border-bottom: 1px solid get-color(grey, 300);
 
 	}
 
@@ -25,6 +27,49 @@
 		&:hover {
 
 			opacity: 1;
+
+		}
+
+	}
+
+	.form-inline {
+
+		margin-top: -5px;
+
+	}
+
+	.form-group {
+
+		border:1px solid get-color(grey, 300);
+		background-color: #FFF;
+		border-radius: 2px;
+		width: 100%;
+		padding: 0;
+
+		.form-control {
+
+			width: calc(100% - 70px);
+			height: 30px;
+			line-height: 20px;
+			float: left;
+			padding: 6px;
+
+		}
+
+		button {
+
+			float:right;
+			height: 30px;
+			padding: 0 16px;
+			border-radius: 1px;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+
+			i {
+
+				margin-top: 5px;
+
+			}
 
 		}
 

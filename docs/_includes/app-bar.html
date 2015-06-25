@@ -3,29 +3,50 @@
 {% capture num_parts %}{{ url_parts | number_of_words | minus: 1 }}{% endcapture %}
 {% assign previous="" %}
 
-<nav class="app-bar  {% if num_parts == "0" or num_parts == "-1" %} app-bar-extended{% else %} elevated-1 app-bar-static{% endif %} app-bar-translucent bg-cyan">
+<nav class="app-bar {% if page.title == "Tool Bar" %}has-tool-bar{% endif %} {% if num_parts == "0" or num_parts == "-1" %} app-bar-extended{% else %} elevated-1 app-bar-static{% endif %} app-bar-translucent bg-cyan">
 
-<!--
+	{% if page.title == "Tool Bar" %}
+
 	<div class="tool-bar bg-blue-grey bg-50">
 	
-		<span class="pull-right">
+		<div class="col-xs-2">
+
+			<h3>MDfBS</h3>
+
+		</div>
+
+		<div class="col-xs-6">
+
+			<form role="form" class="form-inline">
+		
+				<div class="form-group material full-width">
+					<input type="text" class="form-control" placeholder="Search">
+					<button class="btn btn-primary" type="submit">
+						<i class="icon material-icons">search</i>
+					</button>
+				</div>
+
+
+			</form>
+
+		</div>
+
+		<div class="col-xs-4">
 	
-			<a class="text-grey text-800" href="#">
+			<a class="pull-right text-grey text-800" href="#">
 				<i class="icon material-icons">settings</i>
 			</a>
 	
-			<a class="text-grey text-800" href="#">
+			<a class="pull-right text-grey text-800" href="#">
 				<i class="icon material-icons">sync</i>
 			</a>
 	
-		</span>
+		</div>
 
-		<a class="text-grey text-800" href="#">
-			<i class="icon material-icons">search</i>
-		</a>
 	
 	</div>
--->
+
+	{% endif %}
 
 	<a class="navigation-drawer-toggle" href="#">
 

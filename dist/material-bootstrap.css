@@ -16637,10 +16637,12 @@ a.btn-bg-success .icon {
   padding: 18px 8px;
   margin: -16px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #E0E0E0; }
+  border: 1px solid #E0E0E0; }
   .app-bar .tool-bar {
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    border: 0;
+    border-bottom: 1px solid #E0E0E0; }
   .tool-bar a {
     padding-left: 8px;
     padding-right: 8px;
@@ -16649,6 +16651,29 @@ a.btn-bg-success .icon {
     opacity: 0.8; }
     .tool-bar a:hover {
       opacity: 1; }
+  .tool-bar .form-inline {
+    margin-top: -5px; }
+  .tool-bar .form-group {
+    border: 1px solid #E0E0E0;
+    background-color: #FFF;
+    border-radius: 2px;
+    width: 100%;
+    padding: 0; }
+    .tool-bar .form-group .form-control {
+      width: calc(100% - 70px);
+      height: 30px;
+      line-height: 20px;
+      float: left;
+      padding: 6px; }
+    .tool-bar .form-group button {
+      float: right;
+      height: 30px;
+      padding: 0 16px;
+      border-radius: 1px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+      .tool-bar .form-group button i {
+        margin-top: 5px; }
 
 .app-bar {
   display: block;
