@@ -48,7 +48,7 @@ Grunt will then watch concurrently for changes to docs, js and scss files and bu
 
 ### Documentation
 
-The documentation is generated using [Jekyll](http://jekyllrb.com) and resides in the `docs` directory. When you run `grunt` we automatically set up a Jekyll server [locally](http://127.0.0.1:4000/SASS-Material-Design-for-Bootstrap/) with the docs running.
+The documentation is generated using [Jekyll](http://jekyllrb.com) and resides in the `docs` directory. When you run `grunt` we automatically set up a Jekyll server [locally](http://127.0.0.1:4000/) with the docs running.
 
 Any changes to the source files we be built and the local docs will be updated.
 
