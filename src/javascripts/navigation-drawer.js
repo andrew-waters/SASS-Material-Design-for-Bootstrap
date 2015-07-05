@@ -21,32 +21,38 @@ $(document).ready(function() {
 		$('#navigation-drawer').removeClass('open');
 	});
 
-	$(".toggle-navigation").on("click", function(e) {
+	$(".toggle-navigation i").on("click", function(e) {
 
 		e.preventDefault();
 
-		if($(this).parent().has("ul")) e.preventDefault();
+		$icon = $(this);
 
-		if($(this).hasClass("active")) {
+		if($icon.parent().parent().has("ul")) e.preventDefault();
 
-			$(this).removeClass("active");
+		if($icon.parent().hasClass("active")) {
 
-/*
-			$('.navigation-drawer-nav > ul > li').each(function() {
-				$(this).removeClass("clicked");
+		//	hide
+
+			$icon.parent().removeClass("active");
+
+			$icon.parent().removeClass("active").parent().removeClass("active").removeClass("clicked");
+			$icon.parent().next("ul").slideUp(350, function() {
 			});
-*/
 
-			$(this).next("ul").slideUp(350);
+			$icon.html("expand_more");
 
 		} else {
 
+		//	show
+
 			$('.navigation-drawer-nav > ul > li').each(function() {
 				$(this).removeClass("clicked");
 			});
 
-			$(this).next("ul").slideDown(350);
-			$(this).addClass("active").parent().addClass("clicked");
+			$icon.parent().next("ul").slideDown(350);
+			$icon.parent().addClass("active").parent().addClass("clicked");
+
+			$icon.html("close");
 
 		}
 
@@ -105,7 +111,7 @@ $(document).ready(function() {
 
 (function($) {
 
-	var dropdown = $('.navigation-drawer .dropdown');
+	var dropdown = $('.dropdown');
 
 //	Add slidedown animation to dropdown
 	dropdown.on('show.bs.dropdown', function(e){

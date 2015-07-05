@@ -23,10 +23,11 @@
 
 				{% assign firstLevel = page.url | replace: '/', ' ' | truncatewords: 1 | remove:'...' %}
 
-				<li role="presentation" class="{% if firstLevel == top.href %}active{% endif %}">
+				<li role="presentation" class="{% if firstLevel == top.href %}active clicked{% endif %}">
 
-					<a href="#" class="toggle-navigation">
+					<a href="#" class="toggle-navigation{% if firstLevel == top.href %} active{% endif %}">
 						{{ top.title }}
+						<i class="icon material-icons">{% if firstLevel == top.href %}close{% else %}expand_more{% endif %}</i>
 					</a>
 
 					<ul class="list-level-2">
