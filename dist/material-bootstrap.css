@@ -16564,7 +16564,8 @@ a.btn-bg-success .icon {
     .nav-tabs > li .dropdown-menu,
     .nav-justified > li .dropdown-menu {
       width: 100%;
-      top: -5px; }
+      top: -5px;
+      left: -1px; }
 
 .nav-ripple li a {
   overflow: hidden; }
