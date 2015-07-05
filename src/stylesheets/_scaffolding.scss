@@ -51,10 +51,19 @@ a.no-decoration:hover {
 	padding: 8px 0;
 	top: -10px;
 	left: 0;
+	background-color: get-color(grey, 200);
 
 	> li > a {
 
 		padding: 10px 0 10px 16px;
+
+		&:hover {
+			background-color: get-color(grey, 300);
+		}
+
+		&.active {
+			background-color: get-color(grey, 300);
+		}
 
 	}
 
