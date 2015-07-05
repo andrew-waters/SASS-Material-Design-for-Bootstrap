@@ -16690,7 +16690,8 @@ a.btn-bg-success .icon {
       .nav-tabs > li > a .icon,
       .nav-justified > li > a .icon {
         position: relative;
-        top: 4px; }
+        top: 2px;
+        line-height: 13px !important; }
     .nav-tabs > li > a:not([data-toggle="dropdown"]) .icon,
     .nav-justified > li > a:not([data-toggle="dropdown"]) .icon {
       position: relative;
@@ -16724,7 +16725,8 @@ a.btn-bg-success .icon {
     .nav-tabs > li .dropdown-menu,
     .nav-justified > li .dropdown-menu {
       width: 100%;
-      top: -5px; }
+      top: -5px;
+      left: -1px; }
 
 .nav-ripple li a {
   overflow: hidden; }
