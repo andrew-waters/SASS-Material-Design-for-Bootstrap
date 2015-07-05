@@ -6110,9 +6110,14 @@ a.no-decoration:hover {
 .dropdown-menu {
   padding: 8px 0;
   top: -10px;
-  left: 0; }
+  left: 0;
+  background-color: #EEEEEE; }
   .dropdown-menu > li > a {
     padding: 10px 0 10px 16px; }
+    .dropdown-menu > li > a:hover {
+      background-color: #E0E0E0; }
+    .dropdown-menu > li > a.active {
+      background-color: #E0E0E0; }
 
 .dropdown-menu a {
   margin-right: 0 !important; }
