@@ -16530,7 +16530,8 @@ a.btn-bg-success .icon {
       .nav-tabs > li > a .icon,
       .nav-justified > li > a .icon {
         position: relative;
-        top: 4px; }
+        top: 2px;
+        line-height: 13px !important; }
     .nav-tabs > li > a:not([data-toggle="dropdown"]) .icon,
     .nav-justified > li > a:not([data-toggle="dropdown"]) .icon {
       position: relative;
