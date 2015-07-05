@@ -17251,9 +17251,25 @@ body.navigation-drawer-showing .status-bar {
   .navigation-drawer-default .navigation-drawer-nav li > a {
     color: #616161;
     font-weight: normal;
-    background-color: transparent; }
+    background-color: transparent;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out; }
     .navigation-drawer-default .navigation-drawer-nav li > a i {
-      color: #757575; }
+      color: #757575;
+      float: right;
+      margin-top: -8px;
+      padding: 10px;
+      padding-right: 20px;
+      opacity: 0.3; }
+  .navigation-drawer-default .navigation-drawer-nav li.clicked > a {
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out; }
+  .navigation-drawer-default .navigation-drawer-nav li.active > a i {
+    font-size: 16px !important;
+    padding-right: 21px !important;
+    opacity: 0.5; }
   .navigation-drawer-default .navigation-drawer-nav li:hover > a, .navigation-drawer-default .navigation-drawer-nav li > a:hover {
     color: #000000;
     background-color: transparent; }
@@ -17310,9 +17326,25 @@ body.navigation-drawer-showing .status-bar {
   .navigation-drawer-inverse .navigation-drawer-nav li > a {
     color: #BDBDBD;
     font-weight: normal;
-    background-color: transparent; }
+    background-color: transparent;
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out; }
     .navigation-drawer-inverse .navigation-drawer-nav li > a i {
-      color: #757575; }
+      color: #757575;
+      float: right;
+      margin-top: -8px;
+      padding: 10px;
+      padding-right: 20px;
+      opacity: 0.3; }
+  .navigation-drawer-inverse .navigation-drawer-nav li.clicked > a {
+    -webkit-transition: background-color 0.25s ease-in-out;
+    -o-transition: background-color 0.25s ease-in-out;
+    transition: background-color 0.25s ease-in-out; }
+  .navigation-drawer-inverse .navigation-drawer-nav li.active > a i {
+    font-size: 16px !important;
+    padding-right: 21px !important;
+    opacity: 0.5; }
   .navigation-drawer-inverse .navigation-drawer-nav li:hover > a, .navigation-drawer-inverse .navigation-drawer-nav li > a:hover {
     color: #E0E0E0;
     background-color: transparent; }
