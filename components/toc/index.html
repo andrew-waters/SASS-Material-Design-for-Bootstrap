@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>What's New &middot; SASS for Bootstrap</title>
+		<title>Table of Contents &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -334,11 +334,11 @@
 
 				
 
-				<li role="presentation" class="">
+				<li role="presentation" class="active clicked">
 
-					<a href="#" class="toggle-navigation">
+					<a href="#" class="toggle-navigation active">
 						Components
-						<i class="icon material-icons">expand_more</i>
+						<i class="icon material-icons">close</i>
 					</a>
 
 					<ul class="list-level-2">
@@ -374,7 +374,7 @@
 						
 						
 
-						<li role="presentation" class="">
+						<li role="presentation" class="active current">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/components/toc">
 								Table of Contents
@@ -500,11 +500,11 @@
 
 				
 
-				<li role="presentation" class="active clicked">
+				<li role="presentation" class="">
 
-					<a href="#" class="toggle-navigation active">
+					<a href="#" class="toggle-navigation">
 						Development
-						<i class="icon material-icons">close</i>
+						<i class="icon material-icons">expand_more</i>
 					</a>
 
 					<ul class="list-level-2">
@@ -514,7 +514,7 @@
 						
 						
 
-						<li role="presentation" class="active current">
+						<li role="presentation" class="">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/development/whats-new">
 								What's New
@@ -593,7 +593,7 @@
 				
 				
 		
-				development <span class="divider">&#10095;</span>
+				components <span class="divider">&#10095;</span>
 
 				
 			
@@ -602,7 +602,7 @@
 
 		</span>
 
-		What's New
+		Table of Contents
 
 	</h1>
 
@@ -662,70 +662,113 @@
 
 		<div class="content-container">
 
-			<div class="container whats-new">
+			<div class="container">
 
-	<section class="new-feature">
+	<p class="lead">A Table of Contents (ToC) allows you to display a list of links to anchor points within the page, similar to the one on the <a href="https://www.google.com/design/spec/material-design/introduction.html">Material Design</a> site.</p>
 
-		<div class="container">
+	<p>You can use the primary colour name to style your ToC, such as <code>&lt;div class=&quot;toc toc-cyan&quot;&gt;</code></p>
+	<p>To add a header, user an <code>&lt;h3&gt;</code> tag and to add content to the ToC, use a vanilla <code>&lt;ul&gt;</code>.</p>
 
-			<div class="row">
 
-				<div class="col-xs-2">
-					<div class="version major bg-blue bg-900">
-						0.1.3
-					</div>
-				</div>
+	<div class="example example-left">
 
-				<div class="col-xs-10">
+		<div class="example-code">
+			<pre>&lt;div class=&quot;toc toc-cyan&quot;&gt;
+	&lt;h3&gt;Example Header&lt;/h3&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;#one&quot;&gt;Content Item 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#two&quot;&gt;Content Item 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#three&quot; data-scroll-duration=&quot;3000&quot; data-scroll-easing=&quot;spring&quot;&gt;Content Item 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</pre>
+		</div>
 
-					<div class="row">
+		<div class="example-output">
 
-						<div class="feature col-xs-6">
+	<div class="toc toc-cyan">
 
-							<p class="lead"><i class="icon icon-lg material-icons">power_input</i>Controls</p>
-							<p>Added Switches, checkboxes and radio buttons</p>
+		<h3>Example Header</h3>
 
-						</div>
+		<ul>
 
-					</div>
+			<li><a href="#one">Content Item 1</a></li>
+			<li><a href="#two">Content Item 2</a></li>
+			<li><a href="#three" data-scroll-duration="3000" data-scroll-easing="spring">Content Item 3</a></li>
 
-				</div>
+		</ul>
 
-				<div class="breather-lg"></div>
-
-				<div class="col-xs-2">
-					<div class="version major bg-blue bg-900">
-						0.1.0
-					</div>
-				</div>
-
-				<div class="col-xs-10">
-
-					<div class="row">
-
-						<div class="feature col-xs-6">
-
-							<p class="lead"><i class="icon icon-lg material-icons">dashboard</i>Cards</p>
-							<p>A card is a piece of paper with unique related data that serves as an entry point to more detailed information. For example, a card could contain a photo, text, and a link about a single subject.</p>
-
-						</div>
-
-						<div class="feature col-xs-6">
-
-							<p class="lead"><i class="icon icon-lg material-icons">insert_drive_file</i>Paper</p>
-							<p>Material has certain immutable characteristics and inherent behaviours. Understanding these qualities will help you manipulate material in a way that’s consistent with the vision of material design.</p>
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
+	</div>
 
 		</div>
 
-	</section>
+	</div>
+
+	<div id="one">
+		<h2 class="text-cyan">Content 1</h2>
+		<div class="paper">
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+		</div>
+	</div>
+
+	<div id="two">
+		<h2 class="text-cyan">Content 2</h2>
+		<div class="paper">
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+		</div>
+	</div>
+
+	<div id="three">
+		<h2 class="text-cyan">Content 3</h2>
+		<div class="paper">
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+			<div class="breather-lg"></div>
+		</div>
+	</div>
+
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
+	<div class="breather-lg"></div>
 
 </div>
 
