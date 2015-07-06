@@ -50,6 +50,8 @@
       href: "paper"
     - title: "Cards"
       href: "cards"
+    - title: "Content Index"
+      href: "content-index"
     - title: "Empty State"
       href: "empty-state"
     - title: "Icons"

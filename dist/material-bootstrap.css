@@ -6893,6 +6893,123 @@ pre {
 .text-blue-grey.text-900 {
   color: #263238; }
 
+.content-index {
+  padding-left: 20px;
+  border-left: 5px solid #F5F5F5;
+  padding-bottom: 0;
+  margin-top: 45px;
+  margin-bottom: 100px; }
+  .content-index h3 {
+    font-size: 1.1em;
+    opacity: 0.5; }
+  .content-index ul {
+    padding: 0; }
+    .content-index ul li {
+      list-style: none;
+      line-height: 1;
+      margin-top: 20px; }
+      .content-index ul li a {
+        font-size: 1.5em;
+        line-height: 1;
+        color: #757575; }
+        .content-index ul li a:hover {
+          text-decoration: none; }
+
+.content-index.content-index-red {
+  border-left-color: #FFCDD2; }
+  .content-index.content-index-red ul > li > a {
+    color: #EF5350; }
+
+.content-index.content-index-pink {
+  border-left-color: #F8BBD0; }
+  .content-index.content-index-pink ul > li > a {
+    color: #EC407A; }
+
+.content-index.content-index-purple {
+  border-left-color: #E1BEE7; }
+  .content-index.content-index-purple ul > li > a {
+    color: #AB47BC; }
+
+.content-index.content-index-deep-purple {
+  border-left-color: #D1C4E9; }
+  .content-index.content-index-deep-purple ul > li > a {
+    color: #7E57C2; }
+
+.content-index.content-index-indigo {
+  border-left-color: #C5CAE9; }
+  .content-index.content-index-indigo ul > li > a {
+    color: #5C6BC0; }
+
+.content-index.content-index-blue {
+  border-left-color: #BBDEFB; }
+  .content-index.content-index-blue ul > li > a {
+    color: #42A5F5; }
+
+.content-index.content-index-light-blue {
+  border-left-color: #B3E5FC; }
+  .content-index.content-index-light-blue ul > li > a {
+    color: #29B6F6; }
+
+.content-index.content-index-cyan {
+  border-left-color: #B2EBF2; }
+  .content-index.content-index-cyan ul > li > a {
+    color: #26C6DA; }
+
+.content-index.content-index-teal {
+  border-left-color: #B2DFDB; }
+  .content-index.content-index-teal ul > li > a {
+    color: #26A69A; }
+
+.content-index.content-index-green {
+  border-left-color: #C8E6C9; }
+  .content-index.content-index-green ul > li > a {
+    color: #66BB6A; }
+
+.content-index.content-index-light-green {
+  border-left-color: #DCEDC8; }
+  .content-index.content-index-light-green ul > li > a {
+    color: #9CCC65; }
+
+.content-index.content-index-lime {
+  border-left-color: #F0F4C3; }
+  .content-index.content-index-lime ul > li > a {
+    color: #D4E157; }
+
+.content-index.content-index-yellow {
+  border-left-color: #FFF9C4; }
+  .content-index.content-index-yellow ul > li > a {
+    color: #FFEE58; }
+
+.content-index.content-index-amber {
+  border-left-color: #FFECB3; }
+  .content-index.content-index-amber ul > li > a {
+    color: #FFCA28; }
+
+.content-index.content-index-orange {
+  border-left-color: #FFE0B2; }
+  .content-index.content-index-orange ul > li > a {
+    color: #FFA726; }
+
+.content-index.content-index-deep-orange {
+  border-left-color: #FFCCBC; }
+  .content-index.content-index-deep-orange ul > li > a {
+    color: #FF7043; }
+
+.content-index.content-index-brown {
+  border-left-color: #D7CCC8; }
+  .content-index.content-index-brown ul > li > a {
+    color: #8D6E63; }
+
+.content-index.content-index-grey {
+  border-left-color: #F5F5F5; }
+  .content-index.content-index-grey ul > li > a {
+    color: #BDBDBD; }
+
+.content-index.content-index-blue-grey {
+  border-left-color: #CFD8DC; }
+  .content-index.content-index-blue-grey ul > li > a {
+    color: #78909C; }
+
 .bg-black {
   background-color: #000000;
   color: #FFFFFF; }
