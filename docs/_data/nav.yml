@@ -17,6 +17,14 @@
     - title: "Authentic Motion"
       href: "authentic-motion"
 
+- title: "Animation"
+  href: "animation"
+  sub:
+    - title: "Authentic Motion"
+      href: "authentic-motion"
+    - title: "Smooth Scrolling"
+      href: "smooth-scrolling"
+
 - title: "Forms"
   href: "forms"
   sub:
