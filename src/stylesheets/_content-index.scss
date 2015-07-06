@@ -1,5 +1,5 @@
 
-.content-index {
+.toc {
 
 	padding-left: 20px;
 	border-left: 5px solid get-color(grey, 100);
@@ -47,7 +47,7 @@
 
 @each $color in map-keys(map-get($color-map, colors)) {
 
-	.content-index.content-index-#{"" + $color} {
+	.toc.toc-#{"" + $color} {
 
 		border-left-color: map-fetch($color-map, colors $color 100 'primary');
 
