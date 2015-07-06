@@ -64,9 +64,15 @@
 	}
 
 	& .title {
+
 		padding-left: 90px;
 		padding-top: 20px;
 		font-size: 21px;
+
+		span a:hover {
+			text-decoration: none;
+		}
+
 	}
 
 	
