@@ -225,6 +225,7 @@ $navigation-drawer-font-weight: 500;
 	background: #000;
 	@include transition(visibility 0 linear .4s,opacity .4s ease-in-out);
 	@include transition(translateZ(0));
+	@include transition(opacity 0.5s ease-in-out);
 
 	&.active {
 		opacity: 0.5;
@@ -232,6 +233,7 @@ $navigation-drawer-font-weight: 500;
 		-webkit-transition-delay: 0;
 		-moz-transition-delay: 0;
 		transition-delay: 0;
+		@include transition(opacity 0.5s ease-in-out);
 	}
 
 }

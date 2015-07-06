@@ -16981,13 +16981,19 @@ a.btn-bg-success .icon {
   transition: visibility 0 linear 0.4s, opacity 0.4s ease-in-out;
   -webkit-transition: translateZ(0);
   -o-transition: translateZ(0);
-  transition: translateZ(0); }
+  transition: translateZ(0);
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out; }
   .navigation-drawer-overlay.active {
     opacity: 0.5;
     visibility: visible;
     -webkit-transition-delay: 0;
     -moz-transition-delay: 0;
-    transition-delay: 0; }
+    transition-delay: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out; }
 
 /**
  *
