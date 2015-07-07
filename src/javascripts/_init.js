@@ -1,6 +1,17 @@
 
 $(document).ready(function() {
 
+	var bodyPaddingTop = 60;
+	var $appBar = $('nav.app-bar');
+	if($appBar) {
+		bodyPaddingTop += $appBar.height();
+		if($appBar.hasClass('has-tool-bar')) {
+			bodyPaddingTop += 60;
+		}
+	}
+
+	$('body').css({'padding-top': bodyPaddingTop});
+
 	autosize($('textarea.autosize'));
 
 	$("form.validate").each(function() {
