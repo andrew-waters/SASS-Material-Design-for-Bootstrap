@@ -1,0 +1,76 @@
+
+.list-group-item {
+
+	background-color: get-color(grey, 50);
+	padding: 4px 6px;
+	font-weight: bold;
+	color: get-color(grey, 600);
+	border: 1px solid get-color(grey, 300);
+
+	i {
+
+		float: left;
+		margin-top: 2px;
+		padding-right: 6px;
+
+	}
+
+	&.active {
+
+		background-color: get-color(grey, 50);
+		border: 1px solid get-color(grey, 300);
+		color: get-color(grey, 800);
+
+		&:focus,
+		&:hover {
+
+			background-color: get-color(grey, 100);
+			border-color: get-color(grey, 300);
+			color: get-color(grey, 900);
+
+		}
+
+	}
+
+	&.list-group-item-level-2 {
+
+		padding-left: 38px;
+		background-color: get-color(grey, 50);
+		font-weight: normal;
+		color: get-color(light-blue, 800);
+
+		&.active {
+
+			color: get-color(grey, 600);
+			border-left-width: 3px;
+			padding-left: 36px;
+
+			&:focus,
+			&:hover {
+
+				border-left-width: 3px;
+
+			}
+
+		}
+
+		&:focus,
+		&:hover {
+
+			background-color: get-color(grey, 100);
+			border: 1px solid get-color(grey, 300);
+
+		}
+
+	}
+
+	&:focus,
+	&:hover {
+
+		background-color: get-color(grey, 100);
+		border-color: get-color(grey, 300);
+		color: get-color(grey, 600);
+
+	}
+
+}
