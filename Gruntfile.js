@@ -33,6 +33,7 @@ module.exports = function(grunt) {
 			dist: {
 				files: {
 					'dist/material-bootstrap.min.js': [
+						'bower_components/jquery/dist/jquery.min.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js',
 						'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js',
