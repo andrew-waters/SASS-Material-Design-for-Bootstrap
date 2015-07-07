@@ -3,15 +3,6 @@ html, body {
 	background-color: #f9f9f9;
 }
 
-body {
-	margin-bottom: 100px;
-	padding-top: 140px;
-}
-
-body.has-status-bar {
-	padding-top: 340px;
-}
-
 .background-color-container {
 	margin-top: 15px;
 }
