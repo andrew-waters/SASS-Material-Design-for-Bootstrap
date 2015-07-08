@@ -15,6 +15,10 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+html, body {
+	background-color: get-color(grey, 100);
+}
+
 body.noscroll {
 	overflow: hidden;
 }

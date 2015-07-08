@@ -5960,6 +5960,9 @@ body {
   color: #424242;
   font-family: 'Roboto', sans-serif; }
 
+html, body {
+  background-color: #F5F5F5; }
+
 body.noscroll {
   overflow: hidden; }
 
