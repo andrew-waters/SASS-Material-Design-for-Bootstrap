@@ -18,7 +18,7 @@
 
 	@each $hue in map-keys(map-fetch($color-map, colors $color)) {
 
-		.body-bg-#{"" + $color}.bg-#{$hue} {
+		.body-bg-#{"" + $color}.body-bg-#{$hue} {
 			background-color: map-fetch($color-map, colors $color $hue 'primary');
 		}
 
