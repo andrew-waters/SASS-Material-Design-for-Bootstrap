@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>App Bar &middot; SASS for Bootstrap</title>
+		<title>Syntax Highlighting &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -68,11 +68,11 @@
 
 				
 
-				<li role="presentation" class="active clicked">
+				<li role="presentation" class="">
 
-					<a href="#" class="toggle-navigation active">
+					<a href="#" class="toggle-navigation">
 						Layout
-						<i class="icon material-icons">close</i>
+						<i class="icon material-icons">expand_more</i>
 					</a>
 
 					<ul class="list-level-2">
@@ -108,7 +108,7 @@
 						
 						
 
-						<li role="presentation" class="active current">
+						<li role="presentation" class="">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/layout/app-bar">
 								App Bar
@@ -280,11 +280,11 @@
 
 				
 
-				<li role="presentation" class="">
+				<li role="presentation" class="active clicked">
 
-					<a href="#" class="toggle-navigation">
+					<a href="#" class="toggle-navigation active">
 						Styles
-						<i class="icon material-icons">expand_more</i>
+						<i class="icon material-icons">close</i>
 					</a>
 
 					<ul class="list-level-2">
@@ -333,7 +333,7 @@
 						
 						
 
-						<li role="presentation" class="">
+						<li role="presentation" class="active current">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/styles/syntax">
 								Syntax
@@ -653,7 +653,7 @@
 				
 				
 		
-				layout <span class="divider">&#10095;</span>
+				styles <span class="divider">&#10095;</span>
 
 				
 			
@@ -662,7 +662,7 @@
 
 		</span>
 
-		App Bar
+		Syntax Highlighting
 
 	</h1>
 
@@ -726,193 +726,97 @@
 
 	<div class="row">
 
-		<div class="col-md-8">
+		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 
-			<p class="lead">The App Bar is an alternative to the Bootstrap Navbar. It is intended to be more flexible and suit a variety of requirements.</p>
+			<h4>Default Code Highlighting</h4>
+
+		</div>
+
+		<div class="left-bordered col-lg-offset-1 col-md-offset-1 col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
+			<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+			<hr />
+			<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br />
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+			<hr />
+			<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+			<hr />
+			<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+			<hr />
+			<samp>This text is meant to be treated as sample output from a computer program.</samp>
 
 		</div>
 
 		<div class="breather-lg"></div>
+		<hr />
 
-		<div class="col-xs-3">
+		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
 
-			<h2>Basics</h2>
+			<h4>Language</h4>
 
-			<p>Use <code>nav</code> with an <code>.app-bar</code> class.</p>
-
-			<p>Adding <code>.app-bar-translucent</code> will give the App Bar a 0.95 opacity.</p>
-
-			<p>By Default, the App Bar is a fixed height of 65px. You can optionally increase the size by adding an <code>.app-bar-extended</code> class to the container which increases the height to 255px.</p>
+			<p>We use <a href="https://github.com/PrismJS/prism">Prism</a> to highlight code syntax</p>
 
 		</div>
 
-		<div class="col-xs-9">
+		<div class="left-bordered col-lg-offset-1 col-md-offset-1 col-lg-9 col-md-8 col-sm-12 col-xs-12">
 
 			<div class="example">
+
 				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar&quot;&gt;&lt;/nav&gt;
-
-&lt;nav class=&quot;app-bar <strong>app-bar-translucent</strong>&quot;&gt;&lt;/nav&gt;
-
-&lt;nav class=&quot;app-bar app-bar-translucent <strong>app-bar-extended</strong>&quot;&gt;&lt;/nav&gt;</pre>
+					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;p { color: red }&lt;/code&gt;&lt;/pre&gt;</code></pre>
 				</div>
+
 				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small.svg" />
-					<div class="breather"></div>
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-translucent.svg" />
-					<div class="breather"></div>
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended.svg" />
+					<pre><code class="language-css">p { color: red }</code></pre>
 				</div>
+
 			</div>
 
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Tabs</h2>
-
-			<p>An App Bar can contain tabs. When they are used, you must add the <code>.app-bar-has-tabs</code> to the nav. This extends the nav so that extended navs that aren't static (ie they grow smaller as the user scrolls) maintain a height in which the tabs still display.</p>
-			<p>You <em>probably</em> want to add a <code>&lt;div class="container" /&gt;</code> to the tabs to center them on screen.</p>
-
-			<p>Tabs can be coloured using the base colour scheme (i.e. you don't define the gradient, we use fixed colours).</p>
-
-		</div>
-
-		<div class="col-xs-9">
-
 			<div class="example">
+
 				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar <strong>app-bar-has-tabs</strong>&quot;&gt;
-	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
-		&lt;!-- tab li's --&gt;
-	&lt;/ul&gt;
-&lt;/nav&gt;
-&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-has-tabs</strong>&quot;&gt;
-	&lt;ul class="nav nav-tabs nav-tabs-orange"&gt;
-		&lt;!-- tab li's --&gt;
-	&lt;/ul&gt;
-&lt;/nav&gt;</pre>
+					<pre><code class="language-markup">&lt;code class=&quot;language-css&quot;&gt;p { color: red }&lt;/code&gt;</code></pre>
 				</div>
+
 				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-tabs.svg" />
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-extended-with-tabs.svg" />
+					<code class="language-css">p { color: red }</code>
 				</div>
+
 			</div>
 
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-7">
-
-			<h2>Behaviour</h2>
-
-			<p>The App Bar will be fixed to the top of the page (taking account of whether or not a <a href="/SASS-Material-Design-for-Bootstrap/layout/status-bar">Status Bar</a> is present).</p>
-
-			<p>If the App Bar is extended, it will, by default, shrink when the user moves the page (until it reaches the default height). If you would like it to remain fixed, add <code>.app-bar-static</code> to the container class.</p>
-
-			<p>If you have tabs in the App Bar (see below), it shrinks to 115px, not the default (65px).
-
-		</div>
-
-		<div class="col-xs-5">
-
 			<div class="example">
+
 				<div class="example-code">
-					<pre>&lt;!-- App Bar doesn't change height when the page scrolls --&gt;
-&lt;nav class=&quot;app-bar app-bar-extended <strong>app-bar-static</strong>&quot;&gt;
-
-&lt;/nav&gt;</pre>
+					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&lt;span class=&quot;text-blue&quot;&gt;My Blue Text&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
 				</div>
-			</div>
 
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Floating Action Button</h2>
-
-			<p>By adding a Floating Action Button you make a very bold action clear to the user. When you use it as part of the App Bar, it is fixed in position on the right hand side.</p>
-
-		</div>
-
-		<div class="col-xs-9">
-
-			<div class="example">
-				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar app-bar-has-tabs&quot;&gt;
-	&lt;a class=&quot;btn btn-fab btn-md bg-orange&quot;&gt;
-		&lt;i class=&quot;icon mdi-content-add&quot;&gt;&lt;/i&gt;
-	&lt;/a&gt;
-&lt;/nav&gt;</pre>
-				</div>
 				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-small-with-fab.svg" />
+					<pre><code class="language-markup">&lt;span class=&quot;text-blue&quot;&gt;My Blue Text&lt;/span&gt;</code></pre>
 				</div>
+
 			</div>
-
-		</div>
-
-		<div class="breather-lg"></div>
-
-		<div class="breather-lg"></div>
-
-		<div class="col-xs-3">
-
-			<h2>Action Buttons</h2>
-
-			<p>The Action Buttons are fixed to the top right of the app bar and offer a way for the user to access common functionality.</p>
-
-			<p>They should be wrapped in a div with a <code>.action-icons</code> class which help position them correctly.</p>
-
-			<p>An anchor item within that which has the <code>.search-icon</code> class has special functionality. When pressed, the nav toggle, title and action buttons are removed and replaced with a search interface. In addition, an overlay becomes active to focus the users gone.</p>
-
-			<p>When adding a search icon, you also need to include the wrapper for the search form and the <code>.app-bar-overlay</code>.</p>
-
-		</div>
-
-		<div class="col-xs-9">
 
 			<div class="example">
+
 				<div class="example-code">
-					<pre>&lt;nav class=&quot;app-bar&quot;&gt;
-
-	&lt;div class=&quot;action-icons&quot;&gt;
-		&lt;a href=&quot;#&quot; class=&quot;search-icon&quot;&gt;
-			&lt;i class=&quot;icon mdi-action-search icon-lg&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;
-			&lt;i class=&quot;icon mdi-action-favorite icon-lg&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-		&lt;a href=&quot;#&quot;&gt;
-			&lt;i class=&quot;icon mdi-action-view-module icon-lg&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-	&lt;/div&gt;
-
-	&lt;div class=&quot;app-bar-overlay&quot;&gt;&lt;/div&gt;
-
-	&lt;div class=&quot;search-form&quot;&gt;
-		&lt;a href=&quot;#&quot; class=&quot;back-icon&quot;&gt;
-			&lt;i class=&quot;icon mdi-navigation-arrow-back&quot;&gt;&lt;/i&gt;
-		&lt;/a&gt;
-		&lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Search&quot;&gt;
-	&lt;/div&gt;
-
-&lt;/nav&gt;</pre>
+					<pre><code class="language-php">&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;?php $class = new Class(); echo $class-&gt;sayHello(&quot;World&quot;); ?&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
 				</div>
+
 				<div class="example-output">
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-with-action-bar.svg" />
-					<img class="img-responsive" src="/SASS-Material-Design-for-Bootstrap/assets/images/prod/layout/structure/app-bar-with-active-search.svg" />
+					<pre><code class="language-php">&lt;?php $class = new Class(); echo $class-&gt;sayHello(&quot;World&quot;); ?&gt;</code></pre>
 				</div>
+
 			</div>
 
+
 		</div>
+
+		<div class="col-xs-12">
+
+
+		</div>
+
+		<div class="breather-lg"></div>
 
 	</div>
 
