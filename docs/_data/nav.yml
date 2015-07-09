@@ -44,6 +44,8 @@
       href: "colours"
     - title: "Typography"
       href: "typography"
+    - title: "Syntax"
+      href: "syntax"
     - title: "Helper Classes"
       href: "helper-classes"
     - title: "Elevation"

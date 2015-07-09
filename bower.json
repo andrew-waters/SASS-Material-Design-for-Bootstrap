@@ -30,6 +30,7 @@
     "jquery-validation": "~1.13.1",
     "velocity": "~1.2.2",
     "autosize": "~3.0.6",
-    "slick.js": "~1.5.5"
+    "slick.js": "~1.5.5",
+    "prism": "~1.0.0"
   }
 }

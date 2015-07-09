@@ -1,0 +1,104 @@
+---
+layout: default
+title: Syntax Highlighting
+---
+
+<div class="container">
+
+	<div class="row">
+
+		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+
+			<h4>Default Code Highlighting</h4>
+
+		</div>
+
+		<div class="left-bordered col-lg-offset-1 col-md-offset-1 col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
+			<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+			<hr />
+			<p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br />
+To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd></p>
+			<hr />
+			<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+			<hr />
+			<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+			<hr />
+			<samp>This text is meant to be treated as sample output from a computer program.</samp>
+
+		</div>
+
+		<div class="breather-lg"></div>
+		<hr />
+
+		<div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+
+			<h4>Language</h4>
+
+			<p>We use <a href="https://github.com/PrismJS/prism">Prism</a> to highlight code syntax</p>
+
+		</div>
+
+		<div class="left-bordered col-lg-offset-1 col-md-offset-1 col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
+			<div class="example">
+
+				<div class="example-code">
+					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-css&quot;&gt;p { color: red }&lt;/code&gt;&lt;/pre&gt;</code></pre>
+				</div>
+
+				<div class="example-output">
+					<pre><code class="language-css">p { color: red }</code></pre>
+				</div>
+
+			</div>
+
+			<div class="example">
+
+				<div class="example-code">
+					<pre><code class="language-markup">&lt;code class=&quot;language-css&quot;&gt;p { color: red }&lt;/code&gt;</code></pre>
+				</div>
+
+				<div class="example-output">
+					<code class="language-css">p { color: red }</code>
+				</div>
+
+			</div>
+
+			<div class="example">
+
+				<div class="example-code">
+					<pre><code class="language-markup">&lt;pre&gt;&lt;code class=&quot;language-markup&quot;&gt;&lt;span class=&quot;text-blue&quot;&gt;My Blue Text&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+				</div>
+
+				<div class="example-output">
+					<pre><code class="language-markup">&lt;span class=&quot;text-blue&quot;&gt;My Blue Text&lt;/span&gt;</code></pre>
+				</div>
+
+			</div>
+
+			<div class="example">
+
+				<div class="example-code">
+					<pre><code class="language-php">&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;?php $class = new Class(); echo $class-&gt;sayHello(&quot;World&quot;); ?&gt;&lt;/code&gt;&lt;/pre&gt;</code></pre>
+				</div>
+
+				<div class="example-output">
+					<pre><code class="language-php">&lt;?php $class = new Class(); echo $class-&gt;sayHello(&quot;World&quot;); ?&gt;</code></pre>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div class="col-xs-12">
+
+
+		</div>
+
+		<div class="breather-lg"></div>
+
+	</div>
+
+</div>
