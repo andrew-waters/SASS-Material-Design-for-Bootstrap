@@ -4,6 +4,10 @@
 
 @each $color in map-keys(map-get($color-map, colors)) {
 
+	.body-bg-#{"" + $color} {
+		background-color: map-fetch($color-map, colors $color 500 'primary');
+	}
+
 	.bg-#{"" + $color} {
 		background-color: map-fetch($color-map, colors $color 500 'primary');
 		color: map-fetch($color-map, colors $color 500 'text');
@@ -13,6 +17,10 @@
 	}
 
 	@each $hue in map-keys(map-fetch($color-map, colors $color)) {
+
+		.body-bg-#{"" + $color}.bg-#{$hue} {
+			background-color: map-fetch($color-map, colors $color $hue 'primary');
+		}
 
 		.bg-#{"" + $color}.bg-#{$hue} {
 			background-color: map-fetch($color-map, colors $color $hue 'primary');
