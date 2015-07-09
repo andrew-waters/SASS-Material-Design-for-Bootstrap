@@ -6118,7 +6118,8 @@ h6, .h6 {
 
 body {
   color: #424242;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 120px; }
 
 html, body {
   background-color: #FAFAFA; }
