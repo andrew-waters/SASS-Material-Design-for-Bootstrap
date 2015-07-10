@@ -10,6 +10,19 @@ $(document).ready(function() {
 		}
 	}
 
+	var $navAppBar = $('nav.app-bar');
+
+	if($navAppBar.attr("data-bg-image")) {
+		var bgPosition = 'center center';
+		if($navAppBar.attr("data-bg-position")) bgPosition = $navAppBar.attr("data-bg-position");
+		$navAppBar.css({
+			'background-image': 'url(\'' + $navAppBar.attr("data-bg-image") + '\')',
+			'background-repeat': 'no-repeat',
+			'background-position': bgPosition
+		});
+	}
+
+
 	$('body').css({'padding-top': bodyPaddingTop});
 
 	autosize($('textarea.autosize'));
