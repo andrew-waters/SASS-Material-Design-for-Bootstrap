@@ -6127,6 +6127,12 @@ html, body {
 body.noscroll {
   overflow: hidden; }
 
+.standalone {
+  position: relative;
+  margin-top: -120px;
+  margin-left: auto;
+  z-index: 55 !important; }
+
 p {
   color: #424242;
   letter-spacing: .1px;
@@ -18432,9 +18438,13 @@ a.btn-bg-success .icon {
 .tool-bar {
   height: 60px;
   padding: 18px 8px;
-  margin: -16px;
+  margin: -15px;
   margin-bottom: 15px;
   border: 1px solid #E0E0E0; }
+  .paper .tool-bar {
+    border-top: none;
+    border-left: none;
+    border-right: none; }
   .app-bar .tool-bar {
     margin-top: 0;
     margin-bottom: 0;

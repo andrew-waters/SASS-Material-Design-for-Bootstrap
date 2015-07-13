@@ -12,6 +12,7 @@
             <path id="X-decoration-1" d="M803,308 L803,314" stroke="#607D8B" stroke-dasharray="6,3"></path>
             <path d="M263,311 L803,311" id="0---Content" stroke="#000000" stroke-width="2" sketch:type="MSShapeGroup"></path>
             <path d="M18,261 L263,261" id="50---App-Bar" stroke="#2196F3" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M225,256 L805,256" id="50---App-Bar-Copy" stroke="#4CAF50" stroke-width="2" sketch:type="MSShapeGroup"></path>
             <path d="M243,251 L283,251" id="60---FAB" stroke="#FF9800" stroke-width="2" sketch:type="MSShapeGroup"></path>
             <g id="80---Nav-Drawer-Toggle" sketch:type="MSLayerGroup" transform="translate(29.000000, 230.000000)" stroke="#000000" stroke-width="2">
                 <path d="M30,1 L40,1" id="3" sketch:type="MSShapeGroup"></path>
