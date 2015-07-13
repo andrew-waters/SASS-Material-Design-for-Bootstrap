@@ -5967,6 +5967,12 @@ html, body {
 body.noscroll {
   overflow: hidden; }
 
+.standalone {
+  position: relative;
+  margin-top: -120px;
+  margin-left: auto;
+  z-index: 55 !important; }
+
 p {
   color: #424242;
   letter-spacing: .1px;
@@ -18272,9 +18278,13 @@ a.btn-bg-success .icon {
 .tool-bar {
   height: 60px;
   padding: 18px 8px;
-  margin: -16px;
+  margin: -15px;
   margin-bottom: 15px;
   border: 1px solid #E0E0E0; }
+  .paper .tool-bar {
+    border-top: none;
+    border-left: none;
+    border-right: none; }
   .app-bar .tool-bar {
     margin-top: 0;
     margin-bottom: 0;
@@ -18321,25 +18331,7 @@ a.btn-bg-success .icon {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 0 16px;
-  height: 65px;
-  /*
-  	@media (min-width: $screen-sm-min) {
-  		& .title {
-  		font-size: 14px;
-  		}
-  	}
-  	@media (min-width: $screen-md-min) {
-  		& .title {
-  			font-size: 18px;
-  		}
-  	}
-  	
-  	@media (min-width: $screen-lg-min) {
-  		& .title {
-  			font-size: 24px;
-  		}
-  	}
-  */ }
+  height: 65px; }
   .app-bar.has-tool-bar {
     margin-top: 60px; }
     body.has-status-bar .app-bar.has-tool-bar {

@@ -24,6 +24,17 @@ body.noscroll {
 	overflow: hidden;
 }
 
+
+.standalone {
+	position: relative;
+	margin-top: -120px;
+	margin-left: auto;
+	z-index: 55 !important;
+}
+
+
+
+
 p {
 	color: get-color(grey, 800);
 	letter-spacing: .1px;

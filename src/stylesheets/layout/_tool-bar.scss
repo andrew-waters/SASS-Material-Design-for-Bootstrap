@@ -3,9 +3,15 @@
 
 	height: 60px;
 	padding: 18px 8px;
-	margin: -16px;
+	margin: -15px;
 	margin-bottom: 15px;
 	border: 1px solid get-color(grey, 300);
+
+	.paper & {
+		border-top: none;
+		border-left: none;
+		border-right: none;
+	}
 
 	.app-bar & {
 
