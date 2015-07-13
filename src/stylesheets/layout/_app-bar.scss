@@ -37,6 +37,11 @@
 
 		}
 
+		& ul.nav.nav-tabs {
+			position: absolute;
+			bottom: 1px;
+		}
+
 	}
 
 
@@ -77,25 +82,6 @@
 
 	
 
-/*
-	@media (min-width: $screen-sm-min) {
-		& .title {
-		font-size: 14px;
-		}
-	}
-	@media (min-width: $screen-md-min) {
-		& .title {
-			font-size: 18px;
-		}
-	}
-	
-	@media (min-width: $screen-lg-min) {
-		& .title {
-			font-size: 24px;
-		}
-	}
-*/
-
 	&.app-bar-extended {
 
 		height: 255px;
@@ -120,6 +106,9 @@
 		float: right;
 		margin-right: 20px;
 		z-index: 60;
+		position: absolute;
+		bottom: -24px;
+		right: 20px;
 	}
 
 	& .action-icons {

@@ -16,6 +16,8 @@
       href: "navigation-drawer"
     - title: "Authentic Motion"
       href: "authentic-motion"
+    - title: "Example Layouts"
+      href: "examples"
 
 - title: "Animation"
   href: "animation"
