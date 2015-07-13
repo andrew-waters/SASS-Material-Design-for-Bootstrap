@@ -1,3 +1,6 @@
+
+sudo: false
+
 script:
  - "scripts/travis/test.rb"
 
