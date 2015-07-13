@@ -10,7 +10,7 @@
 		<meta name="keywords" content="SASS, Bootstrap, Material, Design">
 		<meta name="author" content="Andrew Waters">
 
-		<title>Material Design for Bootstrap &middot; SASS for Bootstrap</title>
+		<title>Example Layouts &middot; SASS for Bootstrap</title>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -26,25 +26,7 @@
 	
 	
 
-	<body class="no-transition has-status-bar">
-
-		
-			
-<header class="status-bar bg-cyan bg-800">
-
-	<div class="pull-right">
-
-		<a href="http://www.google.co.uk/design/spec/material-design/introduction.html" target="_blank">
-			<i class="icon icon-sm fa fa-google"></i>
-		</a>
-
-		<a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
-			<i class="icon icon-sm fa fa-github"></i>
-		</a>
-
-	</div>
-
-</header>
+	<body class="no-transition">
 
 		
 		
@@ -86,11 +68,11 @@
 
 				
 
-				<li role="presentation" class="">
+				<li role="presentation" class="active clicked">
 
-					<a href="#" class="toggle-navigation">
+					<a href="#" class="toggle-navigation active">
 						Layout
-						<i class="icon material-icons">expand_more</i>
+						<i class="icon material-icons">close</i>
 					</a>
 
 					<ul class="list-level-2">
@@ -178,7 +160,7 @@
 						
 						
 
-						<li role="presentation" class="">
+						<li role="presentation" class="active current">
 
 							<a href="/SASS-Material-Design-for-Bootstrap/layout/examples">
 								Example Layouts
@@ -664,7 +646,7 @@
 
 
 
-<nav class="app-bar    app-bar-extended app-bar-translucent bg-cyan" >
+<nav class="app-bar    elevated-1 app-bar-static app-bar-translucent bg-cyan" >
 
 	
 
@@ -679,12 +661,21 @@
 		<span class="hidden-sm hidden-xs">
 
 		
-			&nbsp;
+
+			
+				
+				
+		
+				layout <span class="divider">&#10095;</span>
+
+				
+			
+
 		
 
 		</span>
 
-		Material Design for Bootstrap
+		Example Layouts
 
 	</h1>
 
@@ -748,96 +739,40 @@
 
 	<div class="row">
 
-		<div class="col-xs-12">
+		<div class="col-sm-12 col-md-4">
 
-			<span class="pull-right clearfix">
+			<div class="list elevated-1">
 
-				<a class="btn btn-inverted" href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
-					<i class="icon icon-lg fa fa-github"></i>
-				</a>
+				<div class="list-item with-primary-image">
 
-				<a href="https://travis-ci.org/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">
-					<img src="https://travis-ci.org/band-x-media/SASS-Material-Design-for-Bootstrap.svg?branch=master" />
-				</a>
+					<div class="list-item-primary-image">
+						<a href="/SASS-Material-Design-for-Bootstrap/examples/1.html" target="_blank" class="no-decoration">
+							<i class="icon icon-lg icon-circle material-icons">view_quilt</i>
+						</a>
+					</div>
 
-			</span>
+					<div class="list-item-content with-secondary-action">
 
-			<div class="breather-lg"></div>
-			<div class="breather"></div>
-
-		</div>
-
-		<div class="col-md-4">
-			<p class="text-center ruled">
-				<i class="icon icon-xxl fa fa-google"></i>
-			</p>
-			<p class="lead text-center"><strong>Material Design</strong><br />A set of design principles that Google developed in 2014</p>
-		</div>
-
-		<div class="col-md-4">
-			<p class="text-center ruled">
-				<i class="icon icon-xxl fa fa-html5"></i>
-			</p>
-			<p class="lead text-center"><strong>Bootstrap</strong><br />One of the most popular CSS frameworks on the web</p>
-		</div>
-
-		<div class="col-md-4">
-			<p class="text-center ruled">
-				<i class="icon icon-xxl fa fa-code-fork"></i>
-			</p>
-			<p class="lead text-center"><strong>Material Design for Bootstrap</strong><br /> Joins the two</p>
-		</div>
-
-		<div class="col-xs-12">
+						<div class="list-item-primary-content">
+							<p class="line-1">
+								<a href="/SASS-Material-Design-for-Bootstrap/examples/1.html" target="_blank" class="no-decoration">
+									Example 1 
+								</a>
+							</p>
+							<p class="line-3">
+								An Extended, static App Bar with tabs and FAB
+							</p>
+						</div>
 	
-			<div class="breather-lg"></div>
-	
-			<div class="alert alert-warning text-center">
-				This is an early version of the docs - and some of the implementations - which may be liable to breaking changes<br />
-				If you would like to help document or add features, please contribute via <a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">Github</a>
-			</div>
-	
-		</div>
+						<div class="list-item-secondary-action">
+							<a href="/SASS-Material-Design-for-Bootstrap/examples/1.html" target="_blank" class="no-decoration">
+								<i class="icon icon-md icon-inactive material-icons">open_in_new</i>
+							</a>
+						</div>
 
-		<div class="col-xs-12">
+					</div>
 
-			<div class="breather-lg"></div>
-
-			<p class="lead text-center">We use the power of Bootstrap and adapt it to Material Design principles.</p>
-			<p class="lead text-center">Material Design introduced some new UI elements which this library brings to Bootstrap.</p>
-
-		</div>
-
-	</div>
-
-</div>
-
-<div class="breather-lg"></div>
-
-<div class="body-feature bg-green bg-50">
-
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-md-6">
-
-				<h3>Quick Start</h3>
-
-				<p>Including this library in your project is as simple as replacing the original Bootstrap files with these ones:</p>
-
-				<pre class="bg-green bg-100">&lt;link href=&quot;https://cdn.rawgit.com/band-x-media/SASS-Material-Design-for-Bootstrap/master/dist/material-bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.rawgit.com/band-x-media/SASS-Material-Design-for-Bootstrap/master/dist/material-bootstrap.min.js&quot;&gt;&lt;/script&gt;</pre>
-
-				<div class="breather-lg"></div>
-
-			</div>
-
-			<div class="col-md-6">
-
-				<h3>Contributing</h3>
-				<p>Pull requests are welcome, but not guaranteed. Please make any requests on <a href="https://github.com/band-x-media/SASS-Material-Design-for-Bootstrap" target="_blank">Github</a>.</p>
-				<p>It would be very helpful at this stage to have some assistance with documenting the features.</p>
+				</div>
 
 			</div>
 

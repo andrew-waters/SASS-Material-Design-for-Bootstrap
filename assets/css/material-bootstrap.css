@@ -18481,25 +18481,7 @@ a.btn-bg-success .icon {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   padding: 0 16px;
-  height: 65px;
-  /*
-  	@media (min-width: $screen-sm-min) {
-  		& .title {
-  		font-size: 14px;
-  		}
-  	}
-  	@media (min-width: $screen-md-min) {
-  		& .title {
-  			font-size: 18px;
-  		}
-  	}
-  	
-  	@media (min-width: $screen-lg-min) {
-  		& .title {
-  			font-size: 24px;
-  		}
-  	}
-  */ }
+  height: 65px; }
   .app-bar.has-tool-bar {
     margin-top: 60px; }
     body.has-status-bar .app-bar.has-tool-bar {
@@ -18514,6 +18496,9 @@ a.btn-bg-success .icon {
       height: 255px; }
       .app-bar-extended .app-bar.app-bar-has-tabs ul.nav.nav-tabs {
         margin-top: 159px; }
+    .app-bar.app-bar-has-tabs ul.nav.nav-tabs {
+      position: absolute;
+      bottom: 1px; }
   .app-bar.app-bar-translucent {
     opacity: 0.95; }
   body.no-transition .app-bar {
@@ -18541,7 +18526,10 @@ a.btn-bg-success .icon {
   .app-bar .btn-fab {
     float: right;
     margin-right: 20px;
-    z-index: 60; }
+    z-index: 60;
+    position: absolute;
+    bottom: -24px;
+    right: 20px; }
   .app-bar .action-icons {
     position: fixed;
     top: 20px;
@@ -19142,6 +19130,9 @@ body.has-status-bar {
     display: block;
     height: auto;
     border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
 
 /* Slider */
 .slick-loading .slick-list {
