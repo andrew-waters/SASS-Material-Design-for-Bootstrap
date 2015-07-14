@@ -206,3 +206,21 @@
 .btn-inverted.btn-danger {
 	@include inverted-button-variant($btn-danger-bg, rgba(0,0,0,0), $btn-danger-alt);
 }
+
+
+
+@each $color in map-keys(map-get($color-map, colors)) {
+
+	.btn.text-#{"" + $color} {
+		color: map-fetch($color-map, colors $color 500 'primary');
+	}
+
+	@each $hue in map-keys(map-fetch($color-map, colors $color)) {
+
+		.btn.text-#{"" + $color}.text-#{$hue} {
+			color: map-fetch($color-map, colors $color $hue 'primary');
+		}
+
+	}
+ 
+}
