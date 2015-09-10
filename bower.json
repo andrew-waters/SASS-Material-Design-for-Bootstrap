@@ -7,8 +7,8 @@
   ],
   "description": "Extends Bootstrap to incorporate Google's Material Design (SASS)",
   "main": [
-  	"/dist/material-bootstrap.min.css",
-  	"/dist/material-bootstrap.min.js"
+  	"dist/material-bootstrap.min.css",
+  	"dist/material-bootstrap.min.js"
   ],
   "keywords" : [
 	"sass",
