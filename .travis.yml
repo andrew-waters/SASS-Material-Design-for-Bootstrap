@@ -23,3 +23,6 @@ before_install:
 
 after_success:
  - "scripts/travis/publish-gh-pages.sh"
+
+rvm:
+  - 2.2
